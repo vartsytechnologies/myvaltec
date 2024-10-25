@@ -4,4 +4,5 @@ Valtec website development repo
 
 Tech stack
 - React Js
-- Material UI
+- React-bootstrap
+- Bootstrap
