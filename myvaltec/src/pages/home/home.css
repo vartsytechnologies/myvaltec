@@ -6,9 +6,53 @@
     
 }
 .sliderCaptionMain{
-    font-size: 76px;
-    line-height: 80px;
+    font-size: 3rem;
+    line-height: 3rem;
 }
 .sliderCaptionSubtext{
     color:azure;
 }
+
+@media (min-width: 576px) {
+    .sliderCaptionMain{
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .sliderCaptionMain{
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .sliderCaptionMain{
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .sliderCaptionMain{
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .sliderCaptionMain{
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+}
+
+/* react-bootstrap breakpoints
+X-Small	None	<576px
+Small	sm	≥576px
+Medium	md	≥768px
+Large	lg	≥992px
+Extra large	xl	≥1200px
+Extra extra large	xxl	≥1400px
+*/
