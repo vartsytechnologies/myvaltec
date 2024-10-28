@@ -1,5 +1,14 @@
-.sliderCaption{
+.sliderCaption{/*for positioning the captions*/
+    text-align: left;
     position: absolute;
     top: 20vh;
-    left: 30%;
+    left: 20%;
+    
+}
+.sliderCaptionMain{
+    font-size: 76px;
+    line-height: 80px;
+}
+.sliderCaptionSubtext{
+    color:azure;
 }
