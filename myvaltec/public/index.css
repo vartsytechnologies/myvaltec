@@ -7,3 +7,24 @@ body{
     max-width: 100%;
     overflow-x:hidden;
 }
+
+/*General Images*/
+.zoom-out-container {
+    overflow: hidden; /* Ensures the image stays within its container */
+    /*position: relative;*/
+    /*width: 100%; /* Adjust based on container needs */
+    /*height: 100%;*/
+}
+
+.zoom-out-container img {
+    transition: 2s ease; /* Smooth transition */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image covers container fully */
+}
+
+.zoom-out-container:hover img {
+    transform: scale(1.05); /* Scales the image down to 90% of its size */
+    border-radius: 9px;
+    }
+/*end General Images*/

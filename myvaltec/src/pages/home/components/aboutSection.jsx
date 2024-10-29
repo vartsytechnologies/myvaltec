@@ -24,8 +24,8 @@ function AboutSection(){
                                 sapien risus hendrerit eros, non congue arcu massa sit am
                                 <p className="mt-4"><DefaultButton name ="Read More" /></p>
                                 </Col>
-                                <Col xs={12} lg={6}>
-                                    <img src={aboutImg} alt='about-valtec'/>
+                                <Col xs={12} lg={6} className='zoom-out-container'>
+                                    <img src={aboutImg} alt='about-valtec'className='w-100'/>
                                 </Col>
                             </Row>
                         </Col>

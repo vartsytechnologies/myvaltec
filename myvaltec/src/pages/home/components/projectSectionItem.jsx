@@ -3,7 +3,7 @@ import React from "react";
 function ProjectSectionItem(props) {
     return (
         <>
-            <p style={{ zIndex: '0' }}>
+            <p style={{ zIndex: '0' }} className='zoom-out-container'>    
                 <img 
                     src={props.imageSource} 
                     alt="Project" 

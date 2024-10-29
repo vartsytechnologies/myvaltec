@@ -6,7 +6,7 @@ import DefaultButton from '../../../components/defaultButton';
 
 function MainSlider() {
   return (
-    <Carousel>
+    <Carousel indicators={false}>
       <Carousel.Item interval={3000}>
         <ExampleCarouselImage text="First slide" />
         <Carousel.Caption className='sliderCaption'>
