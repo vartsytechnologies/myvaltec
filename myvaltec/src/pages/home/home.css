@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
 .sliderCaption{/*for positioning the captions*/
     text-align: left;
     position: absolute;
@@ -46,6 +51,11 @@
         font-size: 4rem;
         line-height: 5rem;
     }
+}
+
+/*Market Section*/
+.marketSection{
+    background: #faf7e6;
 }
 
 /* react-bootstrap breakpoints
