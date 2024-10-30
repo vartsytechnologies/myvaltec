@@ -2,12 +2,13 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCard";
+import companyOverview from '../../../assets/companyOverview.jpg'
 
 const projects = [
-  { title: "ENI OCTP-ORF, Sanzule, Ghana", description: "Lorem ipsum dolor sit amet...", imgSrc: "https://via.placeholder.com/300" },
-  { title: "AMANDI Energy Power Plant, Power Enclave, Aboadze, Ghana", description: "Lorem ipsum dolor sit amet...", imgSrc: "https://via.placeholder.com/300" },
-  { title: "AngloGold Ashanti Obuasi Paste Plant, Obuasi, Ghana", description: "Lorem ipsum dolor sit amet...", imgSrc: "https://via.placeholder.com/300" },
-  { title: "Yinson Productions", description: "Lorem ipsum dolor sit amet...", imgSrc: "https://via.placeholder.com/300" },
+  { title: "ENI OCTP-ORF, Sanzule, Ghana", description: "Lorem ipsum dolor sit amet...", imgSrc: companyOverview},
+  { title: "AMANDI Energy Power Plant, Power Enclave, Aboadze, Ghana", description: "Lorem ipsum dolor sit amet...", imgSrc: companyOverview},
+  { title: "AngloGold Ashanti Obuasi Paste Plant, Obuasi, Ghana", description: "Lorem ipsum dolor sit amet...", imgSrc: companyOverview },
+  { title: "Yinson Productions", description: "Lorem ipsum dolor sit amet...", imgSrc: companyOverview },
 ];
 
 function ProjectSection() {
