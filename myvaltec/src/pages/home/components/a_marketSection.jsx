@@ -8,7 +8,7 @@ function MarketSection() {
   return (
     <Container fluid className='mt-5 mb-5 p-5 marketSection'>
         <Row className='ps-5 pe-5'>
-            <Col>
+            <Col xs={12} md={6}>
                 <Card className="bg-dark text-white zoom-out-container">
                     <Card.Img src={oilAndGasMarketImg} alt="Oil and Gas Market" />
                     <Card.ImgOverlay>
@@ -21,8 +21,8 @@ function MarketSection() {
                     </Card.ImgOverlay>
                 </Card>
             </Col>
-            <Col>
-            <Card className="bg-dark text-white zoom-out-container">
+            <Col xs={12} md={6} >
+            <Card className="bg-dark text-white zoom-out-container mt-2 mt-md-auto">
                     <Card.Img src={oilAndGasMarketImg} alt="Oil and Gas Market" />
                     <Card.ImgOverlay>
                         <Card.Title>Oil and Gas Infrastructure</Card.Title>

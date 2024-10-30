@@ -58,6 +58,14 @@
 .marketSection{
     background: #faf7e6;
 }
+.tabMenuItem{
+    color:#fff;
+}
+.marketTitle{
+    position:relative;
+    top: -5rem;
+    z-index: 100;
+}
 
 /* react-bootstrap breakpoints
 X-Small	None	<576px

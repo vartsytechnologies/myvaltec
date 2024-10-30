@@ -8,7 +8,7 @@ import "./fromServices.css";
 
 function Example() {
   return (
-    <Container style={{ marginTop: "30px" }}>
+    <Container style={{ marginTop: "30px", marginBottom:"10rem" }}>
       <h1 className="my-2 text-center">Services</h1>
       <p className="text-center">
         <i>We serve our clients very well in these areas of services</i>

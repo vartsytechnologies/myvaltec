@@ -22,7 +22,7 @@ function AboutSection(){
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor magna et placerat fringilla.
                                 Phasellus nisl orci, imperdiet vitae eros ac, molestie elementum magna. Maecenas dictum, velit quis volutpat cursus,
                                 sapien risus hendrerit eros, non congue arcu massa sit am
-                                <p className="mt-4"><DefaultButton name ="Read More" /></p>
+                                <p className="mt-4"><DefaultButton name ="Read More" variant = "danger" /></p>
                                 </Col>
                                 <Col xs={12} lg={6} className='zoom-out-container'>
                                     <img src={aboutImg} alt='about-valtec'className='w-100'/>
