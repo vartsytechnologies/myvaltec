@@ -4,6 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 //import { a } from 'react-router-dom';
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 import './Footer.css';
+import footerLogo from '../../assets/valtec_logo_white.png'
 
 function Footer() {
     return (
@@ -11,7 +12,7 @@ function Footer() {
             <Container>
                 <Row>
                     <Col xs={12} md={4} className="logo-section text-center">
-                        <img src="../../assets/valtec_logo_white.png" alt="Valtec Logo" className="footer-logo" />
+                        <img src={footerLogo} alt="Valtec Logo" className="footer-logo" />
                         <Row className="social-icons-row ">
                     <Col className="social-icons">
                         <a href="https://facebook.com" aria-label="Facebook">
