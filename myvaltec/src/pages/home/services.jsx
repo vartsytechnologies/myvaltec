@@ -2,18 +2,16 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-// import Image from "react-bootstrap/Image";
-
 import "./fromServices.css";
 
-function Example() {
+function ServiceSection() {
   return (
-    <Container style={{ marginTop: "30px", marginBottom:"10rem" }}>
-      <h1 className="my-2 text-center">Services</h1>
+    <Container>
+      <h1 className="mt-4 text-center">Services</h1>
       <p className="text-center">
         <i>We serve our clients very well in these areas of services</i>
       </p>
-      <hr style={{ height: "3px", background: "black" }} />
+      <hr style={{ height: "3px", background: "black", opacity: "1" }} />
       <Row>
         <Col xs={12} lg={6}>
           <Row className="flex-column">
@@ -21,28 +19,36 @@ function Example() {
               <div className="main mb-4">
                 <div className="row">
                   <div
-                    className="col-3 bg-danger d-flex align-items-center justify-content-center"
-                    style={{ border: "2px solid black" }}
+                    className="col-3 d-flex align-items-center justify-content-center"
+                    style={{
+                      background: "rgba(255, 177, 193, 0.42",
+                      height: "140px",
+                    }}
                   >
                     <div
-                      className="image-container m-2 p-2"
+                      className="image-container m-2 p-2 d-flex align-items-center justify-content-center"
                       style={{
-                        height: "130px",
+                        height: "100px",
                         border: "1px solid black",
                       }}
                     ></div>
                   </div>
                   <div className="col-9">
                     <div className="text-container me-2">
-                      <p className="fs-5">
+                      <p className="fs-5 p-0 m-0">
                         Engineering, Procument and Construction
                       </p>
-                      <hr />
-                      <p>
+                      <hr
+                        style={{
+                          borderTop: "2px solid rgba(255,17,67,1)",
+                          borderRadius: "4px",
+                          opacity: "1",
+                          margin: "0.5rem 0",
+                        }}
+                      />
+                      <p className="p-0 m-0">
                         Lorem ipsum, dolor sit amet consectetur adipisicing
                         elit. Aspernatur itaque placeat impedit aut obcaecati
-                        dolores maxime modi delectus saepe in. Repudiandae,
-                        saepe minima.
                       </p>
                     </div>
                   </div>
@@ -53,26 +59,36 @@ function Example() {
               <div className="main mb-4">
                 <div className="row">
                   <div
-                    className="col-3 bg-danger d-flex align-items-center justify-content-center"
-                    style={{ border: "2px solid black" }}
+                    className="col-3 d-flex align-items-center justify-content-center"
+                    style={{
+                      background: "rgba(255, 177, 193, 0.42",
+                      height: "140px",
+                    }}
                   >
                     <div
-                      className="image-container m-2 p-2"
+                      className="image-container m-2 p-2 d-flex align-items-center justify-content-center"
                       style={{
-                        height: "130px",
+                        height: "100px",
                         border: "1px solid black",
                       }}
                     ></div>
                   </div>
                   <div className="col-9">
                     <div className="text-container me-2">
-                      <p className="fs-5">Calibration Services</p>
-                      <hr />
-                      <p>
+                      <p className="fs-5 p-0 m-0">
+                        Engineering, Procument and Construction
+                      </p>
+                      <hr
+                        style={{
+                          borderTop: "2px solid rgba(255,17,67,1)",
+                          borderRadius: "4px",
+                          opacity: "1",
+                          margin: "0.5rem 0",
+                        }}
+                      />
+                      <p className="p-0 m-0">
                         Lorem ipsum, dolor sit amet consectetur adipisicing
                         elit. Aspernatur itaque placeat impedit aut obcaecati
-                        dolores maxime modi delectus saepe in. Repudiandae,
-                        saepe minima.
                       </p>
                     </div>
                   </div>
@@ -83,26 +99,36 @@ function Example() {
               <div className="main mb-4">
                 <div className="row">
                   <div
-                    className="col-3 bg-danger d-flex align-items-center justify-content-center"
-                    style={{ border: "2px solid black" }}
+                    className="col-3 d-flex align-items-center justify-content-center"
+                    style={{
+                      background: "rgba(255, 177, 193, 0.42",
+                      height: "140px",
+                    }}
                   >
                     <div
-                      className="image-container m-2 p-2"
+                      className="image-container m-2 p-2 d-flex align-items-center justify-content-center"
                       style={{
-                        height: "130px",
+                        height: "100px",
                         border: "1px solid black",
                       }}
                     ></div>
                   </div>
                   <div className="col-9">
                     <div className="text-container me-2">
-                      <p className="fs-5">Fuel Additives and Lubricants</p>
-                      <hr />
-                      <p>
+                      <p className="fs-5 p-0 m-0">
+                        Engineering, Procument and Construction
+                      </p>
+                      <hr
+                        style={{
+                          borderTop: "2px solid rgba(255,17,67,1)",
+                          borderRadius: "4px",
+                          opacity: "1",
+                          margin: "0.5rem 0",
+                        }}
+                      />
+                      <p className="p-0 m-0">
                         Lorem ipsum, dolor sit amet consectetur adipisicing
                         elit. Aspernatur itaque placeat impedit aut obcaecati
-                        dolores maxime modi delectus saepe in. Repudiandae,
-                        saepe minima.
                       </p>
                     </div>
                   </div>
@@ -113,28 +139,36 @@ function Example() {
               <div className="main mb-4">
                 <div className="row">
                   <div
-                    className="col-3 bg-danger d-flex align-items-center justify-content-center"
-                    style={{ border: "2px solid black" }}
+                    className="col-3 d-flex align-items-center justify-content-center"
+                    style={{
+                      background: "rgba(255, 177, 193, 0.42",
+                      height: "140px",
+                    }}
                   >
                     <div
-                      className="image-container m-2 p-2"
+                      className="image-container m-2 p-2 d-flex align-items-center justify-content-center"
                       style={{
-                        height: "130px",
+                        height: "100px",
                         border: "1px solid black",
                       }}
                     ></div>
                   </div>
                   <div className="col-9">
                     <div className="text-container me-2">
-                      <p className="fs-5">
-                        Digital Solutions, IT and Cybersecurity
+                      <p className="fs-5 p-0 m-0">
+                        Engineering, Procument and Construction
                       </p>
-                      <hr />
-                      <p>
+                      <hr
+                        style={{
+                          borderTop: "2px solid rgba(255,17,67,1)",
+                          borderRadius: "4px",
+                          opacity: "1",
+                          margin: "0.5rem 0",
+                        }}
+                      />
+                      <p className="p-0 m-0">
                         Lorem ipsum, dolor sit amet consectetur adipisicing
                         elit. Aspernatur itaque placeat impedit aut obcaecati
-                        dolores maxime modi delectus saepe in. Repudiandae,
-                        saepe minima.
                       </p>
                     </div>
                   </div>
@@ -149,26 +183,36 @@ function Example() {
               <div className="main mb-4">
                 <div className="row">
                   <div
-                    className="col-3 bg-danger d-flex align-items-center justify-content-center"
-                    style={{ border: "2px solid black" }}
+                    className="col-3 d-flex align-items-center justify-content-center"
+                    style={{
+                      background: "rgba(255, 177, 193, 0.42",
+                      height: "140px",
+                    }}
                   >
                     <div
-                      className="image-container m-2 p-2"
+                      className="image-container m-2 p-2 d-flex align-items-center justify-content-center"
                       style={{
-                        height: "130px",
+                        height: "100px",
                         border: "1px solid black",
                       }}
                     ></div>
                   </div>
                   <div className="col-9">
                     <div className="text-container me-2">
-                      <p className="fs-5">Renewable Energy</p>
-                      <hr />
-                      <p>
+                      <p className="fs-5 p-0 m-0">
+                        Engineering, Procument and Construction
+                      </p>
+                      <hr
+                        style={{
+                          borderTop: "2px solid rgba(255,17,67,1)",
+                          borderRadius: "4px",
+                          opacity: "1",
+                          margin: "0.5rem 0",
+                        }}
+                      />
+                      <p className="p-0 m-0">
                         Lorem ipsum, dolor sit amet consectetur adipisicing
                         elit. Aspernatur itaque placeat impedit aut obcaecati
-                        dolores maxime modi delectus saepe in. Repudiandae,
-                        saepe minima.
                       </p>
                     </div>
                   </div>
@@ -179,26 +223,36 @@ function Example() {
               <div className="main mb-4">
                 <div className="row">
                   <div
-                    className="col-3 bg-danger d-flex align-items-center justify-content-center"
-                    style={{ border: "2px solid black" }}
+                    className="col-3 d-flex align-items-center justify-content-center"
+                    style={{
+                      background: "rgba(255, 177, 193, 0.42",
+                      height: "140px",
+                    }}
                   >
                     <div
-                      className="image-container m-2 p-2"
+                      className="image-container m-2 p-2 d-flex align-items-center justify-content-center"
                       style={{
-                        height: "130px",
+                        height: "100px",
                         border: "1px solid black",
                       }}
                     ></div>
                   </div>
                   <div className="col-9">
                     <div className="text-container me-2">
-                      <p className="fs-5">Infrastructure and Facilities</p>
-                      <hr />
-                      <p>
+                      <p className="fs-5 p-0 m-0">
+                        Engineering, Procument and Construction
+                      </p>
+                      <hr
+                        style={{
+                          borderTop: "2px solid rgba(255,17,67,1)",
+                          borderRadius: "4px",
+                          opacity: "1",
+                          margin: "0.5rem 0",
+                        }}
+                      />
+                      <p className="p-0 m-0">
                         Lorem ipsum, dolor sit amet consectetur adipisicing
                         elit. Aspernatur itaque placeat impedit aut obcaecati
-                        dolores maxime modi delectus saepe in. Repudiandae,
-                        saepe minima.
                       </p>
                     </div>
                   </div>
@@ -209,56 +263,36 @@ function Example() {
               <div className="main mb-4">
                 <div className="row">
                   <div
-                    className="col-3 bg-danger d-flex align-items-center justify-content-center"
-                    style={{ border: "2px solid black" }}
+                    className="col-3 d-flex align-items-center justify-content-center"
+                    style={{
+                      background: "rgba(255, 177, 193, 0.42",
+                      height: "140px",
+                    }}
                   >
                     <div
-                      className="image-container m-2 p-2"
+                      className="image-container m-2 p-2 d-flex align-items-center justify-content-center"
                       style={{
-                        height: "130px",
+                        height: "100px",
                         border: "1px solid black",
                       }}
                     ></div>
                   </div>
                   <div className="col-9">
                     <div className="text-container me-2">
-                      <p className="fs-5">Public and Private Partnerships</p>
-                      <hr />
-                      <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Aspernatur itaque placeat impedit aut obcaecati
-                        dolores maxime modi delectus saepe in. Repudiandae,
-                        saepe minima.
+                      <p className="fs-5 p-0 m-0">
+                        Engineering, Procument and Construction
                       </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Col>
-            <Col>
-              <div className="main mb-4">
-                <div className="row">
-                  <div
-                    className="col-3 bg-danger d-flex align-items-center justify-content-center"
-                    style={{ border: "2px solid black" }}
-                  >
-                    <div
-                      className="image-container m-2 p-2"
-                      style={{
-                        height: "130px",
-                        border: "1px solid black",
-                      }}
-                    ></div>
-                  </div>
-                  <div className="col-9">
-                    <div className="text-container me-2">
-                      <p className="fs-5">Public and Private Partnerships</p>
-                      <hr />
-                      <p>
+                      <hr
+                        style={{
+                          borderTop: "2px solid rgba(255,17,67,1)",
+                          borderRadius: "4px",
+                          opacity: "1",
+                          margin: "0.5rem 0",
+                        }}
+                      />
+                      <p className="p-0 m-0">
                         Lorem ipsum, dolor sit amet consectetur adipisicing
                         elit. Aspernatur itaque placeat impedit aut obcaecati
-                        dolores maxime modi delectus saepe in. Repudiandae,
-                        saepe minima.
                       </p>
                     </div>
                   </div>
@@ -272,4 +306,4 @@ function Example() {
   );
 }
 
-export default Example;
+export default ServiceSection;
