@@ -35,3 +35,13 @@
     padding-bottom: 0px;
   } */
 }
+.i-cons {
+  height: 70px;
+  width: 70px;
+  color: rgba(255, 17, 67, 1);
+}
+.icon {
+  height: 40px;
+  width: 40px;
+  color: rgba(255, 17, 67, 1);
+}

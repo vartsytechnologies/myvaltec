@@ -4,8 +4,11 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
-import "./fromServices.css";
-
+import "./homeServices.css";
+import { GoHomeFill } from "react-icons/go";
+import { LuPhoneCall } from "react-icons/lu";
+import { MdEmail } from "react-icons/md";
+import { IoSendSharp } from "react-icons/io5";
 function ContactSection() {
   return (
     <Container fluid>
@@ -25,12 +28,13 @@ function ContactSection() {
                     <div className="contactParent mt-3">
                       <div className="row">
                         <div
-                          className="col col-sm-3 col-md-2 col-lg-2"
+                          className="col col-sm-3 col-md-2 col-lg-2 d-flex align-items-center justify-content-center"
                           style={{
                             background: "rgba(255, 177, 193, 0.42)",
-                            height: "80px",
                           }}
-                        ></div>
+                        >
+                          <GoHomeFill className="icon" />
+                        </div>
                         <div className="col col-sm-8 col-md-10 col-lg-10">
                           <div className="text ">
                             <h4
@@ -49,12 +53,13 @@ function ContactSection() {
                     <div className="contactParent my-4">
                       <div className="row">
                         <div
-                          className="col col-sm-3 col-md-2 col-lg-2"
+                          className="col col-sm-3 col-md-2 col-lg-2 d-flex align-items-center justify-content-center"
                           style={{
                             background: "rgba(255, 177, 193, 0.42)",
-                            height: "80px",
                           }}
-                        ></div>
+                        >
+                          <LuPhoneCall className="icon" />
+                        </div>
                         <div className="col col-sm-8 col-md-10 col-lg-10">
                           <div className="text ">
                             <h4
@@ -73,12 +78,13 @@ function ContactSection() {
                     <div className="contactParent  mb-3">
                       <div className="row">
                         <div
-                          className="col col-sm-3 col-md-2 col-lg-2"
+                          className="col col-sm-3 col-md-2 col-lg-2 d-flex align-items-center justify-content-center"
                           style={{
                             background: "rgba(255, 177, 193, 0.42)",
-                            height: "80px",
                           }}
-                        ></div>
+                        >
+                          <MdEmail className="icon" />
+                        </div>
                         <div className="col col-sm-8 col-md-10 col-lg-10">
                           <div className="text ">
                             <h4
@@ -153,7 +159,7 @@ function ContactSection() {
                             variant="danger"
                             type="submit"
                           >
-                            Send
+                            Send <IoSendSharp className="" />
                           </Button>
                         </div>
                       </Form>
