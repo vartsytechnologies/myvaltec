@@ -1,7 +1,7 @@
 
 import React from 'react';
 import NavBar from '../../../components/navbar/navbar';
-import Banner from '../src/components/banner/Banner.js'
+//import Banner from '../src/components/banner/Banner.js'
 import CompanyOverview from './components/CompanyOverview';
 import Purpose from './components/Purpose';
 import Section from './components/Section';
@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <NavBar/>
-      <Banner title="Thinking" />
+      {/*<Banner title="Thinking" />*/}
       <CompanyOverview />
       <Purpose />
       <Section title="Digital Innovation" content="The potential of harnessing digital technologies to deliver value for our client's projects drives us at VALTEC. We collaborate with experts and build global partnerships with leading industrial solutions to deliver transformative outcomes for our customers. We continuously seek improvement in business performance by efficiently considering evolving technologies, industry best practices, and stakeholder expectations. We strongly emphasize effective ways of working together and developing productive long-term relationships with our internal and external stakeholders." />
