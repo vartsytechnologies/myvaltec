@@ -1,16 +1,16 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './home' // Adjust paths as necessary
 import Thinking from './pages/Thinking/src/Thinking'; // Adjust paths as necessary
 
 function App() {
   return (
     <Router>
-      <Switch>
+      <Routes>
         <Route path="/" exact component={Home} />
         <Route path="/about" component={Thinking} />
         {/* Add more routes as needed */}
-      </Switch>
+      </Routes>
     </Router>
   );
 }
