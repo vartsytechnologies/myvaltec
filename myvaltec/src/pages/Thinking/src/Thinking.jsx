@@ -1,7 +1,7 @@
 
 import React from 'react';
 import NavBar from '../../../components/navbar/navbar';
-import Banner from './components/Banner';
+import Banner from '../src/components/banner/Banner.js'
 import CompanyOverview from './components/CompanyOverview';
 import Purpose from './components/Purpose';
 import Section from './components/Section';
