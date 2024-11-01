@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './home' // Adjust paths as necessary
 import Thinking from './pages/Thinking/src/Thinking'; // Adjust paths as necessary
@@ -7,16 +7,15 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" exact component={Home} />
-        <Route path="/about" component={Thinking} />
-        {/* Add more routes as needed */}
+        <Route path="/" exact component={<Home/>} />
+        <Route path="/about" component={<Thinking/>} />
+        {/* Add more routes as needed }
       </Routes>
     </Router>
   );
 }
 
 export default App;
-
 
 /*import React from "react";
 import MainSlider from "./pages/home/components/carousel.jsx";
