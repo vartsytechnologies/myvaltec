@@ -1,94 +1,101 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import Layout from './components/layout/layout.jsx';
-import Home from './pages/home/home.jsx';
-import Project from './pages/projects/projects.jsx'
-import Thinking from './pages/Thinking/src/Thinking.jsx'
-import Partners from './pages/partners/partners.jsx';
-import NotFoundPage from './pages/notfound/notfoundpage.jsx';
-import Markets from './pages/markets/markets.jsx';
-import Contact from './pages/contact/contact.jsx'
-import reportWebVitals from './reportWebVitals';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-
-
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import Layout from "./components/layout/layout.jsx";
+import Home from "./pages/home/home.jsx";
+import Project from "./pages/projects/projects.jsx";
+import Thinking from "./pages/Thinking/src/Thinking.jsx";
+import Partners from "./pages/partners/partners.jsx";
+import NotFoundPage from "./pages/notfound/notfoundpage.jsx";
+import Markets from "./pages/markets/markets.jsx";
+import Services from "./pages/services/actualServices.jsx";
+import Contact from "./pages/contact/contact.jsx";
+import reportWebVitals from "./reportWebVitals";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
-  {path:'/',
+  {
+    path: "/",
     element: (
       <Layout>
-        <Home/>
+        <Home />
       </Layout>
-      ),
-    errorElement:(
+    ),
+    errorElement: (
       <Layout>
-        <NotFoundPage/>
+        <NotFoundPage />
       </Layout>
-      )
+    ),
   },
 
-  {path:'/home',
+  {
+    path: "/home",
     element: (
       <Layout>
-        <Home/>
+        <Home />
       </Layout>
-      ),
+    ),
   },
 
-  {path:'/thinking',
+  {
+    path: "/thinking",
     element: (
       <Layout>
-        <Thinking/>
+        <Thinking />
       </Layout>
-      )
+    ),
   },
-    
-    {
-      path:'/projects',
-      element: (
-        <Layout>
-          <Project/>
-        </Layout>
-        )
-    },
 
-    {
-      path:'/partners',
-      element: (
-        <Layout>
-          <Partners/>
-        </Layout>
-        )
-    },
+  {
+    path: "/projects",
+    element: (
+      <Layout>
+        <Project />
+      </Layout>
+    ),
+  },
 
-    {
-      path:'/markets',
-      element: (
-        <Layout>
-          <Markets/>
-        </Layout>
-        )
-    },
+  {
+    path: "/partners",
+    element: (
+      <Layout>
+        <Partners />
+      </Layout>
+    ),
+  },
 
-    {
-      path:'/contact',
-      element: (
-        <Layout>
-          <Contact/>
-        </Layout>
-        )
-    },
-])
+  {
+    path: "/markets",
+    element: (
+      <Layout>
+        <Markets />
+      </Layout>
+    ),
+  },
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+  {
+    path: "/contact",
+    element: (
+      <Layout>
+        <Contact />
+      </Layout>
+    ),
+  },
+  {
+    path: "/service",
+    element: (
+      <Layout>
+        <Services />
+      </Layout>
+    ),
+  },
+]);
+
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router}/>
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
-
-
-
 
 //const root = ReactDOM.createRoot(document.getElementById('root'));
 //root.render(
