@@ -1,28 +1,83 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import Layout from './components/layout/layout.jsx';
+import Home from './pages/home/home.jsx';
 import Project from './pages/projects/projects.jsx'
-//import App from './App';
-import Home from './home';
 import Thinking from './pages/Thinking/src/Thinking.jsx'
+import Partners from './pages/partners/partners.jsx';
+import NotFoundPage from './pages/notfound/notfoundpage.jsx';
+import Markets from './pages/markets/markets.jsx';
+import Contact from './pages/contact/contact.jsx'
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 
+
 const router = createBrowserRouter([
   {path:'/',
-    element: <Home/>,
-    errorElement:<div><h1>Developers are currently working on deploying the site. Page will be live soon.</h1></div>
+    element: (
+      <Layout>
+        <Home/>
+      </Layout>
+      ),
+    errorElement:(
+      <Layout>
+        <NotFoundPage/>
+      </Layout>
+      )
   },
+
+  {path:'/home',
+    element: (
+      <Layout>
+        <Home/>
+      </Layout>
+      ),
+  },
+
   {path:'/thinking',
-    element: <Thinking/>},
+    element: (
+      <Layout>
+        <Thinking/>
+      </Layout>
+      )
+  },
+    
     {
       path:'/projects',
-      element: <Project/>
+      element: (
+        <Layout>
+          <Project/>
+        </Layout>
+        )
     },
+
     {
-      path:'/home',
-      element: <Home/>
+      path:'/partners',
+      element: (
+        <Layout>
+          <Partners/>
+        </Layout>
+        )
+    },
+
+    {
+      path:'/markets',
+      element: (
+        <Layout>
+          <Markets/>
+        </Layout>
+        )
+    },
+
+    {
+      path:'/contact',
+      element: (
+        <Layout>
+          <Contact/>
+        </Layout>
+        )
     },
 ])
 

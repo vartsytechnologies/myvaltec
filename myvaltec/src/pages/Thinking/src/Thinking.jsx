@@ -1,17 +1,14 @@
 
 import React from 'react';
-import NavBar from '../../../components/navbar/navbar';
 //import Banner from '../src/components/banner/Banner.js'
 import CompanyOverview from './components/CompanyOverview';
 import Purpose from './components/Purpose';
 import Section from './components/Section';
 import { Container, Row, Col } from 'react-bootstrap';
-import Footer from '../../../components/Footer/Footer';
 
 function App() {
   return (
     <>
-      <NavBar/>
       {/*<Banner title="Thinking" />*/}
       <CompanyOverview />
       <Purpose />
@@ -34,7 +31,6 @@ function App() {
                   </Row>
                 </Container></>
                 }/>
-      <Footer/>
     </>
   );
 }
