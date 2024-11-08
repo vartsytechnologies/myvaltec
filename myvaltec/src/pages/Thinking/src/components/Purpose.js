@@ -1,10 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-//import placeholderImg from './placeholder.jpg';
-import CompanyOverview from "../../../../assets/companyOverview.jpg";
 import AOS from "aos";
 import { useEffect } from "react";
 import "aos/dist/aos.css";
+import purpose from '../../../../assets/purpose.jpg';
 
 function Purpose() {
   useEffect(() => {
@@ -19,14 +18,14 @@ function Purpose() {
       <Row>
         <Col md={4}>
           <img
-            src={CompanyOverview}
+            src={purpose}
             alt="Purpose"
             className="img-fluid"
             data-aos="fade-left"
           />
         </Col>
-        <Col md={8}>
-          <h2 className="text-danger" data-aos="fade-up">
+        <Col md={8} >
+          <h2 className="text-danger ps-2" data-aos="fade-up">
             Our Purpose
           </h2>
           <ul>
