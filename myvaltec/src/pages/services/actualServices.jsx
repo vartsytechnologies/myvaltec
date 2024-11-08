@@ -3,7 +3,6 @@ import React from "react";
 import aboutImg from "../../assets/aboutImg.png";
 
 import { Container, Row, Col } from "react-bootstrap";
-import NavBar from "../../components/navbar/navbar";
 import Banner from "../../components/banner/Banner";
 import "./services.css";
 import {
@@ -17,8 +16,6 @@ import { PiMonitor } from "react-icons/pi";
 import { AiOutlineExperiment } from "react-icons/ai";
 // import { Card } from "react-bootstrap";
 // import aboutImg from "../../../assets/aboutImg.png";
-
-import Footer from "../../components/Footer/Footer";
 
 function Services() {
   return (
