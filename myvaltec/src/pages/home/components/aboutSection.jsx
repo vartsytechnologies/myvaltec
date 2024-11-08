@@ -7,21 +7,19 @@ import aboutImg from '../../../assets/aboutImg.png';
 
 function AboutSection(){
     return(<>
-        <Container>
+        <Container className="pb-4">
             <Row className="mt-4 flex-column">
                         <Col className=''><h1>About Us</h1></Col>
                         <Col>
                             <Row className="justify-content-between align-items-start">
-                                <Col>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Nunc tempor magna et placerat fringilla. Phasellus nisl orci,
-                                imperdiet vitae eros ac, molestie elementum magna. Maecenas dictum,
-                                velit quis volutpat cursus, sapien risus hendrerit eros, non congue arcu massa sit amet magna.
-                                Cras tristique quam augue. Quisque ac tincidunt ante, eu consequat ligula.
-                                Nam sollicitudin leo ut massa consequat, a faucibus risus maximus. Suspendisse velit purus, 
-                                facilisis eu magna vitae, fermentum consequat tortor. Pellentesque sodales consequat finibus. 
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor magna et placerat fringilla.
-                                Phasellus nisl orci, imperdiet vitae eros ac, molestie elementum magna. Maecenas dictum, velit quis volutpat cursus,
-                                sapien risus hendrerit eros, non congue arcu massa sit am
+                                <Col className='ps-0'>Valtec Limited, established in August 2015, is a Ghanaian
+                                        indigenous support service company that stands out in its
+                                        commitment to providing value through technology to EPC
+                                        projects, existing plants, and contractors in the energy, mining, oil, and gas industries. Valtec’s unique blend of
+                                        locally available expertise and a globalized affiliated
+                                        support network ensures specialized precision, real-time
+                                        speed, and reliable services to EPC projects and operations
+                                        in West Africa.
                                 <p className="mt-4"><DefaultButton name ="Read More" variant = "danger" /></p>
                                 </Col>
                                 <Col xs={12} lg={6} className='zoom-out-container'>
