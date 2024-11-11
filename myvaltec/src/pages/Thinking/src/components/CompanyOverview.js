@@ -8,7 +8,7 @@ import "aos/dist/aos.css"; // Import the CSS styles
 function CompanyOverview() {
   useEffect(() => {
     AOS.init({
-      duration: 9650, // Animation duration in milliseconds
+      duration: 50, // Animation duration in milliseconds
       offset: 50, // Trigger animations 50px before an element is in view
     });
   }, []);
@@ -19,7 +19,7 @@ function CompanyOverview() {
       </h2>
       <Row>
         <Col md={7}>
-          <p data-aos="fade-left">
+          <p data-aos="fade-down">
             Established in August 2015, VALTEC is a value-driven design,
             engineering, procurement, construction, and management consulting
             company. Our locally available expertise and globally affiliated
