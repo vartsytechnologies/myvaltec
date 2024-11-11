@@ -4,6 +4,9 @@ import CompanyOverview from "./components/CompanyOverview";
 import Purpose from "./components/Purpose";
 import Section from "./components/Section";
 import { Container, Row, Col } from "react-bootstrap";
+import valtec_digital from "../../../assets/valtec_digital.jpg";
+import quality_assurance from "../../../assets/quality_assurance.jpg";
+import ethics_and_compliance from "../../../assets/ethics_and_compliance.jpg";
 
 function App() {
   return (
@@ -13,7 +16,12 @@ function App() {
       <Purpose />
       <Section
         title="Digital Innovation"
-        content="The potential of harnessing digital technologies to deliver value for our client's projects drives us at VALTEC. We collaborate with experts and build global partnerships with leading industrial solutions to deliver transformative outcomes for our customers. We continuously seek improvement in business performance by efficiently considering evolving technologies, industry best practices, and stakeholder expectations. We strongly emphasize effective ways of working together and developing productive long-term relationships with our internal and external stakeholders."
+        content="The potential of harnessing digital technologies to deliver value for our client's projects drives us at VALTEC.
+      We collaborate with experts and build global partnerships with leading industrial solutions to deliver transformative outcomes for our customers. 
+      We continuously seek improvement in business performance by efficiently considering evolving technologies, industry best practices, and stakeholder
+       expectations. We strongly emphasize effective ways of working together and developing productive long-term relationships with our internal and external 
+       stakeholders."
+        imgSrc={valtec_digital}
       />
       <Section
         title="Ethics & Compliance"
@@ -21,12 +29,17 @@ function App() {
                 Our principles shape our culture; they define our work approach. Our Blueprint details our strategy and ambitions across all business sectors.
                 We embody our principles by establishing clear behavioral expectations for our team and fostering an integrity-focused culture that informs our daily decisions, actions, and relationships.
                 Our clients recognize our commitment to ethical conduct and compliance with local regulations. We consistently build client trust through exceptional service and strict adherence to ethical practices. Our integrity is guided by our Code of Conduct and Anticorruption Policy, which lays out crucial legal and ethical standards for making sound business decisions across all projects."
+        imgSrc={ethics_and_compliance}
       />
 
       <Section
         title="Quality and Assurance"
-        content="When we get it wrong, the consequences can be severe. We fully recognize our duty to develop safe and reliable technical solutions. All our projects follow a tailored, strong, flexible, and systematic process that includes non-negotiable guidelines, expected results, and suitable toolkits.
-                VALTEC is dedicated to safeguarding the physical, psychological, and social well-being of our employees, stakeholders, and communities through effective risk management strategies. Our services adhere to ISO 9001 and ISO 17025."
+        content="When we get it wrong, the consequences can be severe. We fully recognize our duty to develop safe
+       and reliable technical solutions. All our projects follow a tailored, strong, flexible, and systematic process that includes non-negotiable guidelines,
+        expected results, and suitable toolkits.
+                VALTEC is dedicated to safeguarding the physical, psychological, and social well-being of our employees, stakeholders, and communities through
+                 effective risk management strategies. Our services adhere to ISO 9001 and ISO 17025."
+        imgSrc={quality_assurance}
         extraContent={
           <>
             <h5 className="text-danger">
@@ -53,12 +66,12 @@ function App() {
             </span>
             <Container>
               <Row>
-                <Col xs={3} className="ps-0">
+                <Col xs={2} className="ps-0">
                   <p className="btn btn-primary w-100 mt-2 ms-0">
                     ISO 9001 certification
                   </p>
                 </Col>
-                <Col xs={3} className="ps-0">
+                <Col xs={2} className="ps-0">
                   <p className="btn btn-primary w-100 mt-2 ms-0">
                     ISO 17025 certification
                   </p>
