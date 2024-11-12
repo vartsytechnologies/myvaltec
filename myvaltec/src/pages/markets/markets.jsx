@@ -1,10 +1,16 @@
 import React from "react";
+import MarketCard from "./MarketCard";
+import Banner from "../../../src/components/banner/Banner"
 
 
 export default function Markets(){
-    return(
+    return (
+      <div>
+       
         <div>
-            Markets Page is here
+          <Banner title="Market Page"/>
+          <MarketCard />
         </div>
-    )
+      </div>
+    );
 }
