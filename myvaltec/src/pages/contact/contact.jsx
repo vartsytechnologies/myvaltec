@@ -26,7 +26,7 @@ export default function Contact() {
             <Col xs={12} lg={6}>
               <div
                 className="div google-map w-100 d-flex align-items-center justify-content-center"
-                style={{ height: "400px" }}
+                style={{ height: "410px", border: "2px solid red" }}
               >
                 {/* <h1>Google Map API here</h1>
                  */}
