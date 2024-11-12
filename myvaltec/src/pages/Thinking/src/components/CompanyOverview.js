@@ -8,7 +8,7 @@ import "aos/dist/aos.css"; // Import the CSS styles
 function CompanyOverview() {
   useEffect(() => {
     AOS.init({
-      duration: 50, // Animation duration in milliseconds
+      duration: 550, // Animation duration in milliseconds
       offset: 50, // Trigger animations 50px before an element is in view
     });
   }, []);
