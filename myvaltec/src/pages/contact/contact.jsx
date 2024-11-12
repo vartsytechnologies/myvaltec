@@ -5,6 +5,7 @@ import { GoHomeFill } from "react-icons/go";
 import { LuPhoneCall } from "react-icons/lu";
 import { MdEmail } from "react-icons/md";
 import ContactForm from "./components/form";
+import Map from "./components/Map";
 import AOS from "aos";
 import { useEffect } from "react";
 import "aos/dist/aos.css";
@@ -25,9 +26,11 @@ export default function Contact() {
             <Col xs={12} lg={6}>
               <div
                 className="div google-map w-100 d-flex align-items-center justify-content-center"
-                style={{ height: "400px", border: "2px solid red" }}
+                style={{ height: "400px" }}
               >
-                <h1>Google Map API here</h1>
+                {/* <h1>Google Map API here</h1>
+                 */}
+                <Map />
               </div>
             </Col>
             <Col xs={12} lg={6}>

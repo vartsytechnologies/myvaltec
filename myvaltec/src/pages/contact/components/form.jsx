@@ -2,16 +2,17 @@ import React from "react";
 import { Row, Col } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-// import { PhoneInput } from "react-international-phone";
+import { PhoneInput } from "react-international-phone";
 import "react-international-phone/style.css";
 import "./Contacts.css";
 import AOS from "aos";
 import { useEffect } from "react";
 import "aos/dist/aos.css";
 import { IoSendSharp } from "react-icons/io5";
-// import {useState} from "react"
-// const [phone, setPhone] = useState("");
+import { useState } from "react";
+
 function ContactForm() {
+  const [phone, setPhone] = useState("");
   // const handleSubmit = (event) => {
   //   event.preventDefault();
   // };
@@ -23,7 +24,7 @@ function ContactForm() {
     });
   }, []);
   return (
-    <Form data-aos="fade-up">
+    <Form data-aos="fade-up" autoComplete="off">
       <Row className="py-3">
         <Col xs={12} lg={5}>
           <Form.Group as={Col} className="mb-3">
@@ -38,7 +39,7 @@ function ContactForm() {
               required
             />
           </Form.Group>
-          <Form.Group as={Col} className="mb-3" controlId="formPhoneNumber">
+          {/* <Form.Group as={Col} className="mb-3" controlId="formPhoneNumber">
             <Form.Label>Phone Number</Form.Label>
             <Form.Control
               type="tel"
@@ -46,7 +47,8 @@ function ContactForm() {
               pattern="^\+?[1-9][0-9]{7,14}$"
               required
             />
-            {/* <Form.Group as={Col} className="mb-3" controlId="formPhoneNumber">
+             </Form.Group> */}
+          <Form.Group as={Col} className="mb-3" controlId="formPhoneNumber">
             <Form.Label>Phone Number</Form.Label>
             <div
               className="phone-input-container w-100"
@@ -64,7 +66,6 @@ function ContactForm() {
                 }}
               />
             </div>
-          </Form.Group> */}
           </Form.Group>
         </Col>
         <Col xs={12} lg={7}>
