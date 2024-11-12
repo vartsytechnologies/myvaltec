@@ -4,10 +4,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import cardImage from "../../../assets/quality_assurance.jpg"
-import CardImg from "../../../assets/companyOverview9.jpg"
-import CardImg3 from "../../../assets/aboutImg.png.jpg"
-import CardImg4 from "../../../assets/ethics_and_compliance.jpg"
+import cardImage from "../../assets/quality_assurance.jpg"
+import CardImg from "../../assets/companyOverview.jpg"
+import CardImg3 from "../../assets/aboutImg.png"
+import CardImg4 from "../../assets/ethics_and_compliance.jpg"
 
 
 function MarketCard({ title }) {
