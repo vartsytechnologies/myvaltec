@@ -1,5 +1,5 @@
 import React from "react";
-import MarketCard from "./components/MarketCard";
+import MarketCard from "./MarketCard";
 import Banner from "../../../src/components/banner/Banner"
 
 
