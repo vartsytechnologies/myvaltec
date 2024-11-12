@@ -14,7 +14,6 @@ const projects = [
 function ProjectSection() {
   return (
     <Container className="py-5">
-      <h2 className="text-center mb-4">Valtec Projects</h2>
       <Row>
         {projects.map((project, index) => (
           <Col xs={12} md={6} lg={4} className="mb-4" key={index}>

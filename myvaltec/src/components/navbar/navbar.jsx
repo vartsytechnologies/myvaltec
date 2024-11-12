@@ -19,8 +19,7 @@ export default function NavBar(){
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="flex-grow-1">
-          <Nav className="m-auto">
-            <Nav.Link><NavLink to="/" className={({ isActive }) => isActive ? 'text-danger text-decoration-none' : 'text-dark text-decoration-none'}>Home</NavLink></Nav.Link>
+          <Nav className="m-auto defbodyFont">
             <Nav.Link><NavLink to="/thinking" className={({ isActive }) => isActive ? 'text-danger text-decoration-none' : 'text-dark text-decoration-none'}>Thinking</NavLink></Nav.Link>
             <Nav.Link><NavLink to="/services" className={({ isActive }) => isActive ? 'text-danger text-decoration-none' : 'text-dark text-decoration-none'}>Expertise</NavLink></Nav.Link>
             <Nav.Link><NavLink to="/projects" className={({ isActive }) => isActive ? 'text-danger text-decoration-none' : 'text-dark text-decoration-none'}>Partners</NavLink></Nav.Link>
@@ -29,7 +28,7 @@ export default function NavBar(){
           </Nav>
           <Nav>
             <Nav.Link href="#request-quote">
-              <div className='btn btn-danger'>Request a Quote</div>
+              <div className='btn btn-danger defbodyFont'>Request a Quote</div>
               {/*<span className="btn btn-danger px-4">Request a Quote</span>*/}
             </Nav.Link>
           </Nav>

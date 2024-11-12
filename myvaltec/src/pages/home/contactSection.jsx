@@ -13,15 +13,15 @@ function ContactSection() {
   return (
     <Container fluid>
       <Container style={{ marginBottom: "30px" }}>
-        <h2 className="mt-4 text-center">Contact Us</h2>
-        <p className="text-center">
+        <h1 className="mt-4 text-center defheadFont text-danger">Contact Us</h1>
+        <p className="text-center defbodyFont">
           <i>
             Send us your enquiries, Request a quote, etc. Get in touch with us!
           </i>
         </p>
         <Row>
           <Col xs={12} lg={5}>
-            <Row className="flex-column p-0 gx-0">
+            <Row className="flex-column p-0 gx-0 defbodyFont">
               <Col className="contactForm p-3 mb-sm-2">
                 <div className="row">
                   <div className="col-12">
@@ -104,7 +104,7 @@ function ContactSection() {
             </Row>
           </Col>
           <Col xs={12} lg={7}>
-            <Row className="flex-column p-0 gx-0">
+            <Row className="flex-column p-0 gx-0 defbodyFont">
               <Col className="contactForm p-3">
                 <div className="row">
                   <div className="col-12">

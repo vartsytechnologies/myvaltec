@@ -12,10 +12,10 @@ import aboutImg from "../../../assets/aboutImg.png";
 function ProjectSection() {
   return (
     <>
-      <Container className="mt-5">
-        <h2 className="text-center mb-5">
+      <Container className="mt-5 defPt defPb">
+        <h1 className="text-center mb-5 text-danger defheadFont" data-aos="fade-up">
           <FaTools /> Projects
-        </h2>
+        </h1>
         <Row>
           <Col xs={12} md={6} lg={4}>
             <ProjectSectionItem
@@ -39,10 +39,11 @@ function ProjectSection() {
             />
           </Col>
         </Row>
-      </Container>
-      <p style={{ textAlign: "center", marginTop: "0.8rem" }}>
+        <p style={{ textAlign: "center", marginTop: "0.8rem" }} data-aos="fade-up" data-aos-delay="200">
         <DefaultButton name="See More Projects" variant="danger" />
       </p>
+      </Container>
+      
     </>
   );
 }

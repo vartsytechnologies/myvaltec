@@ -5,7 +5,7 @@ import ProjectSection from "./components/ProjectSection";
 function projectApp() {
   return (
     <>
-      <Banner title="Valtec Projects" />
+      <Banner title="Projects" />
       <ProjectSection />
     </>
   );
