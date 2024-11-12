@@ -3,6 +3,7 @@ import { Row, Col } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { PhoneInput } from "react-international-phone";
+import "react-international-phone/style.css";
 import "./Contacts.css";
 import AOS from "aos";
 import { useEffect } from "react";
@@ -12,10 +13,7 @@ import {useState} from "react"
 
 function ContactForm() {
   const [phone, setPhone] = useState("");
-  // const handleSubmit = (event) => {
-  //   event.preventDefault();
-  // };
-
+ 
   useEffect(() => {
     AOS.init({
       duration: 650, // Animation duration in milliseconds
@@ -38,15 +36,7 @@ function ContactForm() {
               required
             />
           </Form.Group>
-          <Form.Group as={Col} className="mb-3" controlId="formPhoneNumber">
-            <Form.Label>Phone Number</Form.Label>
-            <Form.Control
-              type="tel"
-              placeholder="Enter your phone number"
-              pattern="^\+?[1-9][0-9]{7,14}$"
-              required
-            />
-            {/* <Form.Group as={Col} className="mb-3" controlId="formPhoneNumber">
+            <Form.Group as={Col} className="mb-3" controlId="formPhoneNumber">
             <Form.Label>Phone Number</Form.Label>
             <div
               className="phone-input-container w-100"
@@ -64,8 +54,8 @@ function ContactForm() {
                 }}
               />
             </div>
-          </Form.Group> */}
           </Form.Group>
+        
         </Col>
         <Col xs={12} lg={7}>
           <Form.Group as={Col} md="12" className="mb-3">
