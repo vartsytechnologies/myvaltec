@@ -94,7 +94,7 @@ const Markets = () => {
   };
 
   return (
-    <Container fluid className="my-5 marketSection">
+    <Container fluid className="mt-5 marketSection">
       <h2 className="marketTitle text-center mb-3">
         <FaIndustry /> Markets
       </h2>
