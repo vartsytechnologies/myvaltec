@@ -1,7 +1,5 @@
 import React from "react";
-// import Image from "react-bootstrap/Image";
 import aboutImg from "../../assets/aboutImg.png";
-
 import { Container, Row, Col } from "react-bootstrap";
 import Banner from "../../components/banner/Banner";
 import "./services.css";
@@ -14,15 +12,22 @@ import {
 } from "react-icons/md";
 import { PiMonitor } from "react-icons/pi";
 import { AiOutlineExperiment } from "react-icons/ai";
-// import { Card } from "react-bootstrap";
-// import aboutImg from "../../../assets/aboutImg.png";
+import AOS from "aos";
+import { useEffect } from "react";
+import "aos/dist/aos.css";
 
 function Services() {
+  useEffect(() => {
+    AOS.init({
+      duration: 500, // Animation duration in milliseconds
+      offset: 50, // Trigger animations 50px before an element is in view
+    });
+  }, []);
   return (
     <>
       <Banner title="Valtec Services" />
       <Container className="mt-4 px-0">
-        <p className="mx-3">
+        <p className="mx-3" data-aos="fade-up">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laborum
           assumenda, optio vitae sequi possimus eligendi soluta ipsam quasi,
           iure delectus autem, necessitatibus voluptate exercitationem rerum hic
@@ -32,7 +37,7 @@ function Services() {
           exercitationem rerum hic nam quae eum!
         </p>
         <Row className="flex-column gy-2 mt-5">
-          <Col>
+          <Col data-aos="fade-up">
             <Row className="justify-content-between align-items-start">
               <Col xs={12} lg={6} className="zoom-out-container mb-5">
                 <div
@@ -40,17 +45,7 @@ function Services() {
                   style={{ width: "100%", height: "auto" }}
                 >
                   <img src={aboutImg} alt="Company" className="img-fluid" />
-                  {/* <img src={aboutImg} alt="about-valtec" className="w-100" /> */}
                 </div>
-                {/* <div className="image-container">
-                  <Card className="shadow-sm h-100">
-                    <Card.Img variant="top" src={imgSrc} />
-                    <Card.Body>
-                      <Card.Title>{title}</Card.Title>
-                      <Card.Text>{description}</Card.Text>
-                    </Card.Body>
-                  </Card>
-                </div> */}
               </Col>
               <Col className="">
                 <p className="fs-5 p-0 m-0">
@@ -77,7 +72,7 @@ function Services() {
               </Col>
             </Row>
           </Col>
-          <Col>
+          <Col data-aos="fade-up">
             <Row className="justify-content-between align-items-start">
               <Col xs={12} lg={6} className="zoom-out-container mb-5">
                 <img src={aboutImg} alt="Company" className="img-fluid" />
@@ -106,7 +101,7 @@ function Services() {
               </Col>
             </Row>
           </Col>
-          <Col>
+          <Col data-aos="fade-up">
             <Row className="justify-content-between align-items-start">
               <Col xs={12} lg={6} className="zoom-out-container mb-5">
                 <img src={aboutImg} alt="Company" className="img-fluid" />
@@ -135,7 +130,7 @@ function Services() {
               </Col>
             </Row>
           </Col>
-          <Col>
+          <Col data-aos="fade-up">
             <Row className="justify-content-between align-items-start">
               <Col xs={12} lg={6} className="zoom-out-container mb-5">
                 <img src={aboutImg} alt="Company" className="img-fluid" />
@@ -164,7 +159,7 @@ function Services() {
               </Col>
             </Row>
           </Col>
-          <Col>
+          <Col data-aos="fade-up">
             <Row className="justify-content-between align-items-start">
               <Col xs={12} lg={6} className="zoom-out-container mb-5">
                 <img src={aboutImg} alt="Company" className="img-fluid" />
@@ -194,7 +189,7 @@ function Services() {
               </Col>
             </Row>
           </Col>
-          <Col>
+          <Col data-aos="fade-up">
             <Row className="justify-content-between align-items-start">
               <Col xs={12} lg={6} className="zoom-out-container mb-5">
                 <img src={aboutImg} alt="Company" className="img-fluid" />
@@ -223,8 +218,7 @@ function Services() {
               </Col>
             </Row>
           </Col>
-
-          <Col>
+          <Col data-aos="fade-up">
             <Row className="justify-content-between align-items-start">
               <Col xs={12} lg={6} className="zoom-out-container mb-5">
                 <img src={aboutImg} alt="Company" className="img-fluid" />
