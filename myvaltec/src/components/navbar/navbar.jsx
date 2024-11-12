@@ -1,13 +1,13 @@
+import React from "react";
+import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
+import valtecLogo from "../../assets/valtec_logo.png";
+import "./Navbar.css"; // Import CSS for external styling
 
-import React from 'react';
-import { Navbar, Nav, Container, NavDropdown, } from 'react-bootstrap';
-import valtecLogo from "../../assets/valtec_logo.png"
-import {NavLink} from 'react-router-dom'
-
-export default function NavBar(){
+export default function NavBar() {
   return (
     <Navbar bg="light" expand="lg" className="py-1 sticky-top">
-      <Container className="d-flex justify-content-between align-items-center mynavbar" >
+      <Container className="d-flex justify-content-between align-items-center mynavbar">
         <Navbar.Brand href="/">
           <img
             src={valtecLogo}
@@ -19,30 +19,124 @@ export default function NavBar(){
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="flex-grow-1">
-          <Nav className="m-auto defbodyFont">
-            <Nav.Link><NavLink to="/thinking" className={({ isActive }) => isActive ? 'text-danger text-decoration-none' : 'text-dark text-decoration-none'}>Thinking</NavLink></Nav.Link>
+          <Nav className="m-auto">
+            <Nav.Link
+              as={NavLink}
+              to="/"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-danger text-decoration-none"
+                  : "text-dark text-decoration-none"
+              }
+            >
+              Home
+            </Nav.Link>
+
+            {/* Thinking Dropdown */}
             <NavDropdown
-              title="Expertise"
-              menuVariant="dark"
-            ><div className='bg-danger m-0'>
-              <NavDropdown.Item><NavLink to="/service" className={({ isActive }) => isActive ? 'text-danger text-decoration-none' : 'text-dark text-decoration-none'}>Markets</NavLink></NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Projects</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">services</NavDropdown.Item>
+              title="Thinking"
+              id="thinking-dropdown"
+              className="text-dark"
+              style={{ fontWeight: "bold" }}
+            >
+              <div className="thinking-dropdown-container">
+                <div className="thinking-column">
+                  <NavDropdown.Item as={NavLink} to="/leadership">
+                    Our Leadership
+                  </NavDropdown.Item>
+                  <NavDropdown.Item as={NavLink} to="/purpose">
+                    Our Purpose
+                  </NavDropdown.Item>
+                  <NavDropdown.Item as={NavLink} to="/sustainability">
+                    Sustainability
+                  </NavDropdown.Item>
+                </div>
+                <div className="thinking-column">
+                  <NavDropdown.Item as={NavLink} to="/innovation">
+                    Digital Innovation
+                  </NavDropdown.Item>
+                  <NavDropdown.Item as={NavLink} to="/excellence">
+                    Technical Excellence
+                  </NavDropdown.Item>
+                  <NavDropdown.Item as={NavLink} to="/equity">
+                    Equity, Diversity & Inclusion
+                  </NavDropdown.Item>
+                </div>
+                <div className="thinking-column">
+                  <NavDropdown.Item as={NavLink} to="/ethics">
+                    Ethics & Compliance
+                  </NavDropdown.Item>
+                  <NavDropdown.Item as={NavLink} to="/relations">
+                    External Relations
+                  </NavDropdown.Item>
+                  <NavDropdown.Item as={NavLink} to="/safety">
+                    Safety
+                  </NavDropdown.Item>
+                </div>
               </div>
             </NavDropdown>
-            <Nav.Link><NavLink to="/service" className={({ isActive }) => isActive ? 'text-decoration-none' : 'text-dark text-decoration-none'}>Expertise</NavLink></Nav.Link>
-            <Nav.Link><NavLink to="/projects" className={({ isActive }) => isActive ? 'text-danger text-decoration-none' : 'text-dark text-decoration-none'}>Partners</NavLink></Nav.Link>
-            <Nav.Link><NavLink to="/markets" className={({ isActive }) => isActive ? 'text-danger text-decoration-none' : 'text-dark text-decoration-none'}>Careers</NavLink></Nav.Link>
-            <Nav.Link><NavLink to="/contact" className={({ isActive }) => isActive ? 'text-danger text-decoration-none' : 'text-dark text-decoration-none'}>Contact</NavLink></Nav.Link>
+
+            {/* Expertise Dropdown */}
+            <NavDropdown
+              title="Expertise"
+              id="expertise-dropdown"
+              className="text-dark"
+              style={{ fontWeight: "bold" }}
+            >
+              <div className="expertise-dropdown-container">
+                <NavDropdown.Item as={NavLink} to="/markets">
+                  Markets
+                </NavDropdown.Item>
+                <NavDropdown.Item as={NavLink} to="/services">
+                  Services
+                </NavDropdown.Item>
+                <NavDropdown.Item as={NavLink} to="/projects">
+                  Projects
+                </NavDropdown.Item>
+              </div>
+            </NavDropdown>
+
+            <Nav.Link
+              as={NavLink}
+              to="/projects"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-danger text-decoration-none"
+                  : "text-dark text-decoration-none"
+              }
+            >
+              Partners
+            </Nav.Link>
+            <Nav.Link
+              as={NavLink}
+              to="/markets"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-danger text-decoration-none"
+                  : "text-dark text-decoration-none"
+              }
+            >
+              Careers
+            </Nav.Link>
+            <Nav.Link
+              as={NavLink}
+              to="/contact"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-danger text-decoration-none"
+                  : "text-dark text-decoration-none"
+              }
+            >
+              Contact
+            </Nav.Link>
           </Nav>
           <Nav>
             <Nav.Link href="#request-quote">
-              <div className='btn btn-danger defbodyFont'>Request a Quote</div>
-              {/*<span className="btn btn-danger px-4">Request a Quote</span>*/}
+              <div className="btn btn-danger">Request a Quote</div>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
   );
-};
+}

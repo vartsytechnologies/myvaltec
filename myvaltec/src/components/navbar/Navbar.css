@@ -1,0 +1,51 @@
+/* Custom CSS for the Thinking and Expertise dropdown sections */
+
+/* Thinking Dropdown */
+#thinking-dropdown .thinking-dropdown-container {
+    background-color: #dc3545;
+    /* Red background for Thinking */
+    display: flex;
+    padding: 10px;
+}
+
+#thinking-dropdown .thinking-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#thinking-dropdown .thinking-column .nav-link,
+#thinking-dropdown .thinking-column .dropdown-item {
+    color: #fff !important;
+    padding: 8px 0;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+#thinking-dropdown .thinking-column .dropdown-item:hover {
+    background-color: #b02a37;
+    /* Darker red on hover */
+}
+
+/* Expertise Dropdown */
+#expertise-dropdown .expertise-dropdown-container {
+    background-color: #dc3545;
+    /* Red background for Expertise */
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+#expertise-dropdown .expertise-dropdown-container .nav-link,
+#expertise-dropdown .expertise-dropdown-container .dropdown-item {
+    color: #fff !important;
+    text-align: center;
+    padding: 8px 0;
+    transition: background-color 0.3s;
+}
+
+#expertise-dropdown .expertise-dropdown-container .dropdown-item:hover {
+    background-color: #b02a37;
+    /* Darker red on hover */
+}
