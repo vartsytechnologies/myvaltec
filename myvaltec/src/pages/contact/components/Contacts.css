@@ -1,32 +1,28 @@
 .phone-input-container {
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 100% !important;
 }
 
-.phone-input-container .react-international-phone {
-  width: 100%;
+.react-international-phone-input-container {
+  width: 100% !important;
 }
-
-.phone-input-container .react-international-phone input[type="tel"] {
-  width: 100%; /* Full width for responsiveness */
-  padding-left: 3rem; /* Space to prevent overlap with the flag */
-  box-sizing: border-box; /* Prevents content overflow */
+.react-international-phone-country-selector-button {
+  justify-content: space-between !important;
+  padding: 3px 10px !important;
+}
+.react-international-phone-country-selector-button__button-content {
+  width: 100% !important;
+}
+.react-international-phone-input {
+  font-size: 16px !important;
 }
 
 .react-international-phone__flag-dropdown {
   position: absolute;
   left: 0;
   top: 50%;
+  width: 100% !important;
   transform: translateY(-50%);
   z-index: 1; /* Ensures flag appears over the input */
-}
-
-.phone-input-container
-  .react-international-phone
-  .react-international-phone__flag-dropdown {
-  margin-right: 0.5rem;
-}
-.phone-input-container .field {
-  width: 100%;
 }
