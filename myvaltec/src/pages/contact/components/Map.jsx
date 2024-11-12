@@ -12,7 +12,7 @@ function Map() {
     <>
       <div
         className="d-flex align-items-center justify-content-center"
-        style={{ width: "100%", height: "400px" }}
+        style={{ width: "100%", height: "400px", outline: '2px solid red', outlineOffset: '12px', borderRadius: '1px'}}
       >
         <iframe
           title="map"

@@ -5,10 +5,11 @@ import ProjectCard from "./ProjectCard";
 import companyOverview from '../../../assets/companyOverview.jpg'
 
 const projects = [
-  { title: "ENI OCTP-ORF, Sanzule, Ghana", description: "Lorem ipsum dolor sit amet...", imgSrc: companyOverview},
-  { title: "AMANDI Energy Power Plant, Power Enclave, Aboadze, Ghana", description: "Lorem ipsum dolor sit amet...", imgSrc: companyOverview},
+  { title: "ENI Ghana Exploration and Production Limited", description: "ENI Offshore Cape Three Point Onshore Gas Receiving Facility", imgSrc: companyOverview},
+  { title: "AMANDI Energy Power Plant, Power Enclave, Aboadze, Ghana", description: "192MW dual-fired combined cycle power plant", imgSrc: companyOverview},
   { title: "AngloGold Ashanti Obuasi Paste Plant, Obuasi, Ghana", description: "Lorem ipsum dolor sit amet...", imgSrc: companyOverview },
-  { title: "Yinson Productions", description: "Lorem ipsum dolor sit amet...", imgSrc: companyOverview },
+  { title: "Yinson Productions", description: "FPSO_JohnAgyekumKuffour", imgSrc: companyOverview },
+  { title: "MODEC Ghana Limited", description: "Supply of various  Bently Nevada accessories", imgSrc: companyOverview },
 ];
 
 function ProjectSection() {
