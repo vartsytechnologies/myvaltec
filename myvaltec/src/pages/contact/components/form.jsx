@@ -3,7 +3,7 @@ import { Row, Col } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 // import { PhoneInput } from "react-international-phone";
-import "react-international-phone/style.css";
+//import "react-international-phone/style.css";
 import "./Contacts.css";
 import AOS from "aos";
 import { useEffect } from "react";
@@ -24,7 +24,7 @@ function ContactForm() {
   }, []);
   return (
     <Form data-aos="fade-up">
-      <Row className="py-3">
+      <Row className="py-3 defbodyFont">
         <Col xs={12} lg={5}>
           <Form.Group as={Col} className="mb-3">
             <Form.Label>Name</Form.Label>

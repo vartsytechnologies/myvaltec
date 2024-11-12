@@ -8,7 +8,7 @@ export default function Markets(){
       <div>
        
         <div>
-          <Banner title="Market Page"/>
+          <Banner title="Markets"/>
           <MarketCard />
         </div>
       </div>

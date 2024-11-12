@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Card, NavDropdown } from "react-bootstrap";
+import { Card, Container, NavDropdown } from "react-bootstrap";
 import AOS from "aos";
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
@@ -8,39 +8,38 @@ import Row from 'react-bootstrap/Row';
 function MarketCard({ title }) {
   useEffect(() => {
     AOS.init({
-      duration: 950,
+      duration: 1050,
       offset: 50,
     });
   });
   return (
-    <div>
+    <Container>
       <div>
-        <p>Hello welcome to the world of react with boostrap</p>
         <NavDropdown.Divider />
       </div>
       <Row xs={1} md={2} className="g-4">
-        {Array.from({ length: 4 }).map((_, idx) => (
-          <Col key={idx}>
-            <Card
+        {Array.from({ length: 6 }).map((_, idx) => (
+          <Col xs={12} lg={6} xl={4} key={idx}>
+            <Card data-aos="fade-up"
               style={{
-                border: "1px solid #ddd",
+                border: "3px solid #ddd",
                 borderRadius: "10px",
                 overflow: "hidden",
               }}
             >
               <Card.Body>
-                <Card.Title style={{ color: "red", fontWeight: "bold" }}>
+                <Card.Title className="defheadFont text-danger" data-aos="fade-up">
                   Energy and Renewables
                 </Card.Title>
-                <Card.Text>
+                <Card.Text className="defbodyFont" data-aos="fade-up" data-aos-delay="200">
                   The Renewable energy sector is one of our biggest markets.
                 </Card.Text>
-                <Card.Img
+                <Card.Img data-aos="fade-up" data-aos-delay="300"
                   variant="top"
                   src="holder.js/200px180"
                   style={{
                     width: "100%",
-                    height: "300px",
+                    height: "250px",
                     objectFit: "cover",
                     borderRadius: "5px",
                   }}
@@ -50,7 +49,7 @@ function MarketCard({ title }) {
           </Col>
         ))}
       </Row>
-    </div>
+    </Container>
   );
 }
 
