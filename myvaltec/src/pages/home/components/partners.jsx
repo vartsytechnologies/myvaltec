@@ -1,8 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
+// import sliderImage from '../../../assets/slider1.png';
 
-function PartnersSection() {
+function Partners() {
   return (
     <>
       <Container
@@ -19,7 +20,7 @@ function PartnersSection() {
                   className="logo-wrapper d-flex align-items-center justify-content-center flex-column "
                   style={{ height: "200px" }}
                 >
-                  <Image src="https://via.placeholder.com/100" rounded />
+                  <Image src="../" rounded />
                   <div className="hover-text">Your Hover Text</div>
                 </div>
               </div>
@@ -125,4 +126,4 @@ function PartnersSection() {
     </>
   );
 }
-export default PartnersSection;
+export default Partners;
