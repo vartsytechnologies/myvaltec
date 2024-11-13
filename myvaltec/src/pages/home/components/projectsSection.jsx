@@ -8,9 +8,10 @@ import { FaTools } from "react-icons/fa";
 import ENI1 from "../../../assets/projectpics/ENI_OCTP_ORF1.jpg";
 import MiG1 from "../../../assets/projectpics/MIG_Welding1.jpg";
 import img9 from "../../../assets/projectpics/image9.jpg";
+import { Link } from "react-router-dom";
 
 // Import your images
-import aboutImg from "../../../assets/aboutImg.png";
+//import aboutImg from "../../../assets/aboutImg.png";
 
 function ProjectSection() {
   return (
@@ -25,22 +26,22 @@ function ProjectSection() {
         <Row>
           <Col xs={12} md={6} lg={4}>
             <ProjectSectionItem
-              heading="Project Name 1"
-              subtext="A brief description about project number 1"
+              heading="ENI Ghana Exploration and Production Limited"
+              // subtext="ENI Offshore Cape Three Point Onshore Gas Receiving Facility"
               imageSource={ENI1}
             />
           </Col>
           <Col xs={12} md={6} lg={4}>
             <ProjectSectionItem
-              heading="Project Name 2"
-              subtext="A brief description about project number 2"
+              heading="AMANDI Energy Power Plant, Power Enclave, Aboadze, Ghana"
+              // subtext="A brief description about project number 2"
               imageSource={MiG1}
             />
           </Col>
           <Col xs={12} md={6} lg={4}>
             <ProjectSectionItem
-              heading="Project Name 3"
-              subtext="A brief description about project number 3"
+              heading="MODEC Ghana Limited"
+              // subtext="A brief description about project number 3"
               imageSource={img9}
             />
           </Col>
@@ -50,7 +51,9 @@ function ProjectSection() {
           data-aos="fade-up"
           data-aos-delay="200"
         >
-          <DefaultButton name="See More Projects" variant="danger" />
+          <Link to="/projects">
+            <DefaultButton name="See More Projects" variant="danger" />
+          </Link>
         </p>
       </Container>
     </>

@@ -7,7 +7,7 @@ export default function Markets() {
   return (
     <>
       <Container fluid>
-        <Banner title="Market Page" />
+        <Banner title="Markets" />
         <Container>
           <div>
             <div>

@@ -22,7 +22,7 @@ const projects = [
     title: "ENI Ghana Exploration and Production Limited",
     description:
       "ENI Offshore Cape Three Point Onshore Gas Receiving Facility ",
-    imgSrc: companyOverview,
+    imgSrc: ENI1,
     modalProjectName: (
       <p className="pt-3">
         ENI Offshore Cape Three Point Onshore Gas Receiving Facility
@@ -44,7 +44,7 @@ const projects = [
   {
     title: "AMANDI Energy Power Plant, Power Enclave, Aboadze, Ghana",
     description: "192MW dual-fired combined cycle power plant",
-    imgSrc: companyOverview,
+    imgSrc: MIG1,
     modalProjectName: (
       <p className="pt-3">192MW dual-fired combined cycle power plant</p>
     ),
@@ -61,7 +61,7 @@ const projects = [
   {
     title: "AngloGold Ashanti Ghana Limited",
     description: "Paste Backfill Plant for Obuasi Mine",
-    imgSrc: companyOverview,
+    imgSrc: AG1,
     modalProjectName: (
       <p className="pt-3">Paste Backfill Plant for Obuasi Mine</p>
     ),
@@ -91,7 +91,7 @@ const projects = [
   {
     title: "Yinson Productions",
     description: "FPSO_JohnAgyekumKuffour",
-    imgSrc: companyOverview,
+    imgSrc: FPSOJA,
     modalProjectName: <p className="pt-3">FPSO_JohnAgyekumKuffour</p>,
     modalContent: (
       <p>
@@ -110,7 +110,7 @@ const projects = [
   {
     title: "MODEC Ghana Limited",
     description: "Supply of various  Bently Nevada accessories",
-    imgSrc: companyOverview,
+    imgSrc: imgd,
     modalProjectName: <p className="pt-3">FPSO_ProfJohnEvansAttaMillst</p>,
     modalContent: (
       <p>

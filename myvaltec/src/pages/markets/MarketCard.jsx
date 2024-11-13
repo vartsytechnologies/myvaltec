@@ -1,14 +1,13 @@
-import React, {useEffect } from "react";
+import React, { useEffect } from "react";
 import { Card, NavDropdown, Container } from "react-bootstrap";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
-import cardImage from "../../assets/quality_assurance.jpg"
-import CardImg from "../../assets/companyOverview.jpg"
-import CardImg3 from "../../assets/aboutImg.png"
-import CardImg4 from "../../assets/ethics_and_compliance.jpg"
-
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
+import cardImage from "../../assets/quality_assurance.jpg";
+import CardImg from "../../assets/companyOverview.jpg";
+import CardImg3 from "../../assets/aboutImg.png";
+import CardImg4 from "../../assets/ethics_and_compliance.jpg";
 
 function MarketCard({ title }) {
   useEffect(() => {
@@ -17,48 +16,21 @@ function MarketCard({ title }) {
       offset: 50,
     });
   });
-   useEffect(() => {
-     AOS.init({
-       duration: 9650,
-       offset: 50,  
-     });
-   }, []);;
+  useEffect(() => {
+    AOS.init({
+      duration: 9650,
+      offset: 50,
+    });
+  }, []);
   return (
     <Container>
-      <div>
-        <p
-          style={{
-            fontSize: "1.2rem",
-            fontWeight: "500",
-            color: "#333",
-            marginBottom: "10px",
-            alignItem: "center",
-            textAlign: "center",
-            marginTop: "10px",
-          }}
-        >
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Exercitationem consequuntur sit, voluptate quam eaque, nihil sed
-          laboriosam et deserunt perferendis doloribus illo, earum veniam
-          asperiores voluptatem quis! Omnis, totam maiores?
-        </p>
-        <NavDropdown.Divider
-          style={{
-            width: "97%",
-            margin: "0 auto",
-            borderTop: "1px solid #333",
-          }}
-        />
-      </div>
       <Row xs={1} md={2} clamarketsssName="g-4">
-        <Col>
-          <Card className="rounded-lg overflow-hidden shadow-lg">
+        <Col className="mt-3">
+          <Card className="rounded-lg overflow-hidden">
             <Card.Body>
-              <Card.Title className="text-danger fs-5">
-                Energy Renewable Resources
-              </Card.Title>
+              <Card.Title className="text-danger fs-5">Oil and Gas</Card.Title>
               <p className="text-gray-700">
-                The renewable energy sector is one of our biggest markets.
+                Valtec undertakes projects in the OIl and Gas market.
               </p>
               <Card.Img
                 variant="top"
@@ -69,14 +41,12 @@ function MarketCard({ title }) {
           </Card>
         </Col>
 
-        <Col>
-          <Card className="rounded-lg overflow-hidden shadow-lg">
+        <Col className="mt-3">
+          <Card className="rounded-lg overflow-hidden">
             <Card.Body>
-              <Card.Title className="text-danger fs-5">
-                Solar Innovations
-              </Card.Title>
+              <Card.Title className="text-danger fs-5">Energy</Card.Title>
               <p className="text-gray-700">
-                Our solar technologies are advancing energy independence.
+                We specialize in all projects in the energy sector.
               </p>
               <Card.Img
                 variant="top"
@@ -87,14 +57,12 @@ function MarketCard({ title }) {
           </Card>
         </Col>
 
-        <Col>
-          <Card className="rounded-lg overflow-hidden shadow-lg">
+        <Col className="mt-2">
+          <Card className="rounded-lg overflow-hidden">
             <Card.Body>
-              <Card.Title className="text-danger fs-5">
-                Wind Power Solutions
-              </Card.Title>
+              <Card.Title className="text-danger fs-5">Mining</Card.Title>
               <p className="text-gray-700">
-                Harnessing the power of the wind for a cleaner future.
+                All your needs at the mining site will be catered for by valtec.
               </p>
               <Card.Img
                 variant="top"
@@ -105,14 +73,56 @@ function MarketCard({ title }) {
           </Card>
         </Col>
 
-        <Col>
-          <Card className="rounded-lg overflow-hidden shadow-lg">
+        <Col className="mt-2">
+          <Card className="rounded-lg overflow-hidden">
             <Card.Body>
-              <Card.Title className="text-danger fs-5">
-                Hydropower Initiatives
-              </Card.Title>
+              <Card.Title className="text-danger fs-5">Healthcare</Card.Title>
               <p className="text-gray-700">
-                Providing sustainable energy through hydropower.
+                We provide sustainable healthcare solutions
+              </p>
+              <Card.Img
+                variant="top"
+                src={CardImg4}
+                className="w-full h-40 object-cover rounded-t-lg"
+              />
+            </Card.Body>
+          </Card>
+        </Col>
+
+        <Col className="mt-2">
+          <Card className="rounded-lg overflow-hidden">
+            <Card.Body>
+              <Card.Title className="text-danger fs-5">Power</Card.Title>
+              <p className="text-gray-700">Powering Industries for Impact</p>
+              <Card.Img
+                variant="top"
+                src={CardImg4}
+                className="w-full h-40 object-cover rounded-t-lg"
+              />
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col className="mt-2">
+          <Card className="rounded-lg overflow-hidden">
+            <Card.Body>
+              <Card.Title className="text-danger fs-5">Technology</Card.Title>
+              <p className="text-gray-700">
+                We deliver value through technology
+              </p>
+              <Card.Img
+                variant="top"
+                src={CardImg4}
+                className="w-full h-40 object-cover rounded-t-lg"
+              />
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col className="mt-2">
+          <Card className="rounded-lg overflow-hidden">
+            <Card.Body>
+              <Card.Title className="text-danger fs-5">Governments</Card.Title>
+              <p className="text-gray-700">
+                You can trust us for all government infrastructure
               </p>
               <Card.Img
                 variant="top"
