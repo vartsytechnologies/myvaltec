@@ -85,7 +85,7 @@ export default function NavBar() {
                     : "text-dark text-decoration-none"
                 }
               >
-                Partners
+                Projects
               </NavLink>
             </Nav.Link>
             <Nav.Link>

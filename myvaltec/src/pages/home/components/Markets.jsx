@@ -244,14 +244,14 @@ const Markets = () => {
           </Tab.Content>
         </Container>
       </Tab.Container>
-      <p className="text-center defbodyFont">
+      {/* <p className="text-center defbodyFont">
         <Button variant="danger" className="mt-4 px-5 fs-5 marketTitle">
           Request a Quote
         </Button>{" "}
         <Button variant="danger" className="mt-4 px-5 fs-5 ms-2 marketTitle">
           Make Enquiries
         </Button>
-      </p>
+      </p> */}
     </Container>
   );
 };
