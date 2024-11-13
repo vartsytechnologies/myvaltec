@@ -6,33 +6,35 @@ import Col from "react-bootstrap/Col";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import the CSS styles
+import './thinking.css'
 
-function Section({ title, content, extraContent, imgSrc }) {
+
+function Section({ title, content, extraContent, imgSrc, imgOrder,}) {
   useEffect(() => {
     AOS.init({
-      duration: 950, // Animation duration in milliseconds
+      duration: 1050, // Animation duration in milliseconds
       offset: 50, // Trigger animations 50px before an element is in view
     });
   }, []);
   return (
-    <Container className="my-5">
-      <h2 className="text-danger" data-aos="fade-down">
+    <Container className={`defPb`}>
+      <h2 className="text-danger defheadFont" data-aos="fade-down">
         {title}
       </h2>
       <Row>
-        <Col md={7} className="ps-0">
+        <Col md={7} className={`ps-0 order-${imgOrder} defbodyFont`}>
           <p data-aos="zoom-in-right">{content}</p>
         </Col>
         <Col md={5}>
           <img
             src={imgSrc}
             alt={title}
-            className="img-fluid"
+            className={'img-fluid ps-0 pt-2'}
             data-aos="fade-up"
           />
         </Col>
       </Row>
-      <p>{extraContent}</p>
+      <p className="defbodyFont">{extraContent}</p>
     </Container>
   );
 }

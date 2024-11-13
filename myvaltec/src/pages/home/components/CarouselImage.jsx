@@ -1,11 +1,12 @@
-import sliderImage from '../../../assets/slider1.png';
+//import sliderImage from '../../../assets/slider1.jpg';
+import { Container } from 'react-bootstrap';
 
 
-function CarouselImage() {
+function CarouselImage({sliderImage}) {
     return (
-        <div className='container-fluid m-0 p-0'>
-            <img src={sliderImage} alt="sliderImage" style={{width: '100%', height: '60vh', backgroundAttachment: 'fixed', overflow: 'hidden' }} className='img-fluid' />
-        </div>
+        <Container fluid className='m-0 p-0' style={{height: '60vh', overflow: 'hidden', backgroundPosition:'center' }}>
+        <img src={sliderImage} alt="sliderImage" style={{width: '100%', height:'auto', overflow: 'hidden',  }}/>    
+        </Container>
     );
 }
 

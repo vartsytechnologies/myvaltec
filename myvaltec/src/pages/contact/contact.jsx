@@ -21,7 +21,7 @@ export default function Contact() {
     <>
       <Banner title="Get In touch with us" />
       <Container fluid>
-        <Container className="pt-5">
+        <Container className="pt-5 defbodyFont">
           <Row data-aos="fade-up">
             <Col xs={12} lg={6}>
               <div

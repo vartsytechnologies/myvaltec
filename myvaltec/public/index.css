@@ -8,10 +8,44 @@ body{
     max-width: 100%;
     overflow-x:hidden;
     overflow-y: scroll;
-    
+    font-size:1.2rem;
+}
+.defPb{
+    padding-bottom:5vh;
+}
+.defPt{
+    padding-top: 5vh;
+}
+.bg-gray{
+    background-color: rgb(240, 240, 240);
+}
+/*fonts*/
+.defbodyFont{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
-/*General Images*/
+.defheadFont{
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.defsubheadFont{
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+/*end fonts*/
+
+/*NavBar*/
+
+
+/*General Images (zoom in)*/
 .zoom-out-container {
     overflow: hidden; /* Ensures the image stays within its container */
     /*position: relative;*/
@@ -31,3 +65,4 @@ body{
     border-radius: 9px;
     }
 /*end General Images*/
+

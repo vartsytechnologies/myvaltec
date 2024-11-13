@@ -8,7 +8,7 @@ import footerLogo from '../../assets/valtec_logo_white.png'
 
 function Footer() {
     return (
-        <footer className="footer pt-5 pb-5 mt-5">
+        <footer className="footer pt-5 pb-5 mt-5 defbodyFont">
             <Container>
                 <Row>
                     <Col xs={12} md={4} className="logo-section text-center">

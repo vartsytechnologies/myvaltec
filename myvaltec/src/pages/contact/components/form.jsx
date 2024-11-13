@@ -9,14 +9,11 @@ import AOS from "aos";
 import { useEffect } from "react";
 import "aos/dist/aos.css";
 import { IoSendSharp } from "react-icons/io5";
-import { useState } from "react";
+import {useState} from "react"
 
 function ContactForm() {
   const [phone, setPhone] = useState("");
-  // const handleSubmit = (event) => {
-  //   event.preventDefault();
-  // };
-
+ 
   useEffect(() => {
     AOS.init({
       duration: 650, // Animation duration in milliseconds
@@ -24,7 +21,7 @@ function ContactForm() {
     });
   }, []);
   return (
-    <Form data-aos="fade-up" autoComplete="off">
+    <Form data-aos="fade-up">
       <Row className="py-3">
         <Col xs={12} lg={5}>
           <Form.Group as={Col} className="mb-3">
@@ -39,16 +36,7 @@ function ContactForm() {
               required
             />
           </Form.Group>
-          {/* <Form.Group as={Col} className="mb-3" controlId="formPhoneNumber">
-            <Form.Label>Phone Number</Form.Label>
-            <Form.Control
-              type="tel"
-              placeholder="Enter your phone number"
-              pattern="^\+?[1-9][0-9]{7,14}$"
-              required
-            />
-             </Form.Group> */}
-          <Form.Group as={Col} className="mb-3" controlId="formPhoneNumber">
+            <Form.Group as={Col} className="mb-3" controlId="formPhoneNumber">
             <Form.Label>Phone Number</Form.Label>
             <div
               className="phone-input-container w-100"
@@ -67,6 +55,7 @@ function ContactForm() {
               />
             </div>
           </Form.Group>
+        
         </Col>
         <Col xs={12} lg={7}>
           <Form.Group as={Col} md="12" className="mb-3">

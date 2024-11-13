@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Button, Image, Tab, Nav } from "react-bootstrap";
 import placeholder1 from "./placeholder1.jpg";
 import placeholder2 from "./placeholder2.jpg";
@@ -10,6 +10,9 @@ import {
   FaTools,
   FaRecycle,
 } from "react-icons/fa";
+
+import AOS from "aos";
+import "aos/dist/aos.css"
 
 const Markets = () => {
   const [activeTab, setActiveTab] = useState("oilGas");
@@ -93,12 +96,21 @@ const Markets = () => {
     // Additional tabs content can go here
   };
 
+  useEffect(()=>{
+    AOS.init(
+      {
+        duration:1050,
+        offset:50,
+      }
+    )
+  }, []);
+
   return (
     <Container fluid className="mt-5 marketSection">
-      <h2 className="marketTitle text-center mb-3">
-        <FaIndustry /> Markets
-      </h2>
-      <Tab.Container activeKey={activeTab} onSelect={(k) => setActiveTab(k)}>
+      <h1 className="marketTitle text-center mb-3 defheadFont text-danger">
+        <span data-aos="fade-up" data-aos-delay="500"><FaIndustry /></span> <span data-aos="fade-up" data-aos-delay="600">Markets</span>
+      </h1>
+      <Tab.Container activeKey={activeTab} onSelect={(k) => setActiveTab(k)} >
         <Nav
           className="justify-content-center my-2 mx-auto marketTitle"
           variant="pills"
@@ -109,8 +121,8 @@ const Markets = () => {
             width: "70%",
           }}
         >
-          <Nav.Item>
-            <Nav.Link eventKey="oilGas" style={{ color: "#ffffff" }}>
+          <Nav.Item className='defbodyFont'>
+            <Nav.Link eventKey="oilGas" style={{ color: "#ffffff" }} >
               <FaIndustry
                 className="me-2"
                 color={activeTab === "oilGas" ? "#ff416c" : "white"}
@@ -118,7 +130,7 @@ const Markets = () => {
               Oil & Gas
             </Nav.Link>
           </Nav.Item>
-          <Nav.Item>
+          <Nav.Item className='defbodyFont'>
             <Nav.Link eventKey="renewableEnergy" style={{ color: "#fff" }}>
               <FaRecycle
                 className="me-2"
@@ -127,7 +139,7 @@ const Markets = () => {
               Renewable Energy
             </Nav.Link>
           </Nav.Item>
-          <Nav.Item>
+          <Nav.Item className='defbodyFont'>
             <Nav.Link eventKey="infrastructure" style={{ color: "#fff" }}>
               <FaBuilding
                 className="me-2"
@@ -136,7 +148,7 @@ const Markets = () => {
               Infrastructure
             </Nav.Link>
           </Nav.Item>
-          <Nav.Item>
+          <Nav.Item className='defbodyFont'>
             <Nav.Link eventKey="engineering" style={{ color: "#fff" }}>
               <FaTools
                 className="me-2"
@@ -145,7 +157,7 @@ const Markets = () => {
               Engineering
             </Nav.Link>
           </Nav.Item>
-          <Nav.Item>
+          <Nav.Item className='defbodyFont'>
             <Nav.Link eventKey="financial" style={{ color: "#fff" }}>
               <FaLandmark
                 className="me-2"
@@ -158,15 +170,15 @@ const Markets = () => {
         <Container className="marketTitle">
           <Tab.Content>
             <Tab.Pane eventKey={activeTab}>
-              <h3 className="text-center mt-3 mb-1">
+              <h3 className="text-center mt-3 mb-1 defheadFont" data-aos="fade-up">
                 {tabContent[activeTab][0][0].sectionTitle}
               </h3>
               <Row className="justify-content-around">
                 {tabContent[activeTab][1].map((content, index) => (
-                  <Col md={6} className="mt-4" key={index}>
+                  <Col md={6} className="mt-4" key={index} data-aos="fade-up">
                     <Image src={content.img} fluid rounded />
-                    <h5 className="my-3">{content.title}</h5>
-                    <p>{content.description}</p>
+                    <h5 className="my-3 defbodyFont" data-aos="fade-up"><strong>{content.title}</strong></h5>
+                    <p className='defbodyFont' data-aos="fade-up">{content.description}</p>
                   </Col>
                 ))}
               </Row>
@@ -174,7 +186,7 @@ const Markets = () => {
           </Tab.Content>
         </Container>
       </Tab.Container>
-      <p className="text-center">
+      <p className="text-center defbodyFont">
         <Button variant="danger" className="mt-4 px-5 fs-5 marketTitle">
           Request a Quote
         </Button>{" "}

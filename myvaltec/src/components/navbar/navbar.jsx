@@ -39,7 +39,7 @@ export default function NavBar() {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="flex-grow-1">
-          <Nav className="m-auto">
+          <Nav className="m-auto defbodyFont">
             <Nav.Link>
               <NavLink
                 to="/"
