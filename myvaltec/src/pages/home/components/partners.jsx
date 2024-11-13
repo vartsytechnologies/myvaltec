@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 
-function Partners() {
+function PartnersSection() {
   return (
     <>
       <Container
@@ -19,7 +19,7 @@ function Partners() {
                   className="logo-wrapper d-flex align-items-center justify-content-center flex-column "
                   style={{ height: "200px" }}
                 >
-                  <Image src="holder.js/171x180" rounded />
+                  <Image src="https://via.placeholder.com/100" rounded />
                   <div className="hover-text">Your Hover Text</div>
                 </div>
               </div>
@@ -125,4 +125,4 @@ function Partners() {
     </>
   );
 }
-export default Partners;
+export default PartnersSection;
