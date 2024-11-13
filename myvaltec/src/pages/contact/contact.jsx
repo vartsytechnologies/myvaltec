@@ -26,7 +26,7 @@ export default function Contact() {
             <Col xs={12} lg={6}>
               <div
                 className="div google-map w-100 d-flex align-items-center justify-content-center"
-                style={{ height: "400px" }}
+                style={{ height: "410px" }}
               >
                 {/* <h1>Google Map API here</h1>
                  */}
@@ -131,13 +131,13 @@ export default function Contact() {
               </div>
             </Col>
           </Row>
-          <h2
+          <h1
             data-aos="fade-up"
-            className="pt-5 mt-2 text-center"
+            className="pt-5 mt-2 text-center defheadFont"
             style={{ color: "rgba(255, 17, 67, 1)" }}
           >
             Make an enquiry
-          </h2>
+          </h1>
           <p className="text-center" data-aos="fade-up">
             <i>Send us your message and we will gladly respond! us!</i>
           </p>
