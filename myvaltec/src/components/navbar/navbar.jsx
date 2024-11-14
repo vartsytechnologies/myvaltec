@@ -137,7 +137,7 @@ export default function NavBar() {
 
             <Nav.Link>
               <NavLink
-                to="/markets"
+                to="/careers"
                 className={({ isActive }) =>
                   isActive
                     ? "text-danger text-decoration-none"
