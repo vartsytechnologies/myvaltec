@@ -16,7 +16,7 @@ import "./components/thinking.css";
 function App() {
   useEffect(() => {
     AOS.init({
-      duration: 950, // Animation duration in milliseconds
+      duration: 550, // Animation duration in milliseconds
       offset: 50, // Trigger animations 50px before an element is in view
     });
   }, []);

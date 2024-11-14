@@ -13,6 +13,21 @@ import {
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+//market images
+import oil_1 from "../../../assets/markets_img/oil_1.jpg";
+import oil_2 from "../../../assets/markets_img/oil_2.jpg";
+import energy_1 from "../../../assets/markets_img/energy_1.jpg";
+import energy_2 from "../../../assets/markets_img/energy_2.jpg";
+import gov_ger from "../../../assets/markets_img/gov_ger.jpg";
+import gov_uk from "../../../assets/markets_img/gov_uk.jpg";
+import health_1 from "../../../assets/markets_img/health_1.jpg";
+import health_3 from "../../../assets/markets_img/health_3.jpg";
+import mine_1 from "../../../assets/markets_img/mine_1.jpg";
+import mine_2 from "../../../assets/markets_img/mine_2.jpg";
+import power_1 from "../../../assets/markets_img/power_1.jpg";
+import power_2 from "../../../assets/markets_img/power_2.jpg";
+import tech_1 from "../../../assets/markets_img/tech1.jpg";
+import tech_drone from "../../../assets/markets_img/tech_drone.jpg";
 
 const Markets = () => {
   const [activeTab, setActiveTab] = useState("oilGas");
@@ -24,12 +39,12 @@ const Markets = () => {
         {
           title: "Oil and Gas Infrastructure",
           description: "Lorem ipsum dolor sit amet...",
-          img: placeholder1,
+          img: oil_1,
         },
         {
           title: "Oil and Gas Infrastructure",
           description: "Lorem ipsum dolor sit amet...",
-          img: placeholder2,
+          img: oil_2,
         },
       ],
     ],
@@ -39,12 +54,12 @@ const Markets = () => {
         {
           title: "Renewable Energy",
           description: "Lorem ipsum dolor sit amet...",
-          img: placeholder1,
+          img: energy_1,
         },
         {
           title: "Renewable Energy",
           description: "Lorem ipsum dolor sit amet...",
-          img: placeholder2,
+          img: energy_2,
         },
       ],
     ],
@@ -54,12 +69,12 @@ const Markets = () => {
         {
           title: "Mining",
           description: "Lorem ipsum dolor sit amet...",
-          img: placeholder1,
+          img: mine_1,
         },
         {
           title: "Oil and Gas Infrastructure",
           description: "Lorem ipsum dolor sit amet...",
-          img: placeholder2,
+          img: mine_2,
         },
       ],
     ],
@@ -69,12 +84,12 @@ const Markets = () => {
         {
           title: "healthcare",
           description: "Lorem ipsum dolor sit amet...",
-          img: placeholder1,
+          img: health_1,
         },
         {
           title: "Renewable Energy",
           description: "Lorem ipsum dolor sit amet...",
-          img: placeholder2,
+          img: health_3,
         },
       ],
     ],
@@ -84,12 +99,12 @@ const Markets = () => {
         {
           title: "Power ",
           description: "Lorem ipsum dolor sit amet...",
-          img: placeholder1,
+          img: power_1,
         },
         {
           title: "Oil and Gas Infrastructure",
           description: "Lorem ipsum dolor sit amet...",
-          img: placeholder2,
+          img: power_2,
         },
       ],
     ],
@@ -99,12 +114,12 @@ const Markets = () => {
         {
           title: "Technology ",
           description: "Lorem ipsum dolor sit amet...",
-          img: placeholder1,
+          img: tech_1,
         },
         {
           title: "Oil and Gas Infrastructure",
           description: "Lorem ipsum dolor sit amet...",
-          img: placeholder2,
+          img: tech_drone,
         },
       ],
     ],
@@ -114,12 +129,12 @@ const Markets = () => {
         {
           title: "Power ",
           description: "Lorem ipsum dolor sit amet...",
-          img: placeholder1,
+          img: gov_ger,
         },
         {
           title: "Oil ",
           description: "Lorem ipsum dolor sit amet...",
-          img: placeholder2,
+          img: gov_uk,
         },
       ],
     ],
@@ -134,16 +149,28 @@ const Markets = () => {
   }, []);
 
   return (
-    <Container fluid className="mt-5 marketSection">
+    <Container
+      fluid
+      className="mt-5 marketSection mt-5"
+    >
       <h1 className="marketTitle text-center mb-3 defheadFont text-danger">
-        <span data-aos="fade-up" data-aos-delay="500">
+        <span
+          data-aos="fade-up"
+          data-aos-delay="500"
+        >
           <FaIndustry />
         </span>{" "}
-        <span data-aos="fade-up" data-aos-delay="600">
+        <span
+          data-aos="fade-up"
+          data-aos-delay="600"
+        >
           Markets
         </span>
       </h1>
-      <Tab.Container activeKey={activeTab} onSelect={(k) => setActiveTab(k)}>
+      <Tab.Container
+        activeKey={activeTab}
+        onSelect={(k) => setActiveTab(k)}
+      >
         <Nav
           className="justify-content-center my-2 mx-auto marketTitle"
           variant="pills"
@@ -155,7 +182,10 @@ const Markets = () => {
           }}
         >
           <Nav.Item className="defbodyFont">
-            <Nav.Link eventKey="oilGas" style={{ color: "#ffffff" }}>
+            <Nav.Link
+              eventKey="oilGas"
+              style={{ color: "#ffffff" }}
+            >
               <FaIndustry
                 className="me-2"
                 color={activeTab === "oilGas" ? "#ff416c" : "white"}
@@ -164,7 +194,10 @@ const Markets = () => {
             </Nav.Link>
           </Nav.Item>
           <Nav.Item className="defbodyFont">
-            <Nav.Link eventKey="renewableEnergy" style={{ color: "#fff" }}>
+            <Nav.Link
+              eventKey="renewableEnergy"
+              style={{ color: "#fff" }}
+            >
               <FaRecycle
                 className="me-2"
                 color={activeTab === "renewableEnergy" ? "#ff416c" : "white"}
@@ -173,7 +206,10 @@ const Markets = () => {
             </Nav.Link>
           </Nav.Item>
           <Nav.Item className="defbodyFont">
-            <Nav.Link eventKey="mining" style={{ color: "#fff" }}>
+            <Nav.Link
+              eventKey="mining"
+              style={{ color: "#fff" }}
+            >
               <FaBuilding
                 className="me-2"
                 color={activeTab === "mining" ? "#ff416c" : "white"}
@@ -182,7 +218,10 @@ const Markets = () => {
             </Nav.Link>
           </Nav.Item>
           <Nav.Item className="defbodyFont">
-            <Nav.Link eventKey="healthcare" style={{ color: "#fff" }}>
+            <Nav.Link
+              eventKey="healthcare"
+              style={{ color: "#fff" }}
+            >
               <FaTools
                 className="me-2"
                 color={activeTab === "healthcare" ? "#ff416c" : "white"}
@@ -191,7 +230,10 @@ const Markets = () => {
             </Nav.Link>
           </Nav.Item>
           <Nav.Item className="defbodyFont">
-            <Nav.Link eventKey="power" style={{ color: "#fff" }}>
+            <Nav.Link
+              eventKey="power"
+              style={{ color: "#fff" }}
+            >
               <FaLandmark
                 className="me-2"
                 color={activeTab === "power" ? "#ff416c" : "white"}
@@ -200,7 +242,10 @@ const Markets = () => {
             </Nav.Link>
           </Nav.Item>
           <Nav.Item className="defbodyFont">
-            <Nav.Link eventKey="tech" style={{ color: "#fff" }}>
+            <Nav.Link
+              eventKey="tech"
+              style={{ color: "#fff" }}
+            >
               <FaLandmark
                 className="me-2"
                 color={activeTab === "tech" ? "#ff416c" : "white"}
@@ -209,7 +254,10 @@ const Markets = () => {
             </Nav.Link>
           </Nav.Item>
           <Nav.Item className="defbodyFont">
-            <Nav.Link eventKey="gov" style={{ color: "#fff" }}>
+            <Nav.Link
+              eventKey="gov"
+              style={{ color: "#fff" }}
+            >
               <FaLandmark
                 className="me-2"
                 color={activeTab === "gov" ? "#ff416c" : "white"}
@@ -229,8 +277,17 @@ const Markets = () => {
               </h3>
               <Row className="justify-content-around">
                 {tabContent[activeTab][1].map((content, index) => (
-                  <Col md={6} className="mt-4" key={index} data-aos="fade-up">
-                    <Image src={content.img} fluid rounded />
+                  <Col
+                    md={6}
+                    className="mt-4"
+                    key={index}
+                    data-aos="fade-up"
+                  >
+                    <Image
+                      src={content.img}
+                      fluid
+                      rounded
+                    />
                     {/* <h5 className="my-3 defbodyFont" data-aos="fade-up">
                       <strong>{content.title}</strong>
                     </h5>
