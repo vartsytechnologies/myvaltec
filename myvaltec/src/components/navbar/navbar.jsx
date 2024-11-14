@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import {
   Navbar,
   Nav,
@@ -13,6 +13,7 @@ import { IoSendSharp } from "react-icons/io5";
 import valtecLogo from "../../assets/valtec_logo.png";
 import { NavLink } from "react-router-dom";
 import emailjs from "@emailjs/browser";
+import { Link } from "react-router-dom";
 
 // Imports for form
 import Form from "react-bootstrap/Form";
@@ -27,6 +28,35 @@ export default function NavBar() {
   const handleShow = () => setShowModal(true);
   const handleClose = () => setShowModal(false);
 
+  // Handling navbar dropdown
+  const [showDropdown, setShowDropdown] = useState(false);
+
+  // Ref to the dropdown container
+  const dropdownRef = useRef(null);
+
+  // Toggle dropdown visibility
+  const toggleDropdown = () => {
+    setShowDropdown(!showDropdown);
+  };
+
+  // Close dropdown if clicked outside
+  useEffect(() => {
+    // Function to handle clicks outside the dropdown
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setShowDropdown(false);
+      }
+    };
+
+    // Add event listener on mount
+    document.addEventListener("mousedown", handleClickOutside);
+
+    // Cleanup event listener on unmount
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+  //End of Navbar handling
   //Receiving form details via emal
   const sendEmail = (e) => {
     e.preventDefault();
@@ -96,30 +126,15 @@ export default function NavBar() {
                 Thinking
               </NavLink>
             </Nav.Link>
-            <Nav.Link>
-              <NavLink
-                to="/services"
-                className={({ isActive }) =>
-                  isActive
-                    ? "text-danger text-decoration-none"
-                    : "text-dark text-decoration-none"
-                }
-              >
-                Expertise
-              </NavLink>
+
+            {/* Menu Link for Dropdown */}
+            <Nav.Link
+              onClick={toggleDropdown}
+              className="text-dark dropdown-toggle"
+            >
+              Expertise
             </Nav.Link>
-            <Nav.Link>
-              <NavLink
-                to="/projects"
-                className={({ isActive }) =>
-                  isActive
-                    ? "text-danger text-decoration-none"
-                    : "text-dark text-decoration-none"
-                }
-              >
-                Projects
-              </NavLink>
-            </Nav.Link>
+
             <Nav.Link>
               <NavLink
                 to="/markets"
@@ -153,6 +168,37 @@ export default function NavBar() {
           >
             Request a quote
           </Button>
+
+          {/* Dropdown Items - Positioned Outside Navbar */}
+          {showDropdown && (
+            <div
+              className="custom-dropdown"
+              ref={dropdownRef}
+            >
+              <Link
+                to="/markets"
+                className="dropdown-item defbodyFont"
+                onClick={() => setShowDropdown(false)}
+              >
+                Markets
+              </Link>
+              <Link
+                to="/projects"
+                className="dropdown-item defbodyFont"
+                onClick={() => setShowDropdown(false)}
+              >
+                Projects
+              </Link>
+              <Link
+                to="/service"
+                className="dropdown-item defbodyFont"
+                onClick={() => setShowDropdown(false)}
+              >
+                Services
+              </Link>
+            </div>
+          )}
+
           {/* Request a Quote form modal */}
           <Modal
             show={showModal}

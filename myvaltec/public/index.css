@@ -1,41 +1,41 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-body{
-    width:100%;
-    height:100vh;
-    max-width: 100%;
-    overflow-x:hidden;
-    overflow-y: scroll;
-    font-size:1.2rem;
+body {
+  width: 100%;
+  height: 100vh;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-size: 1.2rem;
 }
-.defPb{
-    padding-bottom:5vh;
+.defPb {
+  padding-bottom: 5vh;
 }
-.defPt{
-    padding-top: 5vh;
+.defPt {
+  padding-top: 5vh;
 }
-.bg-gray{
-    background-color: rgb(240, 240, 240);
+.bg-gray {
+  background-color: rgb(240, 240, 240);
 }
 /*fonts*/
-.defbodyFont{
+.defbodyFont {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
 }
 
-.defheadFont{
-    font-family: "Montserrat", sans-serif;
+.defheadFont {
+  font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
 }
 
-.defsubheadFont{
-    font-family: "Montserrat", sans-serif;
+.defsubheadFont {
+  font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
@@ -44,25 +44,68 @@ body{
 
 /*NavBar*/
 
-
 /*General Images (zoom in)*/
 .zoom-out-container {
-    overflow: hidden; /* Ensures the image stays within its container */
-    /*position: relative;*/
-    /*width: 100%; /* Adjust based on container needs */
-    /*height: 100%;*/
+  overflow: hidden; /* Ensures the image stays within its container */
+  /*position: relative;*/
+  /*width: 100%; /* Adjust based on container needs */
+  /*height: 100%;*/
 }
 
 .zoom-out-container img {
-    transition: 1.5s ease; /* Smooth transition */
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures image covers container fully */
+  transition: 1.5s ease; /* Smooth transition */
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures image covers container fully */
 }
 
 .zoom-out-container:hover img {
-    transform: scale(1.05); /* Scales the image down to 90% of its size */
-    border-radius: 9px;
-    }
+  transform: scale(1.05); /* Scales the image down to 90% of its size */
+  border-radius: 9px;
+}
 /*end General Images*/
 
+/* Dropdown Menu Styling */
+.custom-dropdown {
+  position: absolute;
+  background-color: #dc3545; /* bg-danger */
+  width: 50vw; /* Adjust width as needed */
+  top: 100%; /* Positions the dropdown right below the Menu link */
+  left: 50%; /* Centers the dropdown horizontally */
+  transform: translateX(
+    -50%
+  ); /* Offsets the left positioning by 50% of the dropdown width */
+  padding: 0.5rem 0;
+  margin-top: 0.5rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  text-align: center;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown-item:hover {
+  background-color: #c82333;
+  color: rgb(252, 255, 224);
+}
+
+@media (max-width: 992px) {
+  .custom-dropdown {
+    position: static; /* Remove absolute positioning */
+    width: 100%; /* Make dropdown take the full width of its container */
+    left: 0; /* Reset left position */
+    transform: none; /* Remove transform */
+    margin-top: 0.5rem; /* Adjust space between dropdown and Menu */
+  }
+
+  /* Ensure the dropdown is placed below the Menu link */
+  .custom-dropdown .dropdown-item {
+    padding-left: 1rem; /* Adjust padding to align with the navbar items */
+    padding-right: 1rem;
+  }
+}
