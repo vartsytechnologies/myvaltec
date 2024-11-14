@@ -5,7 +5,7 @@ import AboutSection from "./components/aboutSection.jsx";
 import ServiceSection from "./services.jsx";
 
 import MarketSection from "./components/marketSection.js";
-import PartnersSection from "./components/partners.jsx";
+// import PartnersSection from "./components/partners.jsx";
 import ProjectSection from "./components/projectsSection.jsx";
 import ContactSection from "./contactSection.jsx";
 
@@ -17,7 +17,7 @@ function Home() {
       <ServiceSection />
       <MarketSection />
       <ProjectSection />
-      <PartnersSection />
+      {/* <PartnersSection /> */}
       <ContactSection />
     </>
   );

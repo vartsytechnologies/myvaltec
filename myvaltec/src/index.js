@@ -12,6 +12,7 @@ import Services from "./pages/services/actualServices.jsx";
 import Contact from "./pages/contact/contact.jsx";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Careers from "./pages/careers/careers.jsx";
 
 const router = createBrowserRouter([
   {
@@ -86,6 +87,14 @@ const router = createBrowserRouter([
     element: (
       <Layout>
         <Services />
+      </Layout>
+    ),
+  },
+  {
+    path: "/careers",
+    element: (
+      <Layout>
+        <Careers />
       </Layout>
     ),
   },

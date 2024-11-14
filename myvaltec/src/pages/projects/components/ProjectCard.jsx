@@ -27,11 +27,19 @@ function ProjectCard({
 
   return (
     <>
-      <Card className="shadow-sm h-100" data-aos="fade-up" onClick={handleShow}>
-        <Card.Img variant="top" src={imgSrc} data-aos="fade-up" />
+      <Card
+        className="shadow-sm h-100"
+        data-aos="fade-up"
+        onClick={handleShow}
+      >
+        <Card.Img
+          variant="top"
+          src={imgSrc}
+          data-aos="fade-up"
+        />
         <Card.Body>
           <Card.Title
-            className="defheadFont"
+            className="defheadFont text-danger"
             data-aos="fade-up"
             data-aos-delay="300"
           >
@@ -62,7 +70,10 @@ function ProjectCard({
               <Carousel>
                 {carouselImages.length > 0 ? (
                   carouselImages.map((image, idx) => (
-                    <Carousel.Item key={idx} interval={1000}>
+                    <Carousel.Item
+                      key={idx}
+                      interval={1000}
+                    >
                       <img
                         src={image}
                         alt={`Carousel Image ${idx + 1}`}
@@ -90,7 +101,10 @@ function ProjectCard({
             </div>
           </Modal.Body>
           <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>
+            <Button
+              variant="secondary"
+              onClick={handleClose}
+            >
               Close
             </Button>
           </Modal.Footer>
