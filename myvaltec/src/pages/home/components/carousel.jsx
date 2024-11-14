@@ -5,7 +5,6 @@ import "../home.css";
 import AOS from "aos";
 import solutions from "../../../assets/carousel_img/value.jpg";
 import precision_2 from "../../../assets/carousel_img/precision_2.jpg";
-import precision from "../../../assets/carousel_img/precision.jpg";
 import sustainable from "../../../assets/carousel_img/sustainable.jpg";
 
 function MainSlider() {
