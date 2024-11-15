@@ -54,6 +54,16 @@
   }
 }
 
+@media (max-width: 992px) {
+  .sliderCaption {
+    /*for positioning the captions*/
+    text-align: left;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+  }
+}
+
 /*Market Section*/
 .marketSection {
   background: #faf7e6;

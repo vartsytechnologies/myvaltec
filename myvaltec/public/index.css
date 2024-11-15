@@ -46,22 +46,20 @@ body {
 
 /*General Images (zoom in)*/
 .zoom-out-container {
-  overflow: hidden; /* Ensures the image stays within its container */
-  /*position: relative;*/
-  /*width: 100%; /* Adjust based on container needs */
-  /*height: 100%;*/
+  overflow: hidden;
+  padding: 0;
 }
 
 .zoom-out-container img {
-  transition: 1.5s ease; /* Smooth transition */
+  transition: 2s ease;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures image covers container fully */
+  object-fit: cover;
 }
 
 .zoom-out-container:hover img {
-  transform: scale(1.05); /* Scales the image down to 90% of its size */
-  border-radius: 9px;
+  transform: scale(1.1);
+  border-radius: 1px;
 }
 /*end General Images*/
 
@@ -69,9 +67,9 @@ body {
 .custom-dropdown {
   position: absolute;
   background-color: #dc3545; /* bg-danger */
-  width: 50vw; /* Adjust width as needed */
-  top: 100%; /* Positions the dropdown right below the Menu link */
-  left: 50%; /* Centers the dropdown horizontally */
+  width: 50vw;
+  top: 100%;
+  left: 50%;
   transform: translateX(
     -50%
   ); /* Offsets the left positioning by 50% of the dropdown width */
@@ -96,11 +94,11 @@ body {
 
 @media (max-width: 992px) {
   .custom-dropdown {
-    position: static; /* Remove absolute positioning */
-    width: 100%; /* Make dropdown take the full width of its container */
-    left: 0; /* Reset left position */
-    transform: none; /* Remove transform */
-    margin-top: 0.5rem; /* Adjust space between dropdown and Menu */
+    position: static;
+    width: 100%;
+    left: 0;
+    transform: none;
+    margin-top: 0.5rem;
   }
 
   /* Ensure the dropdown is placed below the Menu link */
@@ -108,4 +106,11 @@ body {
     padding-left: 1rem; /* Adjust padding to align with the navbar items */
     padding-right: 1rem;
   }
+}
+
+/* about Section */
+.aboutImgFullWidth {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
 }

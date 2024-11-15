@@ -4,7 +4,7 @@ import companyOverview from "../../../../assets/companyOverview.jpg";
 import AOS from "aos";
 import { useEffect } from "react";
 import "aos/dist/aos.css"; // Import the CSS styles
-import './thinking.css'
+import "./thinking.css";
 
 function CompanyOverview() {
   useEffect(() => {
@@ -15,12 +15,18 @@ function CompanyOverview() {
   }, []);
   return (
     <Container className="defPt defPb">
-      <h2 className="text-danger defheadFont" data-aos="fade-left">
+      <h2
+        className="text-danger defheadFont"
+        data-aos="fade-left"
+      >
         Company Overview
       </h2>
-      <Row >
-        <Col md={6} className="ps-0 defbodyFont">
-          <p data-aos="fade-left" >
+      <Row>
+        <Col
+          md={6}
+          className="ps-0 defbodyFont"
+        >
+          <p data-aos="fade-left">
             Established in August 2015, VALTEC is a value-driven design,
             engineering, procurement, construction, and management consulting
             company. Our locally available expertise and globally affiliated
@@ -31,11 +37,14 @@ function CompanyOverview() {
             commitments to our clients.
           </p>
         </Col>
-        <Col md={6}>
+        <Col
+          md={6}
+          className="zoom-out-container"
+        >
           <img
             src={companyOverview}
             alt="Company"
-            className="img-fluid"
+            // className="img-fluid"
             data-aos="fade-right"
           />
         </Col>

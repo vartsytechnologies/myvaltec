@@ -34,7 +34,7 @@ function MainSlider() {
             </b>
           </p>
           <p
-            className="sliderCaptionSubtext defbodyFont"
+            className="sliderCaptionSubtext defbodyFont "
             data-aos="fade-left"
             data-aos-delay="200"
           >

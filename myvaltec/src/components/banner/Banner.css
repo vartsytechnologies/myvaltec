@@ -1,12 +1,11 @@
-
 .banner {
-  background-image: url('../../assets/thinkingerBanner.jpeg');
+  background-image: url("../../assets/thinkingerBanner.jpeg");
   background-size: cover;
   background-position: center;
   height: 20vh;
 }
 
 .banner-text {
-  font-size: 3.8rem;
+  font-size: 3rem;
   color: white;
 }

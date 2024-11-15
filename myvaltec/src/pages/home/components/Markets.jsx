@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Container, Row, Col, Button, Image, Tab, Nav } from "react-bootstrap";
-import placeholder1 from "./placeholder1.jpg";
-import placeholder2 from "./placeholder2.jpg";
+import { Container, Row, Col, Image, Tab, Nav } from "react-bootstrap";
 import "../home.css";
 import {
   FaIndustry,

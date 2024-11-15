@@ -57,7 +57,8 @@ export default function NavBar() {
     };
   }, []);
   //End of Navbar handling
-  //Receiving form details via emal
+
+  //Form handling
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
