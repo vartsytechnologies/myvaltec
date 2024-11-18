@@ -8,6 +8,7 @@ import kimray_r from "../../../assets/partnerIcons/kimray_r.png";
 import micin_r from "../../../assets/partnerIcons/micin_r.png";
 import pana_r from "../../../assets/partnerIcons/pana_r.png";
 import russ_r from "../../../assets/partnerIcons/russ_r.png";
+import druck_r from "../../../assets/partnerIcons/druck_r.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -103,11 +104,7 @@ function Partners() {
                   className="logo-wrapper d-flex align-items-center justify-content-center flex-column "
                   style={{ height: "100px" }}
                 >
-                  <img
-                    src="https://via.placeholder.com/100"
-                    alt="Logo"
-                    className="logo fluid"
-                  />
+                  <img src={druck_r} alt="Logo" className="logo fluid" />
                   <div className="hover-text d-none">Your Hover Text</div>
                 </div>
               </div>
