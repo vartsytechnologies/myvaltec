@@ -95,7 +95,7 @@ function MarketCard({ title }) {
                 data-aos="fade-up"
                 data-aos-delay="300"
               >
-                All your needs at the mining site will be catered for by valtec.
+                All your needs at the mining site will be catered for by Valtec.
               </p>
               <Card.Img
                 variant="top"
