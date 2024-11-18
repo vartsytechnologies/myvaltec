@@ -19,11 +19,14 @@ export default function Contact() {
   }, []);
   return (
     <>
-      <Banner title="Get In touch with us" />
+      <Banner title="How can we help ?" />
       <Container fluid>
         <Container className="pt-5 defbodyFont">
           <Row data-aos="fade-up">
-            <Col xs={12} lg={6}>
+            <Col
+              xs={12}
+              lg={6}
+            >
               <div
                 className="div google-map w-100 d-flex align-items-center justify-content-center"
                 style={{ height: "410px" }}
@@ -33,10 +36,13 @@ export default function Contact() {
                 <Map />
               </div>
             </Col>
-            <Col xs={12} lg={6}>
+            <Col
+              xs={12}
+              lg={6}
+            >
               <div className="row">
                 <div className="col-12">
-                  <div className="row">
+                  <div className="row mt-2">
                     <div className="col-1">
                       <GoHomeFill className="icon" />
                     </div>
@@ -44,24 +50,14 @@ export default function Contact() {
                       <p className="pt-2">
                         <b>
                           <span style={{ color: "rgba(255, 17, 67, 1)" }}>
-                            Main Office Address
+                            Office Address
                             <br />
-                            Valtec Limited
+                            VALTEC Limited
                           </span>
                         </b>
                         <br />
-                        Mountain View Luxury Suites <br />
-                        #1 Agape Drive, Pantang West
+                        Mountain View Community
                         <br /> Accra, Ghana.
-                      </p>
-                      <p>
-                        <b>
-                          <span style={{ color: "rgba(255, 17, 67, 1)" }}>
-                            Valtec USA LLC
-                          </span>
-                        </b>
-                        <br />
-                        241 Leather Leaf Circle, Sunbury, Ohio, 43074, USA.
                       </p>
                     </div>
                     <hr
@@ -72,7 +68,7 @@ export default function Contact() {
                 </div>
                 <div className="w-100"></div>
                 <div className="col-12">
-                  <div className="row">
+                  <div className="row mt-2">
                     <div className="col-1">
                       <LuPhoneCall className="icon" />
                     </div>
@@ -80,13 +76,11 @@ export default function Contact() {
                       <p>
                         <b>
                           <span style={{ color: "rgba(255, 17, 67, 1)" }}>
-                            Call US
+                            Call
                           </span>
                         </b>
                         <br />
-                        <b>Mobile (Direct): </b> (+233) 53 404 0014
-                        <br />
-                        <b>Tel:</b> (+233) 30 396 5757
+                        (+233) 53 404 0014
                       </p>
                     </div>
                     <hr
@@ -108,11 +102,9 @@ export default function Contact() {
                       <p>
                         <b>
                           <span style={{ color: "rgba(255, 17, 67, 1)" }}>
-                            Email Us
+                            Email
                           </span>
                         </b>
-                        <br />
-                        korda.asare@gmail.com
                         <br />
                         sales@myvaltec.com
                       </p>
@@ -138,8 +130,11 @@ export default function Contact() {
           >
             Make an enquiry
           </h1>
-          <p className="text-center" data-aos="fade-up">
-            <i>Send us your message and we will gladly respond! us!</i>
+          <p
+            className="text-center"
+            data-aos="fade-up"
+          >
+            <i>Send us your message and we will gladly respond!</i>
           </p>
 
           <ContactForm data-aos="fade-up" />

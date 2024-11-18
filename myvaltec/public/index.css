@@ -10,6 +10,10 @@ body {
   overflow-y: scroll;
   font-size: 1.2rem;
 }
+/*Text alignment*/
+.justify {
+  text-align: justify;
+}
 .defPb {
   padding-bottom: 5vh;
 }
@@ -25,6 +29,7 @@ body {
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+  font-size: 1.05rem;
 }
 
 .defheadFont {
@@ -64,15 +69,15 @@ body {
 /*end General Images*/
 
 /* Dropdown Menu Styling */
-.custom-dropdown {
+/* .custom-dropdown {
   position: absolute;
-  background-color: #dc3545; /* bg-danger */
+  background-color: #dc3545; /* bg-danger 
   width: 50vw;
   top: 100%;
   left: 50%;
   transform: translateX(
     -50%
-  ); /* Offsets the left positioning by 50% of the dropdown width */
+  ); /* Offsets the left positioning by 50% of the dropdown width 
   padding: 0.5rem 0;
   margin-top: 0.5rem;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -90,7 +95,46 @@ body {
 .dropdown-item:hover {
   background-color: #c82333;
   color: rgb(252, 255, 224);
+} */
+/* Initial state of the dropdown (hidden) */
+.custom-dropdown {
+  position: absolute;
+  top: 82%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: auto;
+  opacity: 0; /* Initially hidden */
+  pointer-events: none; /* Disable interaction when hidden */
+  /* transition: opacity 0.3s ease-in-out, pointer-events 0s linear 0.3s; Smooth opacity transition */
 }
+
+/* When the dropdown is visible (with the "show" class) */
+.custom-dropdown.show {
+  opacity: 1; /* Make it visible */
+  pointer-events: auto; /* Enable mouse events for interaction */
+  /* transition: opacity 0.3s ease-in-out, pointer-events 0s linear 0s; Smooth opacity transition */
+}
+.dropdown .rotate {
+  transform: rotate(180deg); /* Rotate the arrow */
+  transition: transform 0.3s ease-in-out; /* Smooth rotation */
+}
+.navbar {
+  position: relative;
+}
+.secondary {
+  color: rgba(255, 17, 67, 1);
+}
+/* .dropdown-item {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown-item:hover {
+  background-color: #c82333;
+  color: rgb(252, 255, 224);
+} */
 
 @media (max-width: 992px) {
   .custom-dropdown {

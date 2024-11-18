@@ -38,7 +38,7 @@ function MainSlider() {
             data-aos="fade-left"
             data-aos-delay="200"
           >
-            From cybersecurity to digital transformations, Valtec’s
+            From cybersecurity to digital transformations, VALTEC’s
             technology-driven solutions protect and optimize operations, keeping
             your business ahead in a connected world. Experience cutting-edge
             advancements tailored to your operational needs.
@@ -69,7 +69,7 @@ function MainSlider() {
           >
             With our expertise in Engineering, Procurement, and Construction, we
             drive efficiency and quality at every stage, helping your projects
-            reach completion on time and within budget. Trust Valtec to deliver
+            reach completion on time and within budget. Trust VALTEC to deliver
             solutions that meet the highest industry standards.
           </p>
         </Carousel.Caption>

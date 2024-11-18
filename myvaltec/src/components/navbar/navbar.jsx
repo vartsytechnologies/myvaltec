@@ -14,44 +14,46 @@ import valtecLogo from "../../assets/valtec_logo.png";
 import { NavLink } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 import { Link } from "react-router-dom";
-
+import { RiArrowRightSLine } from "react-icons/ri";
+import { RiArrowDownSLine } from "react-icons/ri";
 // Imports for form
 import Form from "react-bootstrap/Form";
 // import Button from "react-bootstrap/Button";
 
 export default function NavBar() {
   const [phone, setPhone] = useState("");
-  // State for Modal
-  const [showModal, setShowModal] = useState(false);
+  const [showModal, setShowModal] = useState(false); // State for Modal
+  const [showDropdown, setShowDropdown] = useState(false); // State for dropdown visibility
+  const dropdownRef = useRef(null); // Ref to handle dropdown container
+  const expertiseLinkRef = useRef(null); // Ref to expertise nav link
 
   // Functions to handle modal show and hide
   const handleShow = () => setShowModal(true);
   const handleClose = () => setShowModal(false);
 
-  // Handling navbar dropdown
-  const [showDropdown, setShowDropdown] = useState(false);
-
-  // Ref to the dropdown container
-  const dropdownRef = useRef(null);
-
-  // Toggle dropdown visibility
-  const toggleDropdown = () => {
-    setShowDropdown(!showDropdown);
+  // Show dropdown when hovering over the expertise link
+  const handleMouseEnterExpertise = () => {
+    setShowDropdown(true);
   };
 
-  // Close dropdown if clicked outside
+  // Hide dropdown when leaving both the expertise link and dropdown
+  const handleMouseLeave = () => {
+    setShowDropdown(false);
+  };
+
+  // Detect clicks outside to hide the dropdown
   useEffect(() => {
-    // Function to handle clicks outside the dropdown
     const handleClickOutside = (event) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target) &&
+        !expertiseLinkRef.current.contains(event.target)
+      ) {
         setShowDropdown(false);
       }
     };
 
-    // Add event listener on mount
     document.addEventListener("mousedown", handleClickOutside);
-
-    // Cleanup event listener on unmount
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
@@ -85,7 +87,7 @@ export default function NavBar() {
     <Navbar
       bg="light"
       expand="lg"
-      className="py-1 sticky-top"
+      className="py-1 sticky-top navbar"
     >
       <Container className="d-flex justify-content-between align-items-center mynavbar">
         <Navbar.Brand href="/">
@@ -130,10 +132,15 @@ export default function NavBar() {
 
             {/* Menu Link for Dropdown */}
             <Nav.Link
-              onClick={toggleDropdown}
-              className="text-dark dropdown-toggle"
+              ref={expertiseLinkRef}
+              className="text-dark dropdown mb-0 pb-0"
+              onMouseEnter={handleMouseEnterExpertise} // Show dropdown
+              onMouseLeave={handleMouseLeave} // Hide dropdow
             >
               Expertise
+              <RiArrowDownSLine
+                className={`ms-2 ${showDropdown ? "rotate" : ""}`} // Apply rotate when dropdown is shown
+              />
             </Nav.Link>
 
             <Nav.Link>
@@ -171,7 +178,7 @@ export default function NavBar() {
           </Button>
 
           {/* Dropdown Items - Positioned Outside Navbar */}
-          {showDropdown && (
+          {/* {showDropdown && (
             <div
               className="custom-dropdown"
               ref={dropdownRef}
@@ -197,6 +204,166 @@ export default function NavBar() {
               >
                 Services
               </Link>
+            </div>
+          )} */}
+          {showDropdown && (
+            <div
+              className={`container custom-dropdown bg-light ${
+                showDropdown ? "show" : ""
+              }`}
+              ref={dropdownRef}
+              onMouseEnter={handleMouseEnterExpertise} // Keep dropdown visible
+              onMouseLeave={handleMouseLeave} // Hide dropdown
+            >
+              {/* <hr />s */}
+              <div className="row">
+                <div className="col col-md-3 d-flex align-items-start justify-content-center flex-column">
+                  <h1
+                    className="mt-4 ms-1 secondary defheadFont"
+                    style={{ fontSize: "1.4rem" }}
+                  >
+                    Markets
+                  </h1>
+                  <p className="mt-3 text-black d-none d-md-block">
+                    <p className="defbodyFont">
+                      {" "}
+                      <RiArrowRightSLine className="me-2 " /> Oil & Gas
+                    </p>
+                    <p className="defbodyFont">
+                      {" "}
+                      <RiArrowRightSLine className="me-2 " /> Energy
+                    </p>
+                    <p className="defbodyFont">
+                      {" "}
+                      <RiArrowRightSLine className="me-2 " /> Mining
+                    </p>
+                    <p className="defbodyFont">
+                      {" "}
+                      <RiArrowRightSLine className="me-2 " /> Healthcare
+                    </p>
+                    <div className="mb-3 pt-3 d-flex align-items-center justify-content-center">
+                      <Link
+                        to="/markets"
+                        className="px-3 py-1 bg-danger rounded"
+                        style={{
+                          fontSize: "1rem",
+                          textDecoration: "none",
+                          color: "white",
+                        }}
+                      >
+                        All markets
+                      </Link>
+                    </div>
+                  </p>
+                </div>
+                <div className="col col-md-4 d-flex align-items-start justify-content-start flex-column">
+                  <h1
+                    className="mt-4 ms-1 secondary defheadFont"
+                    style={{ fontSize: "1.4rem" }}
+                  >
+                    Projects
+                  </h1>
+                  <p className="mt-3 text-black d-none d-md-block">
+                    <p className="defbodyFont">
+                      {" "}
+                      <RiArrowRightSLine className="me-2 " /> ENI Ghana
+                      Exploration & Production Limited
+                    </p>
+                    <p className="defbodyFont">
+                      {" "}
+                      <RiArrowRightSLine className="me-2 " /> MODEC Ghana
+                      Limited
+                    </p>
+                    <p className="defbodyFont">
+                      {" "}
+                      <RiArrowRightSLine className="me-2 " /> Yinson Productions
+                    </p>
+                    <p className="defbodyFont">
+                      {" "}
+                      <RiArrowRightSLine className="me-2 " /> AngloGold Ashanti
+                      Ghana Limited
+                    </p>
+                    <div className="mb-3 pt-3 d-flex align-items-start justify-content-start rounded">
+                      <Link
+                        to="/projects"
+                        className="px-3 py-1 bg-danger rounded"
+                        style={{
+                          fontSize: "1rem",
+                          textDecoration: "none",
+                          color: "white",
+                        }}
+                      >
+                        All projects
+                      </Link>
+                    </div>
+                  </p>
+                </div>
+                <div className="col col-md-5 d-flex align-items-start justify-content-start flex-column">
+                  <h1
+                    className="mt-4 ms-1 secondary defheadFont"
+                    style={{ fontSize: "1.4rem" }}
+                  >
+                    Services
+                  </h1>
+                  <p className="mt-3 text-black d-none d-md-block">
+                    <p className="defbodyFont">
+                      {" "}
+                      <RiArrowRightSLine className="me-2 " />
+                      Engineering, Procument and Construction
+                    </p>
+                    <p className="defbodyFont">
+                      {" "}
+                      <RiArrowRightSLine className="me-2 " />
+                      Fuel Additives and Lubricants
+                    </p>
+                    <p className="defbodyFont">
+                      {" "}
+                      <RiArrowRightSLine className="me-2 " />
+                      Digital Solutions, IT and Cybersecurity
+                    </p>
+                    <p className="defbodyFont">
+                      {" "}
+                      <RiArrowRightSLine className="me-2 " />
+                      Healthcare
+                    </p>
+                    <div className="mb-3 pt-3 d-flex align-items-start justify-content-start rounded">
+                      <Link
+                        to="/service"
+                        className="px-3 py-1 bg-danger rounded"
+                        style={{
+                          fontSize: "1rem",
+                          textDecoration: "none",
+                          color: "white",
+                        }}
+                      >
+                        All services
+                      </Link>
+                    </div>
+                  </p>
+                </div>
+              </div>
+
+              {/* <Link
+                to="/markets"
+                className="dropdown-item defbodyFont"
+                onClick={() => setShowDropdown(false)}
+              >
+                Markets
+              </Link>
+              <Link
+                to="/projects"
+                className="dropdown-item defbodyFont"
+                onClick={() => setShowDropdown(false)}
+              >
+                Projects
+              </Link>
+              <Link
+                to="/service"
+                className="dropdown-item defbodyFont"
+                onClick={() => setShowDropdown(false)}
+              >
+                Services
+              </Link> */}
             </div>
           )}
 

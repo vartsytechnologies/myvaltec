@@ -88,7 +88,7 @@ function ContactSection() {
                               className="p-0 mt-3"
                               style={{ color: "rgba(255, 17, 67, 1)" }}
                             >
-                              Call Us
+                              Call
                             </h4>
                             <p className="p-0 m-0">(+233) 53 404 0014</p>
                           </div>
@@ -113,9 +113,9 @@ function ContactSection() {
                               className="p-0 mt-3"
                               style={{ color: "rgba(255, 17, 67, 1)" }}
                             >
-                              Email Us
+                              Email
                             </h4>
-                            <p className="p-0 m-0">korda.asare@gmail.com</p>
+                            <p className="p-0 m-0">sales@myvaltec.com</p>
                           </div>
                         </div>
                       </div>

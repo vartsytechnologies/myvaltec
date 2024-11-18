@@ -30,15 +30,15 @@ function AboutSection() {
           <Col>
             <Row className="justify-content-between align-items-start flex-column-reverse flex-lg-row">
               <Col
-                className="ps-0 defbodyFont"
+                className="ps-0 defbodyFont justify"
                 data-aos="fade-up"
                 data-aos-delay="300"
               >
-                Valtec Limited, established in August 2015, is a Ghanaian
+                VALTEC Limited, established in August 2015, is a Ghanaian
                 indigenous support service company that stands out in its
                 commitment to providing value through technology to EPC
                 projects, existing plants, and contractors in the energy,
-                mining, oil, and gas industries. Valtec’s unique blend of
+                mining, oil, and gas industries. VALTEC's unique blend of
                 locally available expertise and a globalized affiliated support
                 network ensures specialized precision, real-time speed, and
                 reliable services to EPC projects and operations in West Africa.

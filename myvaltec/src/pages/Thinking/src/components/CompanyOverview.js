@@ -24,7 +24,7 @@ function CompanyOverview() {
       <Row>
         <Col
           md={6}
-          className="ps-0 defbodyFont"
+          className="ps-0 defbodyFont justify"
         >
           <p data-aos="fade-left">
             Established in August 2015, VALTEC is a value-driven design,

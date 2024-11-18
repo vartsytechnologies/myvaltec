@@ -86,7 +86,7 @@ function ServiceSection() {
                             data-aos-delay="10"
                           />
                           <p
-                            className="p-0 m-0 defbodyFont"
+                            className="p-0 m-0 defbodyFont justify"
                             data-aos="fade-up"
                             data-aos-delay="700"
                           >
@@ -138,7 +138,7 @@ function ServiceSection() {
                             data-aos-delay="10"
                           />
                           <p
-                            className="p-0 m-0 defbodyFont"
+                            className="p-0 m-0 defbodyFont justify"
                             data-aos="fade-up"
                             data-aos-delay="700"
                           >
@@ -189,11 +189,11 @@ function ServiceSection() {
                             data-aos-delay="10"
                           />
                           <p
-                            className="p-0 m-0 defbodyFont"
+                            className="p-0 m-0 defbodyFont justify"
                             data-aos="fade-up"
                             data-aos-delay="700"
                           >
-                            Valtec Limited offers a range of high-quality fuel
+                            VALTEC Limited offers a range of high-quality fuel
                             additives and lubricants designed to enhance
                             equipment performance, reduce emissions, and extend
                             machinery life.
@@ -239,7 +239,7 @@ function ServiceSection() {
                             data-aos="fade-up"
                             data-aos-delay="10"
                           />
-                          <p className="p-0 m-0 defbodyFont">
+                          <p className="p-0 m-0 defbodyFont justify">
                             We help companies modernize their operations while
                             safeguarding critical infrastructure, ensuring peace
                             of mind in an era of heightened cyber risks.
@@ -293,7 +293,7 @@ function ServiceSection() {
                             data-aos-delay="10"
                           />
                           <p
-                            className="p-0 m-0 defbodyFont"
+                            className="p-0 m-0 defbodyFont justify"
                             data-aos="fade-up"
                             data-aos-delay="700"
                           >
@@ -344,11 +344,11 @@ function ServiceSection() {
                             data-aos-delay="10"
                           />
                           <p
-                            className="p-0 m-0 defbodyFont"
+                            className="p-0 m-0 defbodyFont justify"
                             data-aos="fade-up"
                             data-aos-delay="700"
                           >
-                            Valtec Limited leverages its local expertise and
+                            VALTEC Limited leverages its local expertise and
                             global network to support infrastructure projects,
                             ensuring optimal functionality and safety standards
                             in every project.
@@ -395,7 +395,7 @@ function ServiceSection() {
                             data-aos-delay="10"
                           />
                           <p
-                            className="p-0 m-0 defbodyFont"
+                            className="p-0 m-0 defbodyFont justify"
                             data-aos="fade-up"
                             data-aos-delay="700"
                           >
