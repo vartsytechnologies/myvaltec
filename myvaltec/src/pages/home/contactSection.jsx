@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
@@ -7,42 +7,26 @@ import { GoHomeFill } from "react-icons/go";
 import { LuPhoneCall } from "react-icons/lu";
 import { MdEmail } from "react-icons/md";
 import { IoSendSharp } from "react-icons/io5";
-import emailjs from "@emailjs/browser";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 function ContactSection() {
-  const sendDetails = (e) => {
-    e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_i6g7h88",
-        "template_ndyziwj",
-        e.target,
-        "yuJupxGb9q30_RgV8"
-      )
-      .then(
-        (result) => {
-          alert("HI, YOUR MESSAGE HAS BEEN SENT SUCCESSFULLY!");
-          e.target.reset(); // Reset form fields
-          // Clear phone input
-        },
-        (error) => {
-          alert("Failed to send email. Please try again.");
-          console.error(error);
-        }
-      );
-  };
+  useEffect(() => {
+    AOS.init({
+      duration: 1050,
+      offset: 100,
+    });
+  }, []);
   return (
-    <Container fluid>
+    <Container fluid data-aos="fade-up" data-aos-delay="400">
       <Container style={{ marginBottom: "30px" }}>
         <h1 className="mt-4 text-center defheadFont text-danger">Contact Us</h1>
         <p className="text-center defbodyFont">
-          <i>Send us your enquiries. Get in touch with us!</i>
+          <i>
+            Send us your enquiries, Request a quote, etc. Get in touch with us!
+          </i>
         </p>
         <Row>
-          <Col
-            xs={12}
-            lg={5}
-          >
+          <Col xs={12} lg={5}>
             <Row className="flex-column p-0 gx-0 defbodyFont">
               <Col className="contactForm p-3 mb-sm-2">
                 <div className="row">
@@ -88,9 +72,9 @@ function ContactSection() {
                               className="p-0 mt-3"
                               style={{ color: "rgba(255, 17, 67, 1)" }}
                             >
-                              Call
+                              Call Us
                             </h4>
-                            <p className="p-0 m-0">(+233) 53 404 0014</p>
+                            <p className="p-0 m-0">+233 550 988 226</p>
                           </div>
                         </div>
                       </div>
@@ -113,9 +97,9 @@ function ContactSection() {
                               className="p-0 mt-3"
                               style={{ color: "rgba(255, 17, 67, 1)" }}
                             >
-                              Email
+                              Email Us
                             </h4>
-                            <p className="p-0 m-0">sales@myvaltec.com</p>
+                            <p className="p-0 m-0">vartsytech@gmail.com</p>
                           </div>
                         </div>
                       </div>
@@ -125,31 +109,20 @@ function ContactSection() {
               </Col>
             </Row>
           </Col>
-          <Col
-            xs={12}
-            lg={7}
-          >
+          <Col xs={12} lg={7}>
             <Row className="flex-column p-0 gx-0 defbodyFont">
               <Col className="contactForm p-3">
                 <div className="row">
                   <div className="col-12">
                     <div className="contactParent mt-3 mb-4">
-                      <Form
-                        autoComplete="off"
-                        onSubmit={sendDetails}
-                      >
+                      <Form>
                         <Row className="gx-1">
-                          <Form.Group
-                            as={Col}
-                            md="6"
-                            className="mb-3"
-                          >
+                          <Form.Group as={Col} md="6" className="mb-3">
                             <Form.Label>Name</Form.Label>
                             <Form.Control
                               type="name"
                               placeholder="Enter your name"
                               required
-                              name="sender_name"
                             />
                           </Form.Group>
 
@@ -164,41 +137,18 @@ function ContactSection() {
                               type="email"
                               placeholder="Enter your email"
                               required
-                              name="sender_email"
                             />
                           </Form.Group>
                         </Row>
-                        <Form.Group
-                          as={Col}
-                          md="12"
-                          className="mb-3"
-                        >
-                          <Form.Label>Phone Number</Form.Label>
-                          <Form.Control
-                            type="number"
-                            placeholder="Enter your phone number"
-                            required
-                            name="sender_phone"
-                          />
-                        </Form.Group>
-                        <Form.Group
-                          as={Col}
-                          md="12"
-                          className="mb-3"
-                        >
+                        <Form.Group as={Col} md="12" className="mb-3">
                           <Form.Label>Subject</Form.Label>
                           <Form.Control
                             type="text"
                             placeholder="Enter the subject of the mail here"
                             required
-                            name="subject"
                           />
                         </Form.Group>
-                        <Form.Group
-                          as={Col}
-                          md="12"
-                          className="mb-3"
-                        >
+                        <Form.Group as={Col} md="12" className="mb-3">
                           <Form.Label>Message</Form.Label>
                           <Form.Control
                             style={{ resize: "none" }}
@@ -206,7 +156,6 @@ function ContactSection() {
                             rows={7}
                             placeholder="Write your message here..."
                             required
-                            name="message"
                           />
                         </Form.Group>
 
