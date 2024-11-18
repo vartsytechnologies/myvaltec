@@ -10,6 +10,10 @@ body {
   overflow-y: scroll;
   font-size: 1.2rem;
 }
+/*Text alignment*/
+.justify {
+  text-align: justify;
+}
 .defPb {
   padding-bottom: 5vh;
 }

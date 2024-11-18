@@ -65,7 +65,10 @@ function App() {
               >
                 VALTEC upholds a robust QHSE policy by:
               </h4>
-              <span data-aos="fade-down">
+              <span
+                data-aos="fade-down"
+                className="justify"
+              >
                 Establishing clear and measurable Quality Objectives across all
                 operational sectors is imperative. Continuous monitoring,
                 evaluation, and enhancement of the Quality System and its

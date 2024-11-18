@@ -48,7 +48,7 @@ function ServiceSection() {
               xs={12}
               lg={6}
             >
-              <Row className="flex-column">
+              <Row className="flex-column ">
                 <Col>
                   <div className="main mb-5 pb-2">
                     <div className="row">
@@ -86,7 +86,7 @@ function ServiceSection() {
                             data-aos-delay="10"
                           />
                           <p
-                            className="p-0 m-0 defbodyFont"
+                            className="p-0 m-0 defbodyFont justify"
                             data-aos="fade-up"
                             data-aos-delay="700"
                           >
@@ -138,7 +138,7 @@ function ServiceSection() {
                             data-aos-delay="10"
                           />
                           <p
-                            className="p-0 m-0 defbodyFont"
+                            className="p-0 m-0 defbodyFont justify"
                             data-aos="fade-up"
                             data-aos-delay="700"
                           >
@@ -189,7 +189,7 @@ function ServiceSection() {
                             data-aos-delay="10"
                           />
                           <p
-                            className="p-0 m-0 defbodyFont"
+                            className="p-0 m-0 defbodyFont justify"
                             data-aos="fade-up"
                             data-aos-delay="700"
                           >
@@ -239,7 +239,7 @@ function ServiceSection() {
                             data-aos="fade-up"
                             data-aos-delay="10"
                           />
-                          <p className="p-0 m-0 defbodyFont">
+                          <p className="p-0 m-0 defbodyFont justify">
                             We help companies modernize their operations while
                             safeguarding critical infrastructure, ensuring peace
                             of mind in an era of heightened cyber risks.
@@ -293,7 +293,7 @@ function ServiceSection() {
                             data-aos-delay="10"
                           />
                           <p
-                            className="p-0 m-0 defbodyFont"
+                            className="p-0 m-0 defbodyFont justify"
                             data-aos="fade-up"
                             data-aos-delay="700"
                           >
@@ -344,7 +344,7 @@ function ServiceSection() {
                             data-aos-delay="10"
                           />
                           <p
-                            className="p-0 m-0 defbodyFont"
+                            className="p-0 m-0 defbodyFont justify"
                             data-aos="fade-up"
                             data-aos-delay="700"
                           >
@@ -395,7 +395,7 @@ function ServiceSection() {
                             data-aos-delay="10"
                           />
                           <p
-                            className="p-0 m-0 defbodyFont"
+                            className="p-0 m-0 defbodyFont justify"
                             data-aos="fade-up"
                             data-aos-delay="700"
                           >

@@ -3,3 +3,6 @@
   width: 50px;
   color: rgba(255, 17, 67, 1);
 }
+span {
+  text-align: justify;
+}

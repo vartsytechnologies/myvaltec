@@ -20,14 +20,17 @@ function AboutSection() {
       <Container className="defPt defPb">
         <Row className="mt-4 flex-column">
           <Col>
-            <h1 className="defheadFont text-danger" data-aos="fade-up">
+            <h1
+              className="defheadFont text-danger"
+              data-aos="fade-up"
+            >
               About Us
             </h1>
           </Col>
           <Col>
             <Row className="justify-content-between align-items-start">
               <Col
-                className="ps-0 defbodyFont"
+                className="ps-0 defbodyFont justify"
                 data-aos="fade-up"
                 data-aos-delay="300"
               >
@@ -39,10 +42,17 @@ function AboutSection() {
                 locally available expertise and a globalized affiliated support
                 network ensures specialized precision, real-time speed, and
                 reliable services to EPC projects and operations in West Africa.
-                <p className="mt-4" data-aos="fade-up" data-aos-delay="400">
+                <p
+                  className="mt-4"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                >
                   <Link to="/thinking">
                     {" "}
-                    <DefaultButton name="Read More" variant="danger" />
+                    <DefaultButton
+                      name="Read More"
+                      variant="danger"
+                    />
                   </Link>
                 </p>
               </Col>
@@ -53,7 +63,11 @@ function AboutSection() {
                 data-aos="fade-up"
                 data-aos-delay="500"
               >
-                <img src={aboutImg} alt="about-valtec" className="w-100" />
+                <img
+                  src={aboutImg}
+                  alt="about-valtec"
+                  className="w-100"
+                />
               </Col>
             </Row>
           </Col>

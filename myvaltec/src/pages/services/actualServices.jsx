@@ -1,5 +1,5 @@
 import React from "react";
-import aboutImg from "../../assets/aboutImg.png";
+
 import { Container, Row, Col } from "react-bootstrap";
 import Banner from "../../components/banner/Banner";
 import "./services.css";
@@ -74,7 +74,7 @@ function Services() {
                       margin: "0.5rem 0",
                     }}
                   />
-                  <span className="defbodyFont">
+                  <span className="defbodyFont d-block">
                     Valtec Limited offers comprehensive EPC (Engineering,
                     Procurement, and Construction) services, tailored to meet
                     the complex needs of the energy, mining, oil, and gas
@@ -118,7 +118,7 @@ function Services() {
                       margin: "0.5rem 0",
                     }}
                   />
-                  <span className="defbodyFont">
+                  <span className="defbodyFont d-block text-justify">
                     In an industry where accuracy is paramount, our Calibration
                     Services provide reliable, precise calibrations for
                     industrial equipment across energy, mining, and oil & gas
@@ -170,7 +170,7 @@ function Services() {
                         margin: "0.5rem 0",
                       }}
                     />
-                    <span className="defbodyFont">
+                    <span className="defbodyFont d-block text-justify">
                       Valtec Limited offers a range of high-quality fuel
                       additives and lubricants designed to enhance equipment
                       performance, reduce emissions, and extend machinery life.
@@ -213,7 +213,7 @@ function Services() {
                         margin: "0.5rem 0",
                       }}
                     />
-                    <span className="defbodyFont">
+                    <span className="defbodyFont d-block text-justify">
                       Our Infrastructure and Facilities services cater to the
                       specific requirements of the industrial sector, providing
                       reliable, tailored solutions for facility management,
@@ -262,13 +262,17 @@ function Services() {
                       margin: "0.5rem 0",
                     }}
                   />
-                  Valtec Limited is committed to promoting sustainable growth
-                  through renewable energy solutions. From solar and wind to
-                  bioenergy, we design and implement clean energy projects that
-                  help reduce carbon footprints and energy costs. Our renewable
-                  energy expertise enables us to support clients on their
-                  journey toward sustainable operations, offering solutions that
-                  align with global energy goals and environmental standards.
+                  <span className="defbodyFont d-block text-justify">
+                    Valtec Limited is committed to promoting sustainable growth
+                    through renewable energy solutions. From solar and wind to
+                    bioenergy, we design and implement clean energy projects
+                    that help reduce carbon footprints and energy costs. Our
+                    renewable energy expertise enables us to support clients on
+                    their journey toward sustainable operations, offering
+                    solutions that align with global energy goals and
+                    environmental standards.
+                  </span>
+
                   <p className="mt-4"></p>
                 </Col>
               </Row>
@@ -302,7 +306,7 @@ function Services() {
                       margin: "0.5rem 0",
                     }}
                   />
-                  <span className="defbodyFont">
+                  <span className="defbodyFont d-block text-justify">
                     In an increasingly digital world, Valtec Limited provides
                     cutting-edge IT and cybersecurity solutions tailored for
                     industrial environments. Our team of experts secures
@@ -353,7 +357,7 @@ function Services() {
                         margin: "0.5rem 0",
                       }}
                     />
-                    <span className="defbodyFont">
+                    <span className="defbodyFont d-block text-justify">
                       Valtec Limited fosters strategic public-private
                       partnerships to drive innovation, enhance infrastructure,
                       and boost economic growth in West Africa. Our
