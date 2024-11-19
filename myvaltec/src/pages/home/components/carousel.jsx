@@ -17,20 +17,14 @@ function MainSlider() {
   return (
     <Carousel indicatrs={false}>
       <Carousel.Item interval={3000}>
-        <CarouselImage
-          text="First slide"
-          sliderImage={solutions}
-        />
+        <CarouselImage text="First slide" sliderImage={solutions} />
         <Carousel.Caption className="sliderCaption">
-          <p
-            className="sliderCaptionMain defbodyFont"
-            data-aos="fade-up"
-          >
+          <p className="sliderCaptionMain defbodyFont" data-aos="fade-up">
             {" "}
             <b>
               {" "}
               Innovative solutions <br />
-              for <span className="text-danger">Modern</span> Industries
+              for modern industries
             </b>
           </p>
           <p
@@ -47,19 +41,12 @@ function MainSlider() {
       </Carousel.Item>
 
       <Carousel.Item interval={3000}>
-        <CarouselImage
-          text="Second slide"
-          sliderImage={precision_2}
-        />
+        <CarouselImage text="Second slide" sliderImage={precision_2} />
         <Carousel.Caption className="sliderCaption">
-          <p
-            className="sliderCaptionMain defbodyFont"
-            data-aos="fade-up"
-          >
+          <p className="sliderCaptionMain defbodyFont" data-aos="fade-up">
             <b>
               {" "}
-              Empowering Projects <br /> with{" "}
-              <span className="text-danger">Precision.</span>
+              Empowering projects <br /> with precision
             </b>
           </p>
           <p
@@ -76,21 +63,14 @@ function MainSlider() {
       </Carousel.Item>
 
       <Carousel.Item interval={3000}>
-        <CarouselImage
-          text="Third slide"
-          sliderImage={sustainable}
-        />
+        <CarouselImage text="Third slide" sliderImage={sustainable} />
         <Carousel.Caption className="sliderCaption">
-          <p
-            className="sliderCaptionMain defbodyFont"
-            data-aos="fade-up"
-          >
+          <p className="sliderCaptionMain defbodyFont" data-aos="fade-up">
             {" "}
             <b>
               {" "}
-              Building a <span className="text-danger">
-                Sustainable
-              </span> <br /> Future{" "}
+              Building a sustainable
+              <br /> future{" "}
             </b>
           </p>
           <p

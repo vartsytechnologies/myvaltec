@@ -22,6 +22,7 @@ body {
 }
 .bg-gray {
   background-color: rgb(240, 240, 240);
+  color: black;
 }
 /*fonts*/
 .defbodyFont {

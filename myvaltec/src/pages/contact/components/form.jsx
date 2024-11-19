@@ -24,7 +24,6 @@ function ContactForm() {
 
   //Form handling
   const sendDetails = (e) => {
-    e.preventDefault();
     emailjs
       .sendForm(
         "service_i6g7h88",
@@ -46,20 +45,10 @@ function ContactForm() {
   };
 
   return (
-    <Form
-      data-aos="fade-up"
-      autoComplete="off"
-      onSubmit={sendDetails}
-    >
+    <Form data-aos="fade-up" autoComplete="off" onSubmit={sendDetails}>
       <Row className="py-3">
-        <Col
-          xs={12}
-          lg={5}
-        >
-          <Form.Group
-            as={Col}
-            className="mb-3"
-          >
+        <Col xs={12} lg={5}>
+          <Form.Group as={Col} className="mb-3">
             <Form.Label>Name</Form.Label>
             <Form.Control
               type="name"
@@ -68,11 +57,7 @@ function ContactForm() {
               name="sender_name"
             />
           </Form.Group>
-          <Form.Group
-            as={Col}
-            className="mb-3"
-            controlId="formBasicEmail"
-          >
+          <Form.Group as={Col} className="mb-3" controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
             <Form.Control
               type="email"
@@ -81,11 +66,7 @@ function ContactForm() {
               name="sender_email"
             />
           </Form.Group>
-          <Form.Group
-            as={Col}
-            className="mb-3"
-            controlId="formPhoneNumber"
-          >
+          <Form.Group as={Col} className="mb-3" controlId="formPhoneNumber">
             <Form.Label>Phone Number</Form.Label>
             <div
               className="phone-input-container w-100"
@@ -97,24 +78,21 @@ function ContactForm() {
                 onChange={setPhone}
                 inputClassName="field"
                 inputProps={{
-                  required: false,
+                  required: true,
                   placeholder: "Enter your phone number",
                   // pattern: "^\\+?[1-9][0-9]{7,14}$", // Pattern to support international numbers
                 }}
                 name="sender_phone"
               />
             </div>
+            {/* <br />
+            {error && (
+              <p style={{ color: "red", marginTop: "-20px" }}>{error}</p>
+            )} */}
           </Form.Group>
         </Col>
-        <Col
-          xs={12}
-          lg={7}
-        >
-          <Form.Group
-            as={Col}
-            md="12"
-            className="mb-3"
-          >
+        <Col xs={12} lg={7}>
+          <Form.Group as={Col} md="12" className="mb-3">
             <Form.Label>Subject</Form.Label>
             <Form.Control
               type="text"
@@ -123,11 +101,7 @@ function ContactForm() {
               name="subject"
             />
           </Form.Group>
-          <Form.Group
-            as={Col}
-            md="12"
-            className="mb-3"
-          >
+          <Form.Group as={Col} md="12" className="mb-3">
             <Form.Label>Message</Form.Label>
             <Form.Control
               style={{ resize: "none" }}

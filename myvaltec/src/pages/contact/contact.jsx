@@ -23,10 +23,7 @@ export default function Contact() {
       <Container fluid>
         <Container className="pt-5 defbodyFont">
           <Row data-aos="fade-up">
-            <Col
-              xs={12}
-              lg={6}
-            >
+            <Col xs={12} lg={6}>
               <div
                 className="div google-map w-100 d-flex align-items-center justify-content-center"
                 style={{ height: "410px" }}
@@ -36,10 +33,7 @@ export default function Contact() {
                 <Map />
               </div>
             </Col>
-            <Col
-              xs={12}
-              lg={6}
-            >
+            <Col xs={12} lg={6}>
               <div className="row">
                 <div className="col-12">
                   <div className="row mt-2">
@@ -56,7 +50,7 @@ export default function Contact() {
                           </span>
                         </b>
                         <br />
-                        Mountain View Community
+                        Mountain View Community, Pantang West.
                         <br /> Accra, Ghana.
                       </p>
                     </div>
@@ -130,10 +124,7 @@ export default function Contact() {
           >
             Make an enquiry
           </h1>
-          <p
-            className="text-center"
-            data-aos="fade-up"
-          >
+          <p className="text-center" data-aos="fade-up">
             <i>Send us your message and we will gladly respond!</i>
           </p>
 

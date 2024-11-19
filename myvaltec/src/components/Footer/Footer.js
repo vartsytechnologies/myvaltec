@@ -7,37 +7,20 @@ import footerLogo from "../../assets/valtec_logo_white.png";
 
 function Footer() {
   return (
-    <footer className="footer pt-5 pb-5 mt-5 defbodyFont">
+    <footer className="footer pt-5 mt-5 defbodyFont">
       <Container>
-        <Row>
-          <Col
-            xs={12}
-            md={4}
-            className="logo-section text-center"
-          >
-            <img
-              src={footerLogo}
-              alt="Valtec Logo"
-              className="footer-logo"
-            />
+        <Row className="mb-4">
+          <Col xs={12} md={4} className="logo-section text-center">
+            <img src={footerLogo} alt="Valtec Logo" className="footer-logo" />
             <Row className="social-icons-row ">
               <Col className="social-icons">
-                <a
-                  href="https://facebook.com"
-                  aria-label="Facebook"
-                >
+                <a href="https://facebook.com" aria-label="Facebook">
                   <FaFacebook size={30} />
                 </a>
-                <a
-                  href="https://instagram.com"
-                  aria-label="Instagram"
-                >
+                <a href="https://instagram.com" aria-label="Instagram">
                   <FaInstagram size={30} />
                 </a>
-                <a
-                  href="https://twitter.com"
-                  aria-label="X"
-                >
+                <a href="https://twitter.com" aria-label="X">
                   <FaTwitter size={30} />
                 </a>
               </Col>
@@ -71,6 +54,22 @@ function Footer() {
               <a href="/contact">Contact Us</a>
             </div>
           </Col>
+        </Row>
+      </Container>
+      <Container fluid>
+        <Row
+          style={{
+            backgroundColor: "rgba(19, 18, 18, 0.842)",
+          }}
+        >
+          <div
+            className="d-flex align-items-center justify-content-center"
+            style={{ border: "1px solid black", height: "60px" }}
+          >
+            <p className="text-center " style={{ fontSize: ".8rem" }}>
+              Designed & developed by Vartsy Systems
+            </p>
+          </div>
         </Row>
       </Container>
     </footer>
