@@ -42,32 +42,33 @@ function Footer() {
                 </a>
               </Col>
             </Row>
-            <p>© 2024 Valtec Ltd. All Rights Reserved</p>
+            <p>
+              © 2024 VALTEC Ltd. <br />
+              All Rights Reserved
+            </p>
           </Col>
           <Col
             xs={12}
             md={4}
-            className="links-section border-start ps-5"
+            className="links-section  border-0 border-sm-start border-sm-2 ps-0 ps-sm-5"
           >
-            <div className="footer-links-group">
+            <div className="footer-links-group mt-0 mt-sm-4">
+              <a href="/blog">Home</a>
               <a href="/about">About VALTEC</a>
               <a href="/markets">Markets</a>
               <a href="/services">Services</a>
-              <a href="/offices">Partners</a>
-              <a href="/projects">Projects</a>
             </div>
           </Col>
           <Col
             xs={12}
             md={4}
-            className="extra-links-section border-start"
+            className="extra-links-section  border-0 border-sm-start border-sm-2 ps-0 ps-sm-5"
           >
-            <div className="footer-links-group ps-5">
+            <div className="footer-links-group mt-0 mt-sm-4 ">
+              <a href="/offices">Partners</a>
+              <a href="/projects">Projects</a>
               <a href="/careers">Expertise</a>
               <a href="/contact">Contact Us</a>
-              <a href="/news">News</a>
-              <a href="/blog">Home</a>
-              <a href="/social-media">Social Media</a>
             </div>
           </Col>
         </Row>

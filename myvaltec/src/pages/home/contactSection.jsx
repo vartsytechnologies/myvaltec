@@ -17,8 +17,15 @@ function ContactSection() {
     });
   }, []);
   return (
-    <Container fluid data-aos="fade-up" data-aos-delay="400">
-      <Container style={{ marginBottom: "30px" }}>
+    <Container
+      fluid
+      data-aos="fade-up"
+      data-aos-delay="400"
+    >
+      <Container
+        className="mt-4"
+        style={{ marginBottom: "30px" }}
+      >
         <h1 className="mt-4 text-center defheadFont text-danger">Contact Us</h1>
         <p className="text-center defbodyFont">
           <i>
@@ -26,7 +33,10 @@ function ContactSection() {
           </i>
         </p>
         <Row>
-          <Col xs={12} lg={5}>
+          <Col
+            xs={12}
+            lg={5}
+          >
             <Row className="flex-column p-0 gx-0 defbodyFont">
               <Col className="contactForm p-3 mb-sm-2">
                 <div className="row">
@@ -34,14 +44,14 @@ function ContactSection() {
                     <div className="contactParent mt-3">
                       <div className="row">
                         <div
-                          className="col col-sm-3 col-md-2 col-lg-2 d-flex align-items-center justify-content-center"
+                          className="col-3 col-sm-2 d-flex align-items-center justify-content-center"
                           style={{
                             background: "rgba(255, 177, 193, 0.42)",
                           }}
                         >
                           <GoHomeFill className="icon" />
                         </div>
-                        <div className="col col-sm-8 col-md-10 col-lg-10">
+                        <div className="col-9 col-sm-10">
                           <div className="text ">
                             <h4
                               className="p-0 mt-3"
@@ -55,24 +65,25 @@ function ContactSection() {
                       </div>
                     </div>
                   </div>
+                  <div className="w-100"></div>
                   <div className="col-12">
-                    <div className="contactParent my-4">
+                    <div className="contactParent my-2">
                       <div className="row">
                         <div
-                          className="col col-sm-3 col-md-2 col-lg-2 d-flex align-items-center justify-content-center"
+                          className="col-3 col-sm-2 d-flex align-items-center justify-content-center"
                           style={{
                             background: "rgba(255, 177, 193, 0.42)",
                           }}
                         >
                           <LuPhoneCall className="icon" />
                         </div>
-                        <div className="col col-sm-8 col-md-10 col-lg-10">
+                        <div className="col-9 col-sm-10">
                           <div className="text ">
                             <h4
                               className="p-0 mt-3"
                               style={{ color: "rgba(255, 17, 67, 1)" }}
                             >
-                              Call Us
+                              Call
                             </h4>
                             <p className="p-0 m-0">+233 550 988 226</p>
                           </div>
@@ -84,22 +95,22 @@ function ContactSection() {
                     <div className="contactParent  mb-3">
                       <div className="row">
                         <div
-                          className="col col-sm-3 col-md-2 col-lg-2 d-flex align-items-center justify-content-center"
+                          className="col-3 col-sm-2 d-flex align-items-center justify-content-center"
                           style={{
                             background: "rgba(255, 177, 193, 0.42)",
                           }}
                         >
                           <MdEmail className="icon" />
                         </div>
-                        <div className="col col-sm-8 col-md-10 col-lg-10">
+                        <div className="col-9 col-sm-10">
                           <div className="text ">
                             <h4
                               className="p-0 mt-3"
                               style={{ color: "rgba(255, 17, 67, 1)" }}
                             >
-                              Email Us
+                              Email
                             </h4>
-                            <p className="p-0 m-0">vartsytech@gmail.com</p>
+                            <p className="p-0 m-0">sales@myvaltec.com</p>
                           </div>
                         </div>
                       </div>
@@ -109,7 +120,10 @@ function ContactSection() {
               </Col>
             </Row>
           </Col>
-          <Col xs={12} lg={7}>
+          <Col
+            xs={12}
+            lg={7}
+          >
             <Row className="flex-column p-0 gx-0 defbodyFont">
               <Col className="contactForm p-3">
                 <div className="row">
@@ -117,7 +131,11 @@ function ContactSection() {
                     <div className="contactParent mt-3 mb-4">
                       <Form>
                         <Row className="gx-1">
-                          <Form.Group as={Col} md="6" className="mb-3">
+                          <Form.Group
+                            as={Col}
+                            md="6"
+                            className="mb-3"
+                          >
                             <Form.Label>Name</Form.Label>
                             <Form.Control
                               type="name"
@@ -140,7 +158,11 @@ function ContactSection() {
                             />
                           </Form.Group>
                         </Row>
-                        <Form.Group as={Col} md="12" className="mb-3">
+                        <Form.Group
+                          as={Col}
+                          md="12"
+                          className="mb-3"
+                        >
                           <Form.Label>Subject</Form.Label>
                           <Form.Control
                             type="text"
@@ -148,7 +170,11 @@ function ContactSection() {
                             required
                           />
                         </Form.Group>
-                        <Form.Group as={Col} md="12" className="mb-3">
+                        <Form.Group
+                          as={Col}
+                          md="12"
+                          className="mb-3"
+                        >
                           <Form.Label>Message</Form.Label>
                           <Form.Control
                             style={{ resize: "none" }}

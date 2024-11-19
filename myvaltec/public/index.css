@@ -99,6 +99,7 @@ body {
 /* Initial state of the dropdown (hidden) */
 .custom-dropdown {
   position: absolute;
+  border: 1px solid red;
   top: 82%;
   left: 50%;
   transform: translateX(-50%);
@@ -135,6 +136,7 @@ body {
   background-color: #c82333;
   color: rgb(252, 255, 224);
 } */
+/*Partners*/
 
 @media (max-width: 992px) {
   .custom-dropdown {

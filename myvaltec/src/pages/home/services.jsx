@@ -53,7 +53,7 @@ function ServiceSection() {
                   <div className="main mb-5 pb-2">
                     <div className="row">
                       <div
-                        className="col-3 d-flex align-items-center justify-content-center"
+                        className="col-3 d-none d-sm-flex align-items-center justify-content-center"
                         style={{
                           background: "rgba(255, 177, 193, 0.22",
                         }}
@@ -66,7 +66,7 @@ function ServiceSection() {
                           <MdOutlineConstruction className="i-cons" />
                         </div>
                       </div>
-                      <div className="col-9">
+                      <div className="col-12 col-sm-9">
                         <div className="text-container me-2">
                           <h3
                             className="fs-5 p-0 m-0 defheadFont text-danger"
@@ -86,7 +86,7 @@ function ServiceSection() {
                             data-aos-delay="10"
                           />
                           <p
-                            className="p-0 m-0 defbodyFont justify"
+                            className="p-0 m-0 defbodyFont text-left"
                             data-aos="fade-up"
                             data-aos-delay="700"
                           >
@@ -104,7 +104,7 @@ function ServiceSection() {
                   <div className="main mb-5 pb-2">
                     <div className="row">
                       <div
-                        className="col-3 d-flex align-items-center justify-content-center"
+                        className="col-3 d-none d-sm-flex align-items-center justify-content-center"
                         style={{
                           background: "rgba(255, 177, 193, 0.22",
                         }}
@@ -118,7 +118,7 @@ function ServiceSection() {
                           <MdOutlineCompassCalibration className="i-cons" />
                         </div>
                       </div>
-                      <div className="col-9">
+                      <div className="col-12 col-sm-9">
                         <div className="text-container me-2">
                           <p
                             className="fs-5 p-0 m-0 defheadFont text-danger"
@@ -138,7 +138,7 @@ function ServiceSection() {
                             data-aos-delay="10"
                           />
                           <p
-                            className="p-0 m-0 defbodyFont justify"
+                            className="p-0 m-0 defbodyFont text-left"
                             data-aos="fade-up"
                             data-aos-delay="700"
                           >
@@ -156,7 +156,7 @@ function ServiceSection() {
                   <div className="main mb-5 pb-2">
                     <div className="row">
                       <div
-                        className="col-3 d-flex align-items-center justify-content-center"
+                        className="col-3 d-none d-sm-flex align-items-center justify-content-center"
                         style={{
                           background: "rgba(255, 177, 193, 0.22",
                         }}
@@ -169,7 +169,7 @@ function ServiceSection() {
                           <AiOutlineExperiment className="i-cons" />
                         </div>
                       </div>
-                      <div className="col-9">
+                      <div className="col-12 col-sm-9">
                         <div className="text-container me-2">
                           <p
                             className="fs-5 p-0 m-0 defheadFont text-danger"
@@ -189,7 +189,7 @@ function ServiceSection() {
                             data-aos-delay="10"
                           />
                           <p
-                            className="p-0 m-0 defbodyFont justify"
+                            className="p-0 m-0 defbodyFont text-left"
                             data-aos="fade-up"
                             data-aos-delay="700"
                           >
@@ -207,7 +207,7 @@ function ServiceSection() {
                   <div className="main mb-5 pb-2">
                     <div className="row">
                       <div
-                        className="col-3 d-flex align-items-center justify-content-center"
+                        className="col-3 d-none d-sm-flex align-items-center justify-content-center"
                         style={{
                           background: "rgba(255, 177, 193, 0.22",
                         }}
@@ -220,7 +220,7 @@ function ServiceSection() {
                           <PiMonitor className="i-cons" />
                         </div>
                       </div>
-                      <div className="col-9">
+                      <div className="col-12 col-sm-9">
                         <div className="text-container me-2">
                           <p
                             className="fs-5 p-0 m-0 defheadFont text-danger"
@@ -239,7 +239,7 @@ function ServiceSection() {
                             data-aos="fade-up"
                             data-aos-delay="10"
                           />
-                          <p className="p-0 m-0 defbodyFont justify">
+                          <p className="p-0 m-0 defbodyFont ">
                             We help companies modernize their operations while
                             safeguarding critical infrastructure, ensuring peace
                             of mind in an era of heightened cyber risks.
@@ -260,7 +260,7 @@ function ServiceSection() {
                   <div className="main mb-5 pb-2">
                     <div className="row">
                       <div
-                        className="col-3 d-flex align-items-center justify-content-center"
+                        className="col-3 d-none d-sm-flex align-items-center justify-content-center"
                         style={{
                           background: "rgba(255, 177, 193, 0.22",
                         }}
@@ -273,7 +273,7 @@ function ServiceSection() {
                           <MdOutlineSolarPower className="i-cons" />
                         </div>
                       </div>
-                      <div className="col-9">
+                      <div className="col-12 col-sm-9">
                         <div className="text-container me-2">
                           <p
                             className="fs-5 p-0 m-0 defheadFont text-danger"
@@ -293,7 +293,7 @@ function ServiceSection() {
                             data-aos-delay="10"
                           />
                           <p
-                            className="p-0 m-0 defbodyFont justify"
+                            className="p-0 m-0 defbodyFont text-left"
                             data-aos="fade-up"
                             data-aos-delay="700"
                           >
@@ -311,7 +311,7 @@ function ServiceSection() {
                   <div className="main mb-5 pb-2">
                     <div className="row">
                       <div
-                        className="col-3 d-flex align-items-center justify-content-center"
+                        className="col-3 d-none d-sm-flex align-items-center justify-content-center"
                         style={{
                           background: "rgba(255, 177, 193, 0.22",
                         }}
@@ -324,7 +324,7 @@ function ServiceSection() {
                           <MdOutlinePrecisionManufacturing className="i-cons" />
                         </div>
                       </div>
-                      <div className="col-9">
+                      <div className="col-12 col-sm-9">
                         <div className="text-container me-2">
                           <p
                             className="fs-5 p-0 m-0 defheadFont text-danger"
@@ -344,7 +344,7 @@ function ServiceSection() {
                             data-aos-delay="10"
                           />
                           <p
-                            className="p-0 m-0 defbodyFont justify"
+                            className="p-0 m-0 defbodyFont text-left"
                             data-aos="fade-up"
                             data-aos-delay="700"
                           >
@@ -362,7 +362,7 @@ function ServiceSection() {
                   <div className="main mb-5 pb-2">
                     <div className="row">
                       <div
-                        className="col-3 d-flex align-items-center justify-content-center"
+                        className="col-3 d-none d-sm-flex align-items-center justify-content-center"
                         style={{
                           background: "rgba(255, 177, 193, 0.22",
                         }}
@@ -375,7 +375,7 @@ function ServiceSection() {
                           <MdOutlineGroup className="i-cons" />
                         </div>
                       </div>
-                      <div className="col-9">
+                      <div className="col-12 col-sm-9">
                         <div className="text-container me-2">
                           <p
                             className="fs-5 p-0 m-0 defheadFont text-danger"
@@ -395,7 +395,7 @@ function ServiceSection() {
                             data-aos-delay="10"
                           />
                           <p
-                            className="p-0 m-0 defbodyFont justify"
+                            className="p-0 m-0 defbodyFont text-left"
                             data-aos="fade-up"
                             data-aos-delay="700"
                           >

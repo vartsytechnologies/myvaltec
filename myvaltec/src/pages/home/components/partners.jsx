@@ -30,14 +30,21 @@ function Partners() {
       >
         <h1 className="text-center pt-4 defheadFont">Our Partners</h1>
         <Row>
-          <Col xs={12} lg={6}>
+          <Col
+            xs={12}
+            lg={6}
+          >
             <div className="row my-4">
               <div className="col-3">
                 <div
                   className="logo-wrapper d-flex align-items-center justify-content-center flex-column "
                   style={{ height: "100px" }}
                 >
-                  <img src={kin_r} alt="Logo" className="logo fluid" />
+                  <img
+                    src={kin_r}
+                    alt="Logo"
+                    className="logo fluid"
+                  />
                   <div className="hover-text d-none">Your Hover Text</div>
                 </div>
               </div>
@@ -46,7 +53,11 @@ function Partners() {
                   className="logo-wrapper d-flex align-items-center justify-content-center flex-column "
                   style={{ height: "100px" }}
                 >
-                  <img src={ecos_r} alt="Logo" className="logo fluid" />
+                  <img
+                    src={ecos_r}
+                    alt="Logo"
+                    className="logo fluid"
+                  />
                   <div className="hover-text d-none">Your Hover Text</div>
                 </div>
               </div>
@@ -55,7 +66,11 @@ function Partners() {
                   className="logo-wrapper d-flex align-items-center justify-content-center flex-column "
                   style={{ height: "100px" }}
                 >
-                  <img src={fulltrades_r} alt="Logo" className="logo fluid" />
+                  <img
+                    src={fulltrades_r}
+                    alt="Logo"
+                    className="logo fluid"
+                  />
                   <div className="hover-text d-none">Your Hover Text</div>
                 </div>
               </div>
@@ -64,20 +79,31 @@ function Partners() {
                   className="logo-wrapper d-flex align-items-center justify-content-center flex-column "
                   style={{ height: "100px" }}
                 >
-                  <img src={kimray_r} alt="Logo" className="logo fluid" />
+                  <img
+                    src={kimray_r}
+                    alt="Logo"
+                    className="logo fluid"
+                  />
                   <div className="hover-text d-none">Your Hover Text</div>
                 </div>
               </div>
             </div>
           </Col>
-          <Col xs={12} lg={6}>
+          <Col
+            xs={12}
+            lg={6}
+          >
             <div className="row my-4">
               <div className="col-3">
                 <div
                   className="logo-wrapper d-flex align-items-center justify-content-center flex-column "
                   style={{ height: "100px" }}
                 >
-                  <img src={micin_r} alt="Logo" className="logo fluid" />
+                  <img
+                    src={micin_r}
+                    alt="Logo"
+                    className="logo fluid"
+                  />
                   <div className="hover-text d-none">Your Hover Text</div>
                 </div>
               </div>
@@ -86,7 +112,11 @@ function Partners() {
                   className="logo-wrapper d-flex align-items-center justify-content-center flex-column "
                   style={{ height: "100px" }}
                 >
-                  <img src={pana_r} alt="Logo" className="logo fluid" />
+                  <img
+                    src={pana_r}
+                    alt="Logo"
+                    className="logo fluid"
+                  />
                   <div className="hover-text d-none">Your Hover Text</div>
                 </div>
               </div>
@@ -95,7 +125,11 @@ function Partners() {
                   className="logo-wrapper d-flex align-items-center justify-content-center flex-column "
                   style={{ height: "100px" }}
                 >
-                  <img src={russ_r} alt="Logo" className="logo fluid" />
+                  <img
+                    src={russ_r}
+                    alt="Logo"
+                    className="logo fluid"
+                  />
                   <div className="hover-text d-none">Your Hover Text</div>
                 </div>
               </div>
@@ -104,7 +138,11 @@ function Partners() {
                   className="logo-wrapper d-flex align-items-center justify-content-center flex-column "
                   style={{ height: "100px" }}
                 >
-                  <img src={druck_r} alt="Logo" className="logo fluid" />
+                  <img
+                    src={druck_r}
+                    alt="Logo"
+                    className="logo fluid"
+                  />
                   <div className="hover-text d-none">Your Hover Text</div>
                 </div>
               </div>

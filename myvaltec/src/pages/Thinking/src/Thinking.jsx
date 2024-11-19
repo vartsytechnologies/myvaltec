@@ -27,6 +27,7 @@ function App() {
       <CompanyOverview />
       <Purpose />
       <Section
+        className="mt-3 me-sm-1 me-md-3 me-lg-4"
         title="Digital Innovation"
         content="The potential of harnessing digital technologies to deliver value for our client's projects drives us at VALTEC.
       We collaborate with experts and build global partnerships with leading industrial solutions to deliver transformative outcomes for our customers. 

@@ -30,7 +30,7 @@ function AboutSection() {
           <Col>
             <Row className="justify-content-between align-items-start flex-column-reverse flex-lg-row">
               <Col
-                className="ps-0 defbodyFont justify"
+                className="mt-4 me-sm-1 me-md-3 me-lg-4 ps-0 defbodyFont justify"
                 data-aos="fade-up"
                 data-aos-delay="300"
               >

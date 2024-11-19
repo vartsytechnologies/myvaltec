@@ -34,7 +34,7 @@ function MainSlider() {
             </b>
           </p>
           <p
-            className="sliderCaptionSubtext defbodyFont "
+            className="sliderCaptionSubtext defbodyFont d-none d-sm-block"
             data-aos="fade-left"
             data-aos-delay="200"
           >
@@ -63,7 +63,7 @@ function MainSlider() {
             </b>
           </p>
           <p
-            className="sliderCaptionSubtext defbodyFont"
+            className="sliderCaptionSubtext defbodyFont d-none d-sm-block"
             data-aos="fade-left"
             data-aos-delay="200"
           >
@@ -94,7 +94,7 @@ function MainSlider() {
             </b>
           </p>
           <p
-            className="sliderCaptionSubtext defbodyFont"
+            className="sliderCaptionSubtext defbodyFont d-none d-sm-block"
             data-aos="fade-left"
             data-aos-delay="200"
           >
