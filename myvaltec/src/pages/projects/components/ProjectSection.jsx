@@ -16,6 +16,7 @@ import MIG2 from "../../../assets/projectpics/MIG_Welding2.jpg";
 import MIG3 from "../../../assets/projectpics/Mig_Welding4.jpg";
 // import Galva_Welding from "../../../assets/projectpics/Galvanized_Welding.jpg";
 import imgd from "../../../assets/projectpics/image9.jpg";
+import traffic from "../../../assets/projectpics/traffic.jpg"
 
 const projects = [
   {
@@ -121,6 +122,20 @@ const projects = [
     ),
     carouselImages: [imgd, FPSOJE],
   },
+  {
+    title: "Rango Construction Limited",
+    description: "Solar traffic light installation for Suame Interchange",
+    imgSrc: traffic,
+    modalProjectName: <p className="pt-3">Rango Construction Limited</p>,
+    modalContent: (
+      <p>
+        {" "}
+        <b>Project summary</b> <br />
+        Installation of Solar traffic light for Suame Interchange Project
+      </p>
+    ),
+    carouselImages: [traffic],
+  }
 ];
 
 function ProjectSection() {

@@ -14,14 +14,24 @@ import { AiOutlineExperiment } from "react-icons/ai";
 import AOS from "aos";
 import { useEffect } from "react";
 import "aos/dist/aos.css";
+
 //service images
 import epc from "../../assets/services_img/epc.jpg";
-import calib from "../../assets/services_img/calib.jpg";
-import digital from "../../assets/services_img/digital.jpg";
-import lubricants from "../../assets/services_img/lubricants.jpg";
-import infrastructure from "../../assets/services_img/infrastructure.jpg";
+// import calib from "../../assets/services_img/calib.jpg";
+// import digital from "../../assets/services_img/digital.jpg";
+// import lubricants from "../../assets/services_img/lubricants.jpg";
+// import infrastructure from "../../assets/services_img/infrastructure.jpg";
+// import partnership from "../../assets/services_img/partnership.jpg";
+// import renewables from "../../assets/services_img/renewables.jpg";
+
+// new service images
+import calib from "../../assets/services_img/new/calib.jpeg";
+import digital from "../../assets/services_img/new/digital.jpg";
+import lubricants from "../../assets/services_img/new/fuel.png";
+import infrastructure from "../../assets/services_img/new/infra.jpg";
 import partnership from "../../assets/services_img/partnership.jpg";
-import renewables from "../../assets/services_img/renewables.jpg";
+import renewables from "../../assets/services_img/new/pv.jpg";
+
 
 function Services() {
   useEffect(() => {
@@ -43,14 +53,14 @@ function Services() {
               data-aos="fade-up"
               className="py-4"
             >
-              <Row className="justify-content-between align-items-start">
+              <Row className="justify-content-between">
                 <Col
                   xs={12}
                   lg={6}
-                  className="zoom-out-container mb-5"
+                  className="zoom-out-container mb-5 align-self-center"
                 >
                   <div
-                    className="image-Container"
+                    className="image-Container pe-3 pt-0 "
                     style={{ width: "100%", height: "auto" }}
                   >
                     <img
@@ -60,7 +70,7 @@ function Services() {
                     />
                   </div>
                 </Col>
-                <Col className="">
+                <Col className="align-self-center p-auto">
                   <p className="fs-5 p-0 m-0 defheadFont text-danger">
                     <MdOutlineConstruction className="s-icon" />
                     Engineering, Procument and Construction
@@ -96,15 +106,15 @@ function Services() {
                 <Col
                   xs={12}
                   lg={6}
-                  className="zoom-out-container mb-5"
+                  className="zoom-out-container mb-5 align-self-center"
                 >
                   <img
                     src={calib}
                     alt="Company"
-                    className="img-fluid"
+                    className="img-fluid pe-3"
                   />
                 </Col>
-                <Col>
+                <Col className="align-self-center pt-0">
                   <p className="fs-5 p-0 m-0 defheadFont text-danger">
                     <MdOutlineCompassCalibration className="s-icon" />
                     Calibration Services
@@ -148,15 +158,15 @@ function Services() {
                   <Col
                     xs={12}
                     lg={6}
-                    className="zoom-out-container mb-5"
+                    className="zoom-out-container mb-5 align-self-start"
                   >
                     <img
                       src={lubricants}
                       alt="Company"
-                      className="img-fluid"
+                      className="img-fluid pe-3"
                     />
                   </Col>
-                  <Col className="">
+                  <Col className="align-self-center">
                     <p className="fs-5 p-0 m-0 defheadFont text-danger">
                       <AiOutlineExperiment className="s-icon" /> Fuel Additives
                       and Lubricants
@@ -191,15 +201,15 @@ function Services() {
                   <Col
                     xs={12}
                     lg={6}
-                    className="zoom-out-container mb-5"
+                    className="zoom-out-container mb-5 align-self-start"
                   >
                     <img
                       src={infrastructure}
                       alt="Company"
-                      className="img-fluid"
+                      className="img-fluid pe-3"
                     />
                   </Col>
-                  <Col className="">
+                  <Col className="align-self-center">
                     <p className="fs-5 p-0 m-0 defheadFont text-danger">
                       <MdOutlinePrecisionManufacturing className="s-icon" />{" "}
                       Infrastructure and Facilities
@@ -240,15 +250,15 @@ function Services() {
                 <Col
                   xs={12}
                   lg={6}
-                  className="zoom-out-container mb-5"
+                  className="zoom-out-container mb-5 align-self-center"
                 >
                   <img
                     src={renewables}
                     alt="Company"
-                    className="img-fluid"
+                    className="img-fluid pe-3"
                   />
                 </Col>
-                <Col className="">
+                <Col className="align-self-center">
                   <p className="fs-5 p-0 m-0 defheadFont text-danger">
                     <MdOutlineSolarPower className="s-icon" />
                     Renewable Energy
@@ -276,19 +286,19 @@ function Services() {
               data-aos="fade-up"
               className="py-4"
             >
-              <Row className="justify-content-between align-items-start">
+              <Row className="justify-content-between">
                 <Col
                   xs={12}
                   lg={6}
-                  className="zoom-out-container mb-5"
+                  className="zoom-out-container mb-5 align-self-center"
                 >
                   <img
                     src={digital}
                     alt="Company"
-                    className="img-fluid"
+                    className="img-fluid pe-3 align-self-center"
                   />
                 </Col>
-                <Col className="">
+                <Col className="align-self-center">
                   <p className="fs-5 p-0 m-0 defheadFont text-danger">
                     <PiMonitor className="s-icon" />
                     Digital Solutions, IT and Cybersecurity
@@ -331,15 +341,15 @@ function Services() {
                   <Col
                     xs={12}
                     lg={6}
-                    className="zoom-out-container mb-5"
+                    className="zoom-out-container mb-5 align-self-center"
                   >
                     <img
                       src={partnership}
                       alt="Company"
-                      className="img-fluid"
+                      className="img-fluid pe-3"
                     />
                   </Col>
-                  <Col className="">
+                  <Col className="align-self-center">
                     <p className="fs-5 p-0 m-0 defheadFont text-danger">
                       <MdOutlineGroup className="s-icon" />
                       Public Private Partnerships

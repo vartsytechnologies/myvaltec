@@ -12,6 +12,12 @@ import power1 from "../../assets/markets_img/power_1.jpg";
 import mine1 from "../../assets/markets_img/mine_1.jpg";
 import gov1 from "../../assets/markets_img/gov_uk.jpg";
 import health1 from "../../assets/markets_img/health_1.jpg";
+//new images
+import gov from "../../assets/markets_img/new/Skyscrappers.jpeg";
+import mine from "../../assets/markets_img/new/Miningpit.jpeg";
+import energy from "../../assets/markets_img/new/RoofPVSolar.jpg";
+import power from "../../assets/markets_img/new/power.jpg";
+import oil from "../../assets/markets_img/new/Powerplantimg.jpeg";
 
 function MarketCard({ title }) {
   useEffect(() => {
@@ -45,7 +51,7 @@ function MarketCard({ title }) {
               </p>
               <Card.Img
                 variant="top"
-                src={oil1}
+                src={oil}
                 className="w-full h-40 object-cover rounded-t-lg"
                 data-aos="fade-up"
                 data-aos-delay="300"
@@ -72,7 +78,7 @@ function MarketCard({ title }) {
               </p>
               <Card.Img
                 variant="top"
-                src={energy1}
+                src={energy}
                 className="w-full h-40 object-cover rounded-t-lg"
                 data-aos="fade-up"
                 data-aos-delay="300"
@@ -99,7 +105,7 @@ function MarketCard({ title }) {
               </p>
               <Card.Img
                 variant="top"
-                src={mine1}
+                src={mine}
                 className="w-full h-40 object-cover rounded-t-lg"
                 data-aos="fade-up"
                 data-aos-delay="300"
@@ -153,7 +159,7 @@ function MarketCard({ title }) {
               </p>
               <Card.Img
                 variant="top"
-                src={power1}
+                src={power}
                 className="w-full h-40 object-cover rounded-t-lg"
                 data-aos="fade-up"
                 data-aos-delay="300"
@@ -205,7 +211,7 @@ function MarketCard({ title }) {
               </p>
               <Card.Img
                 variant="top"
-                src={gov1}
+                src={gov}
                 className="w-full h-40 object-cover rounded-t-lg"
                 data-aos="fade-up"
                 data-aos-delay="300"
