@@ -90,10 +90,10 @@ const projects = [
     carouselImages: [AG1, AG2, AG3],
   },
   {
-    title: "Yinson Productions",
-    description: "FPSO_JohnAgyekumKuffour",
+    title: "Yinson Productions West Africa Limited",
+    description: "Supply of various FPSO refurbishment items",
     imgSrc: FPSOJA,
-    modalProjectName: <p className="pt-3">FPSO_JohnAgyekumKuffour</p>,
+    modalProjectName: <p className="pt-3">Yinson Productions West Africa Ltd</p>,
     modalContent: (
       <p>
         {" "}
@@ -111,8 +111,8 @@ const projects = [
   {
     title: "MODEC Ghana Limited",
     description: "Supply of various  Bently Nevada accessories",
-    imgSrc: imgd,
-    modalProjectName: <p className="pt-3">FPSO_ProfJohnEvansAttaMillst</p>,
+    imgSrc: FPSOJE,
+    modalProjectName: <p className="pt-3"> </p>,
     modalContent: (
       <p>
         {" "}
@@ -120,7 +120,7 @@ const projects = [
         Supply of various Bently Nevada accessories
       </p>
     ),
-    carouselImages: [imgd, FPSOJE],
+    carouselImages: [FPSOJE],
   },
   {
     title: "Rango Construction Limited",

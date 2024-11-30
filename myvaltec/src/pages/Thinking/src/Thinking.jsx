@@ -61,7 +61,7 @@ function App() {
           extraContent={
             <>
               <h4
-                className="text-danger"
+                className="text-danger pt-3"
                 data-aos="fade-up"
               >
                 VALTEC upholds a robust QHSE policy by:
@@ -88,8 +88,10 @@ function App() {
                 risk mitigation strategies, integrating safety from the
                 project’s inception. Thorough planning safeguards employees and
                 the environment.
+                <br />
+                <span className="text-danger" data-aos="fade-up" data-aos-delay="300"><strong>VALTEC is ISO Certified </strong></span>
               </span>
-              <Container>
+              {/* <Container>
                 <Row className="ps-0 pt-2 ms-0">
                   <Col
                     xs={5}
@@ -110,7 +112,7 @@ function App() {
                     </p>
                   </Col>
                 </Row>
-              </Container>
+              </Container> */}
             </>
           }
         />

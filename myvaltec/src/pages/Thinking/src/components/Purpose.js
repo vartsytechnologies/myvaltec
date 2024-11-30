@@ -22,7 +22,7 @@ function Purpose() {
           <img
             src={purpose}
             alt="Purpose"
-            className="img-fluid"
+            className="img-fluid pb-2"
             data-aos="fade-left"
           />
         </Col>

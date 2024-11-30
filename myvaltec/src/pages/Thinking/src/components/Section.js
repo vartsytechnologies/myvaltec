@@ -25,17 +25,17 @@ function Section({ title, content, extraContent = "", imgSrc, imgOrder }) {
       </h2>
       <Row>
         <Col
-          md={7}
+          xs={12} md={6}
           className={`ps-0 order-${imgOrder} defbodyFont`}
         >
           <p
             data-aos="zoom-in-right"
-            className="justify"
+            className="text-md-justify pt-2"
           >
             {content}
           </p>
         </Col>
-        <Col md={5}>
+        <Col xs={12} md={6}>
           <img
             src={imgSrc}
             alt={title}

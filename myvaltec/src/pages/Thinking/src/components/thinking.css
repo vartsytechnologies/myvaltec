@@ -3,3 +3,10 @@
 li{
     padding-bottom: 1vh;
 }
+
+@media (min-width: 992px) {
+    .text-md-justify{
+        text-align: justify;
+    }
+  }
+  

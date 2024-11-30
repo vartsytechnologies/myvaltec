@@ -161,3 +161,8 @@ body {
   height: 60%;
   object-fit: cover;
 }
+
+/*custom utilities*/
+.text-justify{
+  text-align: justify;
+}

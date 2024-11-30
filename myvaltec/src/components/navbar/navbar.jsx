@@ -374,7 +374,7 @@ export default function NavBar() {
             dialogClassName="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"
           >
             <Modal.Header closeButton>
-              <Modal.Title>Request a quote</Modal.Title>
+              <Modal.Title>Contact Sales</Modal.Title>
             </Modal.Header>
             <Modal.Body>
               <Form

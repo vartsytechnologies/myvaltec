@@ -30,6 +30,7 @@ function Partners() {
         style={{ backgroundColor: "rgba(255, 177, 193, 0.6" }}
         data-aos="fade-up"
         data-aos-delay="300"
+        id="ourpartners"
       >
         <h1 className="text-center pt-4 defheadFont">Our Partners</h1>
         <Row>
