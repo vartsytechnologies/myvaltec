@@ -105,7 +105,7 @@ export default function NavBar() {
           className="flex-grow-1"
         >
           <Nav className="m-auto defbodyFont">
-            <Nav.Link>
+            {/* <Nav.Link>
               <NavLink
                 to="/"
                 className={({ isActive }) =>
@@ -116,7 +116,7 @@ export default function NavBar() {
               >
                 Home
               </NavLink>
-            </Nav.Link>
+            </Nav.Link> */}
             <Nav.Link>
               <NavLink
                 to="/thinking"
@@ -216,13 +216,13 @@ export default function NavBar() {
               onMouseLeave={handleMouseLeave} // Hide dropdown
             >
               {/* <hr />s */}
-              <div className="row">
-                <div className="col col-md-3 d-flex align-items-center align-self-start justify-content-center flex-column">
+              <div className="row justify-content-around">
+                <div className="col col-md-3 d-flex align-items-start align-self-start justify-content-center flex-column">
                   <h1
                     className="mt-4 ms-1 secondary defheadFont"
                     style={{ fontSize: "1.4rem" }}
                   >
-                    Markets
+                    <Link to="/markets" className="text-decoration-none text-danger">Markets</Link>
                   </h1>
                   <p className="mt-3 text-black d-none d-md-block">
                     <p className="defbodyFont">
@@ -264,12 +264,12 @@ export default function NavBar() {
                     </div>
                   </p>
                 </div>
-                <div className="col col-md-4 d-flex align-items-start justify-content-start flex-column">
+                <div className="col col-md-4 d-flex align-items-start align-self-start justify-content-start flex-column">
                   <h1
                     className="mt-4 ms-1 secondary defheadFont"
                     style={{ fontSize: "1.4rem" }}
-                  >
-                    Projects
+                  ><Link to="/projects" className="text-decoration-none text-danger">Projects</Link>
+                    
                   </h1>
                   <p className="mt-3 text-black d-none d-md-block">
                     <p className="defbodyFont">
@@ -306,12 +306,12 @@ export default function NavBar() {
                     </div>
                   </p>
                 </div>
-                <div className="col col-md-5 d-flex align-items-start justify-content-start flex-column">
+                <div className="col col-md-5 d-flex align-items-start align-self-start justify-content-start flex-column">
                   <h1
                     className="mt-4 ms-1 secondary defheadFont"
                     style={{ fontSize: "1.4rem" }}
-                  >
-                    Services
+                    
+                  ><Link to="/service" className="text-decoration-none text-danger">Services</Link>
                   </h1>
                   <p className="mt-3 text-black d-none d-md-block">
                     <p className="defbodyFont">

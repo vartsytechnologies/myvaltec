@@ -66,7 +66,7 @@ function App() {
               >
                 VALTEC upholds a robust QHSE policy by:
               </h4>
-              <span
+              <p
                 data-aos="fade-down"
                 className="justify"
               >
@@ -90,7 +90,11 @@ function App() {
                 the environment.
                 <br />
                 <span className="text-danger" data-aos="fade-up" data-aos-delay="300"><strong>VALTEC is ISO Certified </strong></span>
-              </span>
+              </p>
+              <div className="d-flex">
+              <p className="btn btn-primary me-2">ISO 9001:2015</p>
+              <p className="btn btn-primary">ISO/IEC 17025:2017</p>
+              </div>
               {/* <Container>
                 <Row className="ps-0 pt-2 ms-0">
                   <Col

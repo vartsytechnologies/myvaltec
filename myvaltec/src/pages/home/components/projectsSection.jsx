@@ -7,7 +7,8 @@ import DefaultButton from "../../../components/defaultButton";
 import { FaTools } from "react-icons/fa";
 import ENI1 from "../../../assets/projectpics/ENI_OCTP_ORF1.jpg";
 import MiG1 from "../../../assets/projectpics/MIG_Welding1.jpg";
-import img9 from "../../../assets/projectpics/image9.jpg";
+// import img9 from "../../../assets/projectpics/image9.jpg";
+import img9 from "../../../assets/projectpics/bently2.jpg";
 import { Link } from "react-router-dom";
 
 // Import your images

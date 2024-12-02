@@ -66,7 +66,7 @@ function ProjectCard({
             <Modal.Title>Project Details</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <div className="d-flex w-100">
+            <div className="">
               <Carousel>
                 {carouselImages.length > 0 ? (
                   carouselImages.map((image, idx) => (
@@ -77,7 +77,7 @@ function ProjectCard({
                       <img
                         src={image}
                         alt={`Carousel Image ${idx + 1}`}
-                        className="d-block w-100"
+                        className=""
                       />
                     </Carousel.Item>
                   ))

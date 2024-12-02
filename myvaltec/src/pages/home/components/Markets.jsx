@@ -15,20 +15,20 @@ import "aos/dist/aos.css";
 import oil_1 from "../../../assets/markets_img/new/oilA.JPG";
 import oil_2 from "../../../assets/markets_img/new/oilC.JPG";
 import energy_1 from "../../../assets/markets_img/new/RoofPVSolar.jpg";
-import energy_2 from "../../../assets/markets_img/new/SolarPV.jpeg";
-import gov_ger from "../../../assets/markets_img/new/Skyscrappers.jpeg";
-import gov_uk from "../../../assets/markets_img/new/Eco-building.png";
+import energy_2 from "../../../assets/markets_img/new/SolarPV.jpg";
+import gov_ger from "../../../assets/markets_img/new/Skyscrappers.jpg";
+import gov_uk from "../../../assets/markets_img/new/Eco-building.jpg";
 import health_1 from "../../../assets/markets_img/health_1.jpg";
 import health_3 from "../../../assets/markets_img/health_3.jpg";
-import mine_1 from "../../../assets/markets_img/new/Miningpit.jpeg";
-import mine_2 from "../../../assets/markets_img/new/Mineplant.jpeg";
-import power_1 from "../../../assets/markets_img/new/PowerPlant1.jpeg";
-import power_2 from "../../../assets/markets_img/new/PowerPlant2.jpeg";
-import tech_1 from "../../../assets/markets_img/tech1.jpg";
-import tech_drone from "../../../assets/markets_img/tech_drone.jpg";
+import mine_1 from "../../../assets/markets_img/new/Miningpit.jpg";
+import mine_2 from "../../../assets/markets_img/new/Mineplant.jpg";
+import power_1 from "../../../assets/markets_img/new/PowerPlant1.jpg";
+import power_2 from "../../../assets/markets_img/new/PowerPlant2.jpg";
+import tech_1 from "../../../assets/markets_img/new/tech1.jpg";
+import tech_drone from "../../../assets/markets_img/new/tech2.jpg";
 
 const Markets = () => {
-  const [activeTab, setActiveTab] = useState("oilGas");
+  const [activeTab, setActiveTab] = useState("tech");
 
   const tabContent = {
     oilGas: [
@@ -73,21 +73,6 @@ const Markets = () => {
           title: "Oil and Gas Infrastructure",
           description: "Lorem ipsum dolor sit amet...",
           img: mine_2,
-        },
-      ],
-    ],
-    healthcare: [
-      [{ sectionTitle: "Healthcare " }],
-      [
-        {
-          title: "healthcare",
-          description: "Lorem ipsum dolor sit amet...",
-          img: health_1,
-        },
-        {
-          title: "Renewable Energy",
-          description: "Lorem ipsum dolor sit amet...",
-          img: health_3,
         },
       ],
     ],
@@ -215,7 +200,7 @@ const Markets = () => {
               Mining
             </Nav.Link>
           </Nav.Item>
-          <Nav.Item className="defbodyFont">
+          {/* <Nav.Item className="defbodyFont">
             <Nav.Link
               eventKey="healthcare"
               style={{ color: "#fff" }}
@@ -226,7 +211,7 @@ const Markets = () => {
               />{" "}
               Healthcare
             </Nav.Link>
-          </Nav.Item>
+          </Nav.Item> */}
           <Nav.Item className="defbodyFont">
             <Nav.Link
               eventKey="power"

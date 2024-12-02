@@ -12,13 +12,12 @@ import ENI3 from "../../../assets/projectpics/ENI_OCTP_ORF3.jpg";
 import FPSOJA from "../../../assets/projectpics/FPSO_John_ Agyekum_Kuffour.jpg";
 import FPSOJE from "../../../assets/projectpics/FPSO_ProfJohnEvansAttaMills.jpg";
 import MIG1 from "../../../assets/projectpics/MIG_Welding1.jpg";
-import MIG2 from "../../../assets/projectpics/MIG_Welding2.jpg";
-import MIG3 from "../../../assets/projectpics/Mig_Welding4.jpg";
-import bently1 from "../../../assets/projectpics/bently.jpeg";
-import bently2 from "../../../assets/projectpics/bently2.jpeg";
+import MIG2 from "../../../assets/projectpics/MIG_Welding4.jpg";
+import MIG3 from "../../../assets/projectpics/MIG_Welding4.jpg";
+import bently1 from "../../../assets/projectpics/bently.jpg";
+import bently2 from "../../../assets/projectpics/bently2.jpg";
 import bently3 from "../../../assets/projectpics/bently3.jpg";
 // import Galva_Welding from "../../../assets/projectpics/Galvanized_Welding.jpg";
-import imgd from "../../../assets/projectpics/image9.jpg";
 import traffic from "../../../assets/projectpics/traffic.jpg"
 
 const projects = [
@@ -114,7 +113,7 @@ const projects = [
   {
     title: "MODEC Ghana Limited",
     description: "Supply of various  Bently Nevada accessories",
-    imgSrc: FPSOJE,
+    imgSrc: bently1,
     modalProjectName: <p className="pt-3"> </p>,
     modalContent: (
       <p>

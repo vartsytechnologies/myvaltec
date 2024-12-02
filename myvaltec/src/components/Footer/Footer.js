@@ -40,7 +40,7 @@ function Footer() {
               <Link to="/">Home</Link>
               <Link to="/thinking">About VALTEC</Link>
               <Link to="/markets">Markets</Link>
-              <Link href="/service">Services</Link>
+              
             </div>
           </Col>
           <Col
@@ -49,7 +49,7 @@ function Footer() {
             className="extra-links-section  border-0 border-sm-start border-sm-2 ps-0 ps-sm-5"
           >
             <div className="footer-links-group mt-0 mt-sm-4 ">
-              <Link to="/#ourpartners">Partners</Link>
+            <Link to="/service">Services</Link>
               <Link to="/projects">Projects</Link>
               {/* <a href="/">Expertise</a> */}
               <Link to="/contact">Contact Us</Link>
