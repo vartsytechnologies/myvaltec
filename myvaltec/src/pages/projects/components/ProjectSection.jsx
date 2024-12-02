@@ -14,6 +14,9 @@ import FPSOJE from "../../../assets/projectpics/FPSO_ProfJohnEvansAttaMills.jpg"
 import MIG1 from "../../../assets/projectpics/MIG_Welding1.jpg";
 import MIG2 from "../../../assets/projectpics/MIG_Welding2.jpg";
 import MIG3 from "../../../assets/projectpics/Mig_Welding4.jpg";
+import bently1 from "../../../assets/projectpics/bently.jpeg";
+import bently2 from "../../../assets/projectpics/bently2.jpeg";
+import bently3 from "../../../assets/projectpics/bently3.jpg";
 // import Galva_Welding from "../../../assets/projectpics/Galvanized_Welding.jpg";
 import imgd from "../../../assets/projectpics/image9.jpg";
 import traffic from "../../../assets/projectpics/traffic.jpg"
@@ -120,7 +123,7 @@ const projects = [
         Supply of various Bently Nevada accessories
       </p>
     ),
-    carouselImages: [FPSOJE],
+    carouselImages: [bently1, bently2, bently3],
   },
   {
     title: "Rango Construction Limited",

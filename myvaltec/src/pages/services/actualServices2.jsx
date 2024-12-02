@@ -104,7 +104,7 @@ function Services() {
                     }}
                   />
                   <span className="defbodyFont d-block">
-                    Valtec Limited offers comprehensive EPC (Engineering,
+                    VALTEC Limited offers comprehensive EPC (Engineering,
                     Procurement, and Construction) services, tailored to meet
                     the complex needs of the energy, mining, oil, and gas
                     sectors. Our team brings a wealth of experience, utilizing
@@ -154,7 +154,7 @@ function Services() {
                     In an industry where accuracy is paramount, our Calibration
                     Services provide reliable, precise calibrations for
                     industrial equipment across energy, mining, and oil & gas
-                    sectors. Valtec Limited is dedicated to maintaining optimal
+                    sectors. VALTEC Limited is dedicated to maintaining optimal
                     performance and regulatory compliance by utilizing
                     state-of-the-art calibration tools. Our services reduce
                     downtime and improve operational safety, delivering the
@@ -203,7 +203,7 @@ function Services() {
                       }}
                     />
                     <span className="defbodyFont d-block">
-                      Valtec Limited offers a range of high-quality fuel
+                      VALTEC Limited offers a range of high-quality fuel
                       additives and lubricants designed to enhance equipment
                       performance, reduce emissions, and extend machinery life.
                       Our solutions are formulated for the demanding conditions
@@ -250,7 +250,7 @@ function Services() {
                       Our Infrastructure and Facilities services cater to the
                       specific requirements of the industrial sector, providing
                       reliable, tailored solutions for facility management,
-                      construction, and maintenance. Valtec Limited leverages
+                      construction, and maintenance. VALTEC Limited leverages
                       its local expertise and global network to support
                       infrastructure projects, ensuring optimal functionality
                       and safety standards in every project. We are dedicated to
@@ -296,7 +296,7 @@ function Services() {
                       margin: "0.5rem 0",
                     }}
                   />
-                  Valtec Limited is committed to promoting sustainable growth
+                  VALTEC Limited is committed to promoting sustainable growth
                   through renewable energy solutions. From solar and wind to
                   bioenergy, we design and implement clean energy projects that
                   help reduce carbon footprints and energy costs. Our renewable
@@ -338,7 +338,7 @@ function Services() {
                     }}
                   />
                   <span className="defbodyFont d-block">
-                    In an increasingly digital world, Valtec Limited provides
+                    In an increasingly digital world, VALTEC Limited provides
                     cutting-edge IT and cybersecurity solutions tailored for
                     industrial environments. Our team of experts secures
                     operational technology (OT) systems against emerging cyber
@@ -390,7 +390,7 @@ function Services() {
                       }}
                     />
                     <span className="defbodyFont d-block">
-                      Valtec Limited fosters strategic public-private
+                      VALTEC Limited fosters strategic public-private
                       partnerships to drive innovation, enhance infrastructure,
                       and boost economic growth in West Africa. Our
                       collaborative approach connects government entities and

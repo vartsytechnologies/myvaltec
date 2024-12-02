@@ -12,18 +12,18 @@ import {
 import AOS from "aos";
 import "aos/dist/aos.css";
 //market images
-import oil_1 from "../../../assets/markets_img/oil_1.jpg";
-import oil_2 from "../../../assets/markets_img/oil_2.jpg";
-import energy_1 from "../../../assets/markets_img/energy_1.jpg";
-import energy_2 from "../../../assets/markets_img/energy_2.jpg";
-import gov_ger from "../../../assets/markets_img/gov_ger.jpg";
-import gov_uk from "../../../assets/markets_img/gov_uk.jpg";
+import oil_1 from "../../../assets/markets_img/new/oilA.JPG";
+import oil_2 from "../../../assets/markets_img/new/oilC.JPG";
+import energy_1 from "../../../assets/markets_img/new/RoofPVSolar.jpg";
+import energy_2 from "../../../assets/markets_img/new/SolarPV.jpeg";
+import gov_ger from "../../../assets/markets_img/new/Skyscrappers.jpeg";
+import gov_uk from "../../../assets/markets_img/new/Eco-building.png";
 import health_1 from "../../../assets/markets_img/health_1.jpg";
 import health_3 from "../../../assets/markets_img/health_3.jpg";
-import mine_1 from "../../../assets/markets_img/mine_1.jpg";
-import mine_2 from "../../../assets/markets_img/mine_2.jpg";
-import power_1 from "../../../assets/markets_img/power_1.jpg";
-import power_2 from "../../../assets/markets_img/power_2.jpg";
+import mine_1 from "../../../assets/markets_img/new/Miningpit.jpeg";
+import mine_2 from "../../../assets/markets_img/new/Mineplant.jpeg";
+import power_1 from "../../../assets/markets_img/new/PowerPlant1.jpeg";
+import power_2 from "../../../assets/markets_img/new/PowerPlant2.jpeg";
 import tech_1 from "../../../assets/markets_img/tech1.jpg";
 import tech_drone from "../../../assets/markets_img/tech_drone.jpg";
 

@@ -176,7 +176,7 @@ function ServiceSection() {
                             data-aos="fade-up"
                             data-aos-delay="600"
                           >
-                            Fuel Additives and Lubricants
+                            Additives : Fuel, Lubricants and Greases
                           </p>
                           <hr
                             style={{

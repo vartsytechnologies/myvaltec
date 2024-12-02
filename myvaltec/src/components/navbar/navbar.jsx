@@ -217,7 +217,7 @@ export default function NavBar() {
             >
               {/* <hr />s */}
               <div className="row">
-                <div className="col col-md-3 d-flex align-items-start justify-content-center flex-column">
+                <div className="col col-md-3 d-flex align-items-center align-self-start justify-content-center flex-column">
                   <h1
                     className="mt-4 ms-1 secondary defheadFont"
                     style={{ fontSize: "1.4rem" }}
@@ -227,7 +227,7 @@ export default function NavBar() {
                   <p className="mt-3 text-black d-none d-md-block">
                     <p className="defbodyFont">
                       {" "}
-                      <RiArrowRightSLine className="me-2 " /> Oil & Gas
+                      <RiArrowRightSLine className="me-2 " /> Oil and Gas
                     </p>
                     <p className="defbodyFont">
                       {" "}
@@ -239,7 +239,15 @@ export default function NavBar() {
                     </p>
                     <p className="defbodyFont">
                       {" "}
-                      <RiArrowRightSLine className="me-2 " /> Healthcare
+                      <RiArrowRightSLine className="me-2 " /> Power
+                    </p>
+                    <p className="defbodyFont">
+                      {" "}
+                      <RiArrowRightSLine className="me-2 " /> Technology
+                    </p>
+                    <p className="defbodyFont">
+                      {" "}
+                      <RiArrowRightSLine className="me-2 " /> Governments
                     </p>
                     <div className="mb-3 pt-3 d-flex align-items-center justify-content-center">
                       <Link
@@ -267,7 +275,7 @@ export default function NavBar() {
                     <p className="defbodyFont">
                       {" "}
                       <RiArrowRightSLine className="me-2 " /> ENI Ghana
-                      Exploration & Production Limited
+                      Exploration & Production Limitd
                     </p>
                     <p className="defbodyFont">
                       {" "}
@@ -276,7 +284,7 @@ export default function NavBar() {
                     </p>
                     <p className="defbodyFont">
                       {" "}
-                      <RiArrowRightSLine className="me-2 " /> Yinson Productions
+                      <RiArrowRightSLine className="me-2 " /> Yinson Productions West Africa Limited
                     </p>
                     <p className="defbodyFont">
                       {" "}
@@ -314,17 +322,37 @@ export default function NavBar() {
                     <p className="defbodyFont">
                       {" "}
                       <RiArrowRightSLine className="me-2 " />
-                      Fuel Additives and Lubricants
+                      Calibration
                     </p>
                     <p className="defbodyFont">
                       {" "}
                       <RiArrowRightSLine className="me-2 " />
-                      Digital Solutions, IT and Cybersecurity
+                      Additives : Fuel, Lubricants and Greases
                     </p>
                     <p className="defbodyFont">
                       {" "}
                       <RiArrowRightSLine className="me-2 " />
-                      Healthcare
+                      Infrastructure and Facilities
+                    </p>
+                    <p className="defbodyFont">
+                      {" "}
+                      <RiArrowRightSLine className="me-2 " />
+                      Renewable Energy
+                    </p>
+                    <p className="defbodyFont">
+                      {" "}
+                      <RiArrowRightSLine className="me-2 " />
+                      Digital Solutions
+                    </p>
+                    <p className="defbodyFont">
+                      {" "}
+                      <RiArrowRightSLine className="me-2 " />
+                      Public Private Partnerships
+                    </p>
+                    <p className="defbodyFont">
+                      {" "}
+                      <RiArrowRightSLine className="me-2 " />
+                      Sustainability
                     </p>
                     <div className="mb-3 pt-3 d-flex align-items-start justify-content-start rounded">
                       <Link

@@ -24,6 +24,7 @@ import lubricants from "../../assets/services_img/new/fuel.png";
 import infrastructure from "../../assets/services_img/new/infra.jpg";
 import partnership from "../../assets/services_img/partnership.jpg";
 import renewables from "../../assets/services_img/new/pv.jpg";
+import sustainability from "../../assets/services_img/new/sustainability2.jpg";
 
 // Define the service items with their data
 const serviceItems = [
@@ -69,12 +70,15 @@ const serviceItems = [
 
   },
   {
-    name: "Digital Solutions, IT and Cybersecurity",
+    name: "Digital Solutions",
     initialImage: digital,
     carouselImages: [digital],
     icon: <PiMonitor className="s-icon" />,
     description:
-      "In an increasingly digital world, VALTEC Limited provides cutting-edge IT and cybersecurity solutions tailored for industrial environments. Our team of experts secures operational technology (OT) systems against emerging cyber threats and integrates advanced digital solutions to drive operational efficiency. We help companies modernize their operations while safeguarding critical infrastructure, ensuring peace of mind in an era of heightened cyber risks."
+      <ul>
+        <li>Data and Analytics</li>
+        <li>Visualization and Immersive Storytelling</li>
+      </ul>
   },
   {
     name: "Public Private Partnerships",
@@ -83,6 +87,18 @@ const serviceItems = [
     icon: <MdOutlineGroup className="s-icon" />,
     description:
       "VALTEC Limited fosters strategic public-private partnerships to drive innovation, enhance infrastructure, and boost economic growth in West Africa. Our collaborative approach connects government entities and private enterprises, fostering projects that benefit communities and contribute to sustainable development. By leveraging our industry expertise, we create mutually beneficial partnerships that address critical infrastructure and service needs."
+  },
+  {
+    name: "Sustainability",
+    initialImage: sustainability,
+    carouselImages: [sustainability],
+    icon: <MdOutlineGroup className="s-icon" />,
+    description:
+      <ul>
+        <li>Risk and assurance Strategy
+        </li>
+        <li>Energy and emissions modeling</li>
+      </ul>
   },
 ];
 
@@ -112,7 +128,7 @@ function Services() {
           <Row className="flex-column gy-2 mt-5">
             {serviceItems.map((service, idx) => (
               <Col key={idx} data-aos="fade-up" className="py-0">
-                <Row className="justify-content-between align-items-start">
+                <Row className="justify-content-between align-items-center">
                   <Col xs={12} lg={6} className="zoom-out-container mb-5 align-self-center">
                     <OverlayTrigger
                       placement="top"
@@ -137,9 +153,10 @@ function Services() {
                         borderTop: "2px solid rgba(255,17,67,1)",
                         borderRadius: "4px",
                         opacity: "1",
+                        
                       }}
                     />
-                    <span className="defbodyFont d-block pb-0">{service.description}</span>
+                    <span className="defbodyFont d-block pb-1">{service.description}</span>
                     <ContactSalesBtn />
                   </Col>
                 </Row>

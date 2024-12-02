@@ -18,6 +18,7 @@ import mine from "../../assets/markets_img/new/Miningpit.jpeg";
 import energy from "../../assets/markets_img/new/RoofPVSolar.jpg";
 import power from "../../assets/markets_img/new/power.jpg";
 import oil from "../../assets/markets_img/new/Powerplantimg.jpeg";
+import oilA from "../../assets/markets_img/new/oilA.JPG";
 
 function MarketCard({ title }) {
   useEffect(() => {
@@ -47,11 +48,11 @@ function MarketCard({ title }) {
                 data-aos="fade-up"
                 data-aos-delay="300"
               >
-                Valtec undertakes projects in the OIl and Gas market.
+                VALTEC undertakes projects in the OIl and Gas market.
               </p>
               <Card.Img
                 variant="top"
-                src={oil}
+                src={oilA}
                 className="w-full h-40 object-cover rounded-t-lg"
                 data-aos="fade-up"
                 data-aos-delay="300"
@@ -101,7 +102,7 @@ function MarketCard({ title }) {
                 data-aos="fade-up"
                 data-aos-delay="300"
               >
-                All your needs at the mining site will be catered for by valtec.
+                All your needs at the mining site will be catered for by VALTEC.
               </p>
               <Card.Img
                 variant="top"
