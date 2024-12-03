@@ -95,28 +95,6 @@ function App() {
               <p className="btn btn-primary me-2">ISO 9001:2015</p>
               <p className="btn btn-primary">ISO/IEC 17025:2017</p>
               </div>
-              {/* <Container>
-                <Row className="ps-0 pt-2 ms-0">
-                  <Col
-                    xs={5}
-                    className="ps-0"
-                    data-aos="fade-up"
-                  >
-                    <p className="btn btn-primary w-100 mt-2 ms-0 p-3">
-                      ISO 9001 certification
-                    </p>
-                  </Col>
-                  <Col
-                    xs={5}
-                    className="ps-0"
-                    data-aos="fade-up"
-                  >
-                    <p className="btn btn-primary w-100 mt-2 ms-0 p-3">
-                      ISO 17025 certification
-                    </p>
-                  </Col>
-                </Row>
-              </Container> */}
             </>
           }
         />

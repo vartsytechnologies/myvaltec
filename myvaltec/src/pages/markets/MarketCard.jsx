@@ -20,6 +20,8 @@ import power from "../../assets/markets_img/new/PowerPlant.jpg";
 import oil from "../../assets/markets_img/new/Powerplantimg.jpeg";
 import oilA from "../../assets/markets_img/new/oilA.JPG";
 
+import serv_bg from "../../assets/services_img/white-unsplash-9d0375d2.jpg"
+
 function MarketCard({ title }) {
   useEffect(() => {
     AOS.init({
@@ -28,7 +30,7 @@ function MarketCard({ title }) {
     });
   });
   return (
-    <Container>
+    <Container >
       <Row
         xs={1}
         md={2}
