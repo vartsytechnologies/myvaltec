@@ -16,7 +16,7 @@ import fuelox from "../../../assets/partnerIcons/fuelox.png"
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const partners = [kin_r, agamine_r, fulltrades_r, kimray_r, micin_r, pana_r, russ_r, druck_r, cans_r, huawei_e,, fuelox]
+const partners = [[kin_r, 'https://www.generalkinematics.com'], [agamine_r, 'https://www.agaminesolar.com'], [fulltrades_r, 'https://www.fulltrades.com'], [kimray_r, 'https://www.kimray.com'], [micin_r, 'https://www.microtransindia.com'], [pana_r, 'https://www.bakerhughes.com/panametrics'], [russ_r, 'https://www.rmeglobal.com'], [druck_r, 'https://www.bakerhughes.com/druck'], [cans_r, 'https://www.canadiansolar.com'], [huawei_e, 'https://www.huawei.com'], [fuelox, 'https://www.fuelox.com']]
 
 function Partners() {
   useEffect(() => {
@@ -32,7 +32,7 @@ function Partners() {
         <Row className="align-items-around justify-content-center mt-0 pt-0 pb-5 mb-5" >
             {partners.map((partner, index)=>(
                 (<Col xs={6} sm={4} md={3} className="align-self-center justify-content-center my-0 py-0">
-                    <img src={partner} alt="valtec partner" style={{width:'75%'}} />
+                    <a href={`${partner[1]}`} target="blank"><img src={partner[0]} alt="valtec partner" style={{width:'75%'}} /></a>
                 </Col>)
             ))}
         </Row>

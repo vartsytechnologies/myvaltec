@@ -89,7 +89,7 @@ function App() {
                 project’s inception. Thorough planning safeguards employees and
                 the environment.
                 <br />
-                <span className="text-danger" data-aos="fade-up" data-aos-delay="300"><strong>VALTEC is ISO Certified </strong></span>
+                
               </p>
               <div className="d-flex">
               <p className="btn btn-primary me-2">ISO 9001:2015</p>

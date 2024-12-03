@@ -23,7 +23,7 @@ import lubricants from "../../assets/services_img/new/fuel.png";
 import infrastructure from "../../assets/services_img/new/infra.jpg";
 import partnership from "../../assets/services_img/partnership.jpg";
 import renewables from "../../assets/services_img/new/pv.jpg";
-import sustainability from "../../assets/services_img/new/sustainability2.jpg";
+import sustainability from "../../assets/services_img/new/sustainability2.JPG";
 
 //service carousel images
 import ca_calib from "../../assets/services_img/new/calib/dpi620-is1.jpeg";
@@ -52,7 +52,7 @@ import epc4 from "../../assets/services_img/new/epc/epc4.jpg";
 // Service items with their data
 const serviceItems = [
   {
-    name: "EPC Services",
+    name: "Engineering Procurement and Construction Services",
     initialImage: epc1,
     imgOrder: 0,
     carouselImages: [epc1, epc2, epc3, epc4],
@@ -105,8 +105,13 @@ const serviceItems = [
     icon: <PiMonitor className="s-icon" />,
     description:
       <ul>
-        <li>Data and Analytics</li>
-        <li>Visualization and Immersive Storytelling</li>
+        <li><strong>Data Analytics</strong>
+          <br/><span>We help businesses make smarter decisions by turning raw data into actionable insights.</span>
+        </li>
+        
+        <li><strong>Visualization and Immersive Storytelling</strong>
+          <br/><span>VALTEC brings your data to life with stunning visuals and engaging stories.</span>
+        </li>
       </ul>
   },
   {
@@ -126,9 +131,12 @@ const serviceItems = [
     icon: <MdOutlineGroup className="s-icon" />,
     description:
       <ul>
-        <li>Risk and assurance Strategy
+        <li><strong>Risk and assurance Strategy</strong>
+          <br/>We help you identify risks and build strategies that ensure sustainable, long-term success.
         </li>
-        <li>Energy and emissions modeling</li>
+        <li><strong>Energy and emissions modeling</strong>
+        <br/>Our solutions help you track energy use and reduce emissions for a greener, efficient future.
+        </li>
       </ul>
   },
 ];
@@ -192,7 +200,7 @@ function Services() {
                         
                       }}
                     />
-                    <span className="defbodyFont d-block pb-1">{service.description}</span>
+                    <p className="defbodyFont d-block pb-1">{service.description}</p>
                     <ContactSalesBtn />
                   </Col>
                 </Row>

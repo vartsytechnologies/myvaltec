@@ -16,6 +16,7 @@ import oil_1 from "../../../assets/markets_img/new/oilA.JPG";
 import oil_2 from "../../../assets/markets_img/new/oilC.JPG";
 import energy_1 from "../../../assets/markets_img/new/RoofPVSolar.jpg";
 import energy_2 from "../../../assets/markets_img/new/SolarPV.jpg";
+import lights from "../../../assets/markets_img/new/lights.jpg";
 import gov_ger from "../../../assets/markets_img/new/Skyscrappers.jpg";
 import gov_uk from "../../../assets/markets_img/new/Eco-building.jpg";
 import health_1 from "../../../assets/markets_img/health_1.jpg";
@@ -52,12 +53,12 @@ const Markets = () => {
         {
           title: "Renewable Energy",
           description: "Lorem ipsum dolor sit amet...",
-          img: energy_1,
+          img: lights,
         },
         {
           title: "Renewable Energy",
           description: "Lorem ipsum dolor sit amet...",
-          img: energy_2,
+          img: energy_1,
         },
       ],
     ],

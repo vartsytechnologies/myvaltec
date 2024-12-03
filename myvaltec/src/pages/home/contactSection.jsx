@@ -59,7 +59,8 @@ function ContactSection() {
                             >
                               Address
                             </h4>
-                            <p className="p-0 m-0">Kasoa, Accra, Ghana.</p>
+                            <p className="p-0 m-0">
+                            Mountain View Community, Pantang West. | Accra, Ghana.</p>
                           </div>
                         </div>
                       </div>
@@ -85,7 +86,7 @@ function ContactSection() {
                             >
                               Call
                             </h4>
-                            <p className="p-0 m-0">+233 550 988 226</p>
+                            <p className="p-0 m-0">(+233) 53 404 0014</p>
                           </div>
                         </div>
                       </div>

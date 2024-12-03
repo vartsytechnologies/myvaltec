@@ -105,18 +105,6 @@ export default function NavBar() {
           className="flex-grow-1"
         >
           <Nav className="m-auto defbodyFont">
-            {/* <Nav.Link>
-              <NavLink
-                to="/"
-                className={({ isActive }) =>
-                  isActive
-                    ? "text-danger text-decoration-none"
-                    : "text-dark text-decoration-none"
-                }
-              >
-                Home
-              </NavLink>
-            </Nav.Link> */}
             <Nav.Link>
               <NavLink
                 to="/thinking"
@@ -174,38 +162,10 @@ export default function NavBar() {
             variant="primary"
             onClick={handleShow}
           >
-            Request a quote
+            Contact Sales
           </Button>
 
-          {/* Dropdown Items - Positioned Outside Navbar */}
-          {/* {showDropdown && (
-            <div
-              className="custom-dropdown"
-              ref={dropdownRef}
-            >
-              <Link
-                to="/markets"
-                className="dropdown-item defbodyFont"
-                onClick={() => setShowDropdown(false)}
-              >
-                Markets
-              </Link>
-              <Link
-                to="/projects"
-                className="dropdown-item defbodyFont"
-                onClick={() => setShowDropdown(false)}
-              >
-                Projects
-              </Link>
-              <Link
-                to="/service"
-                className="dropdown-item defbodyFont"
-                onClick={() => setShowDropdown(false)}
-              >
-                Services
-              </Link>
-            </div>
-          )} */}
+          
           {showDropdown && (
             <div
               className={`container custom-dropdown bg-light ${
@@ -370,28 +330,6 @@ export default function NavBar() {
                   </p>
                 </div>
               </div>
-
-              {/* <Link
-                to="/markets"
-                className="dropdown-item defbodyFont"
-                onClick={() => setShowDropdown(false)}
-              >
-                Markets
-              </Link>
-              <Link
-                to="/projects"
-                className="dropdown-item defbodyFont"
-                onClick={() => setShowDropdown(false)}
-              >
-                Projects
-              </Link>
-              <Link
-                to="/service"
-                className="dropdown-item defbodyFont"
-                onClick={() => setShowDropdown(false)}
-              >
-                Services
-              </Link> */}
             </div>
           )}
 
