@@ -1,9 +1,10 @@
-import React from "react";
+import { React } from "react";
 import Banner from "../../../components/banner/Banner";
 import CompanyOverview from "./components/CompanyOverview";
 import Purpose from "./components/Purpose";
 import Section from "./components/Section";
 import { Container, Row, Col } from "react-bootstrap";
+import Card from "react-bootstrap/Card";
 import valtec_digital from "../../../assets/valtec_digital.jpg";
 import quality_assurance from "../../../assets/quality_assurance.jpg";
 import ethics_and_compliance from "../../../assets/ethics_and_compliance.jpg";
@@ -12,6 +13,29 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import the CSS styles;
 import "./components/thinking.css";
+
+const teamMembers = [
+  {
+    name: "Jason Michaels",
+    title: "Chairman and CEO",
+    image: "https://via.placeholder.com/150", // Replace with the actual image URL
+  },
+  {
+    name: "Jason Michaels",
+    title: "Lead Director",
+    image: "https://via.placeholder.com/150",
+  },
+  {
+    name: "Jason Michaels",
+    title: "Chairman and CEO",
+    image: "https://via.placeholder.com/150",
+  },
+  {
+    name: "Jason Michaels",
+    title: "Chairman and CEO",
+    image: "https://via.placeholder.com/150",
+  },
+];
 
 function App() {
   useEffect(() => {
@@ -46,10 +70,7 @@ function App() {
         imgSrc={ethics_and_compliance}
         imgOrder={1}
       />
-      <Container
-        fluid
-        className="bg-gray py-5"
-      >
+      <Container fluid className="bg-gray py-5">
         <Section
           title="Quality and Assurance"
           content="When we get it wrong, the consequences can be severe. We fully recognize our duty to develop safe
@@ -60,16 +81,10 @@ function App() {
           imgSrc={quality_assurance}
           extraContent={
             <>
-              <h4
-                className="text-danger pt-3"
-                data-aos="fade-up"
-              >
+              <h4 className="text-danger pt-3" data-aos="fade-up">
                 VALTEC upholds a robust QHSE policy by:
               </h4>
-              <p
-                data-aos="fade-down"
-                className="justify"
-              >
+              <p data-aos="fade-down" className="justify">
                 Establishing clear and measurable Quality Objectives across all
                 operational sectors is imperative. Continuous monitoring,
                 evaluation, and enhancement of the Quality System and its
@@ -89,15 +104,45 @@ function App() {
                 project’s inception. Thorough planning safeguards employees and
                 the environment.
                 <br />
-                <span className="text-danger" data-aos="fade-up" data-aos-delay="300"><strong>VALTEC is ISO Certified </strong></span>
+                <span
+                  className="text-danger"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  <strong>VALTEC is ISO Certified </strong>
+                </span>
               </p>
               <div className="d-flex">
-              <p className="btn btn-primary me-2">ISO 9001:2015</p>
-              <p className="btn btn-primary">ISO/IEC 17025:2017</p>
+                <p className="btn btn-primary me-2">ISO 9001:2015</p>
+                <p className="btn btn-primary">ISO/IEC 17025:2017</p>
               </div>
             </>
           }
         />
+      </Container>
+      <Container>
+        <div>
+          <h4 className="text-secondary pt-3 mt-5" data-aos="fade-up">
+            Team Members
+          </h4>
+        </div>
+        <Row className="p-0 gx-0 defbodyFont my-5">
+          <Col lg={12}>
+            <Row>
+              {teamMembers.map((member, index) => (
+                <Col key={index} xs={12} sm={6} md={4} lg={3} className="mb-4">
+                  <Card className="text-center">
+                    <Card.Img variant="top" src={quality_assurance} />
+                    <Card.Body>
+                      <Card.Title>{member.name}</Card.Title>
+                      <Card.Text>{member.title}</Card.Text>
+                    </Card.Body>
+                  </Card>
+                </Col>
+              ))}
+            </Row>
+          </Col>
+        </Row>
       </Container>
     </>
   );

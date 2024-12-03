@@ -11,7 +11,7 @@ import russ_r from "../../../assets/partnerIcons/russ_r.png";
 import druck_r from "../../../assets/partnerIcons/druck_r.png";
 import cans_r from "../../../assets/partnerIcons/cans_r.png";
 import huawei_e from "../../../assets/partnerIcons/huawei_e.png";
-import fuelox from "../../../assets/partnerIcons/fuelox.png"
+import fuelox from "../../../assets/partnerIcons/fuelox.png";
 // import druck_r from "../../../assets/partnerIcons/druck_r.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -28,7 +28,7 @@ function Partners() {
       <Container
         className="my-5"
         fluid
-        style={{backgroundColor: "rgba(255, 177, 193, 0.6" }}
+        style={{ backgroundColor: "rgba(255, 177, 193, 0.6" }}
         data-aos="fade-up"
         data-aos-delay="300"
         id="ourpartners"
@@ -43,7 +43,7 @@ function Partners() {
                   style={{ height: "100px" }}
                 >
                   <img src={huawei_e} alt="Logo" className="logo fluid" />
-                  <div className="hover-text d-none">Your Hover Text</div>
+                  <div className="hover-text ">Your Hover Text</div>
                 </div>
               </div>
               <div className="col-3">
@@ -115,7 +115,7 @@ function Partners() {
               </div>
             </div>
           </Col>
-  
+
           <Col xs={12} lg={6}>
             <div class="row">
               {/* <div className="col-0 col-sm-3 "></div>
