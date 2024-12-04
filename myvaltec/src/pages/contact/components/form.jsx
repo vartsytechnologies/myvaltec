@@ -26,10 +26,10 @@ function ContactForm() {
   const sendDetails = (e) => {
     emailjs
       .sendForm(
-        "service_i6g7h88",
-        "template_ndyziwj",
+        process.env.REACT_APP_CONTACT_SERVICE,
+        process.env.REACT_APP_CONTACT_TEMP,
         e.target,
-        "yuJupxGb9q30_RgV8"
+        process.env.REACT_APP_CONTACT_PUBK
       )
       .then(
         (result) => {

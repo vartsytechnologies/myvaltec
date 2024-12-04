@@ -65,10 +65,10 @@ export default function NavBar() {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_i6g7h88",
-        "template_5tlbi6m",
+        process.env.REACT_APP_REQ_A_QUOTE_SERVICE,
+        process.env.REACT_APP_REQ_A_QUOTE_TEMP,
         e.target,
-        "yuJupxGb9q30_RgV8"
+        process.ENV.REACT_APP_REQ_A_QUOTE_PUBK
       )
       .then(
         (result) => {
@@ -394,11 +394,6 @@ export default function NavBar() {
                           inputClassName="field"
                           required
                           placeholder="Enter your phone number"
-                          // inputProps={{
-                          //   required: false,
-                          //   placeholder: "Enter your phone number",
-                          //   pattern: "^\\+?[1-9][0-9]{7,14}$", // Pattern to support international numbers
-                          // }}
                         />
                       </div>
                     </Form.Group>

@@ -68,7 +68,7 @@ function Footer() {
             style={{ border: "1px solid black", height: "60px" }}
           >
             <p className="text-center " style={{ fontSize: ".8rem" }}>
-              Designed & developed by VartsySystems.com
+              Designed & developed by Vartsy Systems
             </p>
           </div>
         </Row>

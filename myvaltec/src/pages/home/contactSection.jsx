@@ -9,6 +9,8 @@ import { MdEmail } from "react-icons/md";
 import { IoSendSharp } from "react-icons/io5";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import emailjs from "@emailjs/browser";
+
 function ContactSection() {
   useEffect(() => {
     AOS.init({
@@ -16,6 +18,28 @@ function ContactSection() {
       offset: 100,
     });
   }, []);
+
+//Form handling
+const sendDetails = (e) => {
+  emailjs
+    .sendForm(
+      process.env.REACT_APP_CONTACT_SERVICE,
+      process.env.REACT_APP_CONTACT_TEMP,
+      e.target,
+      process.ENV.REACT_APP_CONTACT_PUBK
+    )
+    .then(
+      (result) => {
+        alert("Email sent successfully!");
+        e.target.reset(); // Reset form fields
+      },
+      (error) => {
+        alert("Failed to send email. Please try again.");
+        console.error(error);
+      }
+    );
+};
+
   return (
     <Container
       fluid
@@ -130,7 +154,7 @@ function ContactSection() {
                 <div className="row">
                   <div className="col-12">
                     <div className="contactParent mt-3 mb-4">
-                      <Form>
+                      <Form autoComplete="off" onSubmit={sendDetails}>
                         <Row className="gx-1">
                           <Form.Group
                             as={Col}
@@ -142,6 +166,7 @@ function ContactSection() {
                               type="name"
                               placeholder="Enter your name"
                               required
+                              name="sender_name"
                             />
                           </Form.Group>
 
@@ -156,6 +181,7 @@ function ContactSection() {
                               type="email"
                               placeholder="Enter your email"
                               required
+                              name="sender_email"
                             />
                           </Form.Group>
                         </Row>
@@ -169,6 +195,7 @@ function ContactSection() {
                             type="text"
                             placeholder="Enter the subject of the mail here"
                             required
+                            name="subject"
                           />
                         </Form.Group>
                         <Form.Group
@@ -183,6 +210,7 @@ function ContactSection() {
                             rows={7}
                             placeholder="Write your message here..."
                             required
+                            name="message"
                           />
                         </Form.Group>
 
