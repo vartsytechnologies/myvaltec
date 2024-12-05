@@ -52,6 +52,7 @@ function App() {
       <Purpose />
       <Section
         className="mt-3 me-sm-1 me-md-3 me-lg-4"
+        imgOrder={0}
         title="Digital Innovation"
         content="The potential of harnessing digital technologies to deliver value for our client's projects drives us at VALTEC.
       We collaborate with experts and build global partnerships with leading industrial solutions to deliver transformative outcomes for our customers. 
@@ -68,7 +69,7 @@ function App() {
                 We embody our principles by establishing clear behavioral expectations for our team and fostering an integrity-focused culture that informs our daily decisions, actions, and relationships.
                 Our clients recognize our commitment to ethical conduct and compliance with local regulations. We consistently build client trust through exceptional service and strict adherence to ethical practices. Our integrity is guided by our Code of Conduct and Anticorruption Policy, which lays out crucial legal and ethical standards for making sound business decisions across all projects."
         imgSrc={ethics_and_compliance}
-        imgOrder={1}
+        
       />
       <Container fluid className="bg-gray py-5">
         <Section
@@ -84,7 +85,14 @@ function App() {
               <h4 className="text-danger pt-3" data-aos="fade-up">
                 VALTEC upholds a robust QHSE policy by:
               </h4>
+<<<<<<< Updated upstream
               <p data-aos="fade-down" className="justify">
+=======
+              <p
+                data-aos="fade-down"
+                // className="justify"
+              >
+>>>>>>> Stashed changes
                 Establishing clear and measurable Quality Objectives across all
                 operational sectors is imperative. Continuous monitoring,
                 evaluation, and enhancement of the Quality System and its

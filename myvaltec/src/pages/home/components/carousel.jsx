@@ -1,4 +1,5 @@
 import { React, useEffect } from "react";
+import "bootstrap"
 import Carousel from "react-bootstrap/Carousel";
 import CarouselImage from "./CarouselImage";
 import "../home.css";

@@ -41,26 +41,35 @@ export default function NavBar() {
     setShowDropdown(false);
   };
 
-  // Detect clicks outside to hide the dropdown
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (
-        dropdownRef.current &&
-        !dropdownRef.current.contains(event.target) &&
-        !expertiseLinkRef.current.contains(event.target)
-      ) {
-        setShowDropdown(false);
-      }
+  //End of Navbar handling    
+  const [isNavbarOpen, setIsNavbarOpen] = useState(false);
+    // Handle toggle button click
+    const handleToggle = () => {
+      setIsNavbarOpen(!isNavbarOpen);
     };
-
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
-  //End of Navbar handling
-
   
+    // Close the navbar on outside click
+    useEffect(() => {
+      const handleClickOutside = (event) => {
+        const navbar = document.querySelector(".navbar-collapse");
+        if (isNavbarOpen && navbar && !navbar.contains(event.target)) {
+          setIsNavbarOpen(false);
+        };
+        if (
+            dropdownRef.current &&
+            !dropdownRef.current.contains(event.target) &&
+            !expertiseLinkRef.current.contains(event.target)
+          ) {
+            setShowDropdown(false);
+          }
+      };
+  
+      document.addEventListener("click", handleClickOutside);
+      return () => {
+        document.removeEventListener("click", handleClickOutside);
+      };
+    }, [isNavbarOpen]);
+
   //Form handling
   const sendEmail = (e) => {
     e.preventDefault();
@@ -69,7 +78,7 @@ export default function NavBar() {
         process.env.REACT_APP_REQ_A_QUOTE_SERVICE,
         process.env.REACT_APP_REQ_A_QUOTE_TEMP,
         e.target,
-        process.env.REACT_APP_REQ_A_QUOTE_PUBK
+        process.ENV.REACT_APP_REQ_A_QUOTE_PUBK
       )
       .then(
         (result) => {
@@ -100,7 +109,7 @@ export default function NavBar() {
             className="d-inline-block align-top"
           />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleToggle}/>
         <Navbar.Collapse
           id="basic-navbar-nav"
           className="flex-grow-1"
@@ -114,6 +123,7 @@ export default function NavBar() {
                     ? "text-danger text-decoration-none"
                     : "text-dark text-decoration-none"
                 }
+                onClick={() => setIsNavbarOpen(false)}
               >
                 Thinking
               </NavLink>
@@ -132,7 +142,7 @@ export default function NavBar() {
               />
             </Nav.Link>
 
-            <Nav.Link>
+            <Nav.Link onClick={() => setIsNavbarOpen(false)}>
               <NavLink
                 to="/careers"
                 className={({ isActive }) =>

@@ -13,7 +13,13 @@ import Contact from "./pages/contact/contact.jsx";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Careers from "./pages/careers/careers.jsx";
+import ResetScroll from "./components/resetScroll/resetscroll.jsx";
 
+import process from 'process';
+window.process = process;
+
+
+// Define routes
 const router = createBrowserRouter([
   {
     path: "/",
@@ -28,7 +34,6 @@ const router = createBrowserRouter([
       </Layout>
     ),
   },
-
   {
     path: "/home",
     element: (
@@ -37,7 +42,6 @@ const router = createBrowserRouter([
       </Layout>
     ),
   },
-
   {
     path: "/thinking",
     element: (
@@ -46,7 +50,6 @@ const router = createBrowserRouter([
       </Layout>
     ),
   },
-
   {
     path: "/projects",
     element: (
@@ -55,7 +58,6 @@ const router = createBrowserRouter([
       </Layout>
     ),
   },
-
   {
     path: "/partners",
     element: (
@@ -64,7 +66,6 @@ const router = createBrowserRouter([
       </Layout>
     ),
   },
-
   {
     path: "/markets",
     element: (
@@ -73,7 +74,6 @@ const router = createBrowserRouter([
       </Layout>
     ),
   },
-
   {
     path: "/contact",
     element: (
@@ -100,18 +100,15 @@ const router = createBrowserRouter([
   },
 ]);
 
+// Render the application
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <RouterProvider router={router}>
+      {/* Place ResetScroll inside RouterProvider */}
+      <ResetScroll />
+    </RouterProvider>
   </React.StrictMode>
 );
-
-//const root = ReactDOM.createRoot(document.getElementById('root'));
-//root.render(
-//  <React.StrictMode>
-//    <App />
-//  </React.StrictMode>
-//);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

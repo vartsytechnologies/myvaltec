@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import companyOverview from "../../../../assets/companyOverview.jpg";
+import companyOverview from "../../../../assets/aboutImg.jpg";
 import AOS from "aos";
 import { useEffect } from "react";
 import "aos/dist/aos.css"; // Import the CSS styles

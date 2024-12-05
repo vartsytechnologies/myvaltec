@@ -1,5 +1,5 @@
 import { React, useState, useEffect } from "react";
-import { Container, Row, Col, Modal, Button, Carousel, Tooltip, OverlayTrigger } from "react-bootstrap";
+import { Container, Row, Col, Modal, Button, Carousel} from "react-bootstrap";
 import Banner from "../../components/banner/Banner";
 import "./services.css";
 import ContactSalesBtn from "./contactSalesbtn";
@@ -43,6 +43,14 @@ import i3 from "../../assets/services_img/new/infrastructure/i3.jpeg";
 
 import ren1 from "../../assets/services_img/new/renewable/pv.jpg";
 import ren2 from "../../assets/services_img/new/renewable/lights.jpeg";
+import ren3 from "../../assets/services_img/new/renewable/IMG_4122.JPG";
+import ren4 from "../../assets/services_img/new/renewable/IMG_4123.JPG";
+import ren5 from "../../assets/services_img/new/renewable/IMG_4124.JPG";
+import ren6 from "../../assets/services_img/new/renewable/IMG_4125.JPG";
+import ren7 from "../../assets/services_img/new/renewable/IMG_4126.JPG";
+import ren8 from "../../assets/services_img/new/renewable/IMG_4127.JPG";
+import ren9 from "../../assets/services_img/new/renewable/IMG_4128.JPG";
+import ren10 from "../../assets/services_img/new/renewable/IMG_4129.JPG";
 
 import epc1 from "../../assets/services_img/new/epc/epc1.jpg";
 import epc2 from "../../assets/services_img/new/epc/epc2.jpg";
@@ -52,7 +60,7 @@ import epc4 from "../../assets/services_img/new/epc/epc4.jpg";
 // Service items with their data
 const serviceItems = [
   {
-    name: "Engineering Procurement and Construction Services",
+    name: "Engineering Procurement and Construction",
     initialImage: epc1,
     imgOrder: 0,
     carouselImages: [epc1, epc2, epc3, epc4],
@@ -91,7 +99,7 @@ const serviceItems = [
     name: "Renewable Energy",
     initialImage: renewables,
     imgOrder: 0,
-    carouselImages: [ren1, ren2],
+    carouselImages: [ren1, ren2, ren3, ren4, ren5, ren6, ren7, ren8, ren9, ren10],
     icon: <MdOutlineSolarPower className="s-icon" />,
     description:
       "VALTEC Limited is committed to promoting sustainable growth through renewable energy solutions. From solar and wind to bioenergy, we design and implement clean energy projects that help reduce carbon footprints and energy costs. Our renewable energy expertise enables us to support clients on their journey toward sustainable operations, offering solutions that align with global energy goals and environmental standards."
@@ -104,7 +112,7 @@ const serviceItems = [
     carouselImages: [digital],
     icon: <PiMonitor className="s-icon" />,
     description:
-      <ul>
+      <ul className="list-unstyled">
         <li><strong>Data Analytics</strong>
           <br/><span>We help businesses make smarter decisions by turning raw data into actionable insights.</span>
         </li>
@@ -130,7 +138,7 @@ const serviceItems = [
     carouselImages: [sustainability],
     icon: <MdOutlineGroup className="s-icon" />,
     description:
-      <ul>
+      <ul className="list-unstyled">
         <li><strong>Risk and assurance Strategy</strong>
           <br/>We help you identify risks and build strategies that ensure sustainable, long-term success.
         </li>
@@ -171,13 +179,9 @@ function Services() {
         <Container>
           <Row className="flex-column mt-5">
             {serviceItems.map((service, idx) => (
-              <Col key={idx} data-aos="fade-up" className="py-0">
+              <Col key={idx} data-aos="fade-up" className="py-0 mb-5">
                 <Row className="justify-content-between align-items-center">
-                  <Col xs={12} lg={6} className={`zoom-out-container mb-5 align-self-center order-${service.imgOrder}`}>
-                    <OverlayTrigger
-                      placement="top"
-                      overlay={<Tooltip id={`tooltip-${idx}`}>Click me for more</Tooltip>}
-                    >
+                  <Col xs={12} lg={6} className={`zoom-out-container mb-0 mb-md-5 align-self-center order-md-${service.imgOrder}`}>
                       <div className="image-Container align-self-center pe-3 pt-0" style={{ width: "100%", height: "auto" }}>
                         <img
                           src={service.initialImage}
@@ -186,12 +190,15 @@ function Services() {
                           onClick={() => handleShow(service)}
                         />
                       </div>
-                    </OverlayTrigger>
                   </Col>
                   <Col className="align-self-center pt-0">
-                    <p className="fs-5 p-0 m-0 defheadFont text-danger">
-                      {service.icon} {service.name}
+                  <div className="d-flex">
+                    <p className="fs-5 pt-2 m-0 defheadFont text-danger mb-0">
+                      {service.icon}
                     </p>
+                    <p className="fs-5 pt-3 defheadFont text-danger ms-1 mb-0 ">
+                      {service.name} </p>
+                    </div>
                     <hr
                       style={{
                         borderTop: "2px solid rgba(255,17,67,1)",

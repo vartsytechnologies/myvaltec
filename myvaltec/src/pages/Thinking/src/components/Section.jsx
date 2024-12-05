@@ -26,7 +26,7 @@ function Section({ title, content, extraContent = "", imgSrc, imgOrder }) {
       <Row>
         <Col
           xs={12} md={6}
-          className={`ps-0 order-${imgOrder} defbodyFont`}
+          className={`ps-0 order-1 order-md-${imgOrder}  defbodyFont`}
         >
           <p
             data-aos="zoom-in-right"
@@ -35,11 +35,11 @@ function Section({ title, content, extraContent = "", imgSrc, imgOrder }) {
             {content}
           </p>
         </Col>
-        <Col xs={12} md={6}>
+        <Col xs={12} md={6} className="justify-content-start ps-0">
           <img
             src={imgSrc}
             alt={title}
-            className={"img-fluid ps-0 pt-2"}
+            className={"img-fluid mt-2"}
             data-aos="fade-up"
           />
         </Col>
