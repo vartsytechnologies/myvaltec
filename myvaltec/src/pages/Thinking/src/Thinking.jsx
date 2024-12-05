@@ -85,14 +85,10 @@ function App() {
               <h4 className="text-danger pt-3" data-aos="fade-up">
                 VALTEC upholds a robust QHSE policy by:
               </h4>
-<<<<<<< Updated upstream
-              <p data-aos="fade-down" className="justify">
-=======
               <p
                 data-aos="fade-down"
                 // className="justify"
               >
->>>>>>> Stashed changes
                 Establishing clear and measurable Quality Objectives across all
                 operational sectors is imperative. Continuous monitoring,
                 evaluation, and enhancement of the Quality System and its
