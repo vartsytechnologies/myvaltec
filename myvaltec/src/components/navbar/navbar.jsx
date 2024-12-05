@@ -73,13 +73,13 @@ export default function NavBar() {
       )
       .then(
         (result) => {
-          alert("Email sent successfully!");
+          alert("Message Sent Successfully. Thank you for contacting VALTEC!");
           e.target.reset(); // Reset form fields
           setPhone(""); // Clear phone input
           handleClose(); // Close modal
         },
         (error) => {
-          alert("Failed to send email. Please try again.");
+          alert("Failed to send the Message. Please try again Later.");
           console.error(error);
         }
       );
@@ -385,7 +385,7 @@ export default function NavBar() {
                       className="mb-3"
                       controlId="formPhoneNumber"
                     >
-                      <Form.Label name="sender_phone">Phone Number</Form.Label>
+                      <Form.Label>Phone Number</Form.Label>
                       <div
                         className="phone-input-container w-100"
                         style={{ border: "1px solid black" }}
@@ -397,6 +397,7 @@ export default function NavBar() {
                           inputClassName="field"
                           required
                           placeholder="Enter your phone number"
+                          name="sender_phone"
                         />
                       </div>
                     </Form.Group>
@@ -418,7 +419,7 @@ export default function NavBar() {
                     xs={12}
                     lg={7}
                   >
-                    <Form.Group
+                    {/* <Form.Group
                       as={Col}
                       md="12"
                       className="mb-3"
@@ -434,19 +435,20 @@ export default function NavBar() {
                         <option value="ind">Individual</option>
                         <option value="com">Company</option>
                       </Form.Control>
-                    </Form.Group>
+                    </Form.Group> */}
                     <Form.Group
                       as={Col}
                       md="12"
                       className="mb-3"
                     >
-                      <Form.Label name="sender_institution">
-                        Name of institution
+                      <Form.Label>
+                        Name of institution or Company
                       </Form.Label>
                       <Form.Control
                         type="text"
                         placeholder="Enter the name of your institution"
                         required
+                        name="sender_institution"
                       />
                     </Form.Group>
                     <Form.Group
@@ -454,13 +456,14 @@ export default function NavBar() {
                       md="12"
                       className="mb-3"
                     >
-                      <Form.Label name="quote_details">Details</Form.Label>
+                      <Form.Label name="quote_details">Message</Form.Label>
                       <Form.Control
                         style={{ resize: "none" }}
                         as="textarea"
                         rows={7}
-                        placeholder="Write the details of the product or services needed here.."
+                        placeholder="Your Message here"
                         required
+                        name="message"
                       />
                     </Form.Group>
                     <div className="d-flex align-items-center justify-content-center">

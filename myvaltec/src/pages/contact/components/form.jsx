@@ -24,6 +24,7 @@ function ContactForm() {
 
   //Form handling
   const sendDetails = (e) => {
+    e.preventDefault();
     emailjs
       .sendForm(
         process.env.REACT_APP_CONTACT_SERVICE,
@@ -33,12 +34,12 @@ function ContactForm() {
       )
       .then(
         (result) => {
-          alert("Email sent successfully!");
+          alert("Message Sent Successfully. Thank you for contacting VALTEC!");
           e.target.reset(); // Reset form fields
           setPhone(""); // Clear phone input
         },
         (error) => {
-          alert("Failed to send email. Please try again.");
+          alert("Failed to send the Message. Please try again Later.");
           console.error(error);
         }
       );
@@ -85,18 +86,32 @@ function ContactForm() {
                 name="sender_phone"
               />
             </div>
-            {/* <br />
-            {error && (
-              <p style={{ color: "red", marginTop: "-20px" }}>{error}</p>
-            )} */}
+          </Form.Group>
+          <Form.Group as={Col} className="mb-3">
+            <Form.Label>Name of Company or Institution</Form.Label>
+            <Form.Control
+              type="name"
+              placeholder="Your Institution... Indicate N/A if not applicable"
+              required
+              name="sender_institution"
+            />
           </Form.Group>
         </Col>
         <Col xs={12} lg={7}>
+        <Form.Group as={Col} md="12" className="mb-3">
+            <Form.Label>Location</Form.Label>
+            <Form.Control
+              type="text"
+              placeholder="Enter your location here"
+              required
+              name="sender_location"
+            />
+          </Form.Group>
           <Form.Group as={Col} md="12" className="mb-3">
             <Form.Label>Subject</Form.Label>
             <Form.Control
               type="text"
-              placeholder="Enter the subject of the mail here"
+              placeholder="Enter the subject here"
               required
               name="subject"
             />

@@ -1,5 +1,6 @@
-import { React, useEffect } from "react";
+import { React, useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { PhoneInput } from "react-international-phone";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import "./homeServices.css";
@@ -11,6 +12,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import emailjs from "@emailjs/browser";
 
+
 function ContactSection() {
   useEffect(() => {
     AOS.init({
@@ -20,21 +22,23 @@ function ContactSection() {
   }, []);
 
 //Form handling
+const [phone, setPhone] = useState("");
 const sendDetails = (e) => {
+  e.preventDefault();
   emailjs
     .sendForm(
       process.env.REACT_APP_CONTACT_SERVICE,
       process.env.REACT_APP_CONTACT_TEMP,
       e.target,
-      process.ENV.REACT_APP_CONTACT_PUBK
+      process.env.REACT_APP_CONTACT_PUBK
     )
     .then(
       (result) => {
-        alert("Email sent successfully!");
-        e.target.reset(); // Reset form fields
+        e.target.reset();
+        alert("Message Sent Successfully. Thank you for contacting VALTEC!");
       },
       (error) => {
-        alert("Failed to send email. Please try again.");
+        alert("Failed to send the Message. Please try again Later. You can also contact us through the contact details below.");
         console.error(error);
       }
     );
@@ -182,6 +186,43 @@ const sendDetails = (e) => {
                               placeholder="Enter your email"
                               required
                               name="sender_email"
+                            />
+                          </Form.Group>
+                        </Row>
+                        <Row className="gx-1">
+                        <Form.Group as={Col} className="mb-3" controlId="formPhoneNumber">
+            <Form.Label>Phone Number</Form.Label>
+            <div
+              className="phone-input-container w-100"
+              style={{ border: "1px solid black" }}
+            >
+              <PhoneInput
+                defaultCountry="gh" // Change to desired default country
+                value={phone}
+                onChange={setPhone}
+                inputClassName="field"
+                inputProps={{
+                  required: true,
+                  placeholder: "Enter your phone number",
+                  // pattern: "^\\+?[1-9][0-9]{7,14}$", // Pattern to support international numbers
+                }}
+                name="sender_phone"
+              />
+            </div>
+          </Form.Group>
+
+                          <Form.Group
+                            as={Col}
+                            md="6"
+                            className="mb-3"
+                            controlId="formBasicEmail"
+                          >
+                            <Form.Label>Institution or Company</Form.Label>
+                            <Form.Control
+                              type="text"
+                              placeholder="Enter N/A if not applicable"
+                              required
+                              name="sender_institution"
                             />
                           </Form.Group>
                         </Row>
