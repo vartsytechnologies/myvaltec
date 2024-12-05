@@ -16,23 +16,23 @@ import "./components/thinking.css";
 
 const teamMembers = [
   {
-    name: "Jason Michaels",
+    name: "Korda Asare",
     title: "Chairman and CEO",
     image: "https://via.placeholder.com/150", // Replace with the actual image URL
   },
   {
-    name: "Jason Michaels",
+    name: "Joel Michaels",
     title: "Lead Director",
     image: "https://via.placeholder.com/150",
   },
   {
-    name: "Jason Michaels",
-    title: "Chairman and CEO",
+    name: "Dr. Omanye Jason",
+    title: "Quality Assurance Officer",
     image: "https://via.placeholder.com/150",
   },
   {
-    name: "Jason Michaels",
-    title: "Chairman and CEO",
+    name: "Manye Dromor",
+    title: "Human Resource Manager",
     image: "https://via.placeholder.com/150",
   },
 ];
