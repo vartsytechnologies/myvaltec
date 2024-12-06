@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCard";
-import companyOverview from "../../../assets/companyOverview.jpg";
+// import companyOverview from "../../../assets/companyOverview.jpg";
 //project images
 import AG1 from "../../../assets/projectpics/AGA1.jpg";
 import AG2 from "../../../assets/projectpics/AGA2.jpg";
@@ -10,7 +10,7 @@ import ENI1 from "../../../assets/projectpics/ENI_OCTP_ORF1.jpg";
 import ENI2 from "../../../assets/projectpics/ENI_OCTP_ORF2.jpg";
 import ENI3 from "../../../assets/projectpics/ENI_OCTP_ORF3.jpg";
 import FPSOJA from "../../../assets/projectpics/FPSO_John_ Agyekum_Kuffour.jpg";
-import FPSOJE from "../../../assets/projectpics/FPSO_ProfJohnEvansAttaMills.jpg";
+// import FPSOJE from "../../../assets/projectpics/FPSO_ProfJohnEvansAttaMills.jpg";
 import MIG1 from "../../../assets/projectpics/MIG_Welding1.jpg";
 import MIG2 from "../../../assets/projectpics/MIG_Welding1.jpg";
 import MIG3 from "../../../assets/projectpics/MIG_Welding1.jpg";

@@ -228,7 +228,7 @@ function Services() {
                 <Carousel.Item key={idx}>
                   <img
                     src={image}
-                    alt={`Carousel Image ${idx + 1}`}
+                    alt={`Slideshow ${idx + 1}`}
                     className="d-block w-100 modal-img" // Ensure modal images have the same size
                   />
                 </Carousel.Item>

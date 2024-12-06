@@ -5,22 +5,22 @@ import "aos/dist/aos.css";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 //market images
-import oil1 from "../../assets/markets_img/oil_1.jpg";
-import energy1 from "../../assets/markets_img/energy_1.jpg";
+// import oil1 from "../../assets/markets_img/oil_1.jpg";
+// import energy1 from "../../assets/markets_img/energy_1.jpg";
 import tech1 from "../../assets/markets_img/new/tech1.jpg";
-import power1 from "../../assets/markets_img/power_1.jpg";
-import mine1 from "../../assets/markets_img/mine_1.jpg";
-import gov1 from "../../assets/markets_img/gov_uk.jpg";
-import health1 from "../../assets/markets_img/health_1.jpg";
+// import power1 from "../../assets/markets_img/power_1.jpg";
+// import mine1 from "../../assets/markets_img/mine_1.jpg";
+// import gov1 from "../../assets/markets_img/gov_uk.jpg";
+// import health1 from "../../assets/markets_img/health_1.jpg";
 //new images
 import gov from "../../assets/markets_img/new/Skyscrappers.jpg";
 import mine from "../../assets/markets_img/new/Miningpit.jpg";
 import energy from "../../assets/markets_img/new/RoofPVSolar.jpg";
 import power from "../../assets/markets_img/new/PowerPlant.jpg";
-import oil from "../../assets/markets_img/new/Powerplantimg.jpeg";
-import oilA from "../../assets/markets_img/new/oilA.JPG";
+// import oil from "../../assets/markets_img/new/Powerplantimg.jpeg";
+ import oilA from "../../assets/markets_img/new/oilA.JPG";
 
-import serv_bg from "../../assets/services_img/white-unsplash-9d0375d2.jpg"
+// import serv_bg from "../../assets/services_img/white-unsplash-9d0375d2.jpg"
 
 function MarketCard({ title }) {
   useEffect(() => {

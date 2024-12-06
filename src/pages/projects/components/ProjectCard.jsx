@@ -76,7 +76,7 @@ function ProjectCard({
                     >
                       <img
                         src={image}
-                        alt={`Carousel Image ${idx + 1}`}
+                        alt={`Slideshow ${idx + 1}`}
                         className=""
                       />
                     </Carousel.Item>
