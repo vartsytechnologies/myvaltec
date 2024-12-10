@@ -24,8 +24,8 @@ function MainSlider() {
             {" "}
             <b>
               {" "}
-              Innovative solutions <br />
-              for modern industries
+              We are VALTEC,<br />
+              an energy technology company 
             </b>
           </p>
           <p
@@ -33,10 +33,7 @@ function MainSlider() {
             data-aos="fade-left"
             data-aos-delay="200"
           >
-            From cybersecurity to digital transformations, VALTEC’s
-            technology-driven solutions protect and optimize operations, keeping
-            your business ahead in a connected world. Experience cutting-edge
-            advancements tailored to your operational needs.
+            We take energy forward - making it safer, cleaner, and more efficient for people and the plan
           </p>
         </Carousel.Caption>
       </Carousel.Item>
