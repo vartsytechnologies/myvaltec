@@ -16,10 +16,10 @@ function MainSlider() {
     });
   }, []);
   return (
-    <Carousel indicatrs={false}>
+    <Carousel indicators={false}>
       <Carousel.Item interval={3000}>
         <CarouselImage text="First slide" sliderImage={solutions} />
-        <Carousel.Caption className="sliderCaption">
+        <Carousel.Caption className="sliderCaption" id="captionWithButton">
           <p className="sliderCaptionMain defbodyFont" data-aos="fade-up">
             {" "}
             <b>
@@ -35,7 +35,9 @@ function MainSlider() {
           >
             We take energy forward - making it safer, cleaner, and more efficient for people and the plan
           </p>
+          <p className="btn btn-danger px-4 mt-0 defbodyFont">Explore</p>
         </Carousel.Caption>
+        
       </Carousel.Item>
 
       <Carousel.Item interval={3000}>

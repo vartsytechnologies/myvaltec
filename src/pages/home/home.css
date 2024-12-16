@@ -10,6 +10,12 @@
   top: 20%;
   left: 20%;
 }
+
+#captionWithButton{
+  position: absolute;
+  top: 10%;
+}
+
 .sliderCaptionMain {
   font-size: 3rem;
   line-height: 3rem;
