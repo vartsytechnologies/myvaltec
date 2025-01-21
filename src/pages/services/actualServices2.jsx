@@ -1,4 +1,4 @@
-import {React, useState, useEffect} from "react";
+import { React, useState, useEffect } from "react";
 import { Container, Row, Col, Modal, Button, Carousel } from "react-bootstrap";
 import Banner from "../../components/banner/Banner";
 import "./services.css";
@@ -32,7 +32,6 @@ import infrastructure from "../../assets/services_img/new/infra.jpg";
 import partnership from "../../assets/services_img/partnership.jpg";
 import renewables from "../../assets/services_img/new/pv.jpg";
 
-
 function Services() {
   useEffect(() => {
     AOS.init({
@@ -41,36 +40,31 @@ function Services() {
     });
   }, []);
 
-  const carouselImages = {epcService:[[calib, renewables]],
-    calibService:[calib, renewables]
-  }
-  
-  let clickedImage = []
+  const carouselImages = {
+    epcService: [[calib, renewables]],
+    calibService: [calib, renewables],
+  };
+
+  let clickedImage = [];
 
   const handleShow = (event) => {
     setShowModal(true); // Assuming this updates some state
     let clickedImage = event.target; // Access the clicked element
-    alert(`Modal Name: ${carouselImages[clickedImage.getAttribute("modalname")]}`);
-};
+    alert(
+      `Modal Name: ${carouselImages[clickedImage.getAttribute("modalname")]}`
+    );
+  };
 
   const handleClose = () => setShowModal(false);
   const [showModal, setShowModal] = useState(false);
 
- 
-
   return (
     <>
       <Banner title="Services" />
-      <Container
-        fluid
-        className="mt-4 px-0"
-      >
+      <Container fluid className="mt-4 px-0">
         <Container>
           <Row className="flex-column gy-2 mt-5">
-            <Col
-              data-aos="fade-up"
-              className="py-4"
-            >
+            <Col data-aos="fade-up" className="py-4">
               <Row className="justify-content-between">
                 <Col
                   xs={12}
@@ -86,7 +80,7 @@ function Services() {
                       src={epc}
                       alt="Company"
                       className="img-fluid"
-                      modalname = "epcService"
+                      modalname="epcService"
                     />
                   </div>
                 </Col>
@@ -113,16 +107,13 @@ function Services() {
                     focus on precision and efficiency, we ensure that every
                     project adheres to the highest standards, driving
                     cost-effectiveness and timely delivery for our clients.
-                    <ContactSalesBtn/>
+                    <ContactSalesBtn />
                   </span>
                   <p className="mt-4"></p>
                 </Col>
               </Row>
             </Col>
-            <Col
-              data-aos="fade-up"
-              className="py-4"
-            >
+            <Col data-aos="fade-up" className="py-4">
               <Row className="justify-content-between align-items-start">
                 <Col
                   xs={12}
@@ -159,8 +150,8 @@ function Services() {
                     state-of-the-art calibration tools. Our services reduce
                     downtime and improve operational safety, delivering the
                     assurance our clients need to operate confidently and
-                    efficiently.
-                    <ContactSalesBtn/>
+                    efficiently.uhggfx
+                    <ContactSalesBtn />
                   </span>
                   <p className="mt-4"></p>
                 </Col>
@@ -168,16 +159,10 @@ function Services() {
             </Col>
           </Row>
         </Container>
-        <Container
-          fluid
-          className="bg-gray"
-        >
+        <Container fluid className="bg-gray">
           <Container className="py-4">
             <Row className="flex-column gy-2 mt-5">
-              <Col
-                data-aos="fade-up"
-                className="py-4"
-              >
+              <Col data-aos="fade-up" className="py-4">
                 <Row className="justify-content-between align-items-start">
                   <Col
                     xs={12}
@@ -192,7 +177,8 @@ function Services() {
                   </Col>
                   <Col className="align-self-center">
                     <p className="fs-5 p-0 m-0 defheadFont text-danger">
-                      <AiOutlineExperiment className="s-icon" /> Additives : Fuel, Lubricants and Greases
+                      <AiOutlineExperiment className="s-icon" /> Additives :
+                      Fuel, Lubricants and Greases
                     </p>
                     <hr
                       style={{
@@ -211,16 +197,13 @@ function Services() {
                       efficiency and reliability in day-to-day operations.
                       Partner with us for a greener, more efficient approach to
                       fuel and lubricant management.
-                      <ContactSalesBtn/>
+                      <ContactSalesBtn />
                     </span>
                     <p className="mt-4"></p>
                   </Col>
                 </Row>
               </Col>
-              <Col
-                data-aos="fade-up"
-                className="py-4"
-              >
+              <Col data-aos="fade-up" className="py-4">
                 <Row className="justify-content-between align-items-start">
                   <Col
                     xs={12}
@@ -256,7 +239,7 @@ function Services() {
                       and safety standards in every project. We are dedicated to
                       building resilient facilities that support long-term
                       operational success.
-                      <ContactSalesBtn/>
+                      <ContactSalesBtn />
                     </span>
                     <p className="mt-4"></p>
                   </Col>
@@ -267,10 +250,7 @@ function Services() {
         </Container>
         <Container>
           <Row className="flex-column gy-2 mt-5">
-            <Col
-              data-aos="fade-up"
-              className="py-4"
-            >
+            <Col data-aos="fade-up" className="py-4">
               <Row className="justify-content-between align-items-start">
                 <Col
                   xs={12}
@@ -303,15 +283,12 @@ function Services() {
                   energy expertise enables us to support clients on their
                   journey toward sustainable operations, offering solutions that
                   align with global energy goals and environmental standards.
-                  <ContactSalesBtn/>
+                  <ContactSalesBtn />
                   <p className="mt-4"></p>
                 </Col>
               </Row>
             </Col>
-            <Col
-              data-aos="fade-up"
-              className="py-4"
-            >
+            <Col data-aos="fade-up" className="py-4">
               <Row className="justify-content-between">
                 <Col
                   xs={12}
@@ -346,7 +323,7 @@ function Services() {
                     operational efficiency. We help companies modernize their
                     operations while safeguarding critical infrastructure,
                     ensuring peace of mind in an era of heightened cyber risks.
-                    <ContactSalesBtn/>
+                    <ContactSalesBtn />
                   </span>
                   <p className="mt-4"></p>
                 </Col>
@@ -354,16 +331,10 @@ function Services() {
             </Col>
           </Row>
         </Container>
-        <Container
-          fluid
-          className="bg-gray py-4"
-        >
+        <Container fluid className="bg-gray py-4">
           <Container>
             <Row className="flex-column gy-2 mt-5">
-              <Col
-                data-aos="fade-up"
-                className="py-4"
-              >
+              <Col data-aos="fade-up" className="py-4">
                 <Row className="justify-content-between align-items-start">
                   <Col
                     xs={12}
@@ -399,7 +370,7 @@ function Services() {
                       leveraging our industry expertise, we create mutually
                       beneficial partnerships that address critical
                       infrastructure and service needs.
-                      <ContactSalesBtn/>
+                      <ContactSalesBtn />
                     </span>
                     <p className="mt-4"></p>
                   </Col>
@@ -411,7 +382,7 @@ function Services() {
       </Container>
 
       <>
-      <Modal
+        <Modal
           show={showModal}
           onHide={handleClose}
           dialogClassName="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"
@@ -423,18 +394,17 @@ function Services() {
             <div className="d-flex w-100">
               <Carousel>
                 {carouselImages.length > 0 ? (
-                  carouselImages[clickedImage.getAttribute("modalname")][0].map((image, idx) => (
-                    <Carousel.Item
-                      key={idx}
-                      interval={1000}
-                    >
-                      <img
-                        src={image}
-                        alt={`Carousel Image ${idx + 1}`}
-                        className="d-block w-100"
-                      />
-                    </Carousel.Item>
-                  ))
+                  carouselImages[clickedImage.getAttribute("modalname")][0].map(
+                    (image, idx) => (
+                      <Carousel.Item key={idx} interval={1000}>
+                        <img
+                          src={image}
+                          alt={`Carousel Image ${idx + 1}`}
+                          className="d-block w-100"
+                        />
+                      </Carousel.Item>
+                    )
+                  )
                 ) : (
                   <p>No images available for this project.</p>
                 )}
@@ -442,15 +412,11 @@ function Services() {
             </div>
           </Modal.Body>
           <Modal.Footer>
-            <Button
-              variant="secondary"
-              onClick={handleClose}
-            >
+            <Button variant="secondary" onClick={handleClose}>
               Close
             </Button>
           </Modal.Footer>
         </Modal>
-
       </>
     </>
   );
