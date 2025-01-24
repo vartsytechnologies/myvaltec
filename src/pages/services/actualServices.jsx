@@ -2,7 +2,7 @@ import { React, useState, useEffect } from "react";
 import { Container, Row, Col, Modal, Button, Carousel } from "react-bootstrap";
 import Banner from "../../components/banner/Banner";
 import "./services.css";
-import ContactSalesBtn from "./contactSalesbtn";
+// import ContactSalesBtn from "./contactSalesbtn";
 import ReadMorebtn from "./readMorebtn.jsx";
 import {
   MdOutlineConstruction,
@@ -429,7 +429,7 @@ function Services() {
                     <p className="defbodyFont d-block pb-1">
                       {service.description}
                     </p>
-                    <ContactSalesBtn />{" "}
+                    {/* <ContactSalesBtn />{" "} */}
                     <ReadMorebtn
                       onClick={() => handleShowReadMoreModal(service)}
                     />

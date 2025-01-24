@@ -4,7 +4,7 @@ import { Button } from "react-bootstrap";
 export default function ReadMorebtn({ onClick }) {
   return (
     <>
-      <Button className="mb-2 ms-3" variant="secondary" onClick={onClick}>
+      <Button className="mb-2" variant="primary" onClick={onClick}>
         Read More
       </Button>
     </>
