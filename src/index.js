@@ -14,6 +14,8 @@ import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Careers from "./pages/careers/careers.jsx";
 import ResetScroll from "./components/resetScroll/resetscroll.jsx";
+import EpcSection from "./pages/services/epcSection.jsx";
+import ProductsSection from "./pages/services/epcService.jsx";
 
 import process from 'process';
 window.process = process;
@@ -95,6 +97,22 @@ const router = createBrowserRouter([
     element: (
       <Layout>
         <Careers />
+      </Layout>
+    ),
+  },
+  {
+    path: "/pvf",
+    element: (
+      <Layout>
+        <EpcSection />
+      </Layout>
+    ),
+  },
+  {
+    path: "/epc",
+    element: (
+      <Layout>
+        <ProductsSection />
       </Layout>
     ),
   },

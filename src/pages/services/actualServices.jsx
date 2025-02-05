@@ -3,6 +3,7 @@ import { Container, Row, Col, Modal, Button, Carousel } from "react-bootstrap";
 import Banner from "../../components/banner/Banner";
 import "./services.css";
 // import ContactSalesBtn from "./contactSalesbtn";
+import ProductsSection from "./epcService.jsx";
 import ReadMorebtn from "./readMorebtn.jsx";
 import {
   MdOutlineConstruction,
@@ -58,9 +59,9 @@ import epc2 from "../../assets/services_img/new/epc/epc2.jpg";
 import epc3 from "../../assets/services_img/new/epc/epc3.jpg";
 import epc4 from "../../assets/services_img/new/epc/epc4.jpg";
 
-// Service items with their data
-const serviceItems = [
-  {
+
+const epcDetails = [
+    {
     name: "Engineering Procurement and Construction",
     initialImage: epc1,
     imgOrder: 0,
@@ -96,6 +97,46 @@ const serviceItems = [
       </div>
     ),
   },
+]
+
+// Service items with their data
+const serviceItems = [
+  // {
+  //   name: "Engineering Procurement and Construction",
+  //   initialImage: epc1,
+  //   imgOrder: 0,
+  //   carouselImages: [epc1, epc2, epc3, epc4],
+  //   icon: <MdOutlineConstruction className="s-icon" />,
+  //   description:
+  //     "VALTEC Limited offers comprehensive EPC (Engineering, Procurement, and Construction) services, tailored to meet the complex needs of the energy, mining, oil, and gas sectors. Our team brings a wealth of experience, utilizing advanced technology and local expertise to streamline project execution from design to completion.",
+  //   detailedContent: (
+  //     <div className="service-description">
+  //       <p>
+  //         VALTEC Limited offers comprehensive EPC (Engineering, Procurement, and
+  //         Construction) services tailored to meet the complex needs of the
+  //         energy, mining, oil, and gas sectors. We are your premier sourcing
+  //         partner, equipped with capabilities, offerings, technology, rapid
+  //         turnaround, quality, and modular solutions. Our affiliation with a
+  //         global distribution network provides your project with continuous
+  //         product access, exceptional supply chain management, and an unwavering
+  //         commitment to your success. When fabrication is central to your
+  //         project, VALTEC is your reliable partner. With modular processes and
+  //         state-of-the-art production equipment, we ensure your projects align
+  //         seamlessly with your objectives. Our extensive offerings include
+  //         turnkey metering, treatment facilities, and civil to mechanical
+  //         construction services. <br />
+  //         We specialize in the procurement of OEM products, such as but not
+  //         limited to:
+  //       </p>
+  //       <ul>
+  //         <li>Pipe, Tubes, Valves, Fittings & Flanges</li>
+  //         <li>Pumps Production, and Drilling</li>
+  //         <li>Mill, Tools, MRO & Consumables</li>
+  //         <li>Electrical Cable & Products</li>
+  //       </ul>
+  //     </div>
+  //   ),
+  // },
   {
     name: "Calibration Services",
     initialImage: calib,
@@ -389,6 +430,12 @@ function Services() {
         }}
       >
         <Container>
+          <Row>
+            <ProductsSection/>
+            <Col style={{'position':'relative', 'top':'-50px', 'left':'45px'}}>
+              <ReadMorebtn onClick={() => handleShowReadMoreModal(epcDetails[0])}/>
+            </Col>
+          </Row>
           <Row className="flex-column mt-5">
             {serviceItems.map((service, idx) => (
               <Col key={idx} data-aos="fade-up" className="py-0 mb-5">
