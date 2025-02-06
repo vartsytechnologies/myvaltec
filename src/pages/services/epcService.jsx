@@ -1,10 +1,11 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
-import { Link } from "react-router-dom"; // Assuming you are using React Router
+import { Link } from "react-router-dom"; 
 import ReadMorebtn from "./readMorebtn";
 
+//the epc section on the services page
 
-const ProductsSection = () => {
+const EpcSection = () => {
   return (
     <Container fluid className="px-5 py-4">
       <Row className="align-items-center">
@@ -36,7 +37,7 @@ const ProductsSection = () => {
               </Link>
             </Col>
             <Col md={6} className="mb-2">
-              <Link to="/pumps-drilling" className="text-decoration-none">
+              <Link to="/pumps" className="text-decoration-none">
                 <Card className="text-white text-center p-3" style={{ backgroundColor: "#a00000" }}>
                   <Card.Body>
                     <div className="mb-2">🔬</div>
@@ -49,7 +50,7 @@ const ProductsSection = () => {
           <Row>
             {/* Bottom Row */}
             <Col md={6}>
-              <Link to="/mro-tools" className="text-decoration-none">
+              <Link to="/mill" className="text-decoration-none">
                 <Card className="text-white text-center p-3" style={{ backgroundColor: "#800000" }}>
                   <Card.Body>
                     <div className="mb-2">🛠</div>
@@ -59,7 +60,7 @@ const ProductsSection = () => {
               </Link>
             </Col>
             <Col md={6}>
-              <Link to="/electrical-products" className="text-decoration-none">
+              <Link to="/electrical" className="text-decoration-none">
                 <Card className="text-white text-center p-3" style={{ backgroundColor: "#1a1a1a" }}>
                   <Card.Body>
                     <div className="mb-2">⚡</div>
@@ -75,4 +76,4 @@ const ProductsSection = () => {
   );
 };
 
-export default ProductsSection;
+export default EpcSection;

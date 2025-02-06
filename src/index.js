@@ -14,8 +14,10 @@ import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Careers from "./pages/careers/careers.jsx";
 import ResetScroll from "./components/resetScroll/resetscroll.jsx";
-import EpcSection from "./pages/services/epcSection.jsx";
-import ProductsSection from "./pages/services/epcService.jsx";
+import EpcSection from "./pages/services/pvfpage.jsx";
+import PumpServicePage from "./pages/services/pumps.jsx";
+import MillServicePage from "./pages/services/mill.jsx";
+import ElectricalServicePage from "./pages/services/electrical.jsx";
 
 import process from 'process';
 window.process = process;
@@ -109,10 +111,26 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/epc",
+    path: "/pumps",
     element: (
       <Layout>
-        <ProductsSection />
+        <PumpServicePage/>
+      </Layout>
+    ),
+  },
+  {
+    path: "/mill",
+    element: (
+      <Layout>
+        <MillServicePage/>
+      </Layout>
+    ),
+  },
+  {
+    path: "/electrical",
+    element: (
+      <Layout>
+        <ElectricalServicePage/>
       </Layout>
     ),
   },
