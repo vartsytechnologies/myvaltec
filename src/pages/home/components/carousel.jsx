@@ -17,7 +17,7 @@ function MainSlider() {
   }, []);
   return (
     <Carousel indicators={false}>
-      <Carousel.Item interval={3000}>
+      <Carousel.Item interval={2000}>
         <CarouselImage text="First slide" sliderImage={solutions} />
         <Carousel.Caption className="sliderCaption" id="captionWithButton">
           <p className="sliderCaptionMain defbodyFont" data-aos="fade-up">
@@ -40,7 +40,7 @@ function MainSlider() {
         
       </Carousel.Item>
 
-      <Carousel.Item interval={3000}>
+      <Carousel.Item interval={2000}>
         <CarouselImage text="Second slide" sliderImage={precision_2} />
         <Carousel.Caption className="sliderCaption">
           <p className="sliderCaptionMain defbodyFont" data-aos="fade-up">
@@ -62,7 +62,7 @@ function MainSlider() {
         </Carousel.Caption>
       </Carousel.Item>
 
-      <Carousel.Item interval={3000}>
+      <Carousel.Item interval={2000}>
         <CarouselImage text="Third slide" sliderImage={sustainable} />
         <Carousel.Caption className="sliderCaption">
           <p className="sliderCaptionMain defbodyFont" data-aos="fade-up">

@@ -9,18 +9,19 @@ import Flanges from "../../assets/services_img/pvf/Flanges_Thumbnails.jpg";
 import Fasteners from "../../assets/services_img/pvf/Fasteners_thumbnail.jpg";
 import Gaskets from "../../assets/services_img/pvf/Gaskets_Thumbnails.jpg";
 import Pipe_accessories from "../../assets/services_img/pvf/Pipe_piping_accessories_thumbnail.jpg";
+import Renewable from "../../assets/services_img/renewable_energy.jpg"
 
 const PVFSection = () => {
   return (
     <Container className="my-5">
       <Row className="align-items-center">
         <Col md={6} className="text-center text-md-start">
-          <h2>Pipe, Valves and Fittings (PVF)</h2>
+          <h1>Building a Sustainable Future</h1>
           <p>
-            VALTEC is your global PVF distributor for pipe, valves, actuators,
-            fittings, flanges, fasteners and gaskets. We maintain a wide range
-            of PVF products in multiple schedules, sizes and grades for the oil
-            and gas and industrial markets.
+         VALTEC Limited is dedicated to building a sustainable future through renewable energy. We design and implement clean energy projects that reduce carbon footprints and lower energy costs. We meet residential, commercial, and utility energy demands with high-quality solar photovoltaic modules and reliable battery storage solutions for our projects. We utilize the Smart Design Technology to realize the vision of your solar PV power plant with full 3D rendition, design for maximum yield, high performance, and efficient operations. 
+        Our innovative solar street lighting solution distinguishes us with advanced technological advantages. 
+        We are not just an Energy Company. We are your renewable energy partner collaborating  to support our valued clients in their journey toward sustainable future, delivering solutions that align with global energy goals and environmental standards.
+
           </p>
           <p>
             VALTEC provides a wide range of pipe, valves and fittings to reduce
@@ -29,17 +30,17 @@ const PVFSection = () => {
           </p>
         </Col>
         <Col md={6} className="text-center">
-          <img src={Pvf} alt="PVF Products" className="img-fluid" />
+          <img src={Renewable} alt="PVF Products" className="img-fluid" />
         </Col>
       </Row>
     </Container>
   );
 };
 
-const PvfProductsSection = () => {
+const ProductsSection = () => {
   const allProducts = [
     {
-      name: "Pipe and Tube",
+      name: "Canadian Solar N-type Bifacial TOPCon Technology",
       image: Pipe,
       text: "We stock and sell pipe and tube products in a variety of materials and sizes. Choose from a wide selection of steel, alloy, brass and copper pipe and tube products in all sizes.",
       category: "all",
@@ -132,13 +133,13 @@ const PvfProductsSection = () => {
   );
 };
 
-const Pvfpage = () => {
+const RenewablePage = () => {
   return (
     <>
       <PVFSection />
-      <PvfProductsSection />
+      <ProductsSection />
     </>
   );
 };
 
-export default Pvfpage;
+export default RenewablePage;

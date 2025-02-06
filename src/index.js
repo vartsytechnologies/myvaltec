@@ -18,6 +18,7 @@ import EpcSection from "./pages/services/pvfpage.jsx";
 import PumpServicePage from "./pages/services/pumps.jsx";
 import MillServicePage from "./pages/services/mill.jsx";
 import ElectricalServicePage from "./pages/services/electrical.jsx";
+import RenewablePage from "./pages/services/renewableenergy.jsx";
 
 import process from 'process';
 window.process = process;
@@ -131,6 +132,14 @@ const router = createBrowserRouter([
     element: (
       <Layout>
         <ElectricalServicePage/>
+      </Layout>
+    ),
+  },
+  {
+    path: "/renewableenergy",
+    element: (
+      <Layout>
+        <RenewablePage/>
       </Layout>
     ),
   },
