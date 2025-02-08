@@ -60,13 +60,13 @@ function MainSlider() {
             reach completion on time and within budget. Trust VALTEC to deliver
             solutions that meet the highest industry standards.
           </p>
-          <Link
+          {/* <Link
             className="bg-danger p-3 text-white fs-5 rounded"
             style={{ textDecorationLine: "none" }}
             to={`/service`}
           >
             Explore
-          </Link>
+          </Link> */}
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -91,7 +91,7 @@ function MainSlider() {
             time. Partner with us to create a lasting positive impact on the
             environment and your bottom line.
           </p>
-          <p className="btn btn-danger px-4 mt-0 defbodyFont">Explore</p>
+          <Link to='/renewableenergy'> <p className="btn btn-danger px-4 mt-0 defbodyFont">Explore</p> </Link>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
