@@ -19,7 +19,6 @@ const EpcSection = () => {
           <br /><br />
           {/* <ReadMorebtn/> */}
           </p>
-          
         </Col>
 
         {/* Right side - Product Grid */}
@@ -28,7 +27,10 @@ const EpcSection = () => {
             {/* Top Row */}
             <Col md={6} className="mb-2">
               <Link to="/pvf" className="text-decoration-none">
-                <Card className="text-white text-center p-3" style={{ backgroundColor: "#f00" }}>
+                <Card
+                  className="text-white text-center p-3"
+                  style={{ backgroundColor: "#f00" }}
+                >
                   <Card.Body>
                     <div className="mb-2">🔧</div>
                     <Card.Title>Pipe, Valves, Fittings & Flanges</Card.Title>
@@ -38,7 +40,10 @@ const EpcSection = () => {
             </Col>
             <Col md={6} className="mb-2">
               <Link to="/pumps" className="text-decoration-none">
-                <Card className="text-white text-center p-3" style={{ backgroundColor: "#a00000" }}>
+                <Card
+                  className="text-white text-center p-3"
+                  style={{ backgroundColor: "#a00000" }}
+                >
                   <Card.Body>
                     <div className="mb-2">🔬</div>
                     <Card.Title>Pumps, Production & Drilling</Card.Title>
@@ -51,7 +56,10 @@ const EpcSection = () => {
             {/* Bottom Row */}
             <Col md={6}>
               <Link to="/mill" className="text-decoration-none">
-                <Card className="text-white text-center p-3" style={{ backgroundColor: "#800000" }}>
+                <Card
+                  className="text-white text-center p-3"
+                  style={{ backgroundColor: "#800000" }}
+                >
                   <Card.Body>
                     <div className="mb-2">🛠</div>
                     <Card.Title>Mill, Tools, MRO & Consumables</Card.Title>
@@ -61,7 +69,10 @@ const EpcSection = () => {
             </Col>
             <Col md={6}>
               <Link to="/electrical" className="text-decoration-none">
-                <Card className="text-white text-center p-3" style={{ backgroundColor: "#1a1a1a" }}>
+                <Card
+                  className="text-white text-center p-3"
+                  style={{ backgroundColor: "#1a1a1a" }}
+                >
                   <Card.Body>
                     <div className="mb-2">⚡</div>
                     <Card.Title>Electrical Cable & Products</Card.Title>

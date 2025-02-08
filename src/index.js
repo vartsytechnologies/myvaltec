@@ -19,10 +19,13 @@ import PumpServicePage from "./pages/services/pumps.jsx";
 import MillServicePage from "./pages/services/mill.jsx";
 import ElectricalServicePage from "./pages/services/electrical.jsx";
 import RenewablePage from "./pages/services/renewableenergy.jsx";
+// Extra pages
+import ServiceDetails from "./pages/services/Extras.jsx";
 
-import process from 'process';
+// import CaliDetails from "./pages/services/extras/calibration.jsx";
+
+import process from "process";
 window.process = process;
-
 
 // Define routes
 const router = createBrowserRouter([
@@ -115,7 +118,7 @@ const router = createBrowserRouter([
     path: "/pumps",
     element: (
       <Layout>
-        <PumpServicePage/>
+        <PumpServicePage />
       </Layout>
     ),
   },
@@ -123,7 +126,7 @@ const router = createBrowserRouter([
     path: "/mill",
     element: (
       <Layout>
-        <MillServicePage/>
+        <MillServicePage />
       </Layout>
     ),
   },
@@ -131,7 +134,7 @@ const router = createBrowserRouter([
     path: "/electrical",
     element: (
       <Layout>
-        <ElectricalServicePage/>
+        <ElectricalServicePage />
       </Layout>
     ),
   },
@@ -139,10 +142,36 @@ const router = createBrowserRouter([
     path: "/renewableenergy",
     element: (
       <Layout>
-        <RenewablePage/>
+        <RenewablePage />
       </Layout>
     ),
   },
+  {
+    path: "/renewableenergy",
+    element: (
+      <Layout>
+        <RenewablePage />
+      </Layout>
+    ),
+  },
+
+  // Extra pages on details on the service page
+  // {
+  //   path: "/service/:id",
+  //   element: (
+  //     <Layout>
+  //       <CaliDetails />
+  //     </Layout>
+  //   ),
+  {
+    path: "/service/:slug", // Dynamic route
+    element: (
+      <Layout>
+        <ServiceDetails />
+      </Layout>
+    ),
+  },
+  // },
 ]);
 
 // Render the application

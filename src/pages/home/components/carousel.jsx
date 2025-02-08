@@ -1,5 +1,5 @@
 import { React, useEffect } from "react";
-import "bootstrap"
+import "bootstrap";
 import Carousel from "react-bootstrap/Carousel";
 import CarouselImage from "./CarouselImage";
 import "../home.css";
@@ -7,6 +7,7 @@ import AOS from "aos";
 import solutions from "../../../assets/carousel_img/value.jpg";
 import precision_2 from "../../../assets/carousel_img/precision_2.jpg";
 import sustainable from "../../../assets/carousel_img/sustainable.jpg";
+import { Link } from "react-router-dom";
 
 function MainSlider() {
   useEffect(() => {
@@ -24,8 +25,9 @@ function MainSlider() {
             {" "}
             <b>
               {" "}
-              We are VALTEC,<br />
-              an energy technology company 
+              We are VALTEC,
+              <br />
+              an energy technology company
             </b>
           </p>
           <p
@@ -37,7 +39,6 @@ function MainSlider() {
           </p>
           {/* <p className="btn btn-danger px-4 mt-0 defbodyFont">Explore</p> */}
         </Carousel.Caption>
-        
       </Carousel.Item>
 
       <Carousel.Item interval={2000}>
@@ -59,6 +60,13 @@ function MainSlider() {
             reach completion on time and within budget. Trust VALTEC to deliver
             solutions that meet the highest industry standards.
           </p>
+          <Link
+            className="bg-danger p-3 text-white fs-5 rounded"
+            style={{ textDecorationLine: "none" }}
+            to={`/service`}
+          >
+            Explore
+          </Link>
         </Carousel.Caption>
       </Carousel.Item>
 

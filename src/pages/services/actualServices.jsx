@@ -2,7 +2,9 @@ import { React, useState, useEffect } from "react";
 import { Container, Row, Col, Modal, Button, Carousel } from "react-bootstrap";
 import Banner from "../../components/banner/Banner";
 import "./services.css";
+import { useParams } from "react-router-dom";
 // import ContactSalesBtn from "./contactSalesbtn";
+import { Link } from "react-router-dom";
 import ProductsSection from "./epcService.jsx";
 import ReadMorebtn from "./readMorebtn.jsx";
 import {
@@ -59,9 +61,8 @@ import epc2 from "../../assets/services_img/new/epc/epc2.jpg";
 import epc3 from "../../assets/services_img/new/epc/epc3.jpg";
 import epc4 from "../../assets/services_img/new/epc/epc4.jpg";
 
-
 const epcDetails = [
-    {
+  {
     name: "Engineering Procurement and Construction",
     initialImage: epc1,
     imgOrder: 0,
@@ -97,10 +98,10 @@ const epcDetails = [
       </div>
     ),
   },
-]
+];
 
 // Service items with their data
-const serviceItems = [
+export const serviceItems = [
   // {
   //   name: "Engineering Procurement and Construction",
   //   initialImage: epc1,
@@ -139,6 +140,7 @@ const serviceItems = [
   // },
   {
     name: "Calibration Services",
+    slug: "Calibration_details",
     initialImage: calib,
     imgOrder: 2,
     carouselImages: [ca_calib, ca_calib2, ca_calib3],
@@ -166,6 +168,7 @@ const serviceItems = [
   },
   {
     name: "Additives : Fuel, Lubricants and Greases",
+    slug: "additives_details",
     initialImage: lubricants,
     imgOrder: 0,
     carouselImages: [f1, f2, f3, f4, f5, f6],
@@ -196,6 +199,7 @@ const serviceItems = [
   },
   {
     name: "Infrastructure and Facilities",
+    slug: "infrastructure_Details",
     initialImage: infrastructure,
     imgOrder: 2,
     carouselImages: [i1, i2, i3],
@@ -218,6 +222,7 @@ const serviceItems = [
   },
   {
     name: "Renewable Energy",
+    slug: "renewable_details",
     initialImage: renewables,
     imgOrder: 0,
     carouselImages: [
@@ -237,48 +242,185 @@ const serviceItems = [
       "VALTEC Limited is committed to promoting sustainable growth through renewable energy solutions. From solar and wind to bioenergy, we design and implement clean energy projects that help reduce carbon footprints and energy costs. Our renewable energy expertise enables us to support clients on their journey toward sustainable operations, offering solutions that align with global energy goals and environmental standards.",
     detailedContent: (
       <div>
-        <p>
-          Our Infrastructure and Facilities services cater to the specific
-          requirements of the industrial sector, providing reliable, tailored
-          solutions for facility management, construction, and maintenance.
-          VALTEC Limited leverages its local expertise and global network to
-          support infrastructure projects, ensuring optimal functionality and
-          safety standards in every project. We are dedicated to building
-          resilient facilities that support long-term operational success.
-        </p>
+        <p>Fix Content here</p>
       </div>
     ),
   },
   {
     name: "Digital Solutions",
+    slug: "digital_details",
     initialImage: digital,
     imgOrder: 2,
     carouselImages: [digital],
     icon: <PiMonitor className="s-icon" />,
     description: (
-      <ul className="list-unstyled">
-        <li>
-          <strong>Data Analytics</strong>
-          <br />
-          <span>
+      <p>
+        <strong>Data Analytics </strong>
+        <br />
+        We help businesses make smarter decisions by turning raw data into
+        actionable insights. <br />
+        <strong>Visualization and Immersive Storytelling</strong>
+        <br />
+        VALTEC brings your data to life with stunning visuals and engaging
+        stories.
+      </p>
+    ),
+    detailedContent: (
+      <div className="row">
+        <div className="col-12">
+          <h1 className="text-danger ">Data & Analytics</h1>
+          <p className="mb-5">
             We help businesses make smarter decisions by turning raw data into
-            actionable insights.
-          </span>
-        </li>
-
-        <li>
-          <strong>Visualization and Immersive Storytelling</strong>
+            actionable insights. We leverage data engineering, advanced
+            analytics and machine learning technology to address a diverse range
+            of client challenges. A typical project may include a combination of
+            data scientists, data engineers, business analysts, software
+            engineers and domain experts in disciplines such as geotechnical,
+            electrical, civil and mechanical engineering.  <br />
+            <span className="mt-3">
+              Our data and analytics team works closely with all other parts of
+              VALTEC to deliver exceptional results for clients, for example:
+            </span>
+          </p>
+          <div className="row">
+            <div className="col-md-6">
+              <ol
+                className="list-unstyled p-3 "
+                style={{ border: "2px solid red" }}
+              >
+                <li>
+                  {" "}
+                  <h3 className="text-danger p-0 my-0">Visualize</h3>
+                  We create engaging interactive dashboards and data
+                  visualization tools to display averages, variations, trends,
+                  relationships, and structures.
+                </li>
+                <li>
+                  {" "}
+                  <h3 className="text-danger p-0">Detect</h3>
+                  We identify people, objects, assets, features, anomalies,
+                  faults, hazards, risks, actions, and behaviors. For example,
+                  we map roads from aerial images and identify road signs and
+                  pipeline faults from video footage.
+                </li>
+                <li>
+                  {" "}
+                  <h3 className="text-danger p-0">Predict</h3>
+                  We utilize metered data from residential developments to
+                  predict critical peak loads for energy consumption. We
+                  anticipate demand, timing, events, equipment failures, and
+                  cost revenue.
+                </li>
+              </ol>
+            </div>
+            <div className="col-md-6">
+              <ol
+                className="list-unstyled p-3"
+                style={{ border: "2px solid red" }}
+              >
+                <li className="p-0">
+                  {" "}
+                  <h3 className="text-danger p-0">Optimize</h3>
+                  We optimize site selection, routes, schedules, operational and
+                  production processes, and maintenance. Projects include HVAC
+                  energy reduction, predictive maintenance, and production
+                  process optimization.
+                </li>
+                <li>
+                  {" "}
+                  <h3 className="text-danger p-0">Automate</h3>
+                  Automating expensive, repetitive, or hazardous tasks;
+                  construction and manufacturing activities; and evaluations.
+                </li>
+                <li>
+                  {" "}
+                  <h3 className="text-danger p-0">Create</h3>
+                  Machine learning for designs, images, processes, strategies,
+                  and experiments. We applied machine learning-based generative
+                  design to automate the configuration of a data center. We
+                  assist clients in managing, understanding, and extracting
+                  insights from their data to enhance asset management, optimize
+                  operations, make informed planning and design decisions, and
+                  execute projects more efficiently.
+                </li>
+              </ol>
+            </div>
+          </div>
           <br />
-          <span>
-            VALTEC brings your data to life with stunning visuals and engaging
-            stories.
-          </span>
-        </li>
-      </ul>
+          <h4 className="mt-5">
+            {" "}
+            Our services focus on four key areas and include:
+          </h4>
+          <ul>
+            <li>
+              <h3 className="text-danger">Data management</h3> Advising on the
+              capabilities, processes, platforms, and architectures needed to
+              effectively and securely manage big data. Designing and
+              implementing processes and infrastructure for data acquisition,
+              storage, transformation, and integration. Creating interactive
+              dashboards and reporting tools that enable clients to understand
+              their data and gain better insights into the performance of their
+              assets and operations.
+            </li>
+            <li>
+              <h3 className="text-danger">Asset management</h3> Analytical
+              models for optimizing asset management or capital projects at the
+              portfolio or program level. Automated monitoring of asset
+              conditions and forecasting of asset health. Utilizing machine
+              vision to more accurately, quickly, safely, and remotely detect,
+              geolocate, and inspect geographically dispersed assets. Predictive
+              maintenance through machine learning to optimize maintenance
+              scheduling, road surface evaluation, and capital expenditure
+              decisions.
+            </li>
+            <li>
+              <h3 className="text-danger">Operational improvement</h3>
+              Optimizing logistics, scheduling, capacity assessment, root cause
+              analysis, and production processes with machine learning.
+              Enhancing energy efficiency of HVAC systems, pumps, and other
+              energy-intensive systems through machine learning. Automated event
+              detection, activity analysis, and traffic incident detection
+              utilizing computer vision and machine learning technologies.
+            </li>
+            <li>
+              <h3 className="text-danger">Planning and design</h3>Utilizing
+              advanced analytics enhances infrastructure planning,
+              transportation planning, and urban design. Employing predictive
+              modeling to forecast or assess the likelihood of events, such as
+              predicting critical peak loads for energy usage in residential
+              developments, to aid infrastructure planning. Automating and
+              augmenting design processes through generative design technology.
+              Monitoring projects and enhancing productivity. Optimizing site
+              selection.
+            </li>
+          </ul>
+        </div>
+        <div className="col-12">
+          <h1 className="text-danger pt-4">
+            Visualization and Immersive Storytelling
+          </h1>
+          <p>
+            VALTEC brings your data to life with stunning visuals and compelling
+            narratives. Visualization and real-time rendering build
+            anticipation, eliminate ambiguity, clarify design features, and
+            engage stakeholders through immersive project experiences. By
+            collaborating with our clients, we uncover, translate, and
+            strategically convey their project’s vision through various visual
+            mediums, from augmented reality to motion graphics to app
+            development. Our team transforms your designs from plans and
+            architectural models into fit-for-purpose visual formats, such as
+            videos, before-and-after comparisons, photomontages, 360-degree
+            panoramic videos, aerial photography, and more. High-quality digital
+            content breathes life into your project for a range of purposes and
+            audiences, whether it's for stakeholder engagement or promotion.
+          </p>
+        </div>
+      </div>
     ),
   },
   {
     name: "Public Private Partnerships",
+    slug: "public_details",
     initialImage: partnership,
     imgOrder: 0,
     carouselImages: [partnership],
@@ -301,29 +443,26 @@ const serviceItems = [
   },
   {
     name: "Sustainability",
+    slug: "sustainability_details",
     initialImage: sustainability,
     imgOrder: 2,
     carouselImages: [sustainability],
     icon: <MdOutlineGroup className="s-icon" />,
     description: (
-      <ul className="list-unstyled">
-        <li>
-          <strong>Risk and assurance Strategy</strong>
-          <br />
-          We help you identify risks and build strategies that ensure
-          sustainable, long-term success.
-        </li>
-        <li>
-          <strong>Energy and emissions modeling</strong>
-          <br />
-          Our solutions help you track energy use and reduce emissions for a
-          greener, efficient future.
-        </li>
-      </ul>
+      <p>
+        <strong>Risk and assurance Strategy</strong>
+        <br />
+        We help you identify risks and build strategies that ensure sustainable,
+        long-term success. <br />
+        <strong>Energy and emissions modeling</strong>
+        <br />
+        Our solutions help you track energy use and reduce emissions for a
+        greener, efficient future.
+      </p>
     ),
     detailedContent: (
       <div className="service-description">
-        <h2>Risk and Assurance Strategy</h2>
+        <h2 className="text-danger p-0">Risk and Assurance Strategy</h2>
         <p>
           Uncertainty, experienced by all businesses, is synonymous with risk.
           We recognize this and offer comprehensive risk and assurance
@@ -332,21 +471,20 @@ const serviceItems = [
           comfortable with uncertainty, defining complex problems, managing
           ambiguity, and navigating dynamic environments through:
         </p>
-        <h4>Strategic risk and assurance</h4>
+        <h4 className="text-danger">Strategic risk and assurance</h4>
         <ul>
           <li>Risk-based strategy and strategic risk management</li>
           <li>Strategy performance and governance integration</li>
           <li>
             Risk-based decision support, scenario management, and adaptive
-            planning
+            planning{/* <ContactSalesBtn />{" "} */}tion
           </li>
-          <li>Critical success factor identification</li>
           <li>
             Board and Executive advisory, alignment, and assurance delivery
             services
           </li>
         </ul>
-        <h4>Enterprise risk and assurance</h4>
+        <h4 className="text-danger">Enterprise risk and assurance</h4>
         <ul>
           <li>Risk, governance, audit, assurance, and benefits frameworks</li>
           <li>
@@ -359,7 +497,9 @@ const serviceItems = [
             crisis and emergency management
           </li>
         </ul>
-        <h4>Enterprise risk and assurance</h4>
+        <h4 className="text-danger">
+          Capital asset program risk and assurance
+        </h4>
         <ul>
           <li>
             Project, program, and portfolio risk advisory, governance, benefits
@@ -375,6 +515,117 @@ const serviceItems = [
             risk-based cost estimation, and Monte Carlo simulation
           </li>
         </ul>
+        <h2 className="text-danger p-0">Energy and emissions modeling</h2>
+        <p>
+          Our solutions help you track energy use and reduce emissions for a
+          greener, efficient future.
+        </p>
+      </div>
+    ),
+  },
+  {
+    name: "Reliability Services",
+    slug: "reliability_details",
+    initialImage: partnership,
+    imgOrder: 0,
+    carouselImages: [partnership],
+    icon: <MdOutlineGroup className="s-icon" />,
+    description: (
+      <p>
+        VALTEC ensures the reliability of your machinery through advanced
+        vibration analysis and predictive maintenance solutions. Our expert team
+        conducts in-depth reliability appraisals to assess critical assets,
+        identify vulnerabilities, and recommend tailored solutions for your
+        plant or factory.
+      </p>
+    ),
+    detailedContent: (
+      <div>
+        <p>
+          Most customers encounter various challenges regarding the overall
+          reliability of their machinery. Consequently, a vibration analysis
+          service for rotating assets has evolved into a comprehensive solution
+          for your factory or plant’s high-cost equipment maintenance program.
+          To determine which technology is best suited for your needs, we
+          perform an in-depth analysis of your business through a complimentary
+          reliability appraisal that assesses your current and future
+          maintenance requirements highlights:
+        </p>
+
+        <ul>
+          <li>What are your critical assets are</li>
+          <li>Where are your potential pain points & weaknesses are</li>
+          <li>
+            Which solution is optimal for your business (conventional or
+            customized)
+          </li>
+          <li>How your business will benefit.</li>
+        </ul>
+        <h2>
+          <strong>Our consulting services cover:</strong>
+        </h2>
+        <div className="row">
+          <div className="col-md-6">
+            <ul>
+              <li>Machinery balancing</li>
+              <li>Acceptance testing</li>
+              <li>Safety assessments for people & the environment</li>
+              <li>Structural stability</li>
+              <li>Electrical issues</li>
+              <li>Fire mitigation</li>
+            </ul>
+          </div>
+          <div className="col-md-6">
+            <ul>
+              <li>Leak detection</li>
+              <li>Energy savings</li>
+              <li>Oil analysis</li>
+              <li>Thermographic photography</li>
+              <li>Ultrasound cameras</li>
+            </ul>
+          </div>
+        </div>
+        <div className="p-3 rounded" style={{ border: "2px solid red" }}>
+          <p>
+            Our highly specialized technical team is equipped to identify and
+            resolve operational issues while utilizing various reliability tools
+            and complementary techniques to address every aspect of your
+            maintenance needs. We collaborate with other experts to achieve the
+            best results if we do not have in-house personnel available for the
+            task. VALTEC offers reliable solutions and 24/7 repair services,
+            including{" "}
+            <strong>
+              Vibration Analysis, Onsite Repairs, Laser Alignment, Dynamic
+              Balancing, and Diagnostics Services. Vibration Analysis
+            </strong>
+          </p>
+          <p>
+            Our ASNT-certified analysts provide the most effective predictive
+            tool for routine machinery health monitoring, detecting early
+            issues, and minimizing unscheduled downtime, along with diagnostic
+            capabilities for nearly any rotating equipment machine.
+          </p>
+          <ul>
+            <li>
+              <h4 className="text-danger">Onsite Repairs</h4>
+              We don’t just identify problems; we solve them. Our onsite repair
+              services will get your malfunctioning equipment back online faster
+              because we come to you! Let us minimize your downtime by repairing
+              your machinery at your facility.
+            </li>
+            <li>
+              <h4 className="text-danger">Laser Alignment</h4>
+              We provide precision laser alignment for coupled and belt-driven
+              equipment, minimizing wear and repair costs while enhancing the
+              efficiency and longevity of machines and their parts.
+            </li>
+            <li>
+              <h4 className="text-danger">Dynamic Balancing</h4>
+              VALTEC specializes in the balancing of centrifugal chillers,
+              blowers, fans, and other rotating equipment.
+            </li>
+          </ul>
+        </div>
       </div>
     ),
   },
@@ -387,13 +638,10 @@ function Services() {
       offset: 50,
     });
   }, []);
+
   // State for Image Modal
   const [showModal, setShowModal] = useState(false);
   const [clickedImage, setClickedImage] = useState(null);
-
-  // State for Read More Modal
-  const [showReadMoreModal, setShowReadMoreModal] = useState(false);
-  const [clickedService, setClickedService] = useState(null);
 
   // Function for showing image modal
   const handleShowImageModal = (service) => {
@@ -401,17 +649,9 @@ function Services() {
     setClickedImage(service);
   };
 
-  // Function for showing read more modal
-  const handleShowReadMoreModal = (service) => {
-    console.log("Service passed to modal:", service);
-    setShowReadMoreModal(true);
-    setClickedService(service); // Set service data for Read More modal
-  };
-
-  // Close both modals
+  // Close image modals
   const handleClose = () => {
     setShowModal(false);
-    setShowReadMoreModal(false); // Close both modals when called
   };
 
   return (
@@ -431,10 +671,10 @@ function Services() {
       >
         <Container>
           <Row>
-            <ProductsSection/>
-            <Col style={{'position':'relative', 'top':'-50px', 'left':'45px'}}>
-              <ReadMorebtn onClick={() => handleShowReadMoreModal(epcDetails[0])}/>
-            </Col>
+            <ProductsSection />
+            <Col
+              style={{ position: "relative", top: "-50px", left: "45px" }}
+            ></Col>
           </Row>
           <Row className="flex-column mt-5">
             {serviceItems.map((service, idx) => (
@@ -476,10 +716,19 @@ function Services() {
                     <p className="defbodyFont d-block pb-1">
                       {service.description}
                     </p>
-                    {/* <ContactSalesBtn />{" "} */}
-                    <ReadMorebtn
-                      onClick={() => handleShowReadMoreModal(service)}
-                    />
+
+                    {/* Conditional rendering to exclude "Read More" for certain services */}
+                    {service.name !== "Calibration Services" &&
+                      service.name !== "Infrastructure and Facilities" &&
+                      service.name !== "Public Private Partnerships" && (
+                        <Link
+                          className="bg-primary p-2 text-white fs-5 mb-2 rounded"
+                          style={{ textDecorationLine: "none" }}
+                          to={`/service/${service.slug}`}
+                        >
+                          Read More
+                        </Link>
+                      )}
                   </Col>
                 </Row>
               </Col>
@@ -487,7 +736,6 @@ function Services() {
           </Row>
         </Container>
       </Container>
-
       <Modal
         show={showModal}
         onHide={handleClose}
@@ -510,26 +758,6 @@ function Services() {
               ))}
             </Carousel>
           </div>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-        </Modal.Footer>
-      </Modal>
-
-      {/* Modal for Read More (Detailed Content) */}
-      <Modal
-        show={showReadMoreModal}
-        dialogClassName="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"
-        onHide={() => setShowReadMoreModal(false)}
-      >
-        <Modal.Header closeButton>
-          <Modal.Title>{clickedService?.name || "No Title"}</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          {clickedService?.detailedContent ||
-            "No additional content available."}
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>

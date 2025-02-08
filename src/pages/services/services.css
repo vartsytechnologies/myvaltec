@@ -6,3 +6,15 @@
 span {
   text-align: justify;
 }
+/* Resetting styles */
+.service-description ul {
+  list-style-type: disc; /* Ensure standard bullets */
+  padding-left: 20px; /* Indent the list */
+  margin-top: 10px; /* Some space at the top */
+}
+
+.service-description ul li {
+  font-size: 1rem;
+  margin-bottom: 8px; /* Space between list items */
+  color: #333;
+}

@@ -58,6 +58,8 @@ function Services() {
   const handleClose = () => setShowModal(false);
   const [showModal, setShowModal] = useState(false);
 
+  // const ser
+
   return (
     <>
       <Banner title="Services" />
@@ -150,7 +152,7 @@ function Services() {
                     state-of-the-art calibration tools. Our services reduce
                     downtime and improve operational safety, delivering the
                     assurance our clients need to operate confidently and
-                    efficiently.uhggfx
+                    efficiently.
                     <ContactSalesBtn />
                   </span>
                   <p className="mt-4"></p>
