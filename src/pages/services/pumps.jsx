@@ -1,28 +1,49 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Button, Card } from "react-bootstrap";
-import Pvf from "../../assets/services_img/PVF.jpg";
-import Pipe from "../../assets/services_img/pvf/Pipe_and_Tube_Thumbnail.jpg";
-import Valves from "../../assets/services_img/pvf/Valves_Thumbnails.jpg";
-import Act from "../../assets/services_img/pvf/Actuation_Thumbnails.jpg";
-import Fit from "../../assets/services_img/pvf/Fittings_Thumbnails.jpg";
-import Flanges from "../../assets/services_img/pvf/Flanges_Thumbnails.jpg";
-import Fasteners from "../../assets/services_img/pvf/Fasteners_thumbnail.jpg";
-import Gaskets from "../../assets/services_img/pvf/Gaskets_Thumbnails.jpg";
-import Pipe_accessories from "../../assets/services_img/pvf/Pipe_piping_accessories_thumbnail.jpg";
+import { Link } from "react-router-dom";
 
-const PVFHeaderSection = () => {
+//new images
+import Cent from "../../assets/services_img/pumps/Centrifugal_pumps_thumb.webp"
+import ChemInj from "../../assets/services_img/pumps/Chemical_injection_pumps_thumb.webp"
+import MechSeal from "../../assets/services_img/pumps/Mechanical_seals_thumb.webp"
+import Positive from "../../assets/services_img/pumps/Positive-displacement-thumbnail.webp"
+import Pumpserv from "../../assets/services_img/pumps/Pump_service_repair_thumb.jpg"
+import Rent from "../../assets/services_img/pumps/Rental-pumps-thumbnail.webp"
+import Swd from "../../assets/services_img/pumps/SWD-Turnkey-Package.webp"
+import Pumpsthumb from "../../assets/services_img/pumps/Pumps_thumbnail.webp"
+
+
+import Breadcrumb from 'react-bootstrap/Breadcrumb';
+
+function BreadcrumbSection() {
+  return (
+    <Container><br/>
+    <Breadcrumb>
+      <Breadcrumb.Item href="/home">Home</Breadcrumb.Item>
+      <Breadcrumb.Item href="/service">
+        Services
+      </Breadcrumb.Item>
+      <Breadcrumb.Item active>Pumps</Breadcrumb.Item>
+    </Breadcrumb>
+    </Container>
+  );
+}
+
+
+const PumpHeaderSection = () => {
   return (
     <Container className="my-5">
       <Row className="align-items-center">
         <Col md={6} className="text-center text-md-start">
-          <h1>Industrial and Oilfield Pumps</h1>
-          <h5>Pump Solutions: Buy, Repair and Maintain Quality Pump Products</h5>
-          <p>
+          <h1 className="defheadFont">Industrial and Oilfield Pumps</h1>
+          <h5 className="defbodyFont text-danger">Pump Solutions: Buy, Repair and Maintain Quality Pump Products</h5>
+          <p className="defbodyFont">
           Are you searching for reliable, top-quality pump products and solutions for your business? Our DNOW U.S. Process Solutions group has years of experience in the industry, allowing us to become a trusted and leading provider of oilfield, industrial and municipal pumps that cater to various industries. Our pump stores give you access to a wide range of pump products as well as an extensive fleet of rental pump units, including centrifugal, positive displacement and surface pumps, to mention a few. Contact us today to learn more about how we can help you streamline your operations and improve your bottom line
           </p>
+          <Link to='/contact'><p className="btn btn-danger defbodyFont">Contact Sales</p></Link>
         </Col>
         <Col md={6} className="text-center">
-          <img src={Pvf} alt="PVF Products" className="img-fluid" />
+          <img src={Pumpsthumb} alt="PVF Products" className="img-fluid" />
         </Col>
       </Row>
     </Container>
@@ -32,51 +53,45 @@ const PVFHeaderSection = () => {
 const ProductsSection = () => {
   const allProducts = [
     {
-      name: "Pipe and Tube",
-      image: Pipe,
-      text: "We stock and sell pipe and tube products in a variety of materials and sizes. Choose from a wide selection of steel, alloy, brass and copper pipe and tube products in all sizes.",
+      name: "Centrifugal Pumps",
+      image: Cent,
+      text: "VALTEC is your solution to transport fluids by converting rotational kinetic energy to the hydrodynamic energy of the fluid flow.",
       category: "all",
     },
     {
-      name: "Valves",
-      image: Valves,
-      text: "We stock and distribute a variety of valves with numerous designs, materials and sizes. Choose from a wide selection of ball valves, globe valves, gate valves, check valves and more.",
+      name: "Chemical Dosing & Metering Pumps",
+      image: ChemInj,
+      text: "VALTEC is your solution for pumps that move precise volumes of flow under very high pressures and temperatures",
       category: "all",
     },
     {
-      name: "Actuators",
-      image: Act,
-      text: "We stock and sell a variety of actuators, including linear actuators, rotary actuators and custom built actuators. Our accessories include limit switches, relief valves and regulators.",
+      name: "Mechanical Seals",
+      image: MechSeal,
+      text: "VALTEC is your sealing solution for containing fluid within rotating equipment, pumps, and applications across all industries.",
       category: "all",
     },
     {
-      name: "Fittings",
-      image: Fit,
-      text: "If you need a pipe fittings supplier, we have everything from elbows and tees to couplings and reducers. Our materials include stainless steel, PE-Xa, carbon steel and fiberglass.",
+      name: "Positive Displacement Pumps",
+      image: Positive,
+      text: "VALTEC is your solution for pumps that deliver constant flow rates at a given speed (rpm) no matter the system discharge pressure",
       category: "all",
     },
     {
-      name: "Flanges",
-      image: Flanges,
-      text: "We stock and sell a large stock inventory of flanges in a variety of sizes and materials, such as carbon steel, stainless steel, nickel alloy, fiberglass and composite for all industries.",
+      name: "Pump Service & Repair",
+      image: Pumpserv,
+      text: "VALTEC offers an entire fleet of pump field services and maintenance programs for in-house repairs, upgrades, and replacement parts.",
       category: "tsm",
     },
     {
-      name: "Fasteners",
-      image: Fasteners,
-      text: "We stock and sell fasteners of all sizes and shapes. Our inventory includes screws, nails, anchors, bolts, nuts, washers, studs, hinges, clamps, keystock and other hardware in stock.",
+      name: "Rental Pumps",
+      image: Rent,
+      text: "VALTEC offers a diverse and comprehensive fleet of rental pumps to serve a wide range of pump applications for various markets.",
       category: "tsm",
     },
     {
-      name: "Gaskets",
-      image: Gaskets,
-      text: "We stock and sell gaskets in a variety of materials, including spiral wound gaskets, ring joint gaskets, sheet gaskets and die-cut gaskets. If you need a gasket, we have you covered.",
-      category: "tsm",
-    },
-    {
-      name: "Piping Accessories",
-      image: Pipe_accessories,
-      text: "We carry a wide variety of piping accessories to help you get the job done. Whether you need strainers, steam traps, blinds, closures, vents or arresters, we have what you need.",
+      name: "Turnkey Pump & Control Packages",
+      image: Swd,
+      text: "VALTEC offers modularized turnkey pump packages mounted on a single skid and delivered to a customer site ready for installation",
       category: "tsm",
     },
   ];
@@ -95,16 +110,19 @@ const ProductsSection = () => {
     <Container fluid className="my-5 py-5" style={{ backgroundColor: "#f5f5f5" }}>
       <Container>
         {/* initially a text - center */}
-        <h2 className="">Industry-Leading Pump Products and Services for Superior Flow Management</h2>
-        <p className="">
+        <h2 className="defHeadFont">Industry-Leading Pump Products and Services for Superior Flow Management</h2>
+        <p className="defBodyFont">
         Pump products are incredibly versatile and can resolve several issues related to the transportation and movement of fluids. We have various sizes and types of pumping products, each offering specific benefits and features that cater to multiple requirements. DNOW pump services are also available for all pumps and equipment, ensuring they are in prime condition. With this kind of support, individuals can have peace of mind knowing that their pump products will operate reliably and efficiently. Whether it's for municipal or industrial use, DNOW's pump products can make a significant difference in enhancing your fluid movement process
         </p>
         <div className="mb-4">
           <Button variant="primary" className="me-2" onClick={() => filterProducts("all")}>
             Show all
           </Button>
+          <Button variant="secondary" className="me-2" onClick={() => filterProducts("tsm")}>
+            Odessa Pumps
+          </Button>
           <Button variant="secondary" onClick={() => filterProducts("tsm")}>
-            TS&M Supply Fiberglass
+            Power Service
           </Button>
         </div>
         <Row>
@@ -113,8 +131,8 @@ const ProductsSection = () => {
               <Card className="text-center shadow-sm">
                 <Card.Img variant="top" src={product.image} />
                 <Card.Body>
-                  <Card.Title style={{ color: "red" }}>{product.name}</Card.Title>
-                  <Card.Text>{product.text}</Card.Text>
+                  <Card.Title className="defheadFont" style={{  }}>{product.name}</Card.Title>
+                  <Card.Text className="defbodyFont">{product.text}</Card.Text>
                 </Card.Body>
               </Card>
             </Col>
@@ -128,7 +146,8 @@ const ProductsSection = () => {
 const PumpServicePage = () => {
   return (
     <>
-      <PVFHeaderSection />
+    <BreadcrumbSection/>
+      <PumpHeaderSection />
       <ProductsSection />
     </>
   );

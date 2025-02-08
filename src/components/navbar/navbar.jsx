@@ -159,9 +159,10 @@ export default function NavBar() {
           </Nav>
 
           <Button
-            className="btn btn-danger"
+            className="btn btn-danger defbodyFont"
             variant="primary"
             onClick={handleShow}
+            // style={{'color':'white', 'background':'#881111'}}
           >
             Contact Sales
           </Button>

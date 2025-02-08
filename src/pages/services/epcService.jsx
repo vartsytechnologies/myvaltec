@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { Link } from "react-router-dom"; 
-import ReadMorebtn from "./readMorebtn";
+// import ReadMorebtn from "./readMorebtn";
 
 //the epc section on the services page
 
@@ -11,10 +11,10 @@ const EpcSection = () => {
       <Row className="align-items-center">
         {/* Left side - Text Section */}
         <Col md={6} className="d-flex flex-column justify-content-center">
-          <h2 className="fw-bold">
+          <h2 className="defheadFont">
             Engineering Procurement and Construction
           </h2>
-          <p>
+          <p className="defbodyFont">
           VALTEC Limited offers comprehensive EPC (Engineering, Procurement, and Construction) services, tailored to meet the complex needs of the energy, mining, oil, and gas sectors. Our team brings a wealth of experience, utilizing advanced technology and local expertise to streamline project execution from design to completion.
           <br /><br />
           {/* <ReadMorebtn/> */}

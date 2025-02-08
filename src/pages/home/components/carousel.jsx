@@ -33,9 +33,9 @@ function MainSlider() {
             data-aos="fade-left"
             data-aos-delay="200"
           >
-            We take energy forward - making it safer, cleaner, and more efficient for people and the plan
+            We take energy forward - making it safer, cleaner, and more efficient for people and the planet.
           </p>
-          <p className="btn btn-danger px-4 mt-0 defbodyFont">Explore</p>
+          {/* <p className="btn btn-danger px-4 mt-0 defbodyFont">Explore</p> */}
         </Carousel.Caption>
         
       </Carousel.Item>
@@ -83,6 +83,7 @@ function MainSlider() {
             time. Partner with us to create a lasting positive impact on the
             environment and your bottom line.
           </p>
+          <p className="btn btn-danger px-4 mt-0 defbodyFont">Explore</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

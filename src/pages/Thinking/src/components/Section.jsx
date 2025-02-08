@@ -17,17 +17,16 @@ function Section({ title, content, extraContent = "", imgSrc, imgOrder }) {
   }, []);
   return (
     <Container className={`defPb`}>
-      <h2
+      <Row className="align-items-center">
+        <Col
+          xs={12} md={6}
+          className={`ps-0 order-1 order-md-${imgOrder}  defbodyFont`}
+        ><h2
         className="text-danger defheadFont"
         data-aos="fade-down"
       >
         {title}
       </h2>
-      <Row>
-        <Col
-          xs={12} md={6}
-          className={`ps-0 order-1 order-md-${imgOrder}  defbodyFont`}
-        >
           <p
             data-aos="zoom-in-right"
             className="text-md-justify pt-2"

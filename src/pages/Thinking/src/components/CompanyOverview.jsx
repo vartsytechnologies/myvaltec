@@ -15,20 +15,20 @@ function CompanyOverview() {
   }, []);
   return (
     <Container className="defPt defPb">
-      <h2
+      
+      <Row className="align-items-center">
+        <Col
+          md={6}
+        >
+          <h2
         className="text-danger defheadFont"
         data-aos="fade-left"
       >
         Company Overview
       </h2>
-      <Row>
-        <Col
-          md={6}
-          className="ps-0 defbodyFont text-md-justify"
-        >
           <p
             data-aos="fade-left"
-            className="mt-3 me-sm-1 me-md-3 me-lg-4 "
+            className="mt-3 me-sm-1 me-md-3 me-lg-4 defbodyFont"
           >
             Established in August 2015, VALTEC is a value-driven design,
             engineering, procurement, construction, and management consulting

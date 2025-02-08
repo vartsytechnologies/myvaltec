@@ -10,19 +10,35 @@ import Fasteners from "../../assets/services_img/pvf/Fasteners_thumbnail.jpg";
 import Gaskets from "../../assets/services_img/pvf/Gaskets_Thumbnails.jpg";
 import Pipe_accessories from "../../assets/services_img/pvf/Pipe_piping_accessories_thumbnail.jpg";
 
+import Breadcrumb from 'react-bootstrap/Breadcrumb';
+
+function BreadcrumbSection() {
+  return (
+    <Container><br/>
+    <Breadcrumb>
+      <Breadcrumb.Item href="/home">Home</Breadcrumb.Item>
+      <Breadcrumb.Item href="/service">
+        Services
+      </Breadcrumb.Item>
+      <Breadcrumb.Item active>PVF</Breadcrumb.Item>
+    </Breadcrumb>
+    </Container>
+  );
+}
+
 const PVFSection = () => {
   return (
     <Container className="my-5">
-      <Row className="align-items-center">
+      <Row className="align-items-start">
         <Col md={6} className="text-center text-md-start">
-          <h2>Pipe, Valves and Fittings (PVF)</h2>
-          <p>
+          <h2 className="defheadFont">Pipe, Valves and Fittings (PVF)</h2>
+          <p className="defbodyFont">
             VALTEC is your global PVF distributor for pipe, valves, actuators,
             fittings, flanges, fasteners and gaskets. We maintain a wide range
             of PVF products in multiple schedules, sizes and grades for the oil
             and gas and industrial markets.
           </p>
-          <p>
+          <p className="defbodyFont">
             VALTEC provides a wide range of pipe, valves and fittings to reduce
             operational downtime, replenish your on-site inventory and get what
             you need when you need it.
@@ -101,12 +117,12 @@ const PvfProductsSection = () => {
   return (
     <Container fluid className="my-5 py-5" style={{ backgroundColor: "#f5f5f5" }}>
       <Container>
-        <h2 className="text-center">Browse Products & Services</h2>
-        <p className="text-center">
+        <h2 className="text-center defheadFont">Browse Products & Services</h2>
+        <p className="text-center defbodyFont">
           If you're looking for pipe fittings, pipe flanges, seals and gaskets or
           valves, our catalog has everything you need.
         </p>
-        <div className="text-center mb-4">
+        <div className="text-center mb-4 defbodyFont">
           <Button variant="primary" className="me-2" onClick={() => filterProducts("all")}>
             Show all
           </Button>
@@ -120,8 +136,8 @@ const PvfProductsSection = () => {
               <Card className="text-center shadow-sm">
                 <Card.Img variant="top" src={product.image} />
                 <Card.Body>
-                  <Card.Title style={{ color: "red" }}>{product.name}</Card.Title>
-                  <Card.Text>{product.text}</Card.Text>
+                  <Card.Title className="defheadFont text-start" style={{  }}>{product.name}</Card.Title>
+                  <Card.Text className="defbodyFont text-start">{product.text}</Card.Text>
                 </Card.Body>
               </Card>
             </Col>
@@ -135,6 +151,7 @@ const PvfProductsSection = () => {
 const Pvfpage = () => {
   return (
     <>
+      <BreadcrumbSection/>
       <PVFSection />
       <PvfProductsSection />
     </>
