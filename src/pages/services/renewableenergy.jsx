@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Button, Card } from "react-bootstrap";
-import Pvf from "../../assets/services_img/PVF.jpg";
 import Pipe from "../../assets/services_img/pvf/Pipe_and_Tube_Thumbnail.jpg";
 import Valves from "../../assets/services_img/pvf/Valves_Thumbnails.jpg";
 import Act from "../../assets/services_img/pvf/Actuation_Thumbnails.jpg";
@@ -18,15 +17,9 @@ const PVFSection = () => {
         <Col md={6} className="text-center text-md-start">
           <h1>Building a Sustainable Future</h1>
           <p>
-         VALTEC Limited is dedicated to building a sustainable future through renewable energy. We design and implement clean energy projects that reduce carbon footprints and lower energy costs. We meet residential, commercial, and utility energy demands with high-quality solar photovoltaic modules and reliable battery storage solutions for our projects. We utilize the Smart Design Technology to realize the vision of your solar PV power plant with full 3D rendition, design for maximum yield, high performance, and efficient operations. 
-        Our innovative solar street lighting solution distinguishes us with advanced technological advantages. 
-        We are not just an Energy Company. We are your renewable energy partner collaborating  to support our valued clients in their journey toward sustainable future, delivering solutions that align with global energy goals and environmental standards.
-
-          </p>
-          <p>
-            VALTEC provides a wide range of pipe, valves and fittings to reduce
-            operational downtime, replenish your on-site inventory and get what
-            you need when you need it.
+          VALTEC Limited is dedicated to building a sustainable future through renewable energy. We design and implement clean energy projects that reduce carbon footprints and lower energy costs. We meet residential, commercial, and utility energy demands with high-quality solar photovoltaic modules and reliable battery storage solutions for our projects. We utilize the Smart Design Technology to realize the vision of your solar PV power plant with full 3D rendition, design for maximum yield, high performance, and efficient operations. 
+Our innovative solar street lighting solution distinguishes us with advanced technological advantages. 
+We are not just an Energy Company. We are your renewable energy partner collaborating  to support our valued clients in their journey toward sustainable future, delivering solutions that align with global energy goals and environmental standards.
           </p>
         </Col>
         <Col md={6} className="text-center">
