@@ -260,7 +260,18 @@ export const serviceItems = [
     imgOrder: 2,
     carouselImages: [digital],
     icon: <PiMonitor className="s-icon" />,
-
+    description: (
+      <p>
+        <strong>Data Analytics </strong>
+        <br />
+        We help businesses make smarter decisions by turning raw data into
+        actionable insights. <br />
+        <strong>Visualization and Immersive Storytelling</strong>
+        <br />
+        VALTEC brings your data to life with stunning visuals and engaging
+        stories.
+      </p>
+    ),
     detailedContent: (
       <div className="row">
         <div className="col-12">
@@ -439,30 +450,26 @@ export const serviceItems = [
   },
   {
     name: "Sustainability",
-    id: "5",
+    slug: "sustainability_details",
     initialImage: sustainability,
     imgOrder: 2,
     carouselImages: [sustainability],
     icon: <MdOutlineGroup className="s-icon" />,
     description: (
-      <ul className="list-unstyled">
-        <li>
-          <h2 className="p-0">Risk and assurance Strategy</h2>
-          <br />
-          We help you identify risks and build strategies that ensure
-          sustainable, long-term success.
-        </li>
-        <li>
-          <h2 className="p-0">Energy and emissions modeling</h2>
-          <br />
-          Our solutions help you track energy use and reduce emissions for a
-          greener, efficient future.
-        </li>
-      </ul>
+      <p>
+        <strong>Risk and assurance Strategy</strong>
+        <br />
+        We help you identify risks and build strategies that ensure sustainable,
+        long-term success. <br />
+        <strong>Energy and emissions modeling</strong>
+        <br />
+        Our solutions help you track energy use and reduce emissions for a
+        greener, efficient future.
+      </p>
     ),
     detailedContent: (
       <div className="service-description">
-        <h2 className="p-0">Risk and Assurance Strategy</h2>
+        <h2 className="text-danger p-0">Risk and Assurance Strategy</h2>
         <p>
           Uncertainty, experienced by all businesses, is synonymous with risk.
           We recognize this and offer comprehensive risk and assurance
@@ -471,9 +478,8 @@ export const serviceItems = [
           comfortable with uncertainty, defining complex problems, managing
           ambiguity, and navigating dynamic environments through:
         </p>
-        <h4>Strategic risk and assurance</h4>
+        <h4 className="text-danger">Strategic risk and assurance</h4>
         <ul>
-          Modal
           <li>Risk-based strategy and strategic risk management</li>
           <li>Strategy performance and governance integration</li>
           <li>
@@ -485,7 +491,7 @@ export const serviceItems = [
             services
           </li>
         </ul>
-        <h4>Enterprise risk and assurance</h4>
+        <h4 className="text-danger">Enterprise risk and assurance</h4>
         <ul>
           <li>Risk, governance, audit, assurance, and benefits frameworks</li>
           <li>
@@ -498,7 +504,9 @@ export const serviceItems = [
             crisis and emergency management
           </li>
         </ul>
-        <h4>Enterprise risk and assurance</h4>
+        <h4 className="text-danger">
+          Capital asset program risk and assurance
+        </h4>
         <ul>
           <li>
             Project, program, and portfolio risk advisory, governance, benefits
@@ -514,6 +522,11 @@ export const serviceItems = [
             risk-based cost estimation, and Monte Carlo simulation
           </li>
         </ul>
+        <h2 className="text-danger p-0">Energy and emissions modeling</h2>
+        <p>
+          Our solutions help you track energy use and reduce emissions for a
+          greener, efficient future.
+        </p>
       </div>
     ),
   },
@@ -610,7 +623,7 @@ function Services() {
                       service.name !== "Infrastructure and Facilities" &&
                       service.name !== "Public Private Partnerships" && (
                         <Link
-                          className="bg-primary p-3 text-white fs-5 mb-2 rounded"
+                          className="bg-primary p-2 text-white fs-5 mb-2 rounded"
                           style={{ textDecorationLine: "none" }}
                           to={`/service/${service.slug}`}
                         >

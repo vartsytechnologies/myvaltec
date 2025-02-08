@@ -17,9 +17,11 @@ const ServiceDetails = () => {
         <Banner title={service.name} />
         <Container className="py-3 mt-5 text-justify">
           <div>
-            {/* <img src={service.initialImage} alt={service.name} /> */}
-            <p className="defbodyFont">{service.description}</p>
-            <div>{service.detailedContent}</div>
+            {service.name !== "Sustainability" &&
+              service.name !== "Digital Solutions" && (
+                <p className="defbodyFont">{service.description}</p>
+              )}
+            <div className="defbodyFont">{service.detailedContent}</div>
           </div>
         </Container>
       </Container>
