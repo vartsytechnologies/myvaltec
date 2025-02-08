@@ -222,6 +222,7 @@ export const serviceItems = [
   },
   {
     name: "Renewable Energy",
+    slug: "renewable_details",
     initialImage: renewables,
     imgOrder: 0,
     carouselImages: [
@@ -241,15 +242,7 @@ export const serviceItems = [
       "VALTEC Limited is committed to promoting sustainable growth through renewable energy solutions. From solar and wind to bioenergy, we design and implement clean energy projects that help reduce carbon footprints and energy costs. Our renewable energy expertise enables us to support clients on their journey toward sustainable operations, offering solutions that align with global energy goals and environmental standards.",
     detailedContent: (
       <div>
-        <p>
-          Our Infrastructure and Facilities services cater to the specific
-          requirements of the industrial sector, providing reliable, tailored
-          solutions for facility management, construction, and maintenance.
-          VALTEC Limited leverages its local expertise and global network to
-          support infrastructure projects, ensuring optimal functionality and
-          safety standards in every project. We are dedicated to building
-          resilient facilities that support long-term operational success.
-        </p>
+        <p>Fix Content here</p>
       </div>
     ),
   },
@@ -527,6 +520,112 @@ export const serviceItems = [
           Our solutions help you track energy use and reduce emissions for a
           greener, efficient future.
         </p>
+      </div>
+    ),
+  },
+  {
+    name: "Reliability Services",
+    slug: "reliability_details",
+    initialImage: partnership,
+    imgOrder: 0,
+    carouselImages: [partnership],
+    icon: <MdOutlineGroup className="s-icon" />,
+    description: (
+      <p>
+        VALTEC ensures the reliability of your machinery through advanced
+        vibration analysis and predictive maintenance solutions. Our expert team
+        conducts in-depth reliability appraisals to assess critical assets,
+        identify vulnerabilities, and recommend tailored solutions for your
+        plant or factory.
+      </p>
+    ),
+    detailedContent: (
+      <div>
+        <p>
+          Most customers encounter various challenges regarding the overall
+          reliability of their machinery. Consequently, a vibration analysis
+          service for rotating assets has evolved into a comprehensive solution
+          for your factory or plant’s high-cost equipment maintenance program.
+          To determine which technology is best suited for your needs, we
+          perform an in-depth analysis of your business through a complimentary
+          reliability appraisal that assesses your current and future
+          maintenance requirements highlights:
+        </p>
+
+        <ul>
+          <li>What are your critical assets are</li>
+          <li>Where are your potential pain points & weaknesses are</li>
+          <li>
+            Which solution is optimal for your business (conventional or
+            customized)
+          </li>
+          <li>How your business will benefit.</li>
+        </ul>
+        <h2>
+          <strong>Our consulting services cover:</strong>
+        </h2>
+        <div className="row">
+          <div className="col-md-6">
+            <ul>
+              <li>Machinery balancing</li>
+              <li>Acceptance testing</li>
+              <li>Safety assessments for people & the environment</li>
+              <li>Structural stability</li>
+              <li>Electrical issues</li>
+              <li>Fire mitigation</li>
+            </ul>
+          </div>
+          <div className="col-md-6">
+            <ul>
+              <li>Leak detection</li>
+              <li>Energy savings</li>
+              <li>Oil analysis</li>
+              <li>Thermographic photography</li>
+              <li>Ultrasound cameras</li>
+            </ul>
+          </div>
+        </div>
+        <div className="p-3 rounded" style={{ border: "2px solid red" }}>
+          <p>
+            Our highly specialized technical team is equipped to identify and
+            resolve operational issues while utilizing various reliability tools
+            and complementary techniques to address every aspect of your
+            maintenance needs. We collaborate with other experts to achieve the
+            best results if we do not have in-house personnel available for the
+            task. VALTEC offers reliable solutions and 24/7 repair services,
+            including{" "}
+            <strong>
+              Vibration Analysis, Onsite Repairs, Laser Alignment, Dynamic
+              Balancing, and Diagnostics Services. Vibration Analysis
+            </strong>
+          </p>
+          <p>
+            Our ASNT-certified analysts provide the most effective predictive
+            tool for routine machinery health monitoring, detecting early
+            issues, and minimizing unscheduled downtime, along with diagnostic
+            capabilities for nearly any rotating equipment machine.
+          </p>
+          <ul>
+            <li>
+              <h4 className="text-danger">Onsite Repairs</h4>
+              We don’t just identify problems; we solve them. Our onsite repair
+              services will get your malfunctioning equipment back online faster
+              because we come to you! Let us minimize your downtime by repairing
+              your machinery at your facility.
+            </li>
+            <li>
+              <h4 className="text-danger">Laser Alignment</h4>
+              We provide precision laser alignment for coupled and belt-driven
+              equipment, minimizing wear and repair costs while enhancing the
+              efficiency and longevity of machines and their parts.
+            </li>
+            <li>
+              <h4 className="text-danger">Dynamic Balancing</h4>
+              VALTEC specializes in the balancing of centrifugal chillers,
+              blowers, fans, and other rotating equipment.
+            </li>
+          </ul>
+        </div>
       </div>
     ),
   },
