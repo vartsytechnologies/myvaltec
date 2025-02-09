@@ -162,7 +162,9 @@ export const serviceItems = [
       "VALTEC Limited is committed to promoting sustainable growth through renewable energy solutions. From solar and wind to bioenergy, we design and implement clean energy projects that help reduce carbon footprints and energy costs. Our renewable energy expertise enables us to support clients on their journey toward sustainable operations, offering solutions that align with global energy goals and environmental standards.",
     detailedContent: (
       <div>
-        <p>Fix Content here</p>
+        <p>
+          <em>[ FIX MAIN CONTENT HERE ]</em>
+        </p>
       </div>
     ),
   },
@@ -741,7 +743,7 @@ function Services() {
                       </p>
                     </div>
                     <hr
-                      style={{
+                      stupyle={{
                         borderTop: "2px solid rgba(255,17,67,1)",
                         borderRadius: "4px",
                         opacity: "1",
