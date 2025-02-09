@@ -10,18 +10,17 @@ import Fasteners from "../../assets/services_img/pvf/Fasteners_thumbnail.jpg";
 import Gaskets from "../../assets/services_img/pvf/Gaskets_Thumbnails.jpg";
 import Pipe_accessories from "../../assets/services_img/pvf/Pipe_piping_accessories_thumbnail.jpg";
 
-import Breadcrumb from 'react-bootstrap/Breadcrumb';
+import Breadcrumb from "react-bootstrap/Breadcrumb";
 
 function BreadcrumbSection() {
   return (
-    <Container><br/>
-    <Breadcrumb>
-      <Breadcrumb.Item href="/home">Home</Breadcrumb.Item>
-      <Breadcrumb.Item href="/service">
-        Services
-      </Breadcrumb.Item>
-      <Breadcrumb.Item active>PVF</Breadcrumb.Item>
-    </Breadcrumb>
+    <Container>
+      <br />
+      <Breadcrumb>
+        <Breadcrumb.Item href="/home">Home</Breadcrumb.Item>
+        <Breadcrumb.Item href="/service">Services</Breadcrumb.Item>
+        <Breadcrumb.Item active>PVF</Breadcrumb.Item>
+      </Breadcrumb>
     </Container>
   );
 }
@@ -110,20 +109,32 @@ const PvfProductsSection = () => {
     if (category === "all") {
       setFilteredProducts(allProducts);
     } else {
-      setFilteredProducts(allProducts.filter((product) => product.category === category));
+      setFilteredProducts(
+        allProducts.filter((product) => product.category === category)
+      );
     }
   };
 
   return (
-    <Container fluid className="my-5 py-5" style={{ backgroundColor: "#f5f5f5" }}>
+    <Container
+      fluid
+      className="my-5 py-5"
+      style={{ backgroundColor: "#f5f5f5" }}
+    >
       <Container>
-        <h2 className="text-center defheadFont">Browse Products & Services</h2>
+        <h2 className="text-center defheadFont text-danger">
+          Browse Products & Services
+        </h2>
         <p className="text-center defbodyFont">
-          If you're looking for pipe fittings, pipe flanges, seals and gaskets or
-          valves, our catalog has everything you need.
+          If you're looking for pipe fittings, pipe flanges, seals and gaskets
+          or valves, our catalog has everything you need.
         </p>
         <div className="text-center mb-4 defbodyFont">
-          <Button variant="primary" className="me-2" onClick={() => filterProducts("all")}>
+          <Button
+            variant="primary"
+            className="me-2"
+            onClick={() => filterProducts("all")}
+          >
             Show all
           </Button>
           <Button variant="secondary" onClick={() => filterProducts("tsm")}>
@@ -132,12 +143,16 @@ const PvfProductsSection = () => {
         </div>
         <Row>
           {filteredProducts.map((product, index) => (
-            <Col md={3} sm={6} key={index} className="mb-4">
-              <Card className="text-center shadow-sm">
-                <Card.Img variant="top" src={product.image} />
+            <Col md={4} sm={6} key={index} className="mb-4">
+              <Card className="text-center shadow-sm d-flex flex-column h-100">
+                <Card.Img className="p-3" variant="top" src={product.image} />
                 <Card.Body>
-                  <Card.Title className="defheadFont text-start" style={{  }}>{product.name}</Card.Title>
-                  <Card.Text className="defbodyFont text-start">{product.text}</Card.Text>
+                  <Card.Title className="defheadFont text-start" style={{}}>
+                    {product.name}
+                  </Card.Title>
+                  <Card.Text className="defbodyFont text-start flex-grow-1">
+                    {product.text}
+                  </Card.Text>
                 </Card.Body>
               </Card>
             </Col>
@@ -151,7 +166,7 @@ const PvfProductsSection = () => {
 const Pvfpage = () => {
   return (
     <>
-      <BreadcrumbSection/>
+      <BreadcrumbSection />
       <PVFSection />
       <PvfProductsSection />
     </>

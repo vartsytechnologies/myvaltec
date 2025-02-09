@@ -55,7 +55,7 @@ const EpcSection = () => {
               <Link to="/pvf" className="text-decoration-none">
                 <Card
                   className="text-white text-center p-3"
-                  style={{ backgroundColor: "#f00" }}
+                  style={{ backgroundColor: "#1a1a1a" }}
                 >
                   <Card.Body>
                     {/* <div className="mb-2">🔧</div>
@@ -73,7 +73,7 @@ const EpcSection = () => {
               <Link to="/pumps" className="text-decoration-none">
                 <Card
                   className="text-white text-center p-3"
-                  style={{ backgroundColor: "#a00000" }}
+                  style={{ backgroundColor: "rgb(189, 14, 52)" }}
                 >
                   <Card.Body>
                     {/* <div className="mb-2">🔬</div> */}
@@ -90,7 +90,7 @@ const EpcSection = () => {
               <Link to="/mill" className="text-decoration-none">
                 <Card
                   className="text-white text-center p-3"
-                  style={{ backgroundColor: "#800000" }}
+                  style={{ backgroundColor: "rgb(189, 14, 52)" }}
                 >
                   <Card.Body>
                     {/* <div className="mb-2">🛠</div> */}

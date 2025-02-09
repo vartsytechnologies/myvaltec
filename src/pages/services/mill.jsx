@@ -19,33 +19,38 @@ import Office from "../../assets/services_img/mill/Office_supplies_thumb.webp";
 import Tape from "../../assets/services_img/mill/Tape_and_adhesives_thumb.webp";
 import Tools from "../../assets/services_img/mill/tools-and-welding-thumbnail.webp";
 
-import Breadcrumb from 'react-bootstrap/Breadcrumb';
+import Breadcrumb from "react-bootstrap/Breadcrumb";
 
 function BreadcrumbSection() {
   return (
-    <Container><br/>
-    <Breadcrumb>
-      <Breadcrumb.Item href="/home">Home</Breadcrumb.Item>
-      <Breadcrumb.Item href="/service">
-        Services
-      </Breadcrumb.Item>
-      <Breadcrumb.Item active>Mill</Breadcrumb.Item>
-    </Breadcrumb>
+    <Container>
+      <br />
+      <Breadcrumb>
+        <Breadcrumb.Item href="/home">Home</Breadcrumb.Item>
+        <Breadcrumb.Item href="/service">Services</Breadcrumb.Item>
+        <Breadcrumb.Item active>Mill</Breadcrumb.Item>
+      </Breadcrumb>
     </Container>
   );
 }
-
 
 const MillHeaderSection = () => {
   return (
     <Container className="my-5">
       <Row className="align-items-center">
         <Col md={8} className="text-center text-md-start">
-          <h1 className="defheadFont">Industrial and Facility Supplies
-          </h1>
-          <h5 className="defbodyFont text-danger">Industrial MRO Supplies for the Upkeep of Buildings and Grounds</h5>
+          <h1 className="defheadFont">Industrial and Facility Supplies</h1>
+          <h5 className="defbodyFont text-danger">
+            Industrial MRO Supplies for the Upkeep of Buildings and Grounds
+          </h5>
           <p className="defbodyFont">
-          From manufacturing to facility maintenance, VALTEC's range of industrial and facility supplies ensures smooth operations and safety at every level. Whether you're looking for industrial machinery, facility equipment or warehouse tools, our material handling solutions can do the job. Our commitment is to provide the best in industrial supplies and facility maintenance products, ensuring maximum efficiency, safety and satisfaction.
+            From manufacturing to facility maintenance, VALTEC's range of
+            industrial and facility supplies ensures smooth operations and
+            safety at every level. Whether you're looking for industrial
+            machinery, facility equipment or warehouse tools, our material
+            handling solutions can do the job. Our commitment is to provide the
+            best in industrial supplies and facility maintenance products,
+            ensuring maximum efficiency, safety and satisfaction.
           </p>
         </Col>
         <Col md={4} className="text-center">
@@ -117,32 +122,38 @@ const MillProductsSection = () => {
       image: Janitorial,
       text: "We offer a wide range of janitorial supplies including cleaning products, brooms, mops, bags, dispensers, personal care items and vacuums. From trusted brands that ensure clean and safe facilities. Find products for all your cleaning needs.",
       category: "tsm",
-    },{
+    },
+    {
       name: "Lifting Equipment and Accessories",
       image: Lifting,
       text: "Find top-quality lifting equipment for safe and efficient heavy-duty tasks. From beam attachments to overhead cranes, our products ensure precision, safety and durability. Trusted by professionals in construction and heavy industries.",
       category: "tsm",
-    },{
+    },
+    {
       name: "Lubricants and Lubrication Supplies",
       image: Lubrication,
       text: "We offer an extensive selection of high-quality lubricants and lubrication equipment to ensure the smooth operation of your machinery. With products ranging from motor and gear oil to specialized anti-seize compounds we cater to a diverse array of needs.",
       category: "tsm",
-    },{
+    },
+    {
       name: "Marking Products",
       image: Marking,
       text: "Our inventory consists of marking products tailored for industrial precision from paint markers and stencils to wire tags and stamps. Ensuring clear, durable markings across varied surfaces, essential for error-free projects and impeccable results.",
       category: "tsm",
-    },{
+    },
+    {
       name: "Material Handling",
       image: Material,
       text: "From forklift accessories to waste management tools, we offer material handling solutions to boost efficiency, safety and space optimization. We sell handling equipment that streamlines operations, ensuring both productivity and customer satisfaction.",
       category: "tsm",
-    },{
+    },
+    {
       name: "Office Supplies",
       image: Office,
       text: "Enhance your workspace's productivity with our selection of office supplies from basic items like binders and notebooks to tech essentials and laminating tools. Organize and boost productivity with our essential office tools.",
       category: "tsm",
-    },{
+    },
+    {
       name: "Oilfield Solutions",
       image: Drill,
       text: "We stock tailored oilfield solutions including chemical soap sticks for optimizing well production and efficient rig wash products. Committed to eco-compliance, we provide high-quality pit liners and environmental tanks for contamination prevention.",
@@ -162,16 +173,29 @@ const MillProductsSection = () => {
     if (category === "all") {
       setFilteredProducts(allProducts);
     } else {
-      setFilteredProducts(allProducts.filter((product) => product.category === category));
+      setFilteredProducts(
+        allProducts.filter((product) => product.category === category)
+      );
     }
   };
 
   return (
-    <Container fluid className="my-5 py-5" style={{ backgroundColor: "#f5f5f5" }}>
+    <Container
+      fluid
+      className="my-5 py-5"
+      style={{ backgroundColor: "#f5f5f5" }}
+    >
       <Container>
         <h2 className="defheadFont text-center">Explore Product Offerings</h2>
         <p className="defbodyFont text-center">
-        Our curated inventory boasts everything from premium adhesives and advanced electrical products to elite safety equipment and precision tools. Discover our vast selection, featuring oilfield solutions, essential office supplies, efficient material handling and much more. Prioritize workplace safety with our top-tier PPE or find robust hardware for maintenance tasks. With VALTEC, you're choosing unparalleled quality and durability. Explore our product offerings now and elevate your operations.
+          Our curated inventory boasts everything from premium adhesives and
+          advanced electrical products to elite safety equipment and precision
+          tools. Discover our vast selection, featuring oilfield solutions,
+          essential office supplies, efficient material handling and much more.
+          Prioritize workplace safety with our top-tier PPE or find robust
+          hardware for maintenance tasks. With VALTEC, you're choosing
+          unparalleled quality and durability. Explore our product offerings now
+          and elevate your operations.
         </p>
         {/* <div className="text-center mb-4">
           <Button variant="primary" className="me-2" onClick={() => filterProducts("all")}>
@@ -183,12 +207,16 @@ const MillProductsSection = () => {
         </div> */}
         <Row>
           {filteredProducts.map((product, index) => (
-            <Col md={3} sm={6} key={index} className="mb-4">
-              <Card className="text-center shadow-sm">
-                <Card.Img variant="top" src={product.image} />
+            <Col md={4} sm={6} key={index} className="mb-4">
+              <Card className="text-center shadow-sm d-flex flex-column h-100">
+                <Card.Img className="p-3" variant="top" src={product.image} />
                 <Card.Body>
-                  <Card.Title className="defheadFont text-start" style={{}}>{product.name}</Card.Title>
-                  <Card.Text className="defbodyFont text-start">{product.text}</Card.Text>
+                  <Card.Title className="defheadFont text-start" style={{}}>
+                    {product.name}
+                  </Card.Title>
+                  <Card.Text className="defbodyFont text-start flex-grow-1">
+                    {product.text}
+                  </Card.Text>
                 </Card.Body>
               </Card>
             </Col>
@@ -202,7 +230,7 @@ const MillProductsSection = () => {
 const MillServicePage = () => {
   return (
     <>
-      <BreadcrumbSection/>
+      <BreadcrumbSection />
       <MillHeaderSection />
       <MillProductsSection />
     </>
@@ -210,4 +238,3 @@ const MillServicePage = () => {
 };
 
 export default MillServicePage;
-
