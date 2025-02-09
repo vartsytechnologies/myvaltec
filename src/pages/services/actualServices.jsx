@@ -140,7 +140,7 @@ export const serviceItems = [
   // },
   {
     name: "Calibration Services",
-    slug: "Calibration_details",
+    slug: "calibration_services",
     initialImage: calib,
     imgOrder: 2,
     carouselImages: [ca_calib, ca_calib2, ca_calib3],
@@ -168,7 +168,7 @@ export const serviceItems = [
   },
   {
     name: "Additives : Fuel, Lubricants and Greases",
-    slug: "additives_details",
+    slug: "additives",
     initialImage: lubricants,
     imgOrder: 0,
     carouselImages: [f1, f2, f3, f4, f5, f6],
@@ -199,7 +199,7 @@ export const serviceItems = [
   },
   {
     name: "Infrastructure and Facilities",
-    slug: "infrastructure_Details",
+    slug: "infrastructure&facilities",
     initialImage: infrastructure,
     imgOrder: 2,
     carouselImages: [i1, i2, i3],
@@ -222,7 +222,7 @@ export const serviceItems = [
   },
   {
     name: "Renewable Energy",
-    slug: "renewable_details",
+    slug: "renewable_energy",
     initialImage: renewables,
     imgOrder: 0,
     carouselImages: [
@@ -248,7 +248,7 @@ export const serviceItems = [
   },
   {
     name: "Digital Solutions",
-    slug: "digital_details",
+    slug: "digital_solutions",
     initialImage: digital,
     imgOrder: 2,
     carouselImages: [digital],
@@ -443,7 +443,7 @@ export const serviceItems = [
   },
   {
     name: "Sustainability",
-    slug: "sustainability_details",
+    slug: "sustainability",
     initialImage: sustainability,
     imgOrder: 2,
     carouselImages: [sustainability],
@@ -525,7 +525,7 @@ export const serviceItems = [
   },
   {
     name: "Reliability Services",
-    slug: "reliability_details",
+    slug: "reliability_services",
     initialImage: partnership,
     imgOrder: 0,
     carouselImages: [partnership],

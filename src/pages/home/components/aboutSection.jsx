@@ -20,10 +20,7 @@ function AboutSection() {
       <Container className="defPt defPb">
         <Row className="mt-4 flex-column">
           <Col>
-            <h1
-              className="defheadFont text-danger"
-              data-aos="fade-up"
-            >
+            <h1 className="defheadFont text-danger" data-aos="fade-up">
               About Us
             </h1>
           </Col>
@@ -42,17 +39,10 @@ function AboutSection() {
                 locally available expertise and a globalized affiliated support
                 network ensures specialized precision, real-time speed, and
                 reliable services to EPC projects and operations in West Africa.
-                <p
-                  className="mt-4"
-                  data-aos="fade-up"
-                  data-aos-delay="400"
-                >
+                <p className="mt-4" data-aos="fade-up" data-aos-delay="400">
                   <Link to="/thinking">
                     {" "}
-                    <DefaultButton
-                      name="Read More"
-                      variant="danger"
-                    />
+                    <DefaultButton name="Read More" variant="danger" />
                   </Link>
                 </p>
               </Col>

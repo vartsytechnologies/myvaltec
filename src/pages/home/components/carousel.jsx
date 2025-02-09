@@ -18,7 +18,7 @@ function MainSlider() {
   }, []);
   return (
     <Carousel indicators={false}>
-      <Carousel.Item interval={2000}>
+      {/*<Carousel.Item interval={2000}>
         <CarouselImage text="First slide" sliderImage={solutions} />
         <Carousel.Caption className="sliderCaption" id="captionWithButton">
           <p className="sliderCaptionMain defbodyFont" data-aos="fade-up">
@@ -35,9 +35,37 @@ function MainSlider() {
             data-aos="fade-left"
             data-aos-delay="200"
           >
-            We take energy forward - making it safer, cleaner, and more efficient for people and the planet.
+            We take energy forward - making it safer, cleaner, and more
+            efficient for people and the planet.
           </p>
-          {/* <p className="btn btn-danger px-4 mt-0 defbodyFont">Explore</p> */}
+          <Link to="/service">
+            {" "}
+            <p className="btn btn-danger px-4 mt-0 defbodyFont">Explore</p>{" "}
+          </Link>
+        </Carousel.Caption>
+      </Carousel.Item>*/}
+
+      <Carousel.Item interval={2000}>
+        <CarouselImage text="First slide" sliderImage={solutions} />
+        <Carousel.Caption className="sliderCaption">
+          <p className="sliderCaptionMain defbodyFont" data-aos="fade-up">
+            <b>
+              {" "}
+              We are VALTEC, <br /> an energy technology company
+            </b>
+          </p>
+          <p
+            className="sliderCaptionSubtext defbodyFont d-none d-sm-block"
+            data-aos="fade-left"
+            data-aos-delay="200"
+          >
+            We take energy forward - making it safer, cleaner, and more
+            efficient for people and the planet.
+          </p>
+          <Link to="/service">
+            {" "}
+            <p className="btn btn-danger px-4 mt-0 defbodyFont">Explore</p>{" "}
+          </Link>
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -60,13 +88,10 @@ function MainSlider() {
             reach completion on time and within budget. Trust VALTEC to deliver
             solutions that meet the highest industry standards.
           </p>
-          {/* <Link
-            className="bg-danger p-3 text-white fs-5 rounded"
-            style={{ textDecorationLine: "none" }}
-            to={`/service`}
-          >
-            Explore
-          </Link> */}
+          <Link to="/service">
+            {" "}
+            <p className="btn btn-danger px-4 mt-0 defbodyFont">Explore</p>{" "}
+          </Link>
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -91,7 +116,10 @@ function MainSlider() {
             time. Partner with us to create a lasting positive impact on the
             environment and your bottom line.
           </p>
-          <Link to='/renewableenergy'> <p className="btn btn-danger px-4 mt-0 defbodyFont">Explore</p> </Link>
+          <Link to="/service/renewable_energy">
+            {" "}
+            <p className="btn btn-danger px-4 mt-0 defbodyFont">Explore</p>{" "}
+          </Link>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
