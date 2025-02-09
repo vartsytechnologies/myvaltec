@@ -30,7 +30,7 @@ const ServiceDetails = () => {
           <div>
             {service.name !== "Sustainability" &&
               service.name !== "Digital Solutions" && (
-                <p className="defbodyFont" data-aos="fade-up">
+                <p className="defbodyFont" data-aos="fade-down">
                   {service.description}
                 </p>
               )}

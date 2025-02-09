@@ -287,7 +287,7 @@ export const serviceItems = [
           <div className="row d-flex align-items-stretch">
             <div className="col-md-6 d-flex">
               <ol
-                className="list-unstyled p-3 flex-grow-1"
+                className="list-unstyled p-3 flex-grow-1 rounded"
                 style={{ border: "2px solid red" }}
               >
                 <li>
@@ -317,7 +317,7 @@ export const serviceItems = [
             </div>
             <div className="col-md-6 d-flex">
               <ol
-                className="list-unstyled p-3 flex-grow-1"
+                className="list-unstyled p-3 flex-grow-1 rounded"
                 style={{ border: "2px solid red" }}
               >
                 <li className="p-0">
@@ -567,8 +567,8 @@ export const serviceItems = [
           </li>
           <li>How your business will benefit.</li>
         </ul>
-        <h2>
-          <strong>Our consulting services cover:</strong>
+        <h2 className="defheadFont text-danger">
+          Our consulting services cover:
         </h2>
         <div className="row">
           <div className="col-md-6">
@@ -756,7 +756,7 @@ function Services() {
                       service.name !== "Infrastructure and Facilities" &&
                       service.name !== "Public Private Partnerships" && (
                         <Link
-                          className="bg-primary p-2 mb-4 text-white fs-5 rounded"
+                          className="bg-primary p-2 mb-4 text-white fs-6 fw-bolder rounded"
                           style={{ textDecorationLine: "none" }}
                           to={`/service/${service.slug}`}
                         >
