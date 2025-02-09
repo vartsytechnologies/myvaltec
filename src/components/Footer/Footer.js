@@ -4,7 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import "./Footer.css";
 import footerLogo from "../../assets/valtec_logo_white.png";
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -40,7 +40,6 @@ function Footer() {
               <Link to="/">Home</Link>
               <Link to="/thinking">About VALTEC</Link>
               <Link to="/markets">Markets</Link>
-              
             </div>
           </Col>
           <Col
@@ -49,7 +48,7 @@ function Footer() {
             className="extra-links-section  border-0 border-sm-start border-sm-2 ps-0 ps-sm-5"
           >
             <div className="footer-links-group mt-0 mt-sm-4 ">
-            <Link to="/service">Services</Link>
+              <Link to="/service">Services</Link>
               <Link to="/projects">Projects</Link>
               {/* <a href="/">Expertise</a> */}
               <Link to="/contact">Contact Us</Link>
@@ -65,9 +64,9 @@ function Footer() {
         >
           <div
             className="d-flex align-items-center justify-content-center"
-            style={{ border: "1px solid black", height: "60px" }}
+            style={{ height: "70px" }}
           >
-            <p className="text-center " style={{ fontSize: ".8rem" }}>
+            <p className="mt-3 text-center " style={{ fontSize: ".8rem" }}>
               Designed & developed by Vartsy Systems
             </p>
           </div>
