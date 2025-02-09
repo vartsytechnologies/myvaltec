@@ -37,7 +37,7 @@
   .sliderCaptionMain {
     font-size: 4rem;
     line-height: 4rem;
-  }
+  }style={{ border: "2px solid red" }}
 }
 
 @media (min-width: 992px) {
@@ -52,8 +52,12 @@
     line-height: 2.5rem;
   }
   .sliderCaption {
-    top: -10%;
+    top: -7%;
     left: 20%;
+  }
+  .sliderCaptionSubtext {
+    line-height: 1.4em;
+    font-size: 1rem;
   }
 }
 @media (min-width: 1200px) {

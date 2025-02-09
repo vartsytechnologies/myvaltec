@@ -17,7 +17,7 @@ function MainSlider() {
     });
   }, []);
   return (
-    <Carousel indicators={false} style={{ border: "2px solid red" }}>
+    <Carousel indicators={false}>
       <Carousel.Item interval={2000}>
         <CarouselImage
           className="carousel-image"
