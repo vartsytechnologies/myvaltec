@@ -143,7 +143,7 @@ export const serviceItems = [
     name: "Renewable Energy",
     slug: "renewable_energy",
     initialImage: renewables,
-    imgOrder: 0,
+    imgOrder: 2,
     carouselImages: [
       ren1,
       ren2,
@@ -223,7 +223,7 @@ export const serviceItems = [
     name: "Calibration Services",
     slug: "calibration_services",
     initialImage: calib,
-    imgOrder: 2,
+    imgOrder: 0,
     carouselImages: [ca_calib, ca_calib2, ca_calib3],
     icon: <MdOutlineCompassCalibration className="s-icon" />,
     description:
@@ -258,6 +258,7 @@ export const serviceItems = [
     description: (
       <p>
         <strong>Data Analytics </strong>
+        <p></p>
         <br />
         We help businesses make smarter decisions by turning raw data into
         actionable insights. <br />
