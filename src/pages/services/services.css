@@ -3,6 +3,11 @@
   width: 50px;
   color: rgba(255, 17, 67, 1);
 }
+.b-icon {
+  height: 50px;
+  width: 50px;
+  color: rgb(243, 238, 239);
+}
 span {
   text-align: justify;
 }
@@ -17,4 +22,9 @@ span {
   font-size: 1rem;
   margin-bottom: 8px; /* Space between list items */
   color: #333;
+}
+.img-fluid {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
 }

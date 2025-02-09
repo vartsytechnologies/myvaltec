@@ -14,6 +14,7 @@ import {
   MdOutlinePrecisionManufacturing,
   MdOutlineGroup,
 } from "react-icons/md";
+import { VscWorkspaceTrusted } from "react-icons/vsc";
 import { PiMonitor } from "react-icons/pi";
 import { AiOutlineExperiment } from "react-icons/ai";
 import AOS from "aos";
@@ -529,7 +530,7 @@ export const serviceItems = [
     initialImage: partnership,
     imgOrder: 0,
     carouselImages: [partnership],
-    icon: <MdOutlineGroup className="s-icon" />,
+    icon: <VscWorkspaceTrusted className="s-icon" />,
     description: (
       <p>
         VALTEC ensures the reliability of your machinery through advanced
@@ -677,19 +678,43 @@ function Services() {
             ></Col>
           </Row>
           <Row className="flex-column mt-5">
+            {/* Render the first service separately
+            <Col data-aos="fade-up" className="py-0 mb-5">
+              <Row className="justify-content-between align-items-center">
+                <Col
+                  xs={12}
+                  lg={6}
+                  className={`zoom-out-container mb-0 mb-md-5 align-self-center`}
+                >
+                  <div className="d-flex">
+                    <p className="fs-5 pt-2 m-0 defheadFont text-danger mb-0">
+                      {epcDetails.icon}
+                    </p>
+                    <p className="fs-5 pt-3 defheadFont text-danger ms-1 mb-0 ">
+                      {epcDetails.name}{" "}
+                    </p>
+                  </div>
+                </Col>
+              </Row>
+            </Col> */}
             {serviceItems.map((service, idx) => (
               <Col key={idx} data-aos="fade-up" className="py-0 mb-5">
                 <Row className="justify-content-between align-items-center">
                   <Col
                     xs={12}
                     lg={6}
-                    className={`zoom-out-container mb-0 mb-md-5 align-self-center order-md-${service.imgOrder}`}
+                    className={`zoom-out-container mb-0 mb-md-4 align-self-center order-md-${service.imgOrder}`}
                   >
                     <div
                       className="image-Container align-self-center pe-3 pt-0"
                       style={{ width: "100%", height: "auto" }}
                     >
                       <img
+                        style={{
+                          width: "100%",
+                          height: "500px",
+                          objectFit: "contain",
+                        }}
                         src={service.initialImage}
                         alt={service.name}
                         className={`img-fluid `}
@@ -697,7 +722,11 @@ function Services() {
                       />
                     </div>
                   </Col>
-                  <Col className="align-self-center pt-0">
+                  <Col
+                    xs={12}
+                    lg={6}
+                    className="align-self-center pt-0 rounded"
+                  >
                     <div className="d-flex">
                       <p className="fs-5 pt-2 m-0 defheadFont text-danger mb-0">
                         {service.icon}
@@ -722,7 +751,7 @@ function Services() {
                       service.name !== "Infrastructure and Facilities" &&
                       service.name !== "Public Private Partnerships" && (
                         <Link
-                          className="bg-primary p-2 text-white fs-5 mb-2 rounded"
+                          className="bg-primary p-2 mb-4 text-white fs-5 rounded"
                           style={{ textDecorationLine: "none" }}
                           to={`/service/${service.slug}`}
                         >

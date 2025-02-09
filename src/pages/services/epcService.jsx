@@ -1,6 +1,8 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
-import { Link } from "react-router-dom"; 
+import { Link } from "react-router-dom";
+import "./services.css";
+import { GiValve, GiOilPump } from "react-icons/gi";
 // import ReadMorebtn from "./readMorebtn";
 
 //the epc section on the services page
@@ -15,9 +17,14 @@ const EpcSection = () => {
             Engineering Procurement and Construction
           </h2>
           <p className="defbodyFont">
-          VALTEC Limited offers comprehensive EPC (Engineering, Procurement, and Construction) services, tailored to meet the complex needs of the energy, mining, oil, and gas sectors. Our team brings a wealth of experience, utilizing advanced technology and local expertise to streamline project execution from design to completion.
-          <br /><br />
-          {/* <ReadMorebtn/> */}
+            VALTEC Limited offers comprehensive EPC (Engineering, Procurement,
+            and Construction) services, tailored to meet the complex needs of
+            the energy, mining, oil, and gas sectors. Our team brings a wealth
+            of experience, utilizing advanced technology and local expertise to
+            streamline project execution from design to completion.
+            <br />
+            <br />
+            {/* <ReadMorebtn/> */}
           </p>
         </Col>
 
@@ -32,7 +39,9 @@ const EpcSection = () => {
                   style={{ backgroundColor: "#f00" }}
                 >
                   <Card.Body>
-                    <div className="mb-2">🔧</div>
+                    {/* <div className="mb-2">🔧</div>
+                     */}
+                    <GiValve className="mb-2 b-icon" />
                     <Card.Title>Pipe, Valves, Fittings & Flanges</Card.Title>
                   </Card.Body>
                 </Card>
@@ -45,7 +54,8 @@ const EpcSection = () => {
                   style={{ backgroundColor: "#a00000" }}
                 >
                   <Card.Body>
-                    <div className="mb-2">🔬</div>
+                    {/* <div className="mb-2">🔬</div> */}
+                    <GiOilPump className="mb-2 b-icon" />
                     <Card.Title>Pumps, Production & Drilling</Card.Title>
                   </Card.Body>
                 </Card>
