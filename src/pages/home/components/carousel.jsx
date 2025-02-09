@@ -17,36 +17,13 @@ function MainSlider() {
     });
   }, []);
   return (
-    <Carousel indicators={false}>
-      {/*<Carousel.Item interval={2000}>
-        <CarouselImage text="First slide" sliderImage={solutions} />
-        <Carousel.Caption className="sliderCaption" id="captionWithButton">
-          <p className="sliderCaptionMain defbodyFont" data-aos="fade-up">
-            {" "}
-            <b>
-              {" "}
-              We are VALTEC,
-              <br />
-              an energy technology company
-            </b>
-          </p>
-          <p
-            className="sliderCaptionSubtext defbodyFont d-none d-sm-block"
-            data-aos="fade-left"
-            data-aos-delay="200"
-          >
-            We take energy forward - making it safer, cleaner, and more
-            efficient for people and the planet.
-          </p>
-          <Link to="/service">
-            {" "}
-            <p className="btn btn-danger px-4 mt-0 defbodyFont">Explore</p>{" "}
-          </Link>
-        </Carousel.Caption>
-      </Carousel.Item>*/}
-
+    <Carousel indicators={false} style={{ border: "2px solid red" }}>
       <Carousel.Item interval={2000}>
-        <CarouselImage text="First slide" sliderImage={solutions} />
+        <CarouselImage
+          className="carousel-image"
+          text="First slide"
+          sliderImage={solutions}
+        />
         <Carousel.Caption className="sliderCaption">
           <p className="sliderCaptionMain defbodyFont" data-aos="fade-up">
             <b>
@@ -55,7 +32,7 @@ function MainSlider() {
             </b>
           </p>
           <p
-            className="sliderCaptionSubtext defbodyFont d-none d-sm-block"
+            className="sliderCaptionSubtext defbodyFont"
             data-aos="fade-left"
             data-aos-delay="200"
           >
@@ -70,7 +47,11 @@ function MainSlider() {
       </Carousel.Item>
 
       <Carousel.Item interval={2000}>
-        <CarouselImage text="Second slide" sliderImage={precision_2} />
+        <CarouselImage
+          className="carousel-image"
+          text="Second slide"
+          sliderImage={precision_2}
+        />
         <Carousel.Caption className="sliderCaption">
           <p className="sliderCaptionMain defbodyFont" data-aos="fade-up">
             <b>
@@ -79,7 +60,7 @@ function MainSlider() {
             </b>
           </p>
           <p
-            className="sliderCaptionSubtext defbodyFont d-none d-sm-block"
+            className="sliderCaptionSubtext defbodyFont"
             data-aos="fade-left"
             data-aos-delay="200"
           >
@@ -96,7 +77,11 @@ function MainSlider() {
       </Carousel.Item>
 
       <Carousel.Item interval={2000}>
-        <CarouselImage text="Third slide" sliderImage={sustainable} />
+        <CarouselImage
+          className="carousel-image"
+          text="Third slide"
+          sliderImage={sustainable}
+        />
         <Carousel.Caption className="sliderCaption">
           <p className="sliderCaptionMain defbodyFont" data-aos="fade-up">
             {" "}
@@ -107,7 +92,7 @@ function MainSlider() {
             </b>
           </p>
           <p
-            className="sliderCaptionSubtext defbodyFont d-none d-sm-block"
+            className="sliderCaptionSubtext defbodyFont"
             data-aos="fade-left"
             data-aos-delay="200"
           >

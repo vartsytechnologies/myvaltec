@@ -11,7 +11,8 @@
   left: 20%;
 }
 
-#captionWithButton{
+#captionWithButton {
+  display: block;
   position: absolute;
   top: 10%;
 }
@@ -25,10 +26,10 @@
   font-size: 1.2rem;
 }
 
-@media (min-width: 576px) {
+/* @media (min-width: 576px) {
   .sliderCaptionMain {
-    font-size: 3rem;
-    line-height: 3rem;
+    font-size: 2rem;
+    line-height: 1rem;
   }
 }
 
@@ -44,8 +45,17 @@
     font-size: 4rem;
     line-height: 4rem;
   }
+} */
+@media (max-width: 576px) {
+  .sliderCaptionMain {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .sliderCaption {
+    top: -10%;
+    left: 20%;
+  }
 }
-
 @media (min-width: 1200px) {
   .sliderCaptionMain {
     font-size: 4rem;
@@ -65,7 +75,7 @@
     /*for positioning the captions*/
     text-align: left;
     position: absolute;
-    top: 20%;
+    top: 10%;
     left: 10%;
   }
 }
