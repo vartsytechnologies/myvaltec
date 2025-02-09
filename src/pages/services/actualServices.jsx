@@ -140,31 +140,29 @@ export const serviceItems = [
   //   ),
   // },
   {
-    name: "Calibration Services",
-    slug: "calibration_services",
-    initialImage: calib,
-    imgOrder: 2,
-    carouselImages: [ca_calib, ca_calib2, ca_calib3],
-    icon: <MdOutlineCompassCalibration className="s-icon" />,
+    name: "Renewable Energy",
+    slug: "renewable_energy",
+    initialImage: renewables,
+    imgOrder: 0,
+    carouselImages: [
+      ren1,
+      ren2,
+      ren3,
+      ren4,
+      ren5,
+      ren6,
+      ren7,
+      ren8,
+      ren9,
+      ren10,
+    ],
+    icon: <MdOutlineSolarPower className="s-icon" />,
     description:
-      "In an industry where accuracy is paramount, our Calibration Services provide reliable, precise calibrations for industrial equipment across energy, mining, and oil & gas sectors. VALTEC Limited is dedicated to maintaining optimal performance and regulatory compliance by utilizing state-of-the-art calibration tools. Our services reduce downtime and improve operational safety, delivering the assurance our clients need to operate confidently and efficiently.",
+      "VALTEC Limited is committed to promoting sustainable growth through renewable energy solutions. From solar and wind to bioenergy, we design and implement clean energy projects that help reduce carbon footprints and energy costs. Our renewable energy expertise enables us to support clients on their journey toward sustainable operations, offering solutions that align with global energy goals and environmental standards.",
     detailedContent: (
-      <p>
-        In an industry where accuracy, precision, and reliability of instruments
-        and equipment are paramount, VALTEC calibration services solution will
-        be your reliable partner for reliable, precise calibrations for all
-        industrial instruments (temperature, pressure, humidity, electrical,
-        mechanical) across the energy, manufacturing, mining, and oil & gas
-        sectors. VALTEC is dedicated to maintaining optimal performance and
-        regulatory compliance by utilizing our state-of-the-art calibration
-        laboratory, which is well-equipped with precision tools and advanced
-        technology. Partner with us for the calibration of your instruments and
-        equipment, including sensor calibration, as-found calibration, as-left
-        calibration, verification calibration, routine calibration, and
-        maintenance calibration. Our services minimize downtime and enhance
-        operational safety, providing the confidence our clients require to
-        operate effectively and efficiently.
-      </p>
+      <div>
+        <p>Fix Content here</p>
+      </div>
     ),
   },
   {
@@ -222,31 +220,34 @@ export const serviceItems = [
     ),
   },
   {
-    name: "Renewable Energy",
-    slug: "renewable_energy",
-    initialImage: renewables,
-    imgOrder: 0,
-    carouselImages: [
-      ren1,
-      ren2,
-      ren3,
-      ren4,
-      ren5,
-      ren6,
-      ren7,
-      ren8,
-      ren9,
-      ren10,
-    ],
-    icon: <MdOutlineSolarPower className="s-icon" />,
+    name: "Calibration Services",
+    slug: "calibration_services",
+    initialImage: calib,
+    imgOrder: 2,
+    carouselImages: [ca_calib, ca_calib2, ca_calib3],
+    icon: <MdOutlineCompassCalibration className="s-icon" />,
     description:
-      "VALTEC Limited is committed to promoting sustainable growth through renewable energy solutions. From solar and wind to bioenergy, we design and implement clean energy projects that help reduce carbon footprints and energy costs. Our renewable energy expertise enables us to support clients on their journey toward sustainable operations, offering solutions that align with global energy goals and environmental standards.",
+      "In an industry where accuracy is paramount, our Calibration Services provide reliable, precise calibrations for industrial equipment across energy, mining, and oil & gas sectors. VALTEC Limited is dedicated to maintaining optimal performance and regulatory compliance by utilizing state-of-the-art calibration tools. Our services reduce downtime and improve operational safety, delivering the assurance our clients need to operate confidently and efficiently.",
     detailedContent: (
-      <div>
-        <p>Fix Content here</p>
-      </div>
+      <p>
+        In an industry where accuracy, precision, and reliability of instruments
+        and equipment are paramount, VALTEC calibration services solution will
+        be your reliable partner for reliable, precise calibrations for all
+        industrial instruments (temperature, pressure, humidity, electrical,
+        mechanical) across the energy, manufacturing, mining, and oil & gas
+        sectors. VALTEC is dedicated to maintaining optimal performance and
+        regulatory compliance by utilizing our state-of-the-art calibration
+        laboratory, which is well-equipped with precision tools and advanced
+        technology. Partner with us for the calibration of your instruments and
+        equipment, including sensor calibration, as-found calibration, as-left
+        calibration, verification calibration, routine calibration, and
+        maintenance calibration. Our services minimize downtime and enhance
+        operational safety, providing the confidence our clients require to
+        operate effectively and efficiently.
+      </p>
     ),
   },
+
   {
     name: "Digital Solutions",
     slug: "digital_solutions",
