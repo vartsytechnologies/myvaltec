@@ -259,8 +259,6 @@ export const serviceItems = [
     description: (
       <p>
         <strong>Data Analytics </strong>
-        <p></p>
-        <br />
         We help businesses make smarter decisions by turning raw data into
         actionable insights. <br />
         <strong>Visualization and Immersive Storytelling</strong>
@@ -272,7 +270,7 @@ export const serviceItems = [
     detailedContent: (
       <div className="row">
         <div className="col-12">
-          <h1 className="text-danger ">Data & Analytics</h1>
+          <h1 className="text-danger defheadFont">Data & Analytics</h1>
           <p className="mb-5">
             We help businesses make smarter decisions by turning raw data into
             actionable insights. We leverage data engineering, advanced
@@ -286,10 +284,10 @@ export const serviceItems = [
               VALTEC to deliver exceptional results for clients, for example:
             </span>
           </p>
-          <div className="row">
-            <div className="col-md-6">
+          <div className="row d-flex align-items-stretch">
+            <div className="col-md-6 d-flex">
               <ol
-                className="list-unstyled p-3 "
+                className="list-unstyled p-3 flex-grow-1"
                 style={{ border: "2px solid red" }}
               >
                 <li>
@@ -317,9 +315,9 @@ export const serviceItems = [
                 </li>
               </ol>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 d-flex">
               <ol
-                className="list-unstyled p-3"
+                className="list-unstyled p-3 flex-grow-1"
                 style={{ border: "2px solid red" }}
               >
                 <li className="p-0">
@@ -351,10 +349,10 @@ export const serviceItems = [
             </div>
           </div>
           <br />
-          <h4 className="mt-5">
+          <h2 className="mt-5 defheadFont">
             {" "}
             Our services focus on four key areas and include:
-          </h4>
+          </h2>
           <ul>
             <li>
               <h3 className="text-danger">Data management</h3> Advising on the
@@ -400,7 +398,7 @@ export const serviceItems = [
           </ul>
         </div>
         <div className="col-12">
-          <h1 className="text-danger pt-4">
+          <h1 className="text-danger pt-4 defheadFont">
             Visualization and Immersive Storytelling
           </h1>
           <p>
@@ -466,7 +464,9 @@ export const serviceItems = [
     ),
     detailedContent: (
       <div className="service-description">
-        <h2 className="text-danger p-0">Risk and Assurance Strategy</h2>
+        <h2 className="text-danger p-0 defheadFont">
+          Risk and Assurance Strategy
+        </h2>
         <p>
           Uncertainty, experienced by all businesses, is synonymous with risk.
           We recognize this and offer comprehensive risk and assurance
@@ -477,15 +477,15 @@ export const serviceItems = [
         </p>
         <h4 className="text-danger">Strategic risk and assurance</h4>
         <ul>
-          <li>Risk-based strategy and strategic risk management</li>
-          <li>Strategy performance and governance integration</li>
+          <li>Risk-based strategy and strategic risk management.</li>
+          <li>Strategy performance and governance integration.</li>
           <li>
             Risk-based decision support, scenario management, and adaptive
-            planning{/* <ContactSalesBtn />{" "} */}tion
+            planning.
           </li>
           <li>
             Board and Executive advisory, alignment, and assurance delivery
-            services
+            services.
           </li>
         </ul>
         <h4 className="text-danger">Enterprise risk and assurance</h4>
@@ -493,12 +493,12 @@ export const serviceItems = [
           <li>Risk, governance, audit, assurance, and benefits frameworks</li>
           <li>
             Risk assessments and controls, key risk indicators, risk reporting,
-            knowledge management and continuous improvement approaches
+            knowledge management and continuous improvement approaches.
           </li>
-          <li>Second-line assurance and compliance services</li>
+          <li>Second-line assurance and compliance services.</li>
           <li>
             Enterprise resilience, including business continuity, security, and
-            crisis and emergency management
+            crisis and emergency management.
           </li>
         </ul>
         <h4 className="text-danger">
@@ -507,19 +507,21 @@ export const serviceItems = [
         <ul>
           <li>
             Project, program, and portfolio risk advisory, governance, benefits
-            management, and assurance services
+            management, and assurance services.
           </li>
           <li>
             Capital portfolio prioritization, multi-criteria analysis (MCA),
             total value of ownership (TVO), and complex diagnostic-based project
-            selection
+            selection.
           </li>
           <li>
             Qualitative and quantitative risk analysis, scenario testing,
-            risk-based cost estimation, and Monte Carlo simulation
+            risk-based cost estimation, and Monte Carlo simulation.
           </li>
         </ul>
-        <h2 className="text-danger p-0">Energy and emissions modeling</h2>
+        <h2 className="text-danger p-0 defheadFont">
+          Energy and emissions modeling
+        </h2>
         <p>
           Our solutions help you track energy use and reduce emissions for a
           greener, efficient future.
