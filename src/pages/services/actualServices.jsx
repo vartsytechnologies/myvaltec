@@ -12,6 +12,7 @@ import {
   MdOutlineCompassCalibration,
   MdOutlineSolarPower,
   MdOutlinePrecisionManufacturing,
+  MdOutlineWifiProtectedSetup,
   MdOutlineGroup,
 } from "react-icons/md";
 import { VscWorkspaceTrusted } from "react-icons/vsc";
@@ -450,7 +451,7 @@ export const serviceItems = [
     initialImage: sustainability,
     imgOrder: 2,
     carouselImages: [sustainability],
-    icon: <MdOutlineGroup className="s-icon" />,
+    icon: <MdOutlineWifiProtectedSetup className="s-icon" />,
     description: (
       <p>
         <strong>Risk and assurance Strategy</strong>
