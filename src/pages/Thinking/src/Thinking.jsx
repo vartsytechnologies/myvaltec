@@ -19,22 +19,22 @@ import "./components/thinking.css";
 
 const teamMembers = [
   {
-    name: "Korda Asare",
-    title: "Chairman and CEO",
+    name: "Director 1",
+    title: "General Manager",
     image: "https://via.placeholder.com/150", // Replace with the actual image URL
   },
   {
-    name: "Joel Michaels",
-    title: "Lead Director",
+    name: "Director 2",
+    title: "Technical Director",
     image: "https://via.placeholder.com/150",
   },
   {
-    name: "Dr. Omanye Jason",
-    title: "Quality Assurance Officer",
+    name: "Director 3",
+    title: "Growth & Strategic Partnerships",
     image: "https://via.placeholder.com/150",
   },
   {
-    name: "Manye Dromor",
+    name: "Director 4",
     title: "Human Resource Manager",
     image: "https://via.placeholder.com/150",
   },
