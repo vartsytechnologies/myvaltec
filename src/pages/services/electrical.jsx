@@ -9,6 +9,7 @@ import Flanges from "../../assets/services_img/pvf/Flanges_Thumbnails.jpg";
 import Fasteners from "../../assets/services_img/pvf/Fasteners_thumbnail.jpg";
 import Gaskets from "../../assets/services_img/pvf/Gaskets_Thumbnails.jpg";
 import Pipe_accessories from "../../assets/services_img/pvf/Pipe_piping_accessories_thumbnail.jpg";
+import Cables from "../../assets/services_img/Electrical-thumbnail.jpg";
 
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
 
@@ -39,7 +40,7 @@ const ElectricalHeaderSection = () => {
           </p>
         </Col>
         <Col md={6} className="text-center">
-          <img src={Pvf} alt="PVF Products" className="img-fluid" />
+          <img src={Cables} alt="PVF Products" className="img-fluid" />
         </Col>
       </Row>
     </Container>
