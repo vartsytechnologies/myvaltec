@@ -66,7 +66,7 @@ function MainSlider() {
           >
             Leveraging our expertise, we offer preventive, proactive, reactive
             and predictive solutions for your operations and plants; designed to
-            enhance values and efficiency
+            enhance values and efficiency.
           </p>
           <Link to="/service">
             {" "}
@@ -95,10 +95,8 @@ function MainSlider() {
             data-aos="fade-left"
             data-aos-delay="200"
           >
-            Our commitment to renewable energy and sustainable practices is
-            helping reshape industries across West Africa, one project at a
-            time. Partner with us to create a lasting positive impact on the
-            environment and your bottom line.
+            VALTEC is building a sustainable future through renewable energy.
+            We design and implement clean energy projects that reduce carbon footprints and lower energy costs.
           </p>
           <Link to="/service/renewable_energy">
             {" "}

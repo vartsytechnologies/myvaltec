@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import DefaultButton from "../../../components/defaultButton";
-import aboutImg from "../../../assets/aboutImg.jpg";
+import aboutImg from "../../../assets/agamine_bollard.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
@@ -17,7 +17,7 @@ function AboutSection() {
   }, []);
   return (
     <>
-      <Container className="defPt defPb">
+      <Container className="defPt defPb mb-4">
         <Row className="mt-4 flex-column">
           <Col>
             <h1 className="defheadFont text-danger" data-aos="fade-up">
@@ -31,14 +31,12 @@ function AboutSection() {
                 data-aos="fade-up"
                 data-aos-delay="300"
               >
-                VALTEC Limited, established in August 2015, is a Ghanaian
-                indigenous support service company that stands out in its
-                commitment to providing value through technology to EPC
-                projects, existing plants, and contractors in the energy,
-                mining, oil, and gas industries. VALTEC's unique blend of
-                locally available expertise and a globalized affiliated support
-                network ensures specialized precision, real-time speed, and
-                reliable services to EPC projects and operations in West Africa.
+                Established in August 2015, VALTEC is a value-driven design,
+                engineering, procurement, construction, and management consulting company. Our mission
+                is to deliver compelling value through technology solutions to deliver compelling EPCM projects, 
+                existing plants, and contractors in the energy, mining, manufacturing, refinery, power, oil &gas industries. 
+                VALTEC's unique blend of locally available expertise and a globalized affiliated support network ensures specialized
+                precision, real-time speed, and reliable service quality across all projects in Africa.
                 <p className="mt-4" data-aos="fade-up" data-aos-delay="400">
                   <Link to="/thinking">
                     {" "}
@@ -55,6 +53,7 @@ function AboutSection() {
               >
                 <img
                   src={aboutImg}
+                  style={{ maxHeight: "400px" }}
                   alt="about-valtec"
                   className="w-100 aboutImgFullWidth"
                   // style={{
