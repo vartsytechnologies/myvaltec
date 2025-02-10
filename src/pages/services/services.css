@@ -28,3 +28,18 @@ span {
   height: 400px;
   object-fit: contain;
 }
+
+.image-wrapper {
+  width: 100%;
+  height: 200px; /* Set a fixed height */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures uniform size */
+}

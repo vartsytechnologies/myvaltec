@@ -63,6 +63,8 @@ import epc2 from "../../assets/services_img/new/epc/epc2.jpg";
 import epc3 from "../../assets/services_img/new/epc/epc3.jpg";
 import epc4 from "../../assets/services_img/new/epc/epc4.jpg";
 
+import ImageGallery from "./imageGalleryFuels.jsx";
+
 const epcDetails = [
   {
     name: "Engineering Procurement and Construction",
@@ -190,6 +192,7 @@ export const serviceItems = [
           outlast conventional oil by up to 4x while reducing emissions by up to
           50%.
         </p>
+        <ImageGallery/>
       </div>
     ),
   },
