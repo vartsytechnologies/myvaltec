@@ -9,6 +9,7 @@ import Flanges from "../../assets/services_img/pvf/Flanges_Thumbnails.jpg";
 import Fasteners from "../../assets/services_img/pvf/Fasteners_thumbnail.jpg";
 import Gaskets from "../../assets/services_img/pvf/Gaskets_Thumbnails.jpg";
 import Pipe_accessories from "../../assets/services_img/pvf/Pipe_piping_accessories_thumbnail.jpg";
+import {Link} from "react-router-dom"
 import Cables from "../../assets/services_img/Electrical-thumbnail.jpg";
 
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
@@ -32,14 +33,15 @@ const ElectricalHeaderSection = () => {
   return (
     <Container className="my-5">
       <Row className="align-items-center">
-        <Col md={6} className="text-center text-md-start">
+        <Col md={7} className="text-md-start">
           <h1 className="defheadFont">Electrical Supplies and Products</h1>
           <h5 className="text-danger defbodyFont">Premium Electrical Solutions for Every Need</h5>
           <p className="defbodyFont">
           In an ever-evolving digital world, the need for dependable electrical supplies is paramount. VALTEC stands at the forefront as a leading name in electrical equipment. We are your ultimate electrical equipment supplier, guaranteeing that every electrical need is addressed accurately and professionally. From commercial establishments to hazardous areas, VALTEC's electrical supplies are designed to cater to a wide range of demands.
           </p>
+          <Link to="/contact"><p className="btn btn-danger defbodyFont">Contact Sales</p></Link>
         </Col>
-        <Col md={6} className="text-center">
+        <Col md={5} className="text-center">
           <img src={Cables} alt="PVF Products" className="img-fluid" />
         </Col>
       </Row>

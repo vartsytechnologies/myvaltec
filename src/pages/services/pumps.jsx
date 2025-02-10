@@ -38,7 +38,7 @@ const PumpHeaderSection = () => {
           </h5>
           <p className="defbodyFont">
             Are you searching for reliable, top-quality pump products and
-            solutions for your business? Our DNOW U.S. Process Solutions group
+            solutions for your business? Our VALTEC U.S. Process Solutions group
             has years of experience in the industry, allowing us to become a
             trusted and leading provider of oilfield, industrial and municipal
             pumps that cater to various industries. Our pump stores give you
@@ -134,11 +134,11 @@ const ProductsSection = () => {
           Pump products are incredibly versatile and can resolve several issues
           related to the transportation and movement of fluids. We have various
           sizes and types of pumping products, each offering specific benefits
-          and features that cater to multiple requirements. DNOW pump services
+          and features that cater to multiple requirements. VALTEC pump services
           are also available for all pumps and equipment, ensuring they are in
           prime condition. With this kind of support, individuals can have peace
           of mind knowing that their pump products will operate reliably and
-          efficiently. Whether it's for municipal or industrial use, DNOW's pump
+          efficiently. Whether it's for municipal or industrial use, VALTEC's pump
           products can make a significant difference in enhancing your fluid
           movement process
         </p>
