@@ -28,18 +28,26 @@ span {
   height: 400px;
   object-fit: contain;
 }
-
 .image-wrapper {
   width: 100%;
-  height: 200px; /* Set a fixed height */
+  height: 200px; /* Set fixed height */
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 2px solid #ddd; /* Light gray border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 5px; /* Optional padding for spacing */
 }
 
 .image-wrapper img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures uniform size */
+  object-fit: cover; /* Ensure uniform size */
+  border-radius: 8px; /* Slight rounding for images */
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-wrapper:hover img {
+  transform: scale(1.05); /* Subtle zoom on hover */
 }

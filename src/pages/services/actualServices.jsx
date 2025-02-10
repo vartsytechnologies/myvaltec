@@ -175,6 +175,7 @@ export const serviceItems = [
       "VALTEC Limited offers a range of high-quality fuel additives and lubricants designed to enhance equipment performance, reduce emissions, and extend machinery life. Our solutions are formulated for the demanding conditions of the energy and industrial sectors, providing improved efficiency and reliability in day-to-day operations. Partner with us for a greener, more efficient approach to fuel and lubricant management.",
     detailedContent: (
       <div>
+        <ImageGallery/>
         <p>
           Industry has struggled forever to find a way to significantly reduce
           the cost of maintaining its capital equipment. Friction and
@@ -192,7 +193,7 @@ export const serviceItems = [
           outlast conventional oil by up to 4x while reducing emissions by up to
           50%.
         </p>
-        <ImageGallery/>
+        
       </div>
     ),
   },
