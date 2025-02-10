@@ -160,13 +160,7 @@ export const serviceItems = [
     icon: <MdOutlineSolarPower className="s-icon" />,
     description:
       "VALTEC Limited is committed to promoting sustainable growth through renewable energy solutions. From solar and wind to bioenergy, we design and implement clean energy projects that help reduce carbon footprints and energy costs. Our renewable energy expertise enables us to support clients on their journey toward sustainable operations, offering solutions that align with global energy goals and environmental standards.",
-    detailedContent: (
-      <div>
-        <p>
-          <em>[ FIX MAIN CONTENT HERE ]</em>
-        </p>
-      </div>
-    ),
+    detailedContent: <div></div>,
   },
   {
     name: "Additives : Fuel, Lubricants and Greases",

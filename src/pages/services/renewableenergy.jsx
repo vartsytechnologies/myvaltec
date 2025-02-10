@@ -130,15 +130,15 @@ const ProductsSection = () => {
     {
       name: "Canadian Solar N-type Bifacial TOPCon Technology",
       image: Canadian,
-      text: (
-        <ul>
-          <li>Module power up to 630 W</li>
-          <li> Module efficiency up to 23.3 %</li>
-          <li> Up to 85% Power Bifaciality, more power from the back side</li>
-          <li> 12 Years Enhanced Product Material and Workmanship</li>
-          <li> 30 Years Linear Power Performance Warranty</li>
-        </ul>
-      ),
+      // text: (
+      //   <ul>
+      //     <li>Module power up to 630 W</li>
+      //     <li> Module efficiency up to 23.3 %</li>
+      //     <li> Up to 85% Power Bifaciality, more power from the back side</li>
+      //     <li> 12 Years Enhanced Product Material and Workmanship</li>
+      //     <li> 30 Years Linear Power Performance Warranty</li>
+      //   </ul>
+      // ),
       category: "all",
     },
   ];
@@ -162,17 +162,21 @@ const ProductsSection = () => {
       style={{ backgroundColor: "#f5f5f5" }}
     >
       <Container>
-        <h2 className="text-center defheadFont mb-3">Products & Services</h2>
+        <h2 className="text-center text-danger defheadFont mb-3">
+          Products & Services
+        </h2>
         <Row>
           {filteredProducts.map((product, index) => (
-            <Col md={3} sm={6} key={index} className="mb-4">
-              <Card className="shadow-sm">
-                <Card.Img variant="top" src={product.image} />
+            <Col md={4} sm={6} key={index} className="mb-4">
+              <Card className="shadow-sm d-flex flex-column h-100">
+                <Card.Img className="h-80" variant="top" src={product.image} />
                 <Card.Body>
-                  <Card.Title className="defheadFont">
+                  <Card.Title className="defheadFont text-start">
                     {product.name}
                   </Card.Title>
-                  <Card.Text className="defbodyFont">{product.text}</Card.Text>
+                  {/* <Card.Text className="defbodyFont text-start flex-grow-1">
+                    {product.text}
+                  </Card.Text> */}
                 </Card.Body>
               </Card>
             </Col>

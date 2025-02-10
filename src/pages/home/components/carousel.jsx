@@ -64,9 +64,9 @@ function MainSlider() {
             data-aos="fade-left"
             data-aos-delay="200"
           >
-            Leveraging our expertise, we offer preventive, proactive, 
-            reactive and predictive solutions for your operations and plants;
-            designed to enhance values and efficiency
+            Leveraging our expertise, we offer preventive, proactive, reactive
+            and predictive solutions for your operations and plants; designed to
+            enhance values and efficiency
           </p>
           <Link to="/service">
             {" "}

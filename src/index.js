@@ -139,15 +139,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/renewableenergy",
-    element: (
-      <Layout>
-        <RenewablePage />
-      </Layout>
-    ),
-  },
-  {
-    path: "/renewableenergy",
+    path: "/service/renewable_energy",
     element: (
       <Layout>
         <RenewablePage />

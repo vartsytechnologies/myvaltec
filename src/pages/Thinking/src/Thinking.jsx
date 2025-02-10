@@ -6,6 +6,9 @@ import Section from "./components/Section";
 import { Container, Row, Col } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import valtec_digital from "../../../assets/valtec_digital.jpg";
+import ISO_9 from "../../../assets/ISO/ISO_9.webp";
+import ISO_1 from "../../../assets/ISO/ISO_1.webp";
+import user from "../../../assets/ISO/user.jpg";
 import quality_assurance from "../../../assets/quality_assurance.jpg";
 import ethics_and_compliance from "../../../assets/ethics_and_compliance.jpg";
 import "../src/components/thinking.css";
@@ -69,7 +72,6 @@ function App() {
                 We embody our principles by establishing clear behavioral expectations for our team and fostering an integrity-focused culture that informs our daily decisions, actions, and relationships.
                 Our clients recognize our commitment to ethical conduct and compliance with local regulations. We consistently build client trust through exceptional service and strict adherence to ethical practices. Our integrity is guided by our Code of Conduct and Anticorruption Policy, which lays out crucial legal and ethical standards for making sound business decisions across all projects."
         imgSrc={ethics_and_compliance}
-        
       />
       <Container fluid className="bg-gray py-5">
         <Section
@@ -85,10 +87,7 @@ function App() {
               <h4 className="text-danger pt-3" data-aos="fade-up">
                 VALTEC upholds a robust QHSE policy by:
               </h4>
-              <p
-                data-aos="fade-down"
-                // className="justify"
-              >
+              <p data-aos="fade-down">
                 Establishing clear and measurable Quality Objectives across all
                 operational sectors is imperative. Continuous monitoring,
                 evaluation, and enhancement of the Quality System and its
@@ -108,17 +107,32 @@ function App() {
                 project’s inception. Thorough planning safeguards employees and
                 the environment.
                 <br />
-                <span
-                  className="text-danger"
-                  data-aos="fade-up"
-                  data-aos-delay="300"
-                >
-                  <strong>VALTEC is ISO Certified </strong>
-                </span>
               </p>
-              <div className="d-flex">
-                <p className="btn btn-primary me-2">ISO 9001:2015</p>
-                <p className="btn btn-primary">ISO/IEC 17025:2017</p>
+              <p
+                className="pt-2 text-danger"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <strong>VALTEC is ISO Certified </strong>
+              </p>
+              <div
+                className="border border-secondary border-2 rounded bg-white d-flex align-items-center justify-content-between"
+                style={{ width: "320px" }}
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                <img
+                  className="m-3"
+                  src={ISO_9}
+                  style={{ height: "100px" }}
+                  alt=""
+                />
+                <img
+                  className="m-3"
+                  src={ISO_1}
+                  style={{ height: "130px" }}
+                  alt=""
+                />
               </div>
             </>
           }
@@ -134,10 +148,14 @@ function App() {
           <Col lg={12}>
             <Row>
               {teamMembers.map((member, index) => (
-                <Col key={index} xs={12} sm={6} md={4} lg={3} className="mb-4">
-                  <Card className="text-center">
-                    <Card.Img variant="top" src={quality_assurance} />
-                    <Card.Body>
+                <Col key={index} xs={12} sm={6} md={5} lg={3} className="mb-4">
+                  <Card className="text-center h-100 d-flex flex-column">
+                    <Card.Img
+                      className="border border-secondary border-1"
+                      variant="top"
+                      src={user}
+                    />
+                    <Card.Body className="d-flex flex-column flex-grow-1">
                       <Card.Title>{member.name}</Card.Title>
                       <Card.Text>{member.title}</Card.Text>
                     </Card.Body>
