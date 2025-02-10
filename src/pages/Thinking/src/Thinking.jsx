@@ -76,11 +76,12 @@ function App() {
       <Container fluid className="bg-gray py-5">
         <Section
           title="Quality and Assurance"
-          content="When we get it wrong, the consequences can be severe. We fully recognize our duty to develop safe
-                  and reliable technical solutions. All our projects follow a tailored, strong, flexible, and systematic process that includes non-negotiable guidelines,
-                  expected results, and suitable toolkits.
-                  VALTEC is dedicated to safeguarding the physical, psychological, and social well-being of our employees, stakeholders, and communities through
-                 effective risk management strategies. Our services adhere to ISO 9001 and ISO 17025."
+          content="We are fully aware that when we get it wrong, the consequences can be severe.
+                When we get it wrong, the consequencescanbesevere. We fully recognize our duty to develop safe and reliable
+                technical solutions. All our projects follow a tailored, strong, flexible, and systematic process that includes
+                non-negotiable guidelines, expected results, and suitable toolkits. Hence, our operations strictly adhere to a robust QHSE policy that is dedicated
+                to safeguarding the physical, psychological, and social well-being of our employees, stakeholders, and communities. 
+                We are ISO 9001 and ISO 14001 certified."
           imgSrc={quality_assurance}
           extraContent={
             <>
@@ -113,7 +114,6 @@ function App() {
                 data-aos="fade-up"
                 data-aos-delay="300"
               >
-                <strong>VALTEC is ISO Certified </strong>
               </p>
               <div
                 className="border border-secondary border-2 rounded bg-white d-flex align-items-center justify-content-between"
