@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import DefaultButton from "../../../components/defaultButton";
-import aboutImg from "../../../assets/aboutImg.jpg";
+import aboutImg from "../../../assets/agamine_bollard.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
@@ -17,7 +17,7 @@ function AboutSection() {
   }, []);
   return (
     <>
-      <Container className="defPt defPb">
+      <Container className="defPt defPb mb-4">
         <Row className="mt-4 flex-column">
           <Col>
             <h1 className="defheadFont text-danger" data-aos="fade-up">
@@ -55,6 +55,7 @@ function AboutSection() {
               >
                 <img
                   src={aboutImg}
+                  style={{ maxHeight: "400px" }}
                   alt="about-valtec"
                   className="w-100 aboutImgFullWidth"
                   // style={{
