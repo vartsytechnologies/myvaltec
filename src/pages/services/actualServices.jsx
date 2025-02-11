@@ -7,6 +7,7 @@ import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import ProductsSection from "./epcService.jsx";
 import ReadMorebtn from "./readMorebtn.jsx";
+import { GoGraph } from "react-icons/go";
 import {
   MdOutlineConstruction,
   MdOutlineCompassCalibration,
@@ -64,6 +65,14 @@ import epc3 from "../../assets/services_img/new/epc/epc3.jpg";
 import epc4 from "../../assets/services_img/new/epc/epc4.jpg";
 
 import ImageGallery from "./imageGalleryFuels.jsx";
+
+import visualize from "../../assets/services_img/dataAnalytics/visualization.jpg"
+import { FaMagnifyingGlassChart } from "react-icons/fa6";
+import { MdBatchPrediction } from "react-icons/md";
+import { GrOptimize } from "react-icons/gr";
+import laser from '../../assets/services_img/reliability/Laser Alignment Machine.jpg'
+import vibration from '../../assets/services_img/reliability/Vibration Analysis Machine.jpg'
+import chess from '../../assets/services_img/sustainability/new1.jpg'
 
 const epcDetails = [
   {
@@ -290,29 +299,36 @@ export const serviceItems = [
                 className="list-unstyled p-3 flex-grow-1 rounded"
                 style={{ border: "2px solid red" }}
               >
-                <li>
-                  {" "}
-                  <h3 className="text-danger p-0 my-0">Visualize</h3>
+                <li> 
+                    {" "}
+                  <h3 className="text-danger p-0 my-0">
+                    <GoGraph style={{ fontSize: "1.5em", marginRight: "1.5rem" }} />Visualize</h3>
                   We create engaging interactive dashboards and data
                   visualization tools to display averages, variations, trends,
                   relationships, and structures.
+                    
                 </li>
                 <li>
-                  {" "}
-                  <h3 className="text-danger p-0">Detect</h3>
-                  We identify people, objects, assets, features, anomalies,
-                  faults, hazards, risks, actions, and behaviors. For example,
-                  we map roads from aerial images and identify road signs and
-                  pipeline faults from video footage.
-                </li>
+  <h3 className="text-danger p-0 d-flex align-items-center">
+    <FaMagnifyingGlassChart style={{ fontSize: "1.5em", marginRight: "1.5rem" }} /> 
+    Detect
+  </h3>
+  <p>
+    We identify people, objects, assets, features, anomalies, faults, hazards, risks, actions, and behaviors. 
+    For example, we map roads from aerial images and identify road signs and pipeline faults from video footage.
+  </p>
+</li>
                 <li>
                   {" "}
-                  <h3 className="text-danger p-0">Predict</h3>
+                  <h3 className="text-danger p-0">
+                  <MdBatchPrediction style={{ fontSize: "1.5em", marginRight: "1.5rem" }}/>
+                    Predict</h3>
                   We utilize metered data from residential developments to
                   predict critical peak loads for energy consumption. We
                   anticipate demand, timing, events, equipment failures, and
                   cost revenue.
                 </li>
+                
               </ol>
             </div>
             <div className="col-md-6 d-flex">
@@ -322,7 +338,9 @@ export const serviceItems = [
               >
                 <li className="p-0">
                   {" "}
-                  <h3 className="text-danger p-0">Optimize</h3>
+                  <h3 className="text-danger p-0">
+                  <GrOptimize style={{ fontSize: "1.5em", marginRight: "1.5rem" }} />
+                    Optimize</h3>
                   We optimize site selection, routes, schedules, operational and
                   production processes, and maintenance. Projects include HVAC
                   energy reduction, predictive maintenance, and production
@@ -401,7 +419,10 @@ export const serviceItems = [
           <h1 className="text-danger pt-4 defheadFont">
             Visualization and Immersive Storytelling
           </h1>
-          <p>
+          <Container fluid>
+            <Row className="align-items-center">
+            <Col xs={12} md={6}><img src={visualize} style={{}}/></Col>
+              <Col className="defbodyFont">
             VALTEC brings your data to life with stunning visuals and compelling
             narratives. Visualization and real-time rendering build
             anticipation, eliminate ambiguity, clarify design features, and
@@ -415,7 +436,11 @@ export const serviceItems = [
             panoramic videos, aerial photography, and more. High-quality digital
             content breathes life into your project for a range of purposes and
             audiences, whether it's for stakeholder engagement or promotion.
-          </p>
+          </Col>
+              
+            </Row>
+          </Container>
+          
         </div>
       </div>
     ),
@@ -464,19 +489,26 @@ export const serviceItems = [
     ),
     detailedContent: (
       <div className="service-description">
-        <h2 className="text-danger p-0 defheadFont">
+        <Container>
+          <Row>
+          <h2 className="text-danger p-0 defheadFont">
           Risk and Assurance Strategy
         </h2>
-        <p>
+            <Col md={5}><img src={chess} alt="strategy"  style={{objectFit: "cover" }} className="p-0" /></Col>
+            <Col><p>
           Uncertainty, experienced by all businesses, is synonymous with risk.
           We recognize this and offer comprehensive risk and assurance
           strategies for clients that yield significant enterprise, strategic,
           and capital asset outcomes. We assist business leaders in becoming
           comfortable with uncertainty, defining complex problems, managing
           ambiguity, and navigating dynamic environments through:
-        </p>
+        </p></Col>
+          </Row>
+        </Container>
+        
+        
         <h4 className="text-danger">Strategic risk and assurance</h4>
-        <ul>
+         <ul>
           <li>Risk-based strategy and strategic risk management.</li>
           <li>Strategy performance and governance integration.</li>
           <li>
@@ -488,7 +520,7 @@ export const serviceItems = [
             services.
           </li>
         </ul>
-        <h4 className="text-danger">Enterprise risk and assurance</h4>
+        <h4 className="text-danger mt-4">Enterprise risk and assurance</h4>
         <ul>
           <li>Risk, governance, audit, assurance, and benefits frameworks</li>
           <li>
@@ -547,7 +579,17 @@ export const serviceItems = [
     ),
     detailedContent: (
       <div>
-        <p>
+  <Container>
+    <Row>
+      <Col md={6} xs={12}>
+        <img src={laser} className="w-75 " style={{ objectFit: "cover", height: "100%" }} />
+      </Col>
+      <Col>
+        <img src={vibration} className="w-75 " style={{ objectFit: "cover", height: "100%" }} />
+      </Col>
+    </Row>
+  </Container>
+  <p>
           Most customers encounter various challenges regarding the overall
           reliability of their machinery. Consequently, a vibration analysis
           service for rotating assets has evolved into a comprehensive solution
