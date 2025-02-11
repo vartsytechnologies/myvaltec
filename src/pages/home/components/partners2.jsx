@@ -28,13 +28,16 @@ function Partners() {
       <Container
         className="my-5"
         fluid
-        style={{ backgroundColor: "rgba(255, 177, 193, 0.6" }}
+        style={{
+          backgroundColor: "rgba(255, 177, 193, 0.6",
+          border: "2px solid red",
+        }}
         data-aos="fade-up"
         data-aos-delay="300"
         id="ourpartners"
       >
-        <h1 className="text-center pt-4 defheadFont">Our Partners</h1>
-        <Row>
+        <h1 className="text-center pt-4 defheadFont">Our Create it out</h1>
+        {/* <Row>
           <Col xs={12} lg={6}>
             <div className="row my-4">
               <div className="col-3">
@@ -118,9 +121,7 @@ function Partners() {
 
           <Col xs={12} lg={6}>
             <div class="row">
-              {/* <div className="col-0 col-sm-3 "></div>
-              <div className="col-0 col-sm-3 "></div>
-              <div className="col-0 col-sm-3 "></div> */}
+             
               <div className="col-0 col-sm-3 ">
                 <div
                   className="logo-wrapper d-flex align-items-center justify-content-center flex-column "
@@ -134,9 +135,7 @@ function Partners() {
           </Col>
           <Col xs={12} lg={6}>
             <div class="row">
-              {/* <div className="col-0 col-sm-3 "></div>
-              <div className="col-0 col-sm-3 "></div>
-              <div className="col-0 col-sm-3 "></div> */}
+             
               <div className="col-0 col-sm-3 ">
                 <div
                   className="logo-wrapper d-flex align-items-center justify-content-center flex-column "
@@ -159,12 +158,10 @@ function Partners() {
                   <div className="hover-text d-none">Your Hover Text</div>
                 </div>
               </div>
-              {/* <div className="col-0 col-sm-3"></div>
-              <div className="col-0 col-sm-3"></div>
-              <div className="col-0 col-sm-3"></div> */}
+              
             </div>
           </Col>
-        </Row>
+        </Row> */}
       </Container>
     </>
   );

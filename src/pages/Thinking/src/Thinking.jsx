@@ -113,10 +113,9 @@ function App() {
                 className="pt-2 text-danger"
                 data-aos="fade-up"
                 data-aos-delay="300"
-              >
-              </p>
+              ></p>
               <div
-                className="border border-secondary border-2 rounded bg-white d-flex align-items-center justify-content-between"
+                className=" rounded bg-white d-flex align-items-center justify-content-between"
                 style={{ width: "320px" }}
                 data-aos="fade-up"
                 data-aos-delay="400"
