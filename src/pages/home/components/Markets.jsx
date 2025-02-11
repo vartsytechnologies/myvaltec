@@ -16,7 +16,7 @@ import oil_1 from "../../../assets/markets_img/new/oilA.JPG";
 import oil_2 from "../../../assets/markets_img/new/oilC.JPG";
 import energy_1 from "../../../assets/markets_img/new/RoofPVSolar.jpg";
 // import energy_2 from "../../../assets/markets_img/new/SolarPV.jpg";
-import lights from "../../../assets/markets_img/new/lights.jpg";
+import lights from "../../../assets/markets_img/new/solar.webp";
 import gov_ger from "../../../assets/markets_img/new/Skyscrappers.jpg";
 import gov_uk from "../../../assets/markets_img/new/Eco-building.jpg";
 // import health_1 from "../../../assets/markets_img/health_1.jpg";
@@ -133,28 +133,16 @@ const Markets = () => {
   }, []);
 
   return (
-    <Container
-      fluid
-      className="mt-5 marketSection mt-5"
-    >
+    <Container fluid className="mt-5 marketSection mt-5">
       <h1 className="marketTitle text-center mb-3 defheadFont text-danger">
-        <span
-          data-aos="fade-up"
-          data-aos-delay="500"
-        >
+        <span data-aos="fade-up" data-aos-delay="500">
           <FaIndustry />
         </span>{" "}
-        <span
-          data-aos="fade-up"
-          data-aos-delay="600"
-        >
+        <span data-aos="fade-up" data-aos-delay="600">
           Markets
         </span>
       </h1>
-      <Tab.Container
-        activeKey={activeTab}
-        onSelect={(k) => setActiveTab(k)}
-      >
+      <Tab.Container activeKey={activeTab} onSelect={(k) => setActiveTab(k)}>
         <Nav
           className="justify-content-center my-2 mx-auto marketTitle"
           variant="pills"
@@ -166,10 +154,7 @@ const Markets = () => {
           }}
         >
           <Nav.Item className="defbodyFont">
-            <Nav.Link
-              eventKey="oilGas"
-              style={{ color: "#ffffff" }}
-            >
+            <Nav.Link eventKey="oilGas" style={{ color: "#ffffff" }}>
               <FaIndustry
                 className="me-2"
                 color={activeTab === "oilGas" ? "#ff416c" : "white"}
@@ -178,10 +163,7 @@ const Markets = () => {
             </Nav.Link>
           </Nav.Item>
           <Nav.Item className="defbodyFont">
-            <Nav.Link
-              eventKey="renewableEnergy"
-              style={{ color: "#fff" }}
-            >
+            <Nav.Link eventKey="renewableEnergy" style={{ color: "#fff" }}>
               <FaRecycle
                 className="me-2"
                 color={activeTab === "renewableEnergy" ? "#ff416c" : "white"}
@@ -190,10 +172,7 @@ const Markets = () => {
             </Nav.Link>
           </Nav.Item>
           <Nav.Item className="defbodyFont">
-            <Nav.Link
-              eventKey="mining"
-              style={{ color: "#fff" }}
-            >
+            <Nav.Link eventKey="mining" style={{ color: "#fff" }}>
               <FaBuilding
                 className="me-2"
                 color={activeTab === "mining" ? "#ff416c" : "white"}
@@ -214,10 +193,7 @@ const Markets = () => {
             </Nav.Link>
           </Nav.Item> */}
           <Nav.Item className="defbodyFont">
-            <Nav.Link
-              eventKey="power"
-              style={{ color: "#fff" }}
-            >
+            <Nav.Link eventKey="power" style={{ color: "#fff" }}>
               <FaLandmark
                 className="me-2"
                 color={activeTab === "power" ? "#ff416c" : "white"}
@@ -226,10 +202,7 @@ const Markets = () => {
             </Nav.Link>
           </Nav.Item>
           <Nav.Item className="defbodyFont">
-            <Nav.Link
-              eventKey="tech"
-              style={{ color: "#fff" }}
-            >
+            <Nav.Link eventKey="tech" style={{ color: "#fff" }}>
               <FaLandmark
                 className="me-2"
                 color={activeTab === "tech" ? "#ff416c" : "white"}
@@ -238,10 +211,7 @@ const Markets = () => {
             </Nav.Link>
           </Nav.Item>
           <Nav.Item className="defbodyFont">
-            <Nav.Link
-              eventKey="gov"
-              style={{ color: "#fff" }}
-            >
+            <Nav.Link eventKey="gov" style={{ color: "#fff" }}>
               <FaLandmark
                 className="me-2"
                 color={activeTab === "gov" ? "#ff416c" : "white"}
@@ -261,17 +231,8 @@ const Markets = () => {
               </h3>
               <Row className="justify-content-around">
                 {tabContent[activeTab][1].map((content, index) => (
-                  <Col
-                    md={6}
-                    className="mt-4"
-                    key={index}
-                    data-aos="fade-up"
-                  >
-                    <Image
-                      src={content.img}
-                      fluid
-                      rounded
-                    />
+                  <Col md={6} className="mt-4" key={index} data-aos="fade-up">
+                    <Image src={content.img} fluid rounded />
                     {/* <h5 className="my-3 defbodyFont" data-aos="fade-up">
                       <strong>{content.title}</strong>
                     </h5>
