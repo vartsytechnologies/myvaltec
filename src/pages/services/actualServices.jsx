@@ -2,11 +2,9 @@ import { React, useState, useEffect } from "react";
 import { Container, Row, Col, Modal, Button, Carousel } from "react-bootstrap";
 import Banner from "../../components/banner/Banner";
 import "./services.css";
-import { useParams } from "react-router-dom";
-// import ContactSalesBtn from "./contactSalesbtn";
+ 
 import { Link } from "react-router-dom";
-import ProductsSection from "./epcService.jsx";
-import ReadMorebtn from "./readMorebtn.jsx";
+import ProductsSection from "./epcService.jsx"; 
 import { GoGraph } from "react-icons/go";
 import {
   MdOutlineConstruction,
@@ -99,7 +97,7 @@ const epcDetails = [
           seamlessly with your objectives. Our extensive offerings include
           turnkey metering, treatment facilities, and civil to mechanical
           construction services. <br />
-          We specialize in the procurement of OEM products, such as but not
+          We specialize in the procuremimport ReadMorebtn from "./readMorebtn.jsx";ent of OEM products, such as but not
           limited to:
         </p>
         <ul>
@@ -725,25 +723,7 @@ function Services() {
             ></Col>
           </Row>
           <Row className="flex-column mt-5">
-            {/* Render the first service separately
-            <Col data-aos="fade-up" className="py-0 mb-5">
-              <Row className="justify-content-between align-items-center">
-                <Col
-                  xs={12}
-                  lg={6}
-                  className={`zoom-out-container mb-0 mb-md-5 align-self-center`}
-                >
-                  <div className="d-flex">
-                    <p className="fs-5 pt-2 m-0 defheadFont text-danger mb-0">
-                      {epcDetails.icon}
-                    </p>
-                    <p className="fs-5 pt-3 defheadFont text-danger ms-1 mb-0 ">
-                      {epcDetails.name}{" "}
-                    </p>
-                  </div>
-                </Col>
-              </Row>
-            </Col> */}
+          
             {serviceItems.map((service, idx) => (
               <Col key={idx} data-aos="fade-up" className="py-0 mb-5">
                 <Row className="justify-content-between align-items-center">
@@ -798,7 +778,7 @@ function Services() {
                       service.name !== "Infrastructure and Facilities" &&
                       service.name !== "Public Private Partnerships" && (
                         <Link
-                          className="bg-primary p-2 mb-4 text-white fs-6 fw-bolder rounded"
+                          className="bg-danger p-2 mb-4 text-white fs-6 fw-bolder rounded"
                           style={{ textDecorationLine: "none" }}
                           to={`/service/${service.slug}`}
                         >

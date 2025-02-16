@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import Banner from "../../components/banner/Banner";
 import { useEffect } from "react";
-import { Container, Row, Col, Modal, Button, Carousel } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { serviceItems } from "./actualServices.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";

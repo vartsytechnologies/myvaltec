@@ -105,3 +105,13 @@ Large	lg	≥992px
 Extra large	xl	≥1200px
 Extra extra large	xxl	≥1400px
 */
+.img-fluids{
+  width:100%;
+  height:400px;
+  object-fit: contain;
+}
+@media (max-width:576px){
+  .img-fluids{
+    height:300px;
+  }
+}

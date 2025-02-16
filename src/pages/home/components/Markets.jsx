@@ -231,14 +231,8 @@ const Markets = () => {
               </h3>
               <Row className="justify-content-around">
                 {tabContent[activeTab][1].map((content, index) => (
-                  <Col md={6} className="mt-4" key={index} data-aos="fade-up">
-                    <Image src={content.img} fluid rounded />
-                    {/* <h5 className="my-3 defbodyFont" data-aos="fade-up">
-                      <strong>{content.title}</strong>
-                    </h5>
-                    <p className="defbodyFont" data-aos="fade-up">
-                      {content.description}
-                    </p> */}
+                  <Col sm={12} md={6} className="mt-4 mt-sm-0" key={index} data-aos="fade-up">
+                    <Image src={content.img} className="img-fluids" rounded />
                   </Col>
                 ))}
               </Row>
@@ -246,14 +240,7 @@ const Markets = () => {
           </Tab.Content>
         </Container>
       </Tab.Container>
-      {/* <p className="text-center defbodyFont">
-        <Button variant="danger" className="mt-4 px-5 fs-5 marketTitle">
-          Request a Quote
-        </Button>{" "}
-        <Button variant="danger" className="mt-4 px-5 fs-5 ms-2 marketTitle">
-          Make Enquiries
-        </Button>
-      </p> */}
+     
     </Container>
   );
 };
