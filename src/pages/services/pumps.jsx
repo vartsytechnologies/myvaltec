@@ -31,7 +31,7 @@ const PumpHeaderSection = () => {
   return (
     <Container className="my-5">
       <Row className="align-items-center">
-        <Col md={6} className="text-center text-md-start">
+        <Col md={6} className=" text-md-start">
           <h1 className="defheadFont">Industrial and Oilfield Pumps</h1>
           <h5 className="defbodyFont text-danger">
             Pump Solutions: Buy, Repair and Maintain Quality Pump Products
@@ -138,9 +138,9 @@ const ProductsSection = () => {
           are also available for all pumps and equipment, ensuring they are in
           prime condition. With this kind of support, individuals can have peace
           of mind knowing that their pump products will operate reliably and
-          efficiently. Whether it's for municipal or industrial use, VALTEC's pump
-          products can make a significant difference in enhancing your fluid
-          movement process
+          efficiently. Whether it's for municipal or industrial use, VALTEC's
+          pump products can make a significant difference in enhancing your
+          fluid movement process
         </p>
         <div className="mb-4">
           <Button
@@ -157,7 +157,11 @@ const ProductsSection = () => {
           >
             Odessa Pumps
           </Button>
-          <Button variant="secondary" onClick={() => filterProducts("tsm")}>
+          <Button
+            className="mt-2 md-mt-0"
+            variant="secondary"
+            onClick={() => filterProducts("tsm")}
+          >
             Power Service
           </Button>
         </div>

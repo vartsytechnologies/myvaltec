@@ -38,7 +38,7 @@ const MillHeaderSection = () => {
   return (
     <Container className="my-5">
       <Row className="align-items-center">
-        <Col md={8} className="text-center text-md-start">
+        <Col md={8} className=" text-md-start">
           <h1 className="defheadFont">Industrial and Facility Supplies</h1>
           <h5 className="defbodyFont text-danger">
             Industrial MRO Supplies for the Upkeep of Buildings and Grounds

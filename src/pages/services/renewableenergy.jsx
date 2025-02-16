@@ -20,7 +20,7 @@ const PVFSection = () => {
   return (
     <Container className="my-5">
       <Row className="align-items-center">
-        <Col md={7} className="text-center text-md-start">
+        <Col md={7} className=" text-md-start">
           <h1 className="defheadFont">Building a Sustainable Future</h1>
           <p className="defbodyFont">
             VALTEC Limited is dedicated to building a sustainable future through
@@ -130,15 +130,7 @@ const ProductsSection = () => {
     {
       name: "Canadian Solar N-type Bifacial TOPCon Technology",
       image: Canadian,
-      // text: (
-      //   <ul>
-      //     <li>Module power up to 630 W</li>
-      //     <li> Module efficiency up to 23.3 %</li>
-      //     <li> Up to 85% Power Bifaciality, more power from the back side</li>
-      //     <li> 12 Years Enhanced Product Material and Workmanship</li>
-      //     <li> 30 Years Linear Power Performance Warranty</li>
-      //   </ul>
-      // ),
+
       category: "all",
     },
   ];

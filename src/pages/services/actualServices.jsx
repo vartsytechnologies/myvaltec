@@ -2,9 +2,9 @@ import { React, useState, useEffect } from "react";
 import { Container, Row, Col, Modal, Button, Carousel } from "react-bootstrap";
 import Banner from "../../components/banner/Banner";
 import "./services.css";
- 
+
 import { Link } from "react-router-dom";
-import ProductsSection from "./epcService.jsx"; 
+import ProductsSection from "./epcService.jsx";
 import { GoGraph } from "react-icons/go";
 import {
   MdOutlineConstruction,
@@ -64,13 +64,15 @@ import epc4 from "../../assets/services_img/new/epc/epc4.jpg";
 
 import ImageGallery from "./imageGalleryFuels.jsx";
 
-import visualize from "../../assets/services_img/dataAnalytics/visualization.jpg"
+import visualize from "../../assets/services_img/dataAnalytics/visualization.jpg";
 import { FaMagnifyingGlassChart } from "react-icons/fa6";
 import { MdBatchPrediction } from "react-icons/md";
 import { GrOptimize } from "react-icons/gr";
-import laser from '../../assets/services_img/reliability/Laser Alignment Machine.jpg'
-import vibration from '../../assets/services_img/reliability/Vibration Analysis Machine.jpg'
-import chess from '../../assets/services_img/sustainability/new1.jpg'
+import { TbSettingsAutomation } from "react-icons/tb";
+import { IoCreate } from "react-icons/io5";
+import laser from "../../assets/services_img/reliability/Laser Alignment Machine.jpg";
+import vibration from "../../assets/services_img/reliability/Vibration Analysis Machine.jpg";
+import chess from "../../assets/services_img/sustainability/new1.jpg";
 
 const epcDetails = [
   {
@@ -97,8 +99,8 @@ const epcDetails = [
           seamlessly with your objectives. Our extensive offerings include
           turnkey metering, treatment facilities, and civil to mechanical
           construction services. <br />
-          We specialize in the procuremimport ReadMorebtn from "./readMorebtn.jsx";ent of OEM products, such as but not
-          limited to:
+          We specialize in the procuremimport ReadMorebtn from
+          "./readMorebtn.jsx";ent of OEM products, such as but not limited to:
         </p>
         <ul>
           <li>Pipe, Tubes, Valves, Fittings & Flanges</li>
@@ -182,7 +184,7 @@ export const serviceItems = [
       "VALTEC Limited offers a range of high-quality fuel additives and lubricants designed to enhance equipment performance, reduce emissions, and extend machinery life. Our solutions are formulated for the demanding conditions of the energy and industrial sectors, providing improved efficiency and reliability in day-to-day operations. Partner with us for a greener, more efficient approach to fuel and lubricant management.",
     detailedContent: (
       <div>
-        <ImageGallery/>
+        <ImageGallery />
         <p>
           Industry has struggled forever to find a way to significantly reduce
           the cost of maintaining its capital equipment. Friction and
@@ -200,7 +202,6 @@ export const serviceItems = [
           outlast conventional oil by up to 4x while reducing emissions by up to
           50%.
         </p>
-        
       </div>
     ),
   },
@@ -297,36 +298,45 @@ export const serviceItems = [
                 className="list-unstyled p-3 flex-grow-1 rounded"
                 style={{ border: "2px solid red" }}
               >
-                <li> 
-                    {" "}
+                <li>
+                  {" "}
                   <h3 className="text-danger p-0 my-0">
-                    <GoGraph style={{ fontSize: "1.5em", marginRight: "1.5rem" }} />Visualize</h3>
+                    <GoGraph
+                      style={{ fontSize: "1.3em", marginRight: ".5rem" }}
+                    />
+                    Visualize
+                  </h3>
                   We create engaging interactive dashboards and data
                   visualization tools to display averages, variations, trends,
                   relationships, and structures.
-                    
                 </li>
                 <li>
-  <h3 className="text-danger p-0 d-flex align-items-center">
-    <FaMagnifyingGlassChart style={{ fontSize: "1.5em", marginRight: "1.5rem" }} /> 
-    Detect
-  </h3>
-  <p>
-    We identify people, objects, assets, features, anomalies, faults, hazards, risks, actions, and behaviors. 
-    For example, we map roads from aerial images and identify road signs and pipeline faults from video footage.
-  </p>
-</li>
+                  <h3 className="text-danger p-0 d-flex align-items-center">
+                    <FaMagnifyingGlassChart
+                      style={{ fontSize: "1.3em", marginRight: ".5rem" }}
+                    />
+                    Detect
+                  </h3>
+                  <p>
+                    We identify people, objects, assets, features, anomalies,
+                    faults, hazards, risks, actions, and behaviors. For example,
+                    we map roads from aerial images and identify road signs and
+                    pipeline faults from video footage.
+                  </p>
+                </li>
                 <li>
                   {" "}
                   <h3 className="text-danger p-0">
-                  <MdBatchPrediction style={{ fontSize: "1.5em", marginRight: "1.5rem" }}/>
-                    Predict</h3>
+                    <MdBatchPrediction
+                      style={{ fontSize: "1.3em", marginRight: ".5rem" }}
+                    />
+                    Predict
+                  </h3>
                   We utilize metered data from residential developments to
                   predict critical peak loads for energy consumption. We
                   anticipate demand, timing, events, equipment failures, and
                   cost revenue.
                 </li>
-                
               </ol>
             </div>
             <div className="col-md-6 d-flex">
@@ -334,11 +344,14 @@ export const serviceItems = [
                 className="list-unstyled p-3 flex-grow-1 rounded"
                 style={{ border: "2px solid red" }}
               >
-                <li className="p-0">
+                <li>
                   {" "}
                   <h3 className="text-danger p-0">
-                  <GrOptimize style={{ fontSize: "1.5em", marginRight: "1.5rem" }} />
-                    Optimize</h3>
+                    <GrOptimize
+                      style={{ fontSize: "1.3em", marginRight: ".5rem" }}
+                    />
+                    Optimize
+                  </h3>
                   We optimize site selection, routes, schedules, operational and
                   production processes, and maintenance. Projects include HVAC
                   energy reduction, predictive maintenance, and production
@@ -346,13 +359,23 @@ export const serviceItems = [
                 </li>
                 <li>
                   {" "}
-                  <h3 className="text-danger p-0">Automate</h3>
+                  <h3 className="text-danger p-0">
+                    <TbSettingsAutomation
+                      style={{ fontSize: "1.3em", marginRight: ".5rem" }}
+                    />
+                    Automate
+                  </h3>
                   Automating expensive, repetitive, or hazardous tasks;
                   construction and manufacturing activities; and evaluations.
                 </li>
                 <li>
                   {" "}
-                  <h3 className="text-danger p-0">Create</h3>
+                  <h3 className="text-danger p-0">
+                    <IoCreate
+                      style={{ fontSize: "1.3em", marginRight: ".5rem" }}
+                    />
+                    Create
+                  </h3>
                   Machine learning for designs, images, processes, strategies,
                   and experiments. We applied machine learning-based generative
                   design to automate the configuration of a data center. We
@@ -419,26 +442,27 @@ export const serviceItems = [
           </h1>
           <Container fluid>
             <Row className="align-items-center">
-            <Col xs={12} md={6}><img src={visualize} style={{}}/></Col>
-              <Col className="defbodyFont">
-            VALTEC brings your data to life with stunning visuals and compelling
-            narratives. Visualization and real-time rendering build
-            anticipation, eliminate ambiguity, clarify design features, and
-            engage stakeholders through immersive project experiences. By
-            collaborating with our clients, we uncover, translate, and
-            strategically convey their project’s vision through various visual
-            mediums, from augmented reality to motion graphics to app
-            development. Our team transforms your designs from plans and
-            architectural models into fit-for-purpose visual formats, such as
-            videos, before-and-after comparisons, photomontages, 360-degree
-            panoramic videos, aerial photography, and more. High-quality digital
-            content breathes life into your project for a range of purposes and
-            audiences, whether it's for stakeholder engagement or promotion.
-          </Col>
-              
+              <Col lg={6} md={12}>
+                <img src={visualize} style={{}} />
+              </Col>
+              <Col lg={6} md={12} className="defbodyFont mt-3 lg-mt-0">
+                VALTEC brings your data to life with stunning visuals and
+                compelling narratives. Visualization and real-time rendering
+                build anticipation, eliminate ambiguity, clarify design
+                features, and engage stakeholders through immersive project
+                experiences. By collaborating with our clients, we uncover,
+                translate, and strategically convey their project’s vision
+                through various visual mediums, from augmented reality to motion
+                graphics to app development. Our team transforms your designs
+                from plans and architectural models into fit-for-purpose visual
+                formats, such as videos, before-and-after comparisons,
+                photomontages, 360-degree panoramic videos, aerial photography,
+                and more. High-quality digital content breathes life into your
+                project for a range of purposes and audiences, whether it's for
+                stakeholder engagement or promotion.
+              </Col>
             </Row>
           </Container>
-          
         </div>
       </div>
     ),
@@ -489,24 +513,38 @@ export const serviceItems = [
       <div className="service-description">
         <Container>
           <Row>
-          <h2 className="text-danger p-0 defheadFont">
-          Risk and Assurance Strategy
-        </h2>
-            <Col md={5}><img src={chess} alt="strategy"  style={{objectFit: "cover" }} className="p-0" /></Col>
-            <Col><p>
-          Uncertainty, experienced by all businesses, is synonymous with risk.
-          We recognize this and offer comprehensive risk and assurance
-          strategies for clients that yield significant enterprise, strategic,
-          and capital asset outcomes. We assist business leaders in becoming
-          comfortable with uncertainty, defining complex problems, managing
-          ambiguity, and navigating dynamic environments through:
-        </p></Col>
+            <h2 className="text-danger p-0 defheadFont">
+              Risk and Assurance Strategy
+            </h2>
+            <Col lg={6} md={12}>
+              <p className="pt-4 lg-pt-0">
+                Uncertainty, experienced by all businesses, is synonymous with
+                risk. We recognize this and offer comprehensive risk and
+                assurance strategies for clients that yield significant
+                enterprise, strategic, and capital asset outcomes. We assist
+                business leaders in becoming comfortable with uncertainty,
+                defining complex problems, managing ambiguity, and navigating
+                dynamic environments through:
+              </p>
+            </Col>
+            <Col lg={6} md={12}>
+              <img
+                src={chess}
+                alt="strategy"
+                style={{
+                  height: "250px",
+                  objectFit: "cover",
+                }}
+                className="p-0"
+              />
+            </Col>
           </Row>
         </Container>
-        
-        
-        <h4 className="text-danger">Strategic risk and assurance</h4>
-         <ul>
+
+        <h4 className="text-danger pt-4 md-pt-0">
+          Strategic risk and assurance
+        </h4>
+        <ul>
           <li>Risk-based strategy and strategic risk management.</li>
           <li>Strategy performance and governance integration.</li>
           <li>
@@ -577,17 +615,29 @@ export const serviceItems = [
     ),
     detailedContent: (
       <div>
-  <Container>
-    <Row>
-      <Col md={6} xs={12}>
-        <img src={laser} className="w-75 " style={{ objectFit: "cover", height: "100%" }} />
-      </Col>
-      <Col>
-        <img src={vibration} className="w-75 " style={{ objectFit: "cover", height: "100%" }} />
-      </Col>
-    </Row>
-  </Container>
-  <p>
+        <Container>
+          <Row>
+            <Col>
+              <img
+                src={vibration}
+                style={{
+                  objectFit: "cover",
+                  height: "100%",
+                }}
+              />
+            </Col>
+            <Col md={6} xs={12}>
+              <img
+                src={laser}
+                style={{
+                  objectFit: "cover",
+                  height: "100%",
+                }}
+              />
+            </Col>
+          </Row>
+        </Container>
+        <p className="pt-5">
           Most customers encounter various challenges regarding the overall
           reliability of their machinery. Consequently, a vibration analysis
           service for rotating assets has evolved into a comprehensive solution
@@ -723,7 +773,6 @@ function Services() {
             ></Col>
           </Row>
           <Row className="flex-column mt-5">
-          
             {serviceItems.map((service, idx) => (
               <Col key={idx} data-aos="fade-up" className="py-0 mb-5">
                 <Row className="justify-content-between align-items-center">
@@ -778,7 +827,7 @@ function Services() {
                       service.name !== "Infrastructure and Facilities" &&
                       service.name !== "Public Private Partnerships" && (
                         <Link
-                          className="bg-danger p-2 mb-4 text-white fs-6 fw-bolder rounded"
+                          className="bg-danger p-2 mb-4 text-white fs-5 fw-bolder rounded"
                           style={{ textDecorationLine: "none" }}
                           to={`/service/${service.slug}`}
                         >

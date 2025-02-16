@@ -29,7 +29,7 @@ const PVFSection = () => {
   return (
     <Container className="my-5">
       <Row className="align-items-start">
-        <Col md={6} className="text-center text-md-start">
+        <Col md={6} className=" text-md-start">
           <h2 className="defheadFont">Pipe, Valves and Fittings (PVF)</h2>
           <p className="defbodyFont">
             VALTEC is your global PVF distributor for pipe, valves, actuators,

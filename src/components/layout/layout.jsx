@@ -3,6 +3,7 @@ import React from 'react';
 import NavBar from '../navbar/navbar';
 import Footer from '../Footer/Footer';
 import ResetScroll from '../resetScroll/resetscroll';
+import BackToTop from '../BackToTop/backtt';
 
 const Layout = ({ children }) => {
   return (
@@ -11,6 +12,7 @@ const Layout = ({ children }) => {
       <NavBar />
       <main>{children}</main>
       <Footer></Footer>
+      <BackToTop/>
     </div>
   );
 };
