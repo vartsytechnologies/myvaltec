@@ -13,7 +13,6 @@ import Contact from "./pages/contact/contact.jsx";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Careers from "./pages/careers/careers.jsx";
-import ResetScroll from "./components/resetScroll/resetscroll.jsx";
 import EpcSection from "./pages/services/pvfpage.jsx";
 import PumpServicePage from "./pages/services/pumps.jsx";
 import MillServicePage from "./pages/services/mill.jsx";
@@ -170,8 +169,7 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router}>
-      {/* Place ResetScroll inside RouterProvider */}
-      <ResetScroll />
+    
     </RouterProvider>
   </React.StrictMode>
 );
