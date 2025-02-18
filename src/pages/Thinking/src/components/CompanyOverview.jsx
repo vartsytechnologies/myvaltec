@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import companyOverview from "../../../../assets/aboutImg.jpg";
+import Solar from "../../../../assets/solars.jpeg";
 import AOS from "aos";
 import { useEffect } from "react";
 import "aos/dist/aos.css"; // Import the CSS styles
@@ -15,17 +15,11 @@ function CompanyOverview() {
   }, []);
   return (
     <Container className="defPt defPb">
-      
       <Row className="align-items-center">
-        <Col
-          md={6}
-        >
-          <h2
-        className="text-danger defheadFont"
-        data-aos="fade-left"
-      >
-        Company Overview
-      </h2>
+        <Col md={6}>
+          <h2 className="text-danger defheadFont" data-aos="fade-left">
+            Company Overview
+          </h2>
           <p
             data-aos="fade-left"
             className="mt-3 me-sm-1 me-md-3 me-lg-4 defbodyFont"
@@ -40,13 +34,10 @@ function CompanyOverview() {
             commitments to our clients.
           </p>
         </Col>
-        <Col
-          md={6}
-          className="zoom-out-container"
-        >
+        <Col md={6} className="zoom-out-container">
           <img
-            src={companyOverview}
-            alt="Company"
+            src={Solar}
+            alt="Overview"
             // className="img-fluid"
             data-aos="fade-right"
           />

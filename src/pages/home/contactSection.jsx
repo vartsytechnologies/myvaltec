@@ -12,7 +12,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import emailjs from "@emailjs/browser";
 
-
 function ContactSection() {
   useEffect(() => {
     AOS.init({
@@ -21,39 +20,34 @@ function ContactSection() {
     });
   }, []);
 
-//Form handling
-const [phone, setPhone] = useState("");
-const sendDetails = (e) => {
-  e.preventDefault();
-  emailjs
-    .sendForm(
-      process.env.REACT_APP_CONTACT_SERVICE,
-      process.env.REACT_APP_CONTACT_TEMP,
-      e.target,
-      process.env.REACT_APP_CONTACT_PUBK
-    )
-    .then(
-      (result) => {
-        e.target.reset();
-        alert("Message Sent Successfully. Thank you for contacting VALTEC!");
-      },
-      (error) => {
-        alert("Failed to send the Message. Please try again Later. You can also contact us through the contact details below.");
-        console.error(error);
-      }
-    );
-};
+  //Form handling
+  const [phone, setPhone] = useState("");
+  const sendDetails = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_CONTACT_SERVICE,
+        process.env.REACT_APP_CONTACT_TEMP,
+        e.target,
+        process.env.REACT_APP_CONTACT_PUBK
+      )
+      .then(
+        (result) => {
+          e.target.reset();
+          alert("Message Sent Successfully. Thank you for contacting VALTEC!");
+        },
+        (error) => {
+          alert(
+            "Failed to send the Message. Please try again Later. You can also contact us through the contact details below."
+          );
+          console.error(error);
+        }
+      );
+  };
 
   return (
-    <Container
-      fluid
-      data-aos="fade-up"
-      data-aos-delay="400"
-    >
-      <Container
-        className="mt-4"
-        style={{ marginBottom: "30px" }}
-      >
+    <Container fluid data-aos="fade-up" data-aos-delay="400">
+      <Container className="mt-4" style={{ marginBottom: "30px" }}>
         <h1 className="mt-4 text-center defheadFont text-danger">Contact Us</h1>
         <p className="text-center defbodyFont">
           <i>
@@ -61,10 +55,7 @@ const sendDetails = (e) => {
           </i>
         </p>
         <Row>
-          <Col
-            xs={12}
-            lg={5}
-          >
+          <Col xs={12} lg={5}>
             <Row className="flex-column p-0 gx-0 defbodyFont">
               <Col className="contactForm p-3 mb-sm-2">
                 <div className="row">
@@ -88,7 +79,9 @@ const sendDetails = (e) => {
                               Address
                             </h4>
                             <p className="p-0 m-0">
-                            Mountain View Community, Pantang West. | Accra, Ghana.</p>
+                              Mountain View Community, Pantang West. | Accra,
+                              Ghana.
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -149,10 +142,7 @@ const sendDetails = (e) => {
               </Col>
             </Row>
           </Col>
-          <Col
-            xs={12}
-            lg={7}
-          >
+          <Col xs={12} lg={7}>
             <Row className="flex-column p-0 gx-0 defbodyFont">
               <Col className="contactForm p-3">
                 <div className="row">
@@ -160,11 +150,7 @@ const sendDetails = (e) => {
                     <div className="contactParent mt-3 mb-4">
                       <Form autoComplete="off" onSubmit={sendDetails}>
                         <Row className="gx-1">
-                          <Form.Group
-                            as={Col}
-                            md="6"
-                            className="mb-3"
-                          >
+                          <Form.Group as={Col} md="6" className="mb-3">
                             <Form.Label>Name</Form.Label>
                             <Form.Control
                               type="name"
@@ -190,26 +176,30 @@ const sendDetails = (e) => {
                           </Form.Group>
                         </Row>
                         <Row className="gx-1">
-                        <Form.Group as={Col} className="mb-3" controlId="formPhoneNumber">
-            <Form.Label>Phone Number</Form.Label>
-            <div
-              className="phone-input-container w-100"
-              style={{ border: "1px solid black" }}
-            >
-              <PhoneInput
-                defaultCountry="gh" // Change to desired default country
-                value={phone}
-                onChange={setPhone}
-                inputClassName="field"
-                inputProps={{
-                  required: true,
-                  placeholder: "Enter your phone number",
-                  // pattern: "^\\+?[1-9][0-9]{7,14}$", // Pattern to support international numbers
-                }}
-                name="sender_phone"
-              />
-            </div>
-          </Form.Group>
+                          <Form.Group
+                            as={Col}
+                            className="mb-3"
+                            controlId="formPhoneNumber"
+                          >
+                            <Form.Label>Phone Number</Form.Label>
+                            <div
+                              className="phone-input-container w-100"
+                              style={{ border: "1px solid black" }}
+                            >
+                              <PhoneInput
+                                defaultCountry="gh" // Change to desired default country
+                                value={phone}
+                                onChange={setPhone}
+                                inputClassName="field"
+                                inputProps={{
+                                  required: true,
+                                  placeholder: "Enter your phone number",
+                                  // pattern: "^\\+?[1-9][0-9]{7,14}$", // Pattern to support international numbers
+                                }}
+                                name="sender_phone"
+                              />
+                            </div>
+                          </Form.Group>
 
                           <Form.Group
                             as={Col}
@@ -226,11 +216,7 @@ const sendDetails = (e) => {
                             />
                           </Form.Group>
                         </Row>
-                        <Form.Group
-                          as={Col}
-                          md="12"
-                          className="mb-3"
-                        >
+                        <Form.Group as={Col} md="12" className="mb-3">
                           <Form.Label>Subject</Form.Label>
                           <Form.Control
                             type="text"
@@ -239,11 +225,7 @@ const sendDetails = (e) => {
                             name="subject"
                           />
                         </Form.Group>
-                        <Form.Group
-                          as={Col}
-                          md="12"
-                          className="mb-3"
-                        >
+                        <Form.Group as={Col} md="12" className="mb-3">
                           <Form.Label>Message</Form.Label>
                           <Form.Control
                             style={{ resize: "none" }}

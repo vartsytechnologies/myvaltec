@@ -26,7 +26,7 @@ import epc from "../../assets/services_img/epc.jpg";
 
 // new service images
 import calib from "../../assets/services_img/new/calib.jpeg";
-import digital from "../../assets/services_img/new/digital.jpg";
+import digital from "../../assets/services_img/new/dig.jpg";
 import lubricants from "../../assets/services_img/new/fuel.png";
 import infrastructure from "../../assets/services_img/new/infra.jpg";
 import partnership from "../../assets/services_img/partnership.jpg";
@@ -89,7 +89,7 @@ function Services() {
                 <Col className="align-self-center p-auto">
                   <p className="fs-5 p-0 m-0 defheadFont text-danger">
                     <MdOutlineConstruction className="s-icon" />
-                    Engineering, Procument and Construction
+                    Engineering, Procurement and Construction
                   </p>
                   <hr
                     style={{
@@ -306,7 +306,7 @@ function Services() {
                 <Col className="align-self-center">
                   <p className="fs-5 p-0 m-0 defheadFont text-danger">
                     <PiMonitor className="s-icon" />
-                    Digital Solutions, IT and Cybersecurity
+                    Digital Solutions
                   </p>
                   <hr
                     style={{

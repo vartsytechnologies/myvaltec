@@ -23,10 +23,11 @@ import "aos/dist/aos.css";
 import serv_bg from "../../assets/services_img/white-unsplash-9d0375d2.jpg";
 // new service images
 import calib from "../../assets/services_img/new/calib.jpeg";
-import digital from "../../assets/services_img/new/digital.jpg";
+import digital from "../../assets/services_img/new/dig.jpg";
 import lubricants from "../../assets/services_img/new/fuel.png";
 import infrastructure from "../../assets/services_img/new/infra.jpg";
-import partnership from "../../assets/services_img/partnership.jpg";
+import partnership from "../../assets/services_img/partner.jpg";
+import reliable from "../../assets/services_img/70.jpg";
 import renewables from "../../assets/services_img/new/pv.jpg";
 import sustainability from "../../assets/services_img/new/sustainability2.JPG";
 
@@ -598,11 +599,11 @@ export const serviceItems = [
     ),
   },
   {
-    name: "Reliability Services",
+    name: "Reliability",
     slug: "reliability_services",
-    initialImage: partnership,
+    initialImage: reliable,
     imgOrder: 0,
-    carouselImages: [partnership],
+    carouselImages: [reliable],
     icon: <VscWorkspaceTrusted className="s-icon" />,
     description: (
       <p>

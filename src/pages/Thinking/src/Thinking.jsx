@@ -9,7 +9,7 @@ import valtec_digital from "../../../assets/valtec_digital.jpg";
 import ISO_9 from "../../../assets/ISO/ISO_9.webp";
 import ISO_1 from "../../../assets/ISO/ISO_1.webp";
 import user from "../../../assets/ISO/user.jpg";
-import companyOverview from "../../../assets/aboutImg.jpg";
+import companyOverview from "../../../assets/solars.jpeg";
 import purpose from "../../../assets/purpose.jpg";
 import quality_assurance from "../../../assets/quality_assurance.jpg";
 import ethics_and_compliance from "../../../assets/ethics_and_compliance.jpg";
@@ -156,16 +156,17 @@ function App() {
                       margin: "0.5rem 0",
                     }}
                   />
-                  <span className="defbodyFont d-block">
+                  <span className="defbodyFont d-block me-3">
                     Established in August 2015, VALTEC is a value-driven design,
                     engineering, procurement, construction, and management
-                    consulting company. Our locally available expertise and
-                    globally affiliated support network will provide your
-                    projects, plants, and operations in Africa with specialized
-                    precision, real-time speed, reliability, and sustainable
-                    solutions. Delivering value through technology solutions is
-                    the core principle that drives our innovation and
-                    commitments to our clients.
+                    consulting company. Our mission is to deliver compelling
+                    value through technology solutions to deliver compelling
+                    EPCM projects, existing plants, and contractors in the
+                    energy, mining, manufacturing, refinery, power, oil &gas
+                    industries. VALTEC's unique blend of locally available
+                    expertise and a globalized affiliated support network
+                    ensures specialized precision, real-time speed, and reliable
+                    service quality across all projects in Africa.
                   </span>
                   <p className="mt-4"></p>
                 </Col>
@@ -307,7 +308,7 @@ function App() {
                         margin: "0.5rem 0",
                       }}
                     />
-                    <span className="defbodyFont d-block">
+                    <span className="defbodyFont d-block me-3">
                       VALTEC prioritizes integrity and maintains high ethical
                       and compliance standards while delivering exceptional
                       value to our clients. We collaborate with each other, our
@@ -393,17 +394,48 @@ function App() {
                     strictly adhere to a robust QHSE policy that is dedicated to
                     safeguarding the physical, psychological, and social
                     well-being of our employees, stakeholders, and communities.
-                    We are ISO 9001 and ISO 14001 certified.
+                    <br />{" "}
+                    <span className="text-danger">
+                      We are ISO 9001 and ISO 14001 certified.
+                    </span>
                   </span>
+                  <div
+                    className=" rounded bg-white d-flex align-items-center justify-content-between"
+                    style={{ width: "290px" }}
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                  >
+                    <img
+                      className="m-3"
+                      src={ISO_9}
+                      style={{ height: "90px" }}
+                      alt=""
+                    />
+                    <img
+                      className="m-3"
+                      src={ISO_1}
+                      style={{ height: "100px" }}
+                      alt=""
+                    />
+                  </div>
                   <p className="mt-4"></p>
                 </Col>
               </Row>
               <Row>
                 <Col>
+                  {/* <h3
+                    className=" pt-2 text-danger defHeadFont"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                  >
+                    VALTEC ISO certified
+                  </h3> */}
+
+                  <br />
                   <h4 className="text-danger pt-3" data-aos="fade-up">
                     VALTEC upholds a robust QHSE policy by:
                   </h4>
-                  <p data-aos="fade-up">
+                  <p className="defbodyFont text-justify" data-aos="fade-up">
                     Establishing clear and measurable Quality Objectives across
                     all operational sectors is imperative. Continuous
                     monitoring, evaluation, and enhancement of the Quality
@@ -425,30 +457,6 @@ function App() {
                     environment.
                     <br />
                   </p>
-                  <p
-                    className="pt-2 text-danger"
-                    data-aos="fade-up"
-                    data-aos-delay="300"
-                  ></p>
-                  <div
-                    className=" rounded bg-white d-flex align-items-center justify-content-between"
-                    style={{ width: "320px" }}
-                    data-aos="fade-up"
-                    data-aos-delay="400"
-                  >
-                    <img
-                      className="m-3"
-                      src={ISO_9}
-                      style={{ height: "100px" }}
-                      alt=""
-                    />
-                    <img
-                      className="m-3"
-                      src={ISO_1}
-                      style={{ height: "130px" }}
-                      alt=""
-                    />
-                  </div>
                 </Col>
               </Row>
             </Col>

@@ -10,6 +10,7 @@ import {
   MdOutlinePrecisionManufacturing,
   MdOutlineGroup,
 } from "react-icons/md";
+import { VscWorkspaceTrusted } from "react-icons/vsc";
 import { PiMonitor } from "react-icons/pi";
 import { AiOutlineExperiment } from "react-icons/ai";
 import AOS from "aos";
@@ -24,10 +25,7 @@ function ServiceSection() {
   }, []);
   return (
     <>
-      <Container
-        fluid
-        className="defPb bg-gray pt-5 pb-0 mb-5"
-      >
+      <Container fluid className="defPb bg-gray pt-5 pb-0 mb-5">
         <Container className="pb-4 mb-4">
           <h1
             className="mt-4 text-center text-danger defheadFont"
@@ -44,10 +42,7 @@ function ServiceSection() {
           </p>
           {/* <hr style={{ height: "3px", background: "black", opacity: "1" }} /> */}
           <Row>
-            <Col
-              xs={12}
-              lg={6}
-            >
+            <Col xs={12} lg={6}>
               <Row className="flex-column">
                 <Col>
                   <div className="main mb-5 pb-2">
@@ -227,7 +222,7 @@ function ServiceSection() {
                             data-aos="fade-up"
                             data-aos-delay="600"
                           >
-                            Digital Solutions, IT and Cybersecurity
+                            Digital Solutions
                           </p>
                           <hr
                             style={{
@@ -251,10 +246,7 @@ function ServiceSection() {
                 </Col>
               </Row>
             </Col>
-            <Col
-              xs={12}
-              lg={6}
-            >
+            <Col xs={12} lg={6}>
               <Row className="flex-column">
                 <Col>
                   <div className="main mb-5 pb-2">
@@ -383,6 +375,57 @@ function ServiceSection() {
                             data-aos-delay="600"
                           >
                             Public Private Partnerships
+                          </p>
+                          <hr
+                            style={{
+                              borderTop: "2px solid rgba(255,17,67,1)",
+                              borderRadius: "4px",
+                              opacity: "1",
+                              margin: "0.5rem 0",
+                            }}
+                            data-aos="fade-up"
+                            data-aos-delay="10"
+                          />
+                          <p
+                            className="p-0 m-0 defbodyFont text-left"
+                            data-aos="fade-up"
+                            data-aos-delay="700"
+                          >
+                            Our collaborative approach connects government
+                            entities and private enterprises, fostering projects
+                            that benefit communities and contribute to
+                            sustainable development.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </Col>
+                <Col>
+                  <div className="main mb-5 pb-2">
+                    <div className="row">
+                      <div
+                        className="col-3 d-none d-sm-flex align-items-center justify-content-center"
+                        style={{
+                          background: "rgba(255, 177, 193, 0.22",
+                        }}
+                      >
+                        <div
+                          className="image-container m-2 p-2 d-flex align-items-center justify-content-center "
+                          data-aos="fade-up"
+                          data-aos-delay="500"
+                        >
+                          <VscWorkspaceTrusted className="i-cons" />
+                        </div>
+                      </div>
+                      <div className="col-12 col-sm-9">
+                        <div className="text-container me-2">
+                          <p
+                            className="fs-5 p-0 m-0 defheadFont text-danger"
+                            data-aos="fade-up"
+                            data-aos-delay="600"
+                          >
+                            Reliability
                           </p>
                           <hr
                             style={{
