@@ -395,7 +395,7 @@ function App() {
                     safeguarding the physical, psychological, and social
                     well-being of our employees, stakeholders, and communities.
                     <br />{" "}
-                    <span className="text-danger">
+                    <span className="fw-bolder text-danger">
                       We are ISO 9001 and ISO 14001 certified.
                     </span>
                   </span>

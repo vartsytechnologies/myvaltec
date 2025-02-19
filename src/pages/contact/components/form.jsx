@@ -35,8 +35,8 @@ function ContactForm() {
       .then(
         (result) => {
           alert("Message Sent Successfully. Thank you for contacting VALTEC!");
-          e.target.reset(); // Reset form fields
-          setPhone(""); // Clear phone input
+          e.target.reset(); 
+          setPhone("");
         },
         (error) => {
           alert("Failed to send the Message. Please try again Later.");
@@ -98,7 +98,7 @@ function ContactForm() {
           </Form.Group>
         </Col>
         <Col xs={12} lg={7}>
-        <Form.Group as={Col} md="12" className="mb-3">
+          <Form.Group as={Col} md="12" className="mb-3">
             <Form.Label>Location</Form.Label>
             <Form.Control
               type="text"

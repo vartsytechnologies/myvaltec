@@ -86,12 +86,12 @@ const ProductsSection = () => {
       text: "VALTEC is your solution for pumps that deliver constant flow rates at a given speed (rpm) no matter the system discharge pressure",
       category: "all",
     },
-    {
-      name: "Pump Service & Repair",
-      image: Pumpserv,
-      text: "VALTEC offers an entire fleet of pump field services and maintenance programs for in-house repairs, upgrades, and replacement parts.",
-      category: "tsm",
-    },
+    // {
+    //   name: "Pump Service & Repair",
+    //   image: Pumpserv,
+    //   text: "VALTEC offers an entire fleet of pump field services and maintenance programs for in-house repairs, upgrades, and replacement parts.",
+    //   category: "tsm",
+    // },
     {
       name: "Rental Pumps",
       image: Rent,
