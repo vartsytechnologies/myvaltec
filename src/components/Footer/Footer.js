@@ -10,7 +10,7 @@ function Footer() {
   return (
     <footer className="footer pt-5 mt-5 defbodyFont">
       <Container>
-        <Row className="mb-4">
+        <Row className="mb-5">
           <Col xs={12} md={4} className="logo-section text-center">
             <img src={footerLogo} alt="Valtec Logo" className="footer-logo" />
             <Row className="social-icons-row ">
@@ -34,24 +34,29 @@ function Footer() {
           <Col
             xs={12}
             md={4}
-            className="links-section  border-0 border-sm-start border-sm-2 ps-0 ps-sm-5"
+            className="links-section text-start text-xs-center border-0 border-sm-start border-sm-2 ps-0 ps-sm-5"
           >
             <div className="footer-links-group mt-0 mt-sm-4">
+              <p className=" m-0 pb-0 fw-bolder">Quick Links</p>
               <Link to="/">Home</Link>
               <Link to="/thinking">About VALTEC</Link>
               <Link to="/markets">Markets</Link>
+              <Link to="/service">Services</Link>
+              <Link to="/projects">Projects</Link>
             </div>
           </Col>
           <Col
             xs={12}
             md={4}
-            className="extra-links-section  border-0 border-sm-start border-sm-2 ps-0 ps-sm-5"
+            className="extra-links-section text-start text-xs-center border-0 border-sm-start border-sm-2 ps-0 ps-sm-5"
           >
             <div className="footer-links-group mt-0 mt-sm-4 ">
-              <Link to="/service">Services</Link>
-              <Link to="/projects">Projects</Link>
-              {/* <a href="/">Expertise</a> */}
-              <Link to="/contact">Contact Us</Link>
+              <p className=" m-0 pb-0 fw-bolder ">Contact Us</p>
+              <p className="pt-1">
+                Email :{" "}
+                <a href="mailto:sales@myvaltec.com">sales@myvaltec.com</a>
+              </p>
+              <p className="m-0 p-0">Call : (+233) 534-4040-014</p>
             </div>
           </Col>
         </Row>
