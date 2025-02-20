@@ -36,7 +36,7 @@ function Footer() {
             md={4}
             className="links-section text-start text-xs-center border-0 border-sm-start border-sm-2 ps-0 ps-sm-5"
           >
-            <div className="footer-links-group mt-0 mt-sm-4">
+            <div className="footer-links-group">
               <p className=" m-0 pb-0 fw-bolder">Quick Links</p>
               <Link to="/">Home</Link>
               <Link to="/thinking">About VALTEC</Link>
@@ -50,13 +50,14 @@ function Footer() {
             md={4}
             className="extra-links-section text-start text-xs-center border-0 border-sm-start border-sm-2 ps-0 ps-sm-5"
           >
-            <div className="footer-links-group mt-0 mt-sm-4 ">
+            <div className="footer-links-group">
               <p className=" m-0 pb-0 fw-bolder ">Contact Us</p>
               <p className="pt-1">
                 Email :{" "}
                 <a href="mailto:sales@myvaltec.com">sales@myvaltec.com</a>
+                <br />
               </p>
-              <p className="m-0 p-0">Call : (+233) 534-4040-014</p>
+              <p className="call">Call : (+233) 534-4040-014</p>
             </div>
           </Col>
         </Row>

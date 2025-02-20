@@ -38,9 +38,14 @@
   color: white;
   margin: 0 10px;
 }
-
-@media (max-width: 576px) {
+.call {
+  margin-top: -7px;
+}
+@media (max-width: 768px) {
   .footer-links-group {
     align-items: center;
+  }
+  .footer-links-group{
+    margin-top:30px;
   }
 }
