@@ -11,8 +11,8 @@ import ISO_1 from "../../../assets/ISO/ISO_1.webp";
 import user from "../../../assets/ISO/user.jpg";
 import companyOverview from "../../../assets/solars.jpeg";
 import purpose from "../../../assets/purpose.jpg";
-import quality_assurance from "../../../assets/quality_assurance.jpg";
-import ethics_and_compliance from "../../../assets/ethics_and_compliance.jpg";
+import quality_assurance from "../../../assets/q_a.jpg";
+import ethics_and_compliance from "../../../assets/e_c.webp";
 import "../src/components/thinking.css";
 import { useEffect } from "react";
 import AOS from "aos";
@@ -111,7 +111,7 @@ function App() {
                 the environment.
                 <br />
               </p>
-              <p
+              <pn
                 className="pt-2 text-danger"
                 data-aos="fade-up"
                 data-aos-delay="300"
@@ -191,7 +191,7 @@ function App() {
             <Col data-aos="fade-up" className="py-4">
               <Row className="justify-content-between">
                 <Col
-                  xs={12}
+                  xs={12}Compliance
                   lg={6}
                   className="zoom-out-container mb-5 align-self-center"
                 >

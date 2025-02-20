@@ -35,7 +35,7 @@ function ContactForm() {
       .then(
         (result) => {
           alert("Message Sent Successfully. Thank you for contacting VALTEC!");
-          e.target.reset(); 
+          e.target.reset();
           setPhone("");
         },
         (error) => {
@@ -91,7 +91,7 @@ function ContactForm() {
             <Form.Label>Name of Company or Institution</Form.Label>
             <Form.Control
               type="name"
-              placeholder="Your Institution... Indicate N/A if not applicable"
+              placeholder="Enter N/A if not applicable"
               required
               name="sender_institution"
             />
