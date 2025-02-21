@@ -28,7 +28,7 @@ function CompanyOverview() {
             engineering, procurement, construction, and management consulting company. 
             Our mission is to deliver compelling value through technology solutions 
             to deliver compelling EPCM projects, existing plants, and contractors in the energy,
-            mining, manufacturing, refinery, power, oil &gas industries. 
+            mining, manufacturing, refinery, power, oil & gas industries. 
             VALTEC's unique blend of locally available expertise and a globalized affiliated 
             support network ensures specialized precision, real-time speed, 
             and reliable service quality across all projects in Africa.
