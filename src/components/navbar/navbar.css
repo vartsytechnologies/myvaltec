@@ -71,10 +71,12 @@
   display: block !important;
 }
 
-body {
+/* body {
   overflow-y: scroll;
+} */
+.offcanvas {
+  position: fixed;
 }
-
 .link {
   transition: all 0.2s linear;
 }
@@ -112,4 +114,22 @@ body {
   max-height: 400px;
   opacity: 1;
   visibility: visible;
+}
+/* Hide the menu by default */
+.child {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  top: 74px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdowns:hover + .child,
+.child:hover {
+  visibility: visible;
+  opacity: 1;
 }

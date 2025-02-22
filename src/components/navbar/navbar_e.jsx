@@ -20,13 +20,13 @@ import { NavLink } from "react-router-dom";
 import navbar from "./navbar.css";
 import emailjs from "@emailjs/browser";
 import { Link } from "react-router-dom";
-import { RiArrowUpSLine } from "react-icons/ri";
+import { RiArrowRightSLine } from "react-icons/ri";
 import { RiArrowDownSLine } from "react-icons/ri";
 // Imports for form
 import Form from "react-bootstrap/Form";
 // import Button from "react-bootstrap/Button";
 import { RxHamburgerMenu } from "react-icons/rx";
-
+import AOS from "aos";
 export default function NavBar() {
   const [phone, setPhone] = useState("");
   const [showModal, setShowModal] = useState(false); // State for Modal
@@ -74,7 +74,12 @@ export default function NavBar() {
     };
   }, []);
   //End of Navbar handling
-
+  useEffect(() => {
+    AOS.init({
+      duration: 550, // Animation duration in milliseconds
+      offset: 50, // Trigger animations 50px before an element is in view
+    });
+  }, []);
   //Form handling
   const sendEmail = (e) => {
     e.preventDefault();
@@ -387,7 +392,6 @@ export default function NavBar() {
             />
           </Navbar.Brand>
 
-          {/* Button for Offcanvas - Only visible on md and smaller screens */}
           <Button
             variant="outline-dark"
             className="d-lg-none"
@@ -396,7 +400,6 @@ export default function NavBar() {
             <RxHamburgerMenu className="fs-3" />
           </Button>
 
-          {/* Normal Navbar for lg and larger */}
           <Nav className="defbodyFont mx-auto d-none d-lg-flex align-items-between">
             <Nav.Link>
               <NavLink
@@ -411,23 +414,115 @@ export default function NavBar() {
               </NavLink>
             </Nav.Link>
 
-            {/* Careers Dropdown - Always Visible on Large Screens */}
-            {/* <Nav.Item className="dropdown custom-dropdown"> */}
             <Nav.Link
-              ref={expertiseLinkRef}
-              className="text-dark dropdown mb-0 pb-0"
-              onMouseEnter={handleMouseEnterExpertise} // Show dropdown
-              onMouseLeave={handleMouseLeave} // Hide dropdow
+              className="dropdowns mb-0 pb-0"
+              onMouseEnter={() => setShowDropdown(true)}
+              onMouseLeave={() => setShowDropdown(false)}
             >
               Expertise
               <RiArrowDownSLine
-                className={`ms-2 ${showDropdown ? "rotate" : ""}`} // Apply rotate when dropdown is shown
+                className={`ms-2 ${showDropdown ? "rotate" : ""}`}
               />
             </Nav.Link>
 
             {/* Dropdown Menu */}
-            <div className="menu" aria-labelledby=""></div>
-            {/* </Nav.Item> */}
+            <Row className="child container bg bg-light">
+              <Col data-aos="fade-right" className="bg-danger">
+                <ul>
+                  <p className="defheadFont text-white">Services</p>
+                  <p className="text-white">
+                    <RiArrowRightSLine className="me-2 " />
+                    Calibration
+                  </p>
+                  <p className="text-white">
+                    <RiArrowRightSLine className="me-2 " />
+                    Sustainability
+                  </p>
+                  <p className="text-white">
+                    <RiArrowRightSLine className="me-2 " />
+                    Renewable Energy
+                  </p>
+                  <p className="text-white">
+                    <RiArrowRightSLine className="me-2 " />
+                    Digital Solutions
+                  </p>
+                  <p className="text-white">
+                    <RiArrowRightSLine className="me-2 " />
+                    Infrastructure & Facilities
+                  </p>
+                  <p className="text-white">
+                    <RiArrowRightSLine className="me-2 " />
+                    Public Private Partnerships
+                  </p>
+                  <p className="text-white">
+                    {" "}
+                    <RiArrowRightSLine className="me-2 " />
+                    Engineering, Procurement & Construction
+                  </p>
+                  <p className="text-white">
+                    {" "}
+                    <RiArrowRightSLine className="me-2 " />
+                    Additives: Fuel, Lubricants & Greases
+                  </p>
+                </ul>
+              </Col>
+              <Col data-aos="fade-right" className="bg-secondary">
+                <ul className="text-decoration-none">
+                  <p className="defheadFont text-danger">Markets</p>
+                  <p>
+                    {" "}
+                    <RiArrowRightSLine className="me-2 " />
+                    Power
+                  </p>
+                  <p>
+                    {" "}
+                    <RiArrowRightSLine className="me-2 " />
+                    Mining
+                  </p>
+                  <p>
+                    {" "}
+                    <RiArrowRightSLine className="me-2 " />
+                    Energy
+                  </p>
+                  <p>
+                    {" "}
+                    <RiArrowRightSLine className="me-2 " />
+                    Oil & Gas
+                  </p>
+                  <p>
+                    {" "}
+                    <RiArrowRightSLine className="me-2 " />
+                    Technology
+                  </p>
+                  <p>
+                    {" "}
+                    <RiArrowRightSLine className="me-2 " />
+                    Governments
+                  </p>
+                </ul>
+              </Col>
+              <Col data-aos="fade-right">
+                <ul className="text-decoration-none">
+                  <p className="defheadFont text-danger">Projects</p>
+
+                  <p>
+                    <RiArrowRightSLine className="me-1 " /> MODEC Ghana Limited
+                  </p>
+                  <p>
+                    <RiArrowRightSLine className="me-2 " /> AngloGold Ashanti
+                    Ghana Limited
+                  </p>
+                  <p>
+                    <RiArrowRightSLine className="me-2 " /> Yinson Productions
+                    West Africa Limited
+                  </p>
+                  <p>
+                    <RiArrowRightSLine className="me-2 " /> ENI Ghana
+                    Exploration & Production Limited
+                  </p>
+                </ul>
+              </Col>
+            </Row>
 
             <Nav.Link>
               <NavLink
@@ -575,7 +670,7 @@ export default function NavBar() {
         show={show}
         onHide={handleClose}
         placement="end"
-        className="d-lg-none bg bg-danger"
+        className="d-lg-none bg bg-danger .offcanvas"
       >
         <Offcanvas.Header closeButton>
           <Offcanvas.Title className="defbodyFont fs-3 text-white">
