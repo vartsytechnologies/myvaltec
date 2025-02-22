@@ -21,6 +21,7 @@ const BackToTop = () => {
   return (
     show && (
       <Button
+        className="d-none d-md-block"
         variant="danger"
         onClick={scrollToTop}
         style={{
@@ -30,7 +31,6 @@ const BackToTop = () => {
           padding: "7px 10px",
           fontSize: "15px",
           zIndex: 1000,
-        //   transition: "opacity 0.3s ease, transform 0.3s ease",
         }}
       >
         <FaArrowUp />

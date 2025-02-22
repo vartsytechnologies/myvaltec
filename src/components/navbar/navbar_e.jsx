@@ -1,26 +1,31 @@
 import React, { useState, useEffect, useRef } from "react";
+// import { useMediaQuery } from "react-responsive";
 import {
   Navbar,
   Nav,
   NavDropdown,
+  Offcanvas,
   Modal,
   Button,
   Container,
   Row,
+  Collapse,
   Col,
 } from "react-bootstrap";
 import { PhoneInput } from "react-international-phone";
 import { IoSendSharp } from "react-icons/io5";
+import { IoIosArrowUp } from "react-icons/io";
 import valtecLogo from "../../assets/valtec_logo.png";
 import { NavLink } from "react-router-dom";
 import navbar from "./navbar.css";
 import emailjs from "@emailjs/browser";
 import { Link } from "react-router-dom";
-import { RiArrowRightSLine } from "react-icons/ri";
+import { RiArrowUpSLine } from "react-icons/ri";
 import { RiArrowDownSLine } from "react-icons/ri";
 // Imports for form
 import Form from "react-bootstrap/Form";
 // import Button from "react-bootstrap/Button";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 export default function NavBar() {
   const [phone, setPhone] = useState("");
@@ -29,9 +34,17 @@ export default function NavBar() {
   const dropdownRef = useRef(null); // Ref to handle dropdown container
   const expertiseLinkRef = useRef(null); // Ref to expertise nav link
 
+  //New nav
+  // const isMobile = useMediaQuery({ maxWidth: 991 });
+  const [isOpen, setIsOpen] = useState(false);
+
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   // Functions to handle modal show and hide
-  const handleShow = () => setShowModal(true);
-  const handleClose = () => setShowModal(false);
+  const handleSho = () => setShowModal(true);
+  const handleClos = () => setShowModal(false);
 
   // Show dropdown when hovering over the expertise link
   const handleMouseEnterExpertise = () => {
@@ -166,7 +179,7 @@ export default function NavBar() {
     //           className={`container custom-dropdown bg-light ${
     //             showDropdown ? "show" : ""
     //           }`}
-    //           ref={dropdownRef}
+    // /contact          ref={dropdownRef}
     //           onMouseEnter={handleMouseEnterExpertise} // Keep dropdown visible
     //           onMouseLeave={handleMouseLeave} // Hide dropdown
     //         >
@@ -487,55 +500,323 @@ export default function NavBar() {
     //     </Navbar.Collapse>
     //   </Container>
     // </Navbar>
+    <>
+      <Navbar bg="light" expand="lg" className="sticky-top px-3">
+        <Container>
+          <Navbar.Brand href="/">
+            <img
+              src={valtecLogo}
+              alt="VALTEC Logo"
+              width="100"
+              height="auto"
+              className="d-inline-block align-top"
+            />
+          </Navbar.Brand>
 
-    <Nav className="flex-column">
-      {/* Normal Nav Links */}
-      <Nav.Link className="defbodyFont text-secondary link" href="/thinking">
-        Thinking
-      </Nav.Link>
+          {/* Button for Offcanvas - Only visible on md and smaller screens */}
+          <Button
+            variant="outline-dark"
+            className="d-lg-none"
+            onClick={handleShow}
+          >
+            <RxHamburgerMenu className="fs-3" />
+          </Button>
 
-      {/* Expertise Dropdown */}
-      <NavDropdown
-        className="defbodyFont text-secondary"
-        title="Expertise"
-        id="expertise-dropdown"
+          {/* Normal Navbar for lg and larger */}
+          <Nav className="defbodyFont mx-auto d-none d-lg-flex align-items-between">
+            <Nav.Link>
+              <NavLink
+                to="/thinking"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-danger text-decoration-none"
+                    : "text-dark text-decoration-none"
+                }
+              >
+                Thinking
+              </NavLink>
+            </Nav.Link>
+
+            {/* Careers Dropdown - Always Visible on Large Screens */}
+            {/* <Nav.Item className="dropdown custom-dropdown"> */}
+            <Nav.Link
+              ref={expertiseLinkRef}
+              className="text-dark dropdown mb-0 pb-0"
+              onMouseEnter={handleMouseEnterExpertise} // Show dropdown
+              onMouseLeave={handleMouseLeave} // Hide dropdow
+            >
+              Expertise
+              <RiArrowDownSLine
+                className={`ms-2 ${showDropdown ? "rotate" : ""}`} // Apply rotate when dropdown is shown
+              />
+            </Nav.Link>
+
+            {/* Dropdown Menu */}
+            <div className="menu" aria-labelledby=""></div>
+            {/* </Nav.Item> */}
+
+            <Nav.Link>
+              <NavLink
+                to="/careers"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-danger text-decoration-none"
+                    : "text-dark text-decoration-none"
+                }
+              >
+                Careers
+              </NavLink>
+            </Nav.Link>
+            <Nav.Link>
+              <NavLink
+                to="/contact"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-danger text-decoration-none"
+                    : "text-dark text-decoration-none"
+                }
+              >
+                Contact
+              </NavLink>
+            </Nav.Link>
+          </Nav>
+          <Button
+            className="d-none d-lg-block ms-0 ms-lg-3 btn btn-danger defbodyFont"
+            variant="primary"
+            onClick={handleSho}
+          >
+            Contact Sales
+          </Button>
+        </Container>
+        {/* Request a Quote form modal */}
+        <Modal
+          show={showModal}
+          onHide={handleClos}
+          dialogClassName="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"
+        >
+          <Modal.Header closeButton>
+            <Modal.Title>Contact Sales</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <Form autoComplete="off" onSubmit={sendEmail}>
+              <Row className="py-3">
+                <Col xs={12} lg={5}>
+                  <Form.Group as={Col} className="mb-3">
+                    <Form.Label>Name</Form.Label>
+                    <Form.Control
+                      type="name"
+                      placeholder="Enter your name"
+                      required
+                      name="sender_name"
+                    />
+                  </Form.Group>
+                  <Form.Group
+                    as={Col}
+                    className="mb-3"
+                    controlId="formBasicEmail"
+                  >
+                    <Form.Label>Email address</Form.Label>
+                    <Form.Control
+                      type="email"
+                      placeholder="Enter your email"
+                      required
+                      name="sender_email"
+                    />
+                  </Form.Group>
+                  <Form.Group
+                    as={Col}
+                    className="mb-3"
+                    controlId="formPhoneNumber"
+                  >
+                    <Form.Label>Phone Number</Form.Label>
+                    <div
+                      className="phone-input-container w-100"
+                      style={{ border: "1px solid black" }}
+                    >
+                      <PhoneInput
+                        defaultCountry="gh" // Change to desired default country
+                        value={phone}
+                        onChange={setPhone}
+                        inputClassName="field"
+                        required
+                        placeholder="Enter your phone number"
+                        name="sender_phone"
+                      />
+                    </div>
+                  </Form.Group>
+                  <Form.Group as={Col} md="12" className="mb-3">
+                    <Form.Label>Location</Form.Label>
+                    <Form.Control
+                      type="text"
+                      placeholder="Enter your location"
+                      required
+                      name="sender_location"
+                    />
+                  </Form.Group>
+                </Col>
+                <Col xs={12} lg={7}>
+                  <Form.Group as={Col} md="12" className="mb-3">
+                    <Form.Label>Name of institution or Company</Form.Label>
+                    <Form.Control
+                      type="text"
+                      placeholder="Enter the name of your institution"
+                      required
+                      name="sender_institution"
+                    />
+                  </Form.Group>
+                  <Form.Group as={Col} md="12" className="mb-3">
+                    <Form.Label name="quote_details">Message</Form.Label>
+                    <Form.Control
+                      style={{ resize: "none" }}
+                      as="textarea"
+                      rows={7}
+                      placeholder="Your Message here"
+                      required
+                      name="message"
+                    />
+                  </Form.Group>
+                  <div className="d-flex align-items-center justify-content-center">
+                    <Button
+                      className="bg-danger mt-3 px-5 fs-5 ms-2"
+                      variant="danger"
+                      type="submit"
+                    >
+                      Send <IoSendSharp className="" />
+                    </Button>
+                  </div>
+                </Col>
+              </Row>
+            </Form>
+          </Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={handleClos}>
+              Close
+            </Button>
+          </Modal.Footer>
+        </Modal>
+      </Navbar>
+
+      {/* Offcanvas - Only for md, sm, xs screens */}
+      <Offcanvas
+        show={show}
+        onHide={handleClose}
+        placement="end"
+        className="d-lg-none bg bg-danger"
       >
-        {/* Markets Dropdown (Nested) */}
-        <NavDropdown drop="end" title="Markets" id="markets-dropdown">
-          <NavDropdown.Item
-            className="defbodyFont text-secondary"
-            href="/markets/retail"
-          >
-            Retail
-          </NavDropdown.Item>
-          <NavDropdown.Item
-            className="defbodyFont text-secondary"
-            href="/markets/finance"
-          >
-            Finance
-          </NavDropdown.Item>
-          <NavDropdown.Item
-            className="defbodyFont text-secondary"
-            href="/markets/technology"
-          >
-            Technology
-          </NavDropdown.Item>
-        </NavDropdown>
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title className="defbodyFont fs-3 text-white">
+            Menu
+          </Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+          <Nav className="flex-column">
+            <Nav.Link>
+              <NavLink
+                onClick={handleClose}
+                to="/thinking"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-white text-decoration-none"
+                    : "text-white text-decoration-none"
+                }
+              >
+                Thinking
+              </NavLink>
+            </Nav.Link>
 
-        {/* Other Expertise Items */}
-        <NavDropdown.Item
-          className="defbodyFont text-secondary"
-          href="/projects"
-        >
-          Projects
-        </NavDropdown.Item>
-        <NavDropdown.Item
-          className="defbodyFont text-secondary"
-          href="/service"
-        >
-          Services
-        </NavDropdown.Item>
-      </NavDropdown>
-    </Nav>
+            {/* Expertise Dropdown */}
+            <NavDropdown
+              className="defbodyFont text-white"
+              title={
+                <span style={{ color: "white" }}>
+                  Expertise{" "}
+                  <RiArrowDownSLine
+                    className={`arrow-icon ${isOpen ? "rotate" : ""}`}
+                  />
+                </span>
+              }
+              id="expertise-dropdown"
+              onToggle={(isOpen) => setIsOpen(isOpen)}
+            >
+              <div className={`dropdown-menu-custom ${isOpen ? "open" : ""}`}>
+                <NavDropdown.Item className="defbodyFont text-secondary">
+                  <Nav.Link>
+                    <NavLink
+                      to="/service"
+                      onClick={handleClose}
+                      className={({ isActive }) =>
+                        isActive
+                          ? "text-danger text-decoration-none"
+                          : "text-dark text-decoration-none"
+                      }
+                    >
+                      Services
+                    </NavLink>
+                  </Nav.Link>
+                </NavDropdown.Item>
+                <NavDropdown.Item className="defbodyFont text-secondary">
+                  <Nav.Link>
+                    <NavLink
+                      onClick={handleClose}
+                      to="/markets"
+                      className={({ isActive }) =>
+                        isActive
+                          ? "text-danger text-decoration-none"
+                          : "text-dark text-decoration-none"
+                      }
+                    >
+                      Markets
+                    </NavLink>
+                  </Nav.Link>
+                </NavDropdown.Item>
+
+                <NavDropdown.Item className="defbodyFont text-secondary">
+                  <Nav.Link>
+                    <NavLink
+                      onClick={handleClose}
+                      to="/projects"
+                      className={({ isActive }) =>
+                        isActive
+                          ? "text-danger text-decoration-none bg-transparent active-custom"
+                          : "text-dark text-decoration-none bg-transparent"
+                      }
+                    >
+                      Projects
+                    </NavLink>
+                  </Nav.Link>
+                </NavDropdown.Item>
+              </div>
+            </NavDropdown>
+
+            <Nav.Link>
+              <NavLink
+                onClick={handleClose}
+                to="/careers"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-white text-decoration-none"
+                    : "text-white text-decoration-none"
+                }
+              >
+                Careers
+              </NavLink>
+            </Nav.Link>
+            <Nav.Link>
+              <NavLink
+                onClick={handleClose}
+                to="/contact"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-white text-decoration-none"
+                    : "text-white text-decoration-none"
+                }
+              >
+                Contact
+              </NavLink>
+            </Nav.Link>
+          </Nav>
+        </Offcanvas.Body>
+      </Offcanvas>
+    </>
   );
 }
