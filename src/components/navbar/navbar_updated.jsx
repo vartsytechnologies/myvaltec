@@ -542,7 +542,7 @@ li {
                     <NavLink
                       to="/service"
                       style={{ transition: "all 0.2s linear" }}
-                      className="p-2 all_s border border-2 border-white text-white rounded d-flex align-items-center text-decoration-none"
+                      className="p-2 px-3 all_s border border-2 border-white text-white rounded d-flex align-items-center text-decoration-none"
                     >
                       Services
                     </NavLink>
@@ -593,7 +593,7 @@ li {
                     <NavLink
                       to="/markets"
                       style={{ transition: "all 0.2s linear" }}
-                      className="p-2 all_m  border border-2 border-white text-white rounded d-flex align-items-center text-decoration-none"
+                      className="p-2 px-3 all_m  border border-2 border-white text-white rounded d-flex align-items-center text-decoration-none"
                     >
                       Markets
                     </NavLink>
@@ -636,7 +636,7 @@ li {
                     <NavLink
                       to="/projects"
                       style={{ transition: "all 0.2s linear" }}
-                      className="all_p p-2 border border-2 border-dark text-dark rounded d-flex align-items-center text-decoration-none"
+                      className="all_p p-2 px-3 border border-2 border-dark text-dark rounded d-flex align-items-center text-decoration-none"
                     >
                       Projects
                     </NavLink>
