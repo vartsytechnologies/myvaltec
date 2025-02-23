@@ -17,10 +17,10 @@ import { IoSendSharp } from "react-icons/io5";
 import { IoIosArrowUp } from "react-icons/io";
 import valtecLogo from "../../assets/valtec_logo.png";
 import { NavLink } from "react-router-dom";
-import navbar from "./navbar.css";
+// import navbar from "./navbar.css";
 import emailjs from "@emailjs/browser";
 import { Link } from "react-router-dom";
-import { RiArrowRightSLine } from "react-icons/ri";
+import { VscArrowSmallRight } from "react-icons/vsc";
 import { RiArrowDownSLine } from "react-icons/ri";
 // Imports for form
 import Form from "react-bootstrap/Form";
@@ -94,6 +94,156 @@ export default function NavBar() {
   };
   return (
     <>
+      <style>
+        {`:root {
+  --bs-btn-color: red;
+  --bs-btn-border-color: red;
+  /* --bs-btn-hover-bg: red; */
+}
+
+/* Ensure the mega menu takes the full width of the parent container */
+.mega-menu {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  background: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+  z-index: 1000;
+  display: none;
+}
+
+/* Display the mega menu on hover */
+.mega-dropdown:hover .mega-menu {
+  display: block;
+}
+
+/* Proper alignment of columns */
+.mega-menu .row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap; /* Prevents columns from stacking */
+}
+
+/* Style headings inside the mega menu */
+.mega-menu h6 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.sd{
+  color:#525050
+}
+/* Add spacing between items */
+.mega-menu .col-md-4 {
+  padding: 10px;
+}
+
+/* Ensure links are properly styled */
+.mega-menu a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 5px 0;
+}
+.custom {
+  position: relative;
+}
+
+#expertise-dropdown::after {
+  display: none !important;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  min-width: 300px;
+  max-width: 650px;
+  border-radius: 5px;
+  padding: 10px;
+}
+.custom:hover .menu {
+  display: block !important;
+}
+
+/* body {
+  overflow-y: scroll;
+} */
+.offcanvas {
+  position: fixed;
+}
+.link {
+  transition: all 0.2s linear;
+}
+.link:hover {
+  color: rgba(255, 17, 67, 1);
+}
+.sticky-top {
+  top: 0;
+  position: sticky !important;
+  z-index: 1030;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.arrow-icon {
+  transition: transform 0.3s ease-in-out;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+.active-custom,
+.active-custom:focus {
+  background-color: transparent !important; /* No blue background */
+  color: red !important; /* Keep text red */
+}
+/* Custom Dropdown Animation */
+.dropdown-menu-custom {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  visibility: hidden;
+  transition: max-height 2s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.dropdown-menu-custom.open {
+  max-height: 400px;
+  opacity: 1;
+  visibility: visible;
+}
+/* Hide the menu by default */
+.child {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+  top: 74px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: -1;
+}
+
+.dropdowns:hover + .child,
+.child:hover,.dropdowns:focus + .child {
+  visibility: visible;
+  opacity: 1;
+}
+li {
+  font-size: 0.95em;
+}
+.navlink {
+  color: white !important;
+}
+.navlink:hover {
+  color: rgb(185, 171, 171) !important;
+}
+`}
+      </style>
       <Navbar bg="light" expand="lg" className="sticky-top px-3">
         <Container>
           <Navbar.Brand href="/">
@@ -151,6 +301,7 @@ export default function NavBar() {
               <Col
                 data-aos="fade-right"
                 className="p-0 m-0 bg-danger text-white"
+                style={{ backgroundColor: "#f8f9fa" }}
               >
                 <ul className="p-3 list-unstyled text-decoration-none">
                   <h3
@@ -164,12 +315,12 @@ export default function NavBar() {
                       to="/service/reliability_services"
                       className="navlink d-flex align-items-center text-decoration-underline"
                     >
-                      <RiArrowRightSLine className="me-2" />
+                      <VscArrowSmallRight className="me-2" />
                       Reliability
                     </NavLink>
                   </li>
                   <li className="mb-1  ms-2">
-                    <RiArrowRightSLine className="me-2 " />
+                    <VscArrowSmallRight className="me-2 " />
                     Calibration
                   </li>
                   <li className="mb-1 ms-2">
@@ -177,7 +328,7 @@ export default function NavBar() {
                       to="/service/sustainability"
                       className="navlink d-flex align-items-center text-decoration-underline"
                     >
-                      <RiArrowRightSLine className="me-2" />
+                      <VscArrowSmallRight className="me-2" />
                       Sustainability
                     </NavLink>
                   </li>
@@ -186,7 +337,7 @@ export default function NavBar() {
                       to="/service/renewable_energy"
                       className="navlink d-flex align-items-center text-decoration-underline"
                     >
-                      <RiArrowRightSLine className="me-2" />
+                      <VscArrowSmallRight className="me-2" />
                       Renewable Energy
                     </NavLink>
                   </li>
@@ -195,16 +346,16 @@ export default function NavBar() {
                       to="/service/digital_solutions"
                       className="navlink d-flex align-items-center text-decoration-underline"
                     >
-                      <RiArrowRightSLine className="me-2" />
+                      <VscArrowSmallRight className="me-2" />
                       Digital Solutions
                     </NavLink>
                   </li>
                   <li className="mb-1 ms-2">
-                    <RiArrowRightSLine className="me-2 " />
+                    <VscArrowSmallRight className="me-2 " />
                     Infrastructure & Facilities
                   </li>
                   <li className="mb-1 ms-2">
-                    <RiArrowRightSLine className="me-2 " />
+                    <VscArrowSmallRight className="me-2 " />
                     Public Private Partnerships
                   </li>
                   <li className="mb-1 ms-2">
@@ -212,7 +363,7 @@ export default function NavBar() {
                       to="/service/additives"
                       className="navlink d-flex align-items-center text-decoration-underline"
                     >
-                      <RiArrowRightSLine className="me-2" />
+                      <VscArrowSmallRight className="me-2" />
                       Additives: Fuel, Lubricants & Greases
                     </NavLink>
                   </li>
@@ -221,13 +372,17 @@ export default function NavBar() {
                       to="/service"
                       className="navlink d-flex align-items-center text-decoration-underline"
                     >
-                      <RiArrowRightSLine className="me-2" />
+                      <VscArrowSmallRight className="me-2" />
                       Engineering, Procurement & Construction
                     </NavLink>
                   </li>
                 </ul>
               </Col>
-              <Col data-aos="fade-right" className="text-white bg-dark">
+              <Col
+                data-aos="fade-right"
+                className="text-white"
+                style={{ backgroundColor: "#525050" }}
+              >
                 <ul className="p-3 list-unstyled text-decoration-none">
                   <h3
                     className="p-2 m-3 defheadFont "
@@ -236,34 +391,35 @@ export default function NavBar() {
                     Markets
                   </h3>
                   <li className="mb-1 mt-4 ms-1">
-                    <RiArrowRightSLine className="me-2 " />
+                    <VscArrowSmallRight className="me-2 " />
                     Power
                   </li>
                   <li className="mb-1 ms-1">
-                    <RiArrowRightSLine className="me-2 " />
+                    <VscArrowSmallRight className="me-2 " />
                     Mining
                   </li>
                   <li className="mb-1 ms-1">
-                    <RiArrowRightSLine className="me-2 " />
+                    <VscArrowSmallRight className="me-2 " />
                     Energy{" "}
                   </li>
                   <li className="mb-1 ms-1">
-                    <RiArrowRightSLine className="me-2 " />
+                    <VscArrowSmallRight className="me-2 " />
                     Oil & Gas
                   </li>
                   <li className="mb-1 ms-1">
-                    <RiArrowRightSLine className="me-2 " />
+                    <VscArrowSmallRight className="me-2 " />
                     Technology
                   </li>
                   <li className="mb-1 ms-1">
-                    <RiArrowRightSLine className="me-2 " />
+                    <VscArrowSmallRight className="me-2 " />
                     Governments
                   </li>
                 </ul>
               </Col>
               <Col
                 data-aos="fade-right "
-                className="text-black bg-body-secondary"
+                className="text-black"
+                style={{ backgroundColor: "#dee2e6" }}
               >
                 <ul className="p-3 list-unstyled text-decoration-none">
                   <h3
@@ -273,19 +429,19 @@ export default function NavBar() {
                     Projects
                   </h3>
                   <li className="mb-1 mt-4 ms-1">
-                    <RiArrowRightSLine className="me-2 " />
+                    <VscArrowSmallRight className="me-2 " />
                     MODEC Ghana Limited
                   </li>
                   <li className="mb-1 ms-1">
-                    <RiArrowRightSLine className="me-2 " />
+                    <VscArrowSmallRight className="me-2 " />
                     AngloGold Ashanti Ghana Limited
                   </li>
                   <li className="mb-1 ms-1">
-                    <RiArrowRightSLine className="me-2 " />
+                    <VscArrowSmallRight className="me-2 " />
                     Yinson Productions West Africa Limited
                   </li>
                   <li className="mb-1 ms-1">
-                    <RiArrowRightSLine className="me-2 " />
+                    <VscArrowSmallRight className="me-2 " />
                     ENI Ghana Exploration & Production Limited
                   </li>
                 </ul>
