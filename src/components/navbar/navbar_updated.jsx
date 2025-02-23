@@ -544,7 +544,7 @@ li {
                       style={{ transition: "all 0.2s linear" }}
                       className="p-2 all_s border border-2 border-white text-white rounded d-flex align-items-center text-decoration-none"
                     >
-                      All Services
+                      Services
                     </NavLink>
                     <NavLink
                       to="/service"
@@ -595,7 +595,7 @@ li {
                       style={{ transition: "all 0.2s linear" }}
                       className="p-2 all_m  border border-2 border-white text-white rounded d-flex align-items-center text-decoration-none"
                     >
-                      All Markets
+                      Markets
                     </NavLink>
                     <NavLink
                       to="/markets"
@@ -638,7 +638,7 @@ li {
                       style={{ transition: "all 0.2s linear" }}
                       className="all_p p-2 border border-2 border-dark text-dark rounded d-flex align-items-center text-decoration-none"
                     >
-                      All Projects
+                      Projects
                     </NavLink>
                     <NavLink
                       to="/projects"
