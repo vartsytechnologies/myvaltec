@@ -9,25 +9,23 @@ import Flanges from "../../assets/services_img/pvf/Flanges_Thumbnails.jpg";
 import Fasteners from "../../assets/services_img/pvf/Fasteners_thumbnail.jpg";
 import Gaskets from "../../assets/services_img/pvf/Gaskets_Thumbnails.jpg";
 import Pipe_accessories from "../../assets/services_img/pvf/Pipe_piping_accessories_thumbnail.jpg";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 import Cables from "../../assets/services_img/Electrical-thumbnail.jpg";
 
-import Breadcrumb from 'react-bootstrap/Breadcrumb';
+import Breadcrumb from "react-bootstrap/Breadcrumb";
 
 function BreadcrumbSection() {
   return (
-    <Container><br/>
-    <Breadcrumb>
-      <Breadcrumb.Item href="/home">Home</Breadcrumb.Item>
-      <Breadcrumb.Item href="/service">
-        Services
-      </Breadcrumb.Item>
-      <Breadcrumb.Item active>Electricals</Breadcrumb.Item>
-    </Breadcrumb>
+    <Container>
+      <br />
+      <Breadcrumb>
+        <Breadcrumb.Item href="/home">Home</Breadcrumb.Item>
+        <Breadcrumb.Item href="/service">Services</Breadcrumb.Item>
+        <Breadcrumb.Item active>Electricals</Breadcrumb.Item>
+      </Breadcrumb>
     </Container>
   );
 }
-
 
 const ElectricalHeaderSection = () => {
   return (
@@ -35,11 +33,21 @@ const ElectricalHeaderSection = () => {
       <Row className="align-items-center">
         <Col md={7} className="text-md-start">
           <h1 className="defheadFont">Electrical Supplies and Products</h1>
-          <h5 className="text-danger defbodyFont">Premium Electrical Solutions for Every Need</h5>
+          <h5 className="text-danger defbodyFont">
+            Premium Electrical Solutions for Every Need
+          </h5>
           <p className="defbodyFont">
-          In an ever-evolving digital world, the need for dependable electrical supplies is paramount. VALTEC stands at the forefront as a leading name in electrical equipment. We are your ultimate electrical equipment supplier, guaranteeing that every electrical need is addressed accurately and professionally. From commercial establishments to hazardous areas, VALTEC's electrical supplies are designed to cater to a wide range of demands.
+            In an ever-evolving digital world, the need for dependable
+            electrical supplies is paramount. VALTEC stands at the forefront as
+            a leading name in electrical equipment. We are your ultimate
+            electrical equipment supplier, guaranteeing that every electrical
+            need is addressed accurately and professionally. From commercial
+            establishments to hazardous areas, VALTEC's electrical supplies are
+            designed to cater to a wide range of demands.
           </p>
-          <Link to="/contact"><p className="btn btn-danger defbodyFont">Contact Sales</p></Link>
+          <Link to="/contact">
+            <p className="btn btn-danger defbodyFont">Contact Sales</p>
+          </Link>
         </Col>
         <Col md={5} className="text-center">
           <img src={Cables} alt="PVF Products" className="img-fluid" />
@@ -107,20 +115,30 @@ const ProductsSection = () => {
     if (category === "all") {
       setFilteredProducts(allProducts);
     } else {
-      setFilteredProducts(allProducts.filter((product) => product.category === category));
+      setFilteredProducts(
+        allProducts.filter((product) => product.category === category)
+      );
     }
   };
 
   return (
-    <Container fluid className="my-5 py-5" style={{ backgroundColor: "#f5f5f5" }}>
+    <Container
+      fluid
+      className="my-5 py-5"
+      style={{ backgroundColor: "#f5f5f5" }}
+    >
       <Container>
         <h2 className="text-center">Browse Products & Services</h2>
         <p className="text-center">
-          If you're looking for pipe fittings, pipe flanges, seals and gaskets or
-          valves, our catalog has everything you need.
+          If you're looking for pipe fittings, pipe flanges, seals and gaskets
+          or valves, our catalog has everything you need.
         </p>
         <div className="text-center mb-4">
-          <Button variant="primary" className="me-2" onClick={() => filterProducts("all")}>
+          <Button
+            variant="primary"
+            className="me-2"
+            onClick={() => filterProducts("all")}
+          >
             Show all
           </Button>
           <Button variant="secondary" onClick={() => filterProducts("tsm")}>
@@ -133,7 +151,9 @@ const ProductsSection = () => {
               <Card className="text-center shadow-sm">
                 <Card.Img variant="top" src={product.image} />
                 <Card.Body>
-                  <Card.Title style={{ color: "red" }}>{product.name}</Card.Title>
+                  <Card.Title style={{ color: "red" }}>
+                    {product.name}
+                  </Card.Title>
                   <Card.Text>{product.text}</Card.Text>
                 </Card.Body>
               </Card>
@@ -148,7 +168,7 @@ const ProductsSection = () => {
 const ElectricalServicePage = () => {
   return (
     <>
-    <BreadcrumbSection/>
+      <BreadcrumbSection />
       <ElectricalHeaderSection />
       {/* <ProductsSection /> */}
     </>

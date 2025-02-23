@@ -116,42 +116,6 @@ const epcDetails = [
 
 // Service items with their data
 export const serviceItems = [
-  // {
-  //   name: "Engineering Procurement and Construction",
-  //   initialImage: epc1,
-  //   imgOrder: 0,
-  //   carouselImages: [epc1, epc2, epc3, epc4],
-  //   icon: <MdOutlineConstruction className="s-icon" />,
-  //   description:
-  //     "VALTEC Limited offers comprehensive EPC (Engineering, Procurement, and Construction) services, tailored to meet the complex needs of the energy, mining, oil, and gas sectors. Our team brings a wealth of experience, utilizing advanced technology and local expertise to streamline project execution from design to completion.",
-  //   detailedContent: (
-  //     <div className="service-description">
-  //       <p>
-  //         VALTEC Limited offers comprehensive EPC (Engineering, Procurement, and
-  //         Construction) services tailored to meet the complex needs of the
-  //         energy, mining, oil, and gas sectors. We are your premier sourcing
-  //         partner, equipped with capabilities, offerings, technology, rapid
-  //         turnaround, quality, and modular solutions. Our affiliation with a
-  //         global distribution network provides your project with continuous
-  //         product access, exceptional supply chain management, and an unwavering
-  //         commitment to your success. When fabrication is central to your
-  //         project, VALTEC is your reliable partner. With modular processes and
-  //         state-of-the-art production equipment, we ensure your projects align
-  //         seamlessly with your objectives. Our extensive offerings include
-  //         turnkey metering, treatment facilities, and civil to mechanical
-  //         construction services. <br />
-  //         We specialize in the procurement of OEM products, such as but not
-  //         limited to:
-  //       </p>
-  //       <ul>
-  //         <li>Pipe, Tubes, Valves, Fittings & Flanges</li>
-  //         <li>Pumps Production, and Drilling</li>
-  //         <li>Mill, Tools, MRO & Consumables</li>
-  //         <li>Electrical Cable & Products</li>
-  //       </ul>
-  //     </div>
-  //   ),
-  // },
   {
     name: "Renewable Energy",
     slug: "renewable_energy",
