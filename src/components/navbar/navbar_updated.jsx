@@ -17,7 +17,7 @@ import { IoSendSharp } from "react-icons/io5";
 import { IoIosArrowUp } from "react-icons/io";
 import valtecLogo from "../../assets/valtec_logo.png";
 import { NavLink } from "react-router-dom";
-// import navbar from "./navbar.css";
+import navbar from "./navbar.css";
 import emailjs from "@emailjs/browser";
 import { Link } from "react-router-dom";
 import { VscArrowSmallRight } from "react-icons/vsc";
@@ -376,6 +376,19 @@ li {
                       Engineering, Procurement & Construction
                     </NavLink>
                   </li>
+                  <li className="mt-4 mb-3 ms-2 d-flex align-items-center justify-content-between">
+                    <NavLink
+                      to="/service"
+                      style={{ transition: "all 0.2s linear" }}
+                      className="p-2 all_s border border-2 border-white text-white rounded d-flex align-items-center text-decoration-none"
+                    >
+                      All Services
+                    </NavLink>
+                    <NavLink
+                      to="/service"
+                      className=" d-none p-2 border border-2 border-white rounded d-flex align-items-center text-decoration-none"
+                    ></NavLink>
+                  </li>
                 </ul>
               </Col>
               <Col
@@ -414,6 +427,19 @@ li {
                     <VscArrowSmallRight className="me-2 " />
                     Governments
                   </li>
+                  <li className="mt-4 mb-3 ms-2 d-flex align-items-center justify-content-between">
+                    <NavLink
+                      to="/markets"
+                      style={{ transition: "all 0.2s linear" }}
+                      className="p-2 all_m  border border-2 border-white text-white rounded d-flex align-items-center text-decoration-none"
+                    >
+                      All Markets
+                    </NavLink>
+                    <NavLink
+                      to="/markets"
+                      className="d-none p-2 border border-white-2 rounded d-flex align-items-center text-decoration-none"
+                    ></NavLink>
+                  </li>
                 </ul>
               </Col>
               <Col
@@ -443,6 +469,18 @@ li {
                   <li className="mb-1 ms-1">
                     <VscArrowSmallRight className="me-2 " />
                     ENI Ghana Exploration & Production Limited
+                  </li>
+                  <li className="mt-4 mb-3 ms-2 d-flex align-items-center justify-content-between">
+                    <NavLink
+                      to="/projects"  style={{ transition: "all 0.2s linear" }}
+                      className="all_p p-2 border border-2 border-dark text-dark rounded d-flex align-items-center text-decoration-none"
+                    >
+                      All Projects
+                    </NavLink>
+                    <NavLink
+                      to="/projects"
+                      className="d-none p-2 border border-white-2 rounded d-flex align-items-center text-decoration-none"
+                    ></NavLink>
                   </li>
                 </ul>
               </Col>
