@@ -282,7 +282,7 @@ li {
 .active-custom,
 .active-custom:focus {
   background-color: transparent !important; /* No blue background */
-  color: red !important; /* Keep text red */
+  color: rgba(255, 17, 67, 1) !important; /* Keep text red */
 }
 /* Custom Dropdown Animation */
 .dropdown-menu-custom {
@@ -317,6 +317,21 @@ li {
   visibility: visible;
   opacity: 1;
 }
+.active-dropdown .mainlink {
+  color: rgba(255, 17, 67, 1) !important; /* Make "Expertise" text red */
+}
+
+.active-dropdown .mainlink::before,
+.active-dropdown:hover .mainlink::before {
+  transform: scaleX(1);
+}
+
+/* Ensure hover effect also applies when dropdown is active */
+.active-dropdown:hover,
+.active-dropdown:focus,
+.active-dropdown:focus-within {
+  color: rgba(255, 17, 67, 1) !important;
+}
 
 li {
   font-size: 0.95em;
@@ -336,7 +351,7 @@ li:hover,
   color: rgb(185, 171, 171) !important;
 }
 .all_s:hover {
-  color: red !important;
+  color: rgba(255, 17, 67, 1) !important;
   background-color: white !important;
 }
 .all_m:hover {

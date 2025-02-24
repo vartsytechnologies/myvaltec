@@ -131,19 +131,26 @@ export default function NavBar() {
             </Nav.Link>
 
             <Nav.Link
-              className="dropdowns text-black"
+              className={`dropdowns text-black ${
+                showDropdown ? "active-dropdown" : ""
+              }`}
               onFocus={() => setShowDropdown(true)}
               onBlur={() => setShowDropdown(false)}
               onMouseEnter={() => setShowDropdown(true)}
               onMouseLeave={() => setShowDropdown(false)}
             >
-              <span className="mainlink">
+              <span className={`mainlink ${showDropdown ? "text-danger" : ""}`}>
                 Expertise
-                <RiArrowDownSLine
-                  className={`ms-2 ${showDropdown ? "rotate" : ""}`}
-                  style={{ transition: "transform 0.3s ease-in-out" }}
-                />
               </span>
+              <RiArrowDownSLine
+                className="ms-2"
+                style={{
+                  transform: showDropdown ? "rotate(180deg)" : "rotate(0deg)",
+                  color: showDropdown ? "red" : "inherit",
+                  transition:
+                    "transform 0.3s ease-in-out, color 0.3s ease-in-out",
+                }}
+              />
             </Nav.Link>
 
             {/* Dropdown Menu */}
