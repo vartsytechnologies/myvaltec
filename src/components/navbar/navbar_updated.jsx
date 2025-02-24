@@ -95,315 +95,7 @@ export default function NavBar() {
   return (
     <>
       <style>
-        {`:root {
-  --bs-btn-color: red;
-  --bs-btn-border-color: red;
-  /* --bs-btn-hover-bg: red; */
-}
-
-/* Ensure the mega menu takes the full width of the parent container */
-.mega-menu {
-  width: 100%;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 100%;
-  background: white;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px 0;
-  z-index: 1000;
-  display: none;
-}
-
-/* Display the mega menu on hover */
-.mega-dropdown:hover .mega-menu {
-  display: block;
-}
-
-/* Proper alignment of columns */
-.mega-menu .row {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap; /* Prevents columns from stacking */
-}
-
-/* Style headings inside the mega menu */
-.mega-menu h6 {
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-.sd {
-  color: #525050;
-}
-/* Add spacing between items */
-.mega-menu .col-md-4 {
-  padding: 10px;
-}
-
-/* Ensure links are properly styled */
-.mega-menu a {
-  text-decoration: none;
-  color: black;
-  display: block;
-  padding: 5px 0;
-}
-.custom {
-  position: relative;
-}
-
-#expertise-dropdown::after {
-  display: none !important;
-}
-
-.menu {
-  display: none;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: auto;
-  min-width: 300px;
-  max-width: 650px;
-  border-radius: 5px;
-  padding: 10px;
-}
-.custom:hover .menu {
-  display: block !important;
-}
-
-/* body {
-    overflow-y: scroll;
-  } */
-.offcanvas {
-  position: fixed;
-}
-.link {
-  transition: all 0.2s linear;
-}
-.link:hover {
-  color: rgba(255, 17, 67, 1);
-}
-.sticky-top {
-  top: 0;
-  position: sticky !important;
-  z-index: 1030;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-.arrow-icon {
-  transition: transform 0.3s ease-in-out;
-}
-
-.rotate {
-  transform: rotate(180deg);
-}
-.active-custom,
-.active-custom:focus {
-  background-color: transparent !important; /* No blue background */
-  color: red !important; /* Keep text red */
-}
-/* Custom Dropdown Animation */
-.dropdown-menu-custom {
-  max-height: 0;
-  opacity: 0;
-  overflow: hidden;
-  visibility: hidden;
-  transition: max-height 2s ease-in-out, opacity 0.3s ease-in-out;
-}
-
-.dropdown-menu-custom.open {
-  max-height: 400px;
-  opacity: 1;
-  visibility: visible;
-}
-/* Hide the menu by default */
-.child {
-  position: absolute;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
-  top: 74px;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-
-}
-
-.dropdowns:hover + .child,
-.child:hover,
-.dropdowns:focus + .child {
-  visibility: visible;
-  opacity: 1;
-}
-li {
-  font-size: 0.95em;
-}
-.navlink {
-  color: white !important;
-}
-.navlink:hover {
-  color: rgb(185, 171, 171) !important;
-}
-:root {
-  --bs-btn-color: red;
-  --bs-btn-border-color: red;
-  /* --bs-btn-hover-bg: red; */
-}
-
-/* Ensure the mega menu takes the full width of the parent container */
-.mega-menu {
-  width: 100%;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 100%;
-  background: white;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px 0;
-  z-index: 1000;
-  display: none;
-}
-
-/* Display the mega menu on hover */
-.mega-dropdown:hover .mega-menu {
-  display: block;
-}
-
-/* Proper alignment of columns */
-.mega-menu .row {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap; /* Prevents columns from stacking */
-}
-
-/* Style headings inside the mega menu */
-.mega-menu h6 {
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-.sd {
-  color: #525050;
-}
-/* Add spacing between items */
-.mega-menu .col-md-4 {
-  padding: 10px;
-}
-
-/* Ensure links are properly styled */
-.mega-menu a {
-  text-decoration: none;
-  color: black;
-  display: block;
-  padding: 5px 0;
-}
-.custom {
-  position: relative;
-}
-
-#expertise-dropdown::after {
-  display: none !important;
-}
-
-.menu {
-  display: none;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: auto;
-  min-width: 300px;
-  max-width: 650px;
-  border-radius: 5px;
-  padding: 10px;
-}
-.custom:hover .menu {
-  display: block !important;
-}
-
-/* body {
-  overflow-y: scroll;
-} */
-.offcanvas {
-  position: fixed;
-}
-.link {
-  transition: all 0.2s linear;
-}
-.link:hover {
-  color: rgba(255, 17, 67, 1);
-}
-.sticky-top {
-  top: 0;
-  position: sticky !important;
-  z-index: 1030;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-.arrow-icon {
-  transition: transform 0.3s ease-in-out;
-}
-
-.rotate {
-  transform: rotate(180deg);
-}
-.active-custom,
-.active-custom:focus {
-  background-color: transparent !important; /* No blue background */
-  color: red !important; /* Keep text red */
-}
-/* Custom Dropdown Animation */
-.dropdown-menu-custom {
-  max-height: 0;
-  opacity: 0;
-  overflow: hidden;
-  visibility: hidden;
-  transition: max-height 2s ease-in-out, opacity 0.3s ease-in-out;
-}
-
-.dropdown-menu-custom.open {
-  max-height: 400px;
-  opacity: 1;
-  visibility: visible;
-}
-/* Hide the menu by default */
-.child {
-  position: absolute;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
-  top: 74px;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: -1;
-}
-
-.dropdowns:hover + .child,
-.child:hover,
-.dropdowns:focus + .child {
-  visibility: visible;
-  opacity: 1;
-}
-li {
-  font-size: 0.95em;
-}
-.navlink {
-  color: white !important;
-}
-.navlink:hover {
-  color: rgb(185, 171, 171) !important;
-}
-.all_s:hover {
-  color: red !important;
-  background-color: white !important;
-}
-.all_m:hover {
-  color: #525050 !important;
-  background-color: white !important;
-}
-.all_p:hover {
-    color: #dee2e6 !important;
-    background-color: rgb(59, 57, 57) !important;
-  }
-
+        {`
 `}
       </style>
       <Navbar bg="light" expand="lg" className="sticky-top px-3">
@@ -420,20 +112,18 @@ li {
 
           <Button
             variant="outline-dark"
-            className="d-lg-none"
+            className="d-lg-none border border-2 border-danger bg-transparent"
             onClick={handleShow}
           >
-            <RxHamburgerMenu className="fs-3" />
+            <RxHamburgerMenu className="fs-3 text-danger fw-bolder" />
           </Button>
 
-          <Nav className="defbodyFont mx-auto d-none d-lg-flex align-items-between">
+          <Nav className=" defbodyFont mx-auto d-none d-lg-flex align-items-between">
             <Nav.Link>
               <NavLink
                 to="/thinking"
                 className={({ isActive }) =>
-                  isActive
-                    ? "text-danger text-decoration-none"
-                    : "text-dark text-decoration-none"
+                  isActive ? "mainlink active" : "mainlink"
                 }
               >
                 Thinking
@@ -441,17 +131,19 @@ li {
             </Nav.Link>
 
             <Nav.Link
-              className="dropdowns mb-0 pb-0"
+              className="dropdowns text-black"
               onFocus={() => setShowDropdown(true)}
               onBlur={() => setShowDropdown(false)}
               onMouseEnter={() => setShowDropdown(true)}
               onMouseLeave={() => setShowDropdown(false)}
             >
-              Expertise
-              <RiArrowDownSLine
-                className={`ms-2 ${showDropdown ? "rotate" : ""}`}
-                style={{ transition: "transform 0.3s ease-in-out" }}
-              />
+              <span className="mainlink">
+                Expertise
+                <RiArrowDownSLine
+                  className={`ms-2 ${showDropdown ? "rotate" : ""}`}
+                  style={{ transition: "transform 0.3s ease-in-out" }}
+                />
+              </span>
             </Nav.Link>
 
             {/* Dropdown Menu */}
@@ -653,9 +345,7 @@ li {
               <NavLink
                 to="/careers"
                 className={({ isActive }) =>
-                  isActive
-                    ? "text-danger text-decoration-none"
-                    : "text-dark text-decoration-none"
+                  isActive ? "mainlink active" : "mainlink"
                 }
               >
                 Careers
@@ -665,9 +355,7 @@ li {
               <NavLink
                 to="/contact"
                 className={({ isActive }) =>
-                  isActive
-                    ? "text-danger text-decoration-none"
-                    : "text-dark text-decoration-none"
+                  isActive ? "mainlink active" : "mainlink"
                 }
               >
                 Contact
@@ -797,22 +485,27 @@ li {
         placement="end"
         className="d-lg-none bg bg-danger .offcanvas"
       >
-        <Offcanvas.Header closeButton>
+        <Offcanvas.Header closeButton className="btn-close-white">
           <Offcanvas.Title className="defbodyFont fs-3 text-white">
             Menu
           </Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
           <Nav className="flex-column">
-            <Nav.Link>
+            <Nav.Link className="offlinks">
+              <NavLink
+                onClick={handleClose}
+                to="/"
+                className=" text-white text-decoration-none"
+              >
+                Home
+              </NavLink>
+            </Nav.Link>
+            <Nav.Link className="offlinks">
               <NavLink
                 onClick={handleClose}
                 to="/thinking"
-                className={({ isActive }) =>
-                  isActive
-                    ? "text-white text-decoration-none"
-                    : "text-white text-decoration-none"
-                }
+                className="text-white text-decoration-none"
               >
                 Thinking
               </NavLink>
@@ -820,7 +513,7 @@ li {
 
             {/* Expertise Dropdown */}
             <NavDropdown
-              className="defbodyFont text-white"
+              className="offlinks defbodyFont text-white"
               title={
                 <span style={{ color: "white" }}>
                   Expertise{" "}
@@ -833,29 +526,29 @@ li {
               onToggle={(isOpen) => setIsOpen(isOpen)}
             >
               <div className={`dropdown-menu-custom ${isOpen ? "open" : ""}`}>
-                <NavDropdown.Item className="defbodyFont text-secondary">
-                  <Nav.Link>
+                <NavDropdown.Item className="bg-white defbodyFont text-secondary">
+                  <Nav.Link className="offlinks">
                     <NavLink
                       to="/service"
                       onClick={handleClose}
                       className={({ isActive }) =>
                         isActive
                           ? "text-danger text-decoration-none"
-                          : "text-dark text-decoration-none"
+                          : "text-dark text-decoration-none bg-white"
                       }
                     >
                       Services
                     </NavLink>
                   </Nav.Link>
                 </NavDropdown.Item>
-                <NavDropdown.Item className="defbodyFont text-secondary">
-                  <Nav.Link>
+                <NavDropdown.Item className="bg-white defbodyFont text-secondary">
+                  <Nav.Link className="offlinks">
                     <NavLink
                       onClick={handleClose}
                       to="/markets"
                       className={({ isActive }) =>
                         isActive
-                          ? "text-danger text-decoration-none"
+                          ? "  text-danger text-decoration-none"
                           : "text-dark text-decoration-none"
                       }
                     >
@@ -864,15 +557,15 @@ li {
                   </Nav.Link>
                 </NavDropdown.Item>
 
-                <NavDropdown.Item className="defbodyFont text-secondary">
-                  <Nav.Link>
+                <NavDropdown.Item className="bg-white defbodyFont text-secondary">
+                  <Nav.Link className="offlinks">
                     <NavLink
                       onClick={handleClose}
                       to="/projects"
                       className={({ isActive }) =>
                         isActive
-                          ? "text-danger text-decoration-none bg-transparent active-custom"
-                          : "text-dark text-decoration-none bg-transparent"
+                          ? "text-danger text-decoration-none active-custom"
+                          : "text-dark text-decoration-none "
                       }
                     >
                       Projects
@@ -882,33 +575,26 @@ li {
               </div>
             </NavDropdown>
 
-            <Nav.Link>
+            <Nav.Link className="offlinks">
               <NavLink
                 onClick={handleClose}
                 to="/careers"
-                className={({ isActive }) =>
-                  isActive
-                    ? "text-white text-decoration-none"
-                    : "text-white text-decoration-none"
-                }
+                className="text-white text-decoration-none"
               >
                 Careers
               </NavLink>
             </Nav.Link>
-            <Nav.Link>
+            <Nav.Link className="offlinks">
               <NavLink
                 onClick={handleClose}
                 to="/contact"
-                className={({ isActive }) =>
-                  isActive
-                    ? "text-white text-decoration-none"
-                    : "text-white text-decoration-none"
-                }
+                className="text-white text-decoration-none"
               >
                 Contact
               </NavLink>
             </Nav.Link>
           </Nav>
+          <hr className="text-white mt-5" />
         </Offcanvas.Body>
       </Offcanvas>
     </>

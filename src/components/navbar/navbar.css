@@ -1,6 +1,6 @@
 :root {
   --bs-btn-color: red;
-  --bs-btn-border-color: red;
+  --bs-btn-close-color: white;
   /* --bs-btn-hover-bg: red; */
 }
 
@@ -76,9 +76,42 @@
 /* body {
     overflow-y: scroll;
   } */
-.offcanvas {
-  position: fixed;
+.mainlink {
+  transition: all 0.2s linear;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
 }
+
+.mainlink::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -5px;
+  left: 0;
+  background-color: rgba(255, 17, 67, 1);
+  border-radius: 5px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+.mainlink:hover {
+  color: rgba(255, 17, 67, 1);
+}
+.mainlink:hover::before {
+  transform: scaleX(1);
+}
+
+.mainlink.active {
+  color: rgba(255, 17, 67, 1);
+}
+
+.mainlink.active::before {
+  transform: scaleX(1);
+}
+
 .link {
   transition: all 0.2s linear;
 }
@@ -284,8 +317,17 @@ li {
   visibility: visible;
   opacity: 1;
 }
+
 li {
   font-size: 0.95em;
+  transition: all 0.2s linear;
+}
+.offlinks {
+  transition: all 0.2s linear;
+}
+li:hover,
+.offlinks:hover {
+  transform: translateX(4px);
 }
 .navlink {
   color: white !important;
@@ -304,4 +346,17 @@ li {
 .all_p:hover {
   color: #dee2e6 !important;
   background-color: rgb(59, 57, 57) !important;
+}
+.btn-close-white .btn-close {
+  filter: invert(1);
+  opacity: 1;
+}
+.btn-close-white .btn-close:focus {
+  border: none;
+}
+@media (max-width: 448px) {
+  li:hover,
+  .offlinks:hover {
+    transform: translateX(0px);
+  }
 }
