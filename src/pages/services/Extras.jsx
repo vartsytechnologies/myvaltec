@@ -18,11 +18,6 @@ const ServiceDetails = () => {
     });
   }, []);
 
-  window.scrollTo(0, 0);
-  if (!service) {
-    return <h2>Service not found</h2>;
-  }
-
   return (
     <>
       <Container fluid>

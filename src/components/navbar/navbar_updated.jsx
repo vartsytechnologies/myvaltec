@@ -171,7 +171,7 @@ export default function NavBar() {
                   >
                     Services
                   </h3>
-                  <li className="mb-1 mt-4 ms-2">
+                  <li className="listnav mb-1 mt-4 ms-2">
                     <NavLink
                       to="/service/reliability_services"
                       className="navlink d-flex align-items-center text-decoration-underline"
@@ -180,11 +180,11 @@ export default function NavBar() {
                       Reliability
                     </NavLink>
                   </li>
-                  <li className="mb-1  ms-2">
+                  <li className="listnav mb-1  ms-2">
                     <VscArrowSmallRight className="me-2 " />
                     Calibration
                   </li>
-                  <li className="mb-1 ms-2">
+                  <li className="listnav mb-1 ms-2">
                     <NavLink
                       to="/service/sustainability"
                       className="navlink d-flex align-items-center text-decoration-underline"
@@ -193,7 +193,7 @@ export default function NavBar() {
                       Sustainability
                     </NavLink>
                   </li>
-                  <li className="mb-1 ms-2">
+                  <li className="listnav mb-1 ms-2">
                     <NavLink
                       to="/service/renewable_energy"
                       className="navlink d-flex align-items-center text-decoration-underline"
@@ -202,7 +202,7 @@ export default function NavBar() {
                       Renewable Energy
                     </NavLink>
                   </li>
-                  <li className="mb-1 ms-2">
+                  <li className="listnav mb-1 ms-2">
                     <NavLink
                       to="/service/digital_solutions"
                       className="navlink d-flex align-items-center text-decoration-underline"
@@ -211,15 +211,15 @@ export default function NavBar() {
                       Digital Solutions
                     </NavLink>
                   </li>
-                  <li className="mb-1 ms-2">
+                  <li className="listnav mb-1 ms-2">
                     <VscArrowSmallRight className="me-2 " />
                     Infrastructure & Facilities
                   </li>
-                  <li className="mb-1 ms-2">
+                  <li className="listnav mb-1 ms-2">
                     <VscArrowSmallRight className="me-2 " />
                     Public Private Partnerships
                   </li>
-                  <li className="mb-1 ms-2">
+                  <li className="listnav mb-1 ms-2">
                     <NavLink
                       to="/service/additives"
                       className="navlink d-flex align-items-center text-decoration-underline"
@@ -228,7 +228,7 @@ export default function NavBar() {
                       Additives: Fuel, Lubricants & Greases
                     </NavLink>
                   </li>
-                  <li className="mb-1 ms-2">
+                  <li className="listnav mb-1 ms-2">
                     <NavLink
                       to="/service"
                       className="navlink d-flex align-items-center text-decoration-underline"
@@ -237,7 +237,7 @@ export default function NavBar() {
                       Engineering, Procurement & Construction
                     </NavLink>
                   </li>
-                  <li className="mt-4 mb-3 ms-2 d-flex align-items-center justify-content-between">
+                  <li className="listnav mt-4 mb-3 ms-2 d-flex align-items-center justify-content-between">
                     <NavLink
                       to="/service"
                       style={{ transition: "all 0.2s linear" }}
@@ -264,31 +264,31 @@ export default function NavBar() {
                   >
                     Markets
                   </h3>
-                  <li className="mb-1 mt-4 ms-1">
+                  <li className="listnav mb-1 mt-4 ms-1">
                     <VscArrowSmallRight className="me-2 " />
                     Power
                   </li>
-                  <li className="mb-1 ms-1">
+                  <li className="listnav mb-1 ms-1">
                     <VscArrowSmallRight className="me-2 " />
                     Mining
                   </li>
-                  <li className="mb-1 ms-1">
+                  <li className="listnav mb-1 ms-1">
                     <VscArrowSmallRight className="me-2 " />
                     Energy{" "}
                   </li>
-                  <li className="mb-1 ms-1">
+                  <li className="listnav mb-1 ms-1">
                     <VscArrowSmallRight className="me-2 " />
                     Oil & Gas
                   </li>
-                  <li className="mb-1 ms-1">
+                  <li className="listnav mb-1 ms-1">
                     <VscArrowSmallRight className="me-2 " />
                     Technology
                   </li>
-                  <li className="mb-1 ms-1">
+                  <li className="listnav mb-1 ms-1">
                     <VscArrowSmallRight className="me-2 " />
                     Governments
                   </li>
-                  <li className="mt-4 mb-3 ms-2 d-flex align-items-center justify-content-between">
+                  <li className="listnav mt-4 mb-3 ms-2 d-flex align-items-center justify-content-between">
                     <NavLink
                       to="/markets"
                       style={{ transition: "all 0.2s linear" }}
@@ -315,23 +315,23 @@ export default function NavBar() {
                   >
                     Projects
                   </h3>
-                  <li className="mb-1 mt-4 ms-1">
+                  <li className="listnav mb-1 mt-4 ms-1">
                     <VscArrowSmallRight className="me-2 " />
                     MODEC Ghana Limited
                   </li>
-                  <li className="mb-1 ms-1">
+                  <li className="listnav mb-1 ms-1">
                     <VscArrowSmallRight className="me-2 " />
                     AngloGold Ashanti Ghana Limited
                   </li>
-                  <li className="mb-1 ms-1">
+                  <li className="listnav mb-1 ms-1">
                     <VscArrowSmallRight className="me-2 " />
                     Yinson Productions West Africa Limited
                   </li>
-                  <li className="mb-1 ms-1">
+                  <li className="listnav mb-1 ms-1">
                     <VscArrowSmallRight className="me-2 " />
                     ENI Ghana Exploration & Production Limited
                   </li>
-                  <li className="mt-4 mb-3 ms-2 d-flex align-items-center justify-content-between">
+                  <li className="listnav mt-4 mb-3 ms-2 d-flex align-items-center justify-content-between">
                     <NavLink
                       to="/projects"
                       style={{ transition: "all 0.2s linear" }}
