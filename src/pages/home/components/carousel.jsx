@@ -56,7 +56,7 @@ function MainSlider() {
           <p className="sliderCaptionMain defbodyFont" data-aos="fade-up">
             <b>
               {" "}
-              Empowering projects <br /> with precision
+              Empowering industries with <br /> precision and reliability
             </b>
           </p>
           <p
