@@ -68,7 +68,7 @@ function ServiceSection() {
                             data-aos="fade-up"
                             data-aos-delay="600"
                           >
-                            Engineering, Procument and Construction
+                            Engineering, Procurement and Construction
                           </h3>
                           <hr
                             style={{
@@ -222,7 +222,7 @@ function ServiceSection() {
                             data-aos="fade-up"
                             data-aos-delay="600"
                           >
-                            Digital Solutions
+                            Data & Analytics
                           </p>
                           <hr
                             style={{
@@ -235,9 +235,9 @@ function ServiceSection() {
                             data-aos-delay="10"
                           />
                           <p className="p-0 m-0 defbodyFont ">
-                            We help companies modernize their operations while
-                            safeguarding critical infrastructure, ensuring peace
-                            of mind in an era of heightened cyber risks.
+                            We leverage data engineering, advanced analytics 
+                            and machine learning technology to address a 
+                            diverse range of client challenges. 
                           </p>
                         </div>
                       </div>
@@ -425,7 +425,7 @@ function ServiceSection() {
                             data-aos="fade-up"
                             data-aos-delay="600"
                           >
-                            Reliability
+                           Precision & Reliability
                           </p>
                           <hr
                             style={{
