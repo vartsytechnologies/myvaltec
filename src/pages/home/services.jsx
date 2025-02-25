@@ -68,7 +68,7 @@ function ServiceSection() {
                             data-aos="fade-up"
                             data-aos-delay="600"
                           >
-                            Engineering, Procurement and Construction
+                            Engineering, Procurement, Consulting, and Project Management
                           </h3>
                           <hr
                             style={{
