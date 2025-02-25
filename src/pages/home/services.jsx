@@ -68,7 +68,8 @@ function ServiceSection() {
                             data-aos="fade-up"
                             data-aos-delay="600"
                           >
-                            Engineering, Procurement, Consulting, and Project Management
+                            Engineering, Procurement, Consulting & Project
+                            Management
                           </h3>
                           <hr
                             style={{
@@ -235,9 +236,9 @@ function ServiceSection() {
                             data-aos-delay="10"
                           />
                           <p className="p-0 m-0 defbodyFont ">
-                            We leverage data engineering, advanced analytics 
-                            and machine learning technology to address a 
-                            diverse range of client challenges. 
+                            We leverage data engineering, advanced analytics and
+                            machine learning technology to address a diverse
+                            range of client challenges.
                           </p>
                         </div>
                       </div>
@@ -289,10 +290,9 @@ function ServiceSection() {
                             data-aos="fade-up"
                             data-aos-delay="700"
                           >
-                            Our renewable energy expertise enables us to support
-                            clients on their journey toward sustainable
-                            operations, offering solutions that align with
-                            global energy goals and environmental standards.
+                            We meet residential, commercial, utility energy
+                            demands with high-quality solar photovoltaic modules
+                            and reliable battery solutions for our projects.
                           </p>
                         </div>
                       </div>
@@ -425,7 +425,7 @@ function ServiceSection() {
                             data-aos="fade-up"
                             data-aos-delay="600"
                           >
-                           Precision & Reliability
+                            Precision & Reliability
                           </p>
                           <hr
                             style={{

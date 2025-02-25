@@ -18,14 +18,17 @@ function MainSlider() {
   }, []);
   return (
     <Carousel indicators={false}>
-      <Carousel.Item interval={2000}>
+      <Carousel.Item interval={2500}>
         <CarouselImage
           className="carousel-image"
           text="First slide"
           sliderImage={solutions}
         />
         <Carousel.Caption className="sliderCaption">
-          <p className="sliderCaptionMain defbodyFont" data-aos="fade-up">
+          <p
+            className="sliderCaptionMain defbodyFont mt-4 pt-3"
+            data-aos="fade-up"
+          >
             <b>
               {" "}
               We are VALTEC, <br /> an energy technology company
@@ -53,7 +56,10 @@ function MainSlider() {
           sliderImage={precision_2}
         />
         <Carousel.Caption className="sliderCaption">
-          <p className="sliderCaptionMain defbodyFont" data-aos="fade-up">
+          <p
+            className="sliderCaptionMain defbodyFont mt-4 pt-3"
+            data-aos="fade-up"
+          >
             <b>
               {" "}
               Empowering industries with <br /> precision and reliability
@@ -82,7 +88,10 @@ function MainSlider() {
           sliderImage={sustainable}
         />
         <Carousel.Caption className="sliderCaption">
-          <p className="sliderCaptionMain defbodyFont" data-aos="fade-up">
+          <p
+            className="sliderCaptionMain defbodyFont mt-4 pt-3 mt-xs-0 pt-xs-0"
+            data-aos="fade-up"
+          >
             {" "}
             <b>
               {" "}
@@ -95,8 +104,9 @@ function MainSlider() {
             data-aos="fade-left"
             data-aos-delay="200"
           >
-            VALTEC is building a sustainable future through renewable energy.
-            We design and implement clean energy projects that reduce carbon footprints and lower energy costs.
+            VALTEC is building a sustainable future through renewable energy. We
+            design and implement clean energy projects that reduce carbon
+            footprints and lower energy costs.
           </p>
           <Link to="/service/renewable_energy">
             {" "}

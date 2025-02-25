@@ -234,7 +234,8 @@ export default function NavBar() {
                       className="navlink d-flex align-items-center text-decoration-underline"
                     >
                       <VscArrowSmallRight className="me-2" />
-                      Engineering, Procurement & Construction
+                      Engineering, Procurement, Construction & Project
+                      Management
                     </NavLink>
                   </li>
                   <li className="listnav mt-4 mb-3 ms-2 d-flex align-items-center justify-content-between">
