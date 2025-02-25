@@ -77,7 +77,7 @@ import chess from "../../assets/services_img/sustainability/new1.jpg";
 
 const epcDetails = [
   {
-    name: "Engineering, Procurement, and Construction",
+    name: "Engineering, Procurement, Consulting, and Project Management",
     initialImage: epc1,
     imgOrder: 0,
     carouselImages: [epc1, epc2, epc3, epc4],
@@ -87,8 +87,8 @@ const epcDetails = [
     detailedContent: (
       <div className="service-description">
         <p>
-          VALTEC Limited offers comprehensive EPC (Engineering, Procurement, and
-          Construction) services tailored to meet the complex needs of the
+          VALTEC Limited offers comprehensive EPC (Engineering, Procurement, Consulting, and
+          Project Management) services tailored to meet the complex needs of the
           energy, mining, oil, and gas sectors. We are your premier sourcing
           partner, equipped with capabilities, offerings, technology, rapid
           turnaround, quality, and modular solutions. Our affiliation with a
