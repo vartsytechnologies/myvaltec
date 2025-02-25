@@ -77,7 +77,7 @@ import chess from "../../assets/services_img/sustainability/new1.jpg";
 
 const epcDetails = [
   {
-    name: "Engineering Procurement and Construction",
+    name: "Engineering, Procurement, and Construction",
     initialImage: epc1,
     imgOrder: 0,
     carouselImages: [epc1, epc2, epc3, epc4],
