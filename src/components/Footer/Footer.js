@@ -57,7 +57,7 @@ function Footer() {
                 <a href="mailto:sales@myvaltec.com">sales@myvaltec.com</a>
                 <br />
               </p>
-              <p className="call">Call : (+233) 534-4040-014</p>
+              <p className="call">Call : (+233) 534 404 0014</p>
             </div>
           </Col>
         </Row>

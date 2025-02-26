@@ -32,12 +32,12 @@ const EpcSection = () => {
           >
             <MdEngineering className="mb-2 s-icon" />{" "}
             <p className="mx-3 text-danger defheadFont">
-              Engineering, Procurement, Construction <br />& Project Management
+              Engineering, Procurement, Consulting <br />& Project Management
             </p>
           </div>
 
           <p className="pt-3 defbodyFont">
-            VALTEC offers comprehensive Engineering, Procurement, Construction &
+            VALTEC offers comprehensive Engineering, Procurement, Consulting &
             Project Management services, tailored to meet the complex needs of
             the energy, mining, oil, and gas sectors. Our team brings a wealth
             of experience, utilizing advanced technology and local expertise to

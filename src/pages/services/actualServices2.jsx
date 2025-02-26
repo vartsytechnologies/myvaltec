@@ -89,7 +89,7 @@ function Services() {
                 <Col className="align-self-center p-auto">
                   <p className="fs-5 p-0 m-0 defheadFont text-danger">
                     <MdOutlineConstruction className="s-icon" />
-                    Engineering, Procurement, Consulting & Project Management.
+                    Engineering, Procurement, Consulting & Project Management
                   </p>
                   <hr
                     style={{
@@ -100,15 +100,15 @@ function Services() {
                     }}
                   />
                   <span className="defbodyFont d-block">
-                    VALTEC offers comprehensive EPC (Engineering, Procurement,
-                    and Construction) services, tailored to meet the complex
-                    needs of the energy, mining, oil, and gas sectors. Our team
-                    brings a wealth of experience, utilizing advanced technology
-                    and local expertise to streamline project execution from
-                    design to completion. With a strong focus on precision and
-                    efficiency, we ensure that every project adheres to the
-                    highest standards, driving cost-effectiveness and timely
-                    delivery for our clients.
+                    VALTEC offers comprehensive Engineering, Procurement,
+                    Consulting & Project Management services, tailored to meet
+                    the complex needs of the energy, mining, oil, and gas
+                    sectors. Our team brings a wealth of experience, utilizing
+                    advanced technology and local expertise to streamline
+                    project execution from design to completion. With a strong
+                    focus on precision and efficiency, we ensure that every
+                    project adheres to the highest standards, driving
+                    cost-effectiveness and timely delivery for our clients.
                     <ContactSalesBtn />
                   </span>
                   <p className="mt-4"></p>
@@ -235,7 +235,7 @@ function Services() {
                       Our Infrastructure and Facilities services cater to the
                       specific requirements of the industrial sector, providing
                       reliable, tailored solutions for facility management,
-                      construction, and maintenance. VALTEC leverages its local
+                      consulting, and maintenance. VALTEC leverages its local
                       expertise and global network to support infrastructure
                       projects, ensuring optimal functionality and safety
                       standards in every project. We are dedicated to building

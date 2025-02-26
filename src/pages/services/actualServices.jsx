@@ -99,7 +99,7 @@ const epcDetails = [
           state-of-the-art production equipment, we ensure your projects align
           seamlessly with your objectives. Our extensive offerings include
           turnkey metering, treatment facilities, and civil to mechanical
-          construction services. <br />
+          consulting services. <br />
           We specialize in the procuremimport ReadMorebtn from
           "./readMorebtn.jsx";ent of OEM products, such as but not limited to:
         </p>
@@ -178,14 +178,14 @@ export const serviceItems = [
     carouselImages: [i1, i2, i3],
     icon: <MdOutlinePrecisionManufacturing className="s-icon" />,
     description:
-      "Our Infrastructure and Facilities services cater to the specific requirements of the industrial sector, providing reliable, tailored solutions for facility management, construction, and maintenance. VALTEC leverages its local expertise and global network to support infrastructure projects, ensuring optimal functionality and safety standards in every project. We are dedicated to building resilient facilities that support long-term operational success.",
+      "Our Infrastructure and Facilities services cater to the specific requirements of the industrial sector, providing reliable, tailored solutions for facility management, consulting, and maintenance. VALTEC leverages its local expertise and global network to support infrastructure projects, ensuring optimal functionality and safety standards in every project. We are dedicated to building resilient facilities that support long-term operational success.",
     detailedContent: (
       <div>
         <p>
           Our Infrastructure and Facilities services cater to the specific
           requirements of the industrial sector, providing reliable, tailored
-          solutions for facility management, construction, and maintenance.
-          VALTEC leverages its local expertise and global network to support
+          solutions for facility management, consulting, and maintenance. VALTEC
+          leverages its local expertise and global network to support
           infrastructure projects, ensuring optimal functionality and safety
           standards in every project. We are dedicated to building resilient
           facilities that support long-term operational success.
@@ -331,7 +331,7 @@ export const serviceItems = [
                     Automate
                   </h3>
                   Automating expensive, repetitive, or hazardous tasks;
-                  construction and manufacturing activities; and evaluations.
+                  consulting and manufacturing activities; and evaluations.
                 </li>
                 <li>
                   {" "}

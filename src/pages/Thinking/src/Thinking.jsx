@@ -77,7 +77,7 @@ function App() {
                     company. Our mission is to deliver compelling value through
                     technology solutions to deliver compelling EPCM projects,
                     existing plants, and contractors in the energy, mining,
-                    manufacturing, refinery, power, oil &gas industries.
+                    manufacturing, refinery, power, oil & gas industries.
                     VALTEC's unique blend of locally available expertise and a
                     globalized affiliated support network ensures specialized
                     precision, real-time speed, and reliable service quality
@@ -367,7 +367,7 @@ function App() {
                     client service, safety, and environmental stewardship is
                     crucial. Defining responsibilities and establishing
                     communication for each department. Our design, engineering,
-                    project, and construction teams implement effective risk
+                    project, and consulting teams implement effective risk
                     mitigation strategies, integrating safety from the project’s
                     inception. Thorough planning safeguards employees and the
                     environment.

@@ -18,7 +18,7 @@ import mine from "../../assets/markets_img/new/Miningpit.jpg";
 import energy from "../../assets/markets_img/new/RoofPVSolar.jpg";
 import power from "../../assets/markets_img/new/PowerPlant.jpg";
 // import oil from "../../assets/markets_img/new/Powerplantimg.jpeg";
- import oilA from "../../assets/markets_img/new/oilA.JPG";
+import oilA from "../../assets/markets_img/new/oilA.JPG";
 
 // import serv_bg from "../../assets/services_img/white-unsplash-9d0375d2.jpg"
 
@@ -30,12 +30,8 @@ function MarketCard({ title }) {
     });
   });
   return (
-    <Container >
-      <Row
-        xs={1}
-        md={2}
-        clamarketsssName="g-4"
-      >
+    <Container>
+      <Row xs={1} md={2} clamarketsssName="g-4">
         <Col className="mt-3">
           <Card className="rounded-lg overflow-hidden">
             <Card.Body>
@@ -43,7 +39,7 @@ function MarketCard({ title }) {
                 className="text-danger fs-3 defheadFont"
                 data-aos="fade-up"
               >
-                Oil and Gas
+                Oil & Gas
               </Card.Title>
               <p
                 className="text-gray defbodyFont"
