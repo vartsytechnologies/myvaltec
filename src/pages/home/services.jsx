@@ -189,10 +189,10 @@ function ServiceSection() {
                             data-aos="fade-up"
                             data-aos-delay="700"
                           >
-                            VALTEC Limited offers a range of high-quality fuel
-                            additives and lubricants designed to enhance
-                            equipment performance, reduce emissions, and extend
-                            machinery life.
+                            VALTEC offers a range of high-quality fuel additives
+                            and lubricants designed to enhance equipment
+                            performance, reduce emissions, and extend machinery
+                            life.
                           </p>
                         </div>
                       </div>
@@ -340,10 +340,10 @@ function ServiceSection() {
                             data-aos="fade-up"
                             data-aos-delay="700"
                           >
-                            VALTEC Limited leverages its local expertise and
-                            global network to support infrastructure projects,
-                            ensuring optimal functionality and safety standards
-                            in every project.
+                            VALTEC leverages its local expertise and global
+                            network to support infrastructure projects, ensuring
+                            optimal functionality and safety standards in every
+                            project.
                           </p>
                         </div>
                       </div>

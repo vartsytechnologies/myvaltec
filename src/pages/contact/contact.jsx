@@ -46,7 +46,7 @@ export default function Contact() {
                           <span style={{ color: "rgba(255, 17, 67, 1)" }}>
                             Office Address
                             <br />
-                            VALTEC Limited
+                            VALTEC
                           </span>
                         </b>
                         <br />

@@ -27,8 +27,8 @@ function Footer() {
               </Col>
             </Row>
             <p>
-              © 2024 VALTEC Limited. <br />
-              All Rights Reserved
+              © 2025 VALTEC. <br />
+              All Rights Reserved.
             </p>
           </Col>
           <Col

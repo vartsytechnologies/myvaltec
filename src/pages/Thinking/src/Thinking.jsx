@@ -21,22 +21,22 @@ import "./components/thinking.css";
 
 const teamMembers = [
   {
-    name: "Director 1",
-    title: "General Manager",
+    // name: "Director 1",
+    title: "Finance Manager",
     image: "https://via.placeholder.com/150", // Replace with the actual image URL
   },
   {
-    name: "Director 2",
+    // name: "Director 2",
     title: "Technical Director",
     image: "https://via.placeholder.com/150",
   },
   {
-    name: "Director 3",
+    // name: "Director 3",
     title: "Growth & Strategic Partnerships",
     image: "https://via.placeholder.com/150",
   },
   {
-    name: "Director 4",
+    // name: "Director 4",
     title: "Human Resource Manager",
     image: "https://via.placeholder.com/150",
   },
@@ -53,92 +53,7 @@ function App() {
   return (
     <>
       <Banner title="Thinking" />
-      {/* <CompanyOverview /> */}
-      {/* <Purpose /> */}
-      {/* <Section
-        className="mt-3 me-sm-1 me-md-3 me-lg-4"
-        imgOrder={0}
-        title="Digital Innovation"
-        content="The potential of harnessing digital technologies to deliver value for our client's projects drives us at VALTEC.
-      We collaborate with experts and build global partnerships with leading industrial solutions to deliver transformative outcomes for our customers. 
-      We continuously seek improvement in business performance by efficiently considering evolving technologies, industry best practices, and stakeholder
-       expectations. We strongly emphasize effective ways of working together and developing productive long-term relationships with our internal and external 
-       stakeholders."
-        imgSrc={valtec_digital}
-      />
 
-      <Section
-        title="Ethics & Compliance"
-        content="VALTEC prioritizes integrity and maintains high ethical and compliance standards while delivering exceptional value to our clients. We collaborate with each other, our clients, suppliers, and stakeholders is essential to embodying our principles and achieving our Blueprint.
-                Our principles shape our culture; they define our work approach. Our Blueprint details our strategy and ambitions across all business sectors.
-                We embody our principles by establishing clear behavioral expectations for our team and fostering an integrity-focused culture that informs our daily decisions, actions, and relationships.
-                Our clients recognize our commitment to ethical conduct and compliance with local regulations. We consistently build client trust through exceptional service and strict adherence to ethical practices. Our integrity is guided by our Code of Conduct and Anticorruption Policy, which lays out crucial legal and ethical standards for making sound business decisions across all projects."
-        imgSrc={ethics_and_compliance}
-      />
-      <Container fluid className="bg-gray py-5">
-        <Section
-          title="Quality and Assurance"
-          content="We are fully aware that when we get it wrong, the consequences can be severe.
-                When we get it wrong, the consequencescanbesevere. We fully recognize our duty to develop safe and reliable
-                technical solutions. All our projects follow a tailored, strong, flexible, and systematic process that includes
-                non-negotiable guidelines, expected results, and suitable toolkits. Hence, our operations strictly adhere to a robust QHSE policy that is dedicated
-                to safeguarding the physical, psychological, and social well-being of our employees, stakeholders, and communities. 
-                We are ISO 9001 and ISO 14001 certified."
-          imgSrc={quality_assurance}
-          extraContent={
-            <>
-              <h4 className="text-danger pt-3" data-aos="fade-up">
-                VALTEC upholds a robust QHSE policy by:
-              </h4>
-              <p data-aos="fade-up">
-                Establishing clear and measurable Quality Objectives across all
-                operational sectors is imperative. Continuous monitoring,
-                evaluation, and enhancement of the Quality System and its
-                processes are essential to our success. Our clientele is
-                significant to us; thus, we endeavor to cultivate partnerships
-                with them at every level to comprehensively understand their
-                requirements. We strictly adhere to all pertinent local,
-                national, and international regulations. Prioritizing the health
-                and safety of both our workforce and stakeholders. By improving
-                our performance, we aim to lessen our environmental impact.
-                Promoting awareness among all employees regarding their
-                responsibilities in client service, safety, and environmental
-                stewardship is crucial. Defining responsibilities and
-                establishing communication for each department. Our design,
-                engineering, project, and construction teams implement effective
-                risk mitigation strategies, integrating safety from the
-                project’s inception. Thorough planning safeguards employees and
-                the environment.
-                <br />
-              </p>
-              <pn
-                className="pt-2 text-danger"
-                data-aos="fade-up"
-                data-aos-delay="300"
-              ></p>
-              <div
-                className=" rounded bg-white d-flex align-items-center justify-content-between"
-                style={{ width: "320px" }}
-                data-aos="fade-up"
-                data-aos-delay="400"
-              >
-                <img
-                  className="m-3"
-                  src={ISO_9}
-                  style={{ height: "100px" }}
-                  alt=""
-                />
-                <img
-                  className="m-3"
-                  src={ISO_1}
-                  style={{ height: "130px" }}
-                  alt=""
-                />
-              </div>
-            </>
-          }
-        />
-      </Container> */}
       <Container fluid className="mt-4 px-0">
         <Container>
           <Row className="flex-column gy-2 mt-5">
@@ -158,15 +73,15 @@ function App() {
                   />
                   <span className="defbodyFont d-block me-3">
                     Established in August 2015, VALTEC is a value-driven design,
-                    engineering, procurement, construction, and management
-                    consulting company. Our mission is to deliver compelling
-                    value through technology solutions to deliver compelling
-                    EPCM projects, existing plants, and contractors in the
-                    energy, mining, manufacturing, refinery, power, oil &gas
-                    industries. VALTEC's unique blend of locally available
-                    expertise and a globalized affiliated support network
-                    ensures specialized precision, real-time speed, and reliable
-                    service quality across all projects in Africa.
+                    engineering, procurement, consulting, and project management
+                    company. Our mission is to deliver compelling value through
+                    technology solutions to deliver compelling EPCM projects,
+                    existing plants, and contractors in the energy, mining,
+                    manufacturing, refinery, power, oil &gas industries.
+                    VALTEC's unique blend of locally available expertise and a
+                    globalized affiliated support network ensures specialized
+                    precision, real-time speed, and reliable service quality
+                    across all projects in Africa.
                   </span>
                   <p className="mt-4"></p>
                 </Col>
@@ -191,7 +106,8 @@ function App() {
             <Col data-aos="fade-up" className="py-4">
               <Row className="justify-content-between">
                 <Col
-                  xs={12}Compliance
+                  xs={12}
+                  Compliance
                   lg={6}
                   className="zoom-out-container mb-5 align-self-center"
                 >

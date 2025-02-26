@@ -12,7 +12,7 @@ function MarketSection() {
           <Card className="bg-dark text-white zoom-out-container">
             <Card.Img src={oilAndGasMarketImg} alt="Oil and Gas Market" />
             <Card.ImgOverlay>
-              <Card.Title>Oil and Gas Infrastructure</Card.Title>
+              <Card.Title>Oil & Gas Infrastructure</Card.Title>
               <Card.Text>
                 This is a wider card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
@@ -26,7 +26,7 @@ function MarketSection() {
           <Card className="bg-dark text-white zoom-out-container mt-2 mt-md-auto">
             <Card.Img src={oilAndGasMarketImg} alt="Oil and Gas Market" />
             <Card.ImgOverlay>
-              <Card.Title>Oil and Gas Infrastructure</Card.Title>
+              <Card.Title>Oil & Gas Infrastructure</Card.Title>
               <Card.Text>
                 This is a wider card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit

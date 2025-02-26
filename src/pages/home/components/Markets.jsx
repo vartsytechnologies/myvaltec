@@ -33,15 +33,15 @@ const Markets = () => {
 
   const tabContent = {
     oilGas: [
-      [{ sectionTitle: "Oil and Gas" }],
+      [{ sectionTitle: "Oil & Gas" }],
       [
         {
-          title: "Oil and Gas Infrastructure",
+          title: "Oil & Gas Infrastructure",
           description: "Lorem ipsum dolor sit amet...",
           img: oil_1,
         },
         {
-          title: "Oil and Gas Infrastructure",
+          title: "Oil & Gas Infrastructure",
           description: "Lorem ipsum dolor sit amet...",
           img: oil_2,
         },
@@ -180,18 +180,7 @@ const Markets = () => {
               Mining
             </Nav.Link>
           </Nav.Item>
-          {/* <Nav.Item className="defbodyFont">
-            <Nav.Link
-              eventKey="healthcare"
-              style={{ color: "#fff" }}
-            >
-              <FaTools
-                className="me-2"
-                color={activeTab === "healthcare" ? "#ff416c" : "white"}
-              />{" "}
-              Healthcare
-            </Nav.Link>
-          </Nav.Item> */}
+
           <Nav.Item className="defbodyFont">
             <Nav.Link eventKey="power" style={{ color: "#fff" }}>
               <FaLandmark
@@ -231,7 +220,13 @@ const Markets = () => {
               </h3>
               <Row className="justify-content-around">
                 {tabContent[activeTab][1].map((content, index) => (
-                  <Col sm={12} md={6} className="mt-4 mt-sm-0" key={index} data-aos="fade-up">
+                  <Col
+                    sm={12}
+                    md={6}
+                    className="mt-4 mt-sm-0"
+                    key={index}
+                    data-aos="fade-up"
+                  >
                     <Image src={content.img} className="img-fluids" rounded />
                   </Col>
                 ))}
@@ -240,7 +235,6 @@ const Markets = () => {
           </Tab.Content>
         </Container>
       </Tab.Container>
-     
     </Container>
   );
 };

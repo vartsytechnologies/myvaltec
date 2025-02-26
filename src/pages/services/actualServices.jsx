@@ -77,18 +77,18 @@ import chess from "../../assets/services_img/sustainability/new1.jpg";
 
 const epcDetails = [
   {
-    name: "Engineering, Procurement, Consulting, and Project Management",
+    name: "Engineering, Procurement, Consulting & Project Management",
     initialImage: epc1,
     imgOrder: 0,
     carouselImages: [epc1, epc2, epc3, epc4],
     icon: <MdOutlineConstruction className="s-icon" />,
     description:
-      "VALTEC Limited offers comprehensive EPC (Engineering, Procurement, and Construction) services, tailored to meet the complex needs of the energy, mining, oil, and gas sectors. Our team brings a wealth of experience, utilizing advanced technology and local expertise to streamline project execution from design to completion.",
+      "VALTEC offers comprehensive Engineering, Procurement, Consulting and Project Management services, tailored to meet the complex needs of the energy, mining, oil, and gas sectors. Our team brings a wealth of experience, utilizing advanced technology and local expertise to streamline project execution from design to completion.",
     detailedContent: (
       <div className="service-description">
         <p>
-          VALTEC Limited offers comprehensive EPC (Engineering, Procurement, Consulting, and
-          Project Management) services tailored to meet the complex needs of the
+          VALTEC offers comprehensive Engineering, Procurement, Consulting, and
+          Project Management services tailored to meet the complex needs of the
           energy, mining, oil, and gas sectors. We are your premier sourcing
           partner, equipped with capabilities, offerings, technology, rapid
           turnaround, quality, and modular solutions. Our affiliation with a
@@ -135,7 +135,7 @@ export const serviceItems = [
     ],
     icon: <MdOutlineSolarPower className="s-icon" />,
     description:
-      "VALTEC Limited is committed to promoting sustainable growth through renewable energy solutions. From solar and wind to bioenergy, we design and implement clean energy projects that help reduce carbon footprints and energy costs. Our renewable energy expertise enables us to support clients on their journey toward sustainable operations, offering solutions that align with global energy goals and environmental standards.",
+      "VALTEC is committed to promoting sustainable growth through renewable energy solutions. From solar and wind to bioenergy, we design and implement clean energy projects that help reduce carbon footprints and energy costs. Our renewable energy expertise enables us to support clients on their journey toward sustainable operations, offering solutions that align with global energy goals and environmental standards.",
     detailedContent: <div></div>,
   },
   {
@@ -146,7 +146,7 @@ export const serviceItems = [
     carouselImages: [f1, f2, f3, f4, f5, f6],
     icon: <AiOutlineExperiment className="s-icon" />,
     description:
-      "VALTEC Limited offers a range of high-quality fuel additives and lubricants designed to enhance equipment performance, reduce emissions, and extend machinery life. Our solutions are formulated for the demanding conditions of the energy and industrial sectors, providing improved efficiency and reliability in day-to-day operations. Partner with us for a greener, more efficient approach to fuel and lubricant management.",
+      "VALTEC offers a range of high-quality fuel additives and lubricants designed to enhance equipment performance, reduce emissions, and extend machinery life. Our solutions are formulated for the demanding conditions of the energy and industrial sectors, providing improved efficiency and reliability in day-to-day operations. Partner with us for a greener, more efficient approach to fuel and lubricant management.",
     detailedContent: (
       <div>
         <ImageGallery />
@@ -171,24 +171,24 @@ export const serviceItems = [
     ),
   },
   {
-    name: "Infrastructure and Facilities",
+    name: "Infrastructure & Facilities",
     slug: "infrastructure&facilities",
     initialImage: infrastructure,
     imgOrder: 2,
     carouselImages: [i1, i2, i3],
     icon: <MdOutlinePrecisionManufacturing className="s-icon" />,
     description:
-      "Our Infrastructure and Facilities services cater to the specific requirements of the industrial sector, providing reliable, tailored solutions for facility management, construction, and maintenance. VALTEC Limited leverages its local expertise and global network to support infrastructure projects, ensuring optimal functionality and safety standards in every project. We are dedicated to building resilient facilities that support long-term operational success.",
+      "Our Infrastructure and Facilities services cater to the specific requirements of the industrial sector, providing reliable, tailored solutions for facility management, construction, and maintenance. VALTEC leverages its local expertise and global network to support infrastructure projects, ensuring optimal functionality and safety standards in every project. We are dedicated to building resilient facilities that support long-term operational success.",
     detailedContent: (
       <div>
         <p>
           Our Infrastructure and Facilities services cater to the specific
           requirements of the industrial sector, providing reliable, tailored
           solutions for facility management, construction, and maintenance.
-          VALTEC Limited leverages its local expertise and global network to
-          support infrastructure projects, ensuring optimal functionality and
-          safety standards in every project. We are dedicated to building
-          resilient facilities that support long-term operational success.
+          VALTEC leverages its local expertise and global network to support
+          infrastructure projects, ensuring optimal functionality and safety
+          standards in every project. We are dedicated to building resilient
+          facilities that support long-term operational success.
         </p>
       </div>
     ),
@@ -201,7 +201,7 @@ export const serviceItems = [
     carouselImages: [ca_calib, ca_calib2, ca_calib3],
     icon: <MdOutlineCompassCalibration className="s-icon" />,
     description:
-      "In an industry where accuracy is paramount, our Calibration Services provide reliable, precise calibrations for industrial equipment across energy, mining, and oil & gas sectors. VALTEC Limited is dedicated to maintaining optimal performance and regulatory compliance by utilizing state-of-the-art calibration tools. Our services reduce downtime and improve operational safety, delivering the assurance our clients need to operate confidently and efficiently.",
+      "In an industry where accuracy is paramount, our Calibration Services provide reliable, precise calibrations for industrial equipment across energy, mining, and oil & gas sectors. VALTEC is dedicated to maintaining optimal performance and regulatory compliance by utilizing state-of-the-art calibration tools. Our services reduce downtime and improve operational safety, delivering the assurance our clients need to operate confidently and efficiently.",
     detailedContent: (
       <p>
         In an industry where accuracy, precision, and reliability of instruments
@@ -223,7 +223,7 @@ export const serviceItems = [
   },
 
   {
-    name: "Digital Solutions",
+    name: "Data & Analytics",
     slug: "digital_solutions",
     initialImage: digital,
     imgOrder: 2,
@@ -440,11 +440,11 @@ export const serviceItems = [
     carouselImages: [partnership],
     icon: <MdOutlineGroup className="s-icon" />,
     description:
-      "VALTEC Limited fosters strategic public-private partnerships to drive innovation, enhance infrastructure, and boost economic growth in West Africa. Our collaborative approach connects government entities and private enterprises, fostering projects that benefit communities and contribute to sustainable development. By leveraging our industry expertise, we create mutually beneficial partnerships that address critical infrastructure and service needs.",
+      "VALTEC fosters strategic public-private partnerships to drive innovation, enhance infrastructure, and boost economic growth in West Africa. Our collaborative approach connects government entities and private enterprises, fostering projects that benefit communities and contribute to sustainable development. By leveraging our industry expertise, we create mutually beneficial partnerships that address critical infrastructure and service needs.",
     detailedContent: (
       <div>
         <p>
-          VALTEC Limited fosters strategic public-private partnerships to drive
+          VALTEC fosters strategic public-private partnerships to drive
           innovation, enhance infrastructure, and boost economic growth in West
           Africa. Our collaborative approach connects government entities and
           private enterprises, fostering projects that benefit communities and
@@ -563,7 +563,7 @@ export const serviceItems = [
     ),
   },
   {
-    name: "Reliability",
+    name: "Precision & Reliability",
     slug: "reliability_services",
     initialImage: reliable,
     imgOrder: 0,

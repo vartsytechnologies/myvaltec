@@ -1,13 +1,12 @@
-
-import React from 'react';
+import React from "react";
 //import 'bootstrap/dist/css/bootstrap.min.css';
-import Markets from './Markets';
+import Markets from "./Markets";
 
 function MarketSection() {
   return (
-      <div>
-        <Markets />
-      </div>
+    <div>
+      <Markets />
+    </div>
   );
 }
 

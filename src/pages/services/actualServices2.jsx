@@ -89,7 +89,7 @@ function Services() {
                 <Col className="align-self-center p-auto">
                   <p className="fs-5 p-0 m-0 defheadFont text-danger">
                     <MdOutlineConstruction className="s-icon" />
-                    Engineering, Procurement and Construction
+                    Engineering, Procurement, Consulting & Project Management.
                   </p>
                   <hr
                     style={{
@@ -100,15 +100,15 @@ function Services() {
                     }}
                   />
                   <span className="defbodyFont d-block">
-                    VALTEC Limited offers comprehensive EPC (Engineering,
-                    Procurement, and Construction) services, tailored to meet
-                    the complex needs of the energy, mining, oil, and gas
-                    sectors. Our team brings a wealth of experience, utilizing
-                    advanced technology and local expertise to streamline
-                    project execution from design to completion. With a strong
-                    focus on precision and efficiency, we ensure that every
-                    project adheres to the highest standards, driving
-                    cost-effectiveness and timely delivery for our clients.
+                    VALTEC offers comprehensive EPC (Engineering, Procurement,
+                    and Construction) services, tailored to meet the complex
+                    needs of the energy, mining, oil, and gas sectors. Our team
+                    brings a wealth of experience, utilizing advanced technology
+                    and local expertise to streamline project execution from
+                    design to completion. With a strong focus on precision and
+                    efficiency, we ensure that every project adheres to the
+                    highest standards, driving cost-effectiveness and timely
+                    delivery for our clients.
                     <ContactSalesBtn />
                   </span>
                   <p className="mt-4"></p>
@@ -147,7 +147,7 @@ function Services() {
                     In an industry where accuracy is paramount, our Calibration
                     Services provide reliable, precise calibrations for
                     industrial equipment across energy, mining, and oil & gas
-                    sectors. VALTEC Limited is dedicated to maintaining optimal
+                    sectors. VALTEC is dedicated to maintaining optimal
                     performance and regulatory compliance by utilizing
                     state-of-the-art calibration tools. Our services reduce
                     downtime and improve operational safety, delivering the
@@ -191,14 +191,14 @@ function Services() {
                       }}
                     />
                     <span className="defbodyFont d-block">
-                      VALTEC Limited offers a range of high-quality fuel
-                      additives and lubricants designed to enhance equipment
-                      performance, reduce emissions, and extend machinery life.
-                      Our solutions are formulated for the demanding conditions
-                      of the energy and industrial sectors, providing improved
-                      efficiency and reliability in day-to-day operations.
-                      Partner with us for a greener, more efficient approach to
-                      fuel and lubricant management.
+                      VALTEC offers a range of high-quality fuel additives and
+                      lubricants designed to enhance equipment performance,
+                      reduce emissions, and extend machinery life. Our solutions
+                      are formulated for the demanding conditions of the energy
+                      and industrial sectors, providing improved efficiency and
+                      reliability in day-to-day operations. Partner with us for
+                      a greener, more efficient approach to fuel and lubricant
+                      management.
                       <ContactSalesBtn />
                     </span>
                     <p className="mt-4"></p>
@@ -235,12 +235,12 @@ function Services() {
                       Our Infrastructure and Facilities services cater to the
                       specific requirements of the industrial sector, providing
                       reliable, tailored solutions for facility management,
-                      construction, and maintenance. VALTEC Limited leverages
-                      its local expertise and global network to support
-                      infrastructure projects, ensuring optimal functionality
-                      and safety standards in every project. We are dedicated to
-                      building resilient facilities that support long-term
-                      operational success.
+                      construction, and maintenance. VALTEC leverages its local
+                      expertise and global network to support infrastructure
+                      projects, ensuring optimal functionality and safety
+                      standards in every project. We are dedicated to building
+                      resilient facilities that support long-term operational
+                      success.
                       <ContactSalesBtn />
                     </span>
                     <p className="mt-4"></p>
@@ -278,13 +278,13 @@ function Services() {
                       margin: "0.5rem 0",
                     }}
                   />
-                  VALTEC Limited is committed to promoting sustainable growth
-                  through renewable energy solutions. From solar and wind to
-                  bioenergy, we design and implement clean energy projects that
-                  help reduce carbon footprints and energy costs. Our renewable
-                  energy expertise enables us to support clients on their
-                  journey toward sustainable operations, offering solutions that
-                  align with global energy goals and environmental standards.
+                  VALTEC is committed to promoting sustainable growth through
+                  renewable energy solutions. From solar and wind to bioenergy,
+                  we design and implement clean energy projects that help reduce
+                  carbon footprints and energy costs. Our renewable energy
+                  expertise enables us to support clients on their journey
+                  toward sustainable operations, offering solutions that align
+                  with global energy goals and environmental standards.
                   <ContactSalesBtn />
                   <p className="mt-4"></p>
                 </Col>
@@ -317,7 +317,7 @@ function Services() {
                     }}
                   />
                   <span className="defbodyFont d-block">
-                    In an increasingly digital world, VALTEC Limited provides
+                    In an increasingly digital world, VALTEC provides
                     cutting-edge IT and cybersecurity solutions tailored for
                     industrial environments. Our team of experts secures
                     operational technology (OT) systems against emerging cyber
@@ -363,15 +363,14 @@ function Services() {
                       }}
                     />
                     <span className="defbodyFont d-block">
-                      VALTEC Limited fosters strategic public-private
-                      partnerships to drive innovation, enhance infrastructure,
-                      and boost economic growth in West Africa. Our
-                      collaborative approach connects government entities and
-                      private enterprises, fostering projects that benefit
-                      communities and contribute to sustainable development. By
-                      leveraging our industry expertise, we create mutually
-                      beneficial partnerships that address critical
-                      infrastructure and service needs.
+                      VALTEC fosters strategic public-private partnerships to
+                      drive innovation, enhance infrastructure, and boost
+                      economic growth in West Africa. Our collaborative approach
+                      connects government entities and private enterprises,
+                      fostering projects that benefit communities and contribute
+                      to sustainable development. By leveraging our industry
+                      expertise, we create mutually beneficial partnerships that
+                      address critical infrastructure and service needs.
                       <ContactSalesBtn />
                     </span>
                     <p className="mt-4"></p>

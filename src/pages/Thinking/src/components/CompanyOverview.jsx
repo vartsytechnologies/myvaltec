@@ -24,14 +24,15 @@ function CompanyOverview() {
             data-aos="fade-left"
             className="mt-3 me-sm-1 me-md-3 me-lg-4 defbodyFont"
           >
-            Established in August 2015, VALTEC is a value-driven design, 
-            engineering, procurement, construction, and management consulting company. 
-            Our mission is to deliver compelling value through technology solutions 
-            to deliver compelling EPCM projects, existing plants, and contractors in the energy,
-            mining, manufacturing, refinery, power, oil & gas industries. 
-            VALTEC's unique blend of locally available expertise and a globalized affiliated 
-            support network ensures specialized precision, real-time speed, 
-            and reliable service quality across all projects in Africa.
+            Established in August 2015, VALTEC is a value-driven design,
+            engineering, procurement, consulting, and project management
+            company. Our mission is to deliver compelling value through
+            technology solutions to deliver compelling EPCM projects, existing
+            plants, and contractors in the energy, mining, manufacturing,
+            refinery, power, oil & gas industries. VALTEC's unique blend of
+            locally available expertise and a globalized affiliated support
+            network ensures specialized precision, real-time speed, and reliable
+            service quality across all projects in Africa.
           </p>
         </Col>
         <Col md={6} className="zoom-out-container">

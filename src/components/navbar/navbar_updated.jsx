@@ -171,16 +171,8 @@ export default function NavBar() {
                   >
                     Services
                   </h3>
+
                   <li className="listnav mb-1 mt-4 ms-2">
-                    <NavLink
-                      to="/service/reliability_services"
-                      className="navlink d-flex align-items-center text-decoration-underline"
-                    >
-                      <VscArrowSmallRight className="me-2" />
-                      Reliability
-                    </NavLink>
-                  </li>
-                  <li className="listnav mb-1  ms-2">
                     <VscArrowSmallRight className="me-2 " />
                     Calibration
                   </li>
@@ -195,6 +187,15 @@ export default function NavBar() {
                   </li>
                   <li className="listnav mb-1 ms-2">
                     <NavLink
+                      to="/service/digital_solutions"
+                      className="navlink d-flex align-items-center text-decoration-underline"
+                    >
+                      <VscArrowSmallRight className="me-2" />
+                      Data & Analytics
+                    </NavLink>
+                  </li>
+                  <li className="listnav mb-1 ms-2">
+                    <NavLink
                       to="/service/renewable_energy"
                       className="navlink d-flex align-items-center text-decoration-underline"
                     >
@@ -202,13 +203,13 @@ export default function NavBar() {
                       Renewable Energy
                     </NavLink>
                   </li>
-                  <li className="listnav mb-1 ms-2">
+                  <li className="listnav mb-1  ms-2">
                     <NavLink
-                      to="/service/digital_solutions"
+                      to="/service/reliability_services"
                       className="navlink d-flex align-items-center text-decoration-underline"
                     >
                       <VscArrowSmallRight className="me-2" />
-                      Digital Solutions
+                      Precison & Reliability
                     </NavLink>
                   </li>
                   <li className="listnav mb-1 ms-2">
@@ -234,8 +235,7 @@ export default function NavBar() {
                       className="navlink d-flex align-items-center text-decoration-underline"
                     >
                       <VscArrowSmallRight className="me-2" />
-                      Engineering, Procurement, Construction & Project
-                      Management
+                      Engineering, Procurement, Consulting & Project Management
                     </NavLink>
                   </li>
                   <li className="listnav mt-4 mb-3 ms-2 d-flex align-items-center justify-content-between">

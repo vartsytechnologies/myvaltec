@@ -41,34 +41,34 @@ export default function NavBar() {
     setShowDropdown(false);
   };
 
-  //End of Navbar handling    
+  //End of Navbar handling
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
-    // Handle toggle button click
-    const handleToggle = () => {
-      setIsNavbarOpen(!isNavbarOpen);
+  // Handle toggle button click
+  const handleToggle = () => {
+    setIsNavbarOpen(!isNavbarOpen);
+  };
+
+  // Close the navbar on outside click
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      const navbar = document.querySelector(".navbar-collapse");
+      if (isNavbarOpen && navbar && !navbar.contains(event.target)) {
+        setIsNavbarOpen(false);
+      }
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target) &&
+        !expertiseLinkRef.current.contains(event.target)
+      ) {
+        setShowDropdown(false);
+      }
     };
-  
-    // Close the navbar on outside click
-    useEffect(() => {
-      const handleClickOutside = (event) => {
-        const navbar = document.querySelector(".navbar-collapse");
-        if (isNavbarOpen && navbar && !navbar.contains(event.target)) {
-          setIsNavbarOpen(false);
-        };
-        if (
-            dropdownRef.current &&
-            !dropdownRef.current.contains(event.target) &&
-            !expertiseLinkRef.current.contains(event.target)
-          ) {
-            setShowDropdown(false);
-          }
-      };
-  
-      document.addEventListener("click", handleClickOutside);
-      return () => {
-        document.removeEventListener("click", handleClickOutside);
-      };
-    }, [isNavbarOpen]);
+
+    document.addEventListener("click", handleClickOutside);
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, [isNavbarOpen]);
 
   //Form handling
   const sendEmail = (e) => {
@@ -94,11 +94,7 @@ export default function NavBar() {
       );
   };
   return (
-    <Navbar
-      bg="light"
-      expand="lg"
-      className="py-1 sticky-top navbar"
-    >
+    <Navbar bg="light" expand="lg" className="py-1 sticky-top navbar">
       <Container className="d-flex justify-content-between align-items-center mynavbar">
         <Navbar.Brand href="/">
           <img
@@ -109,11 +105,11 @@ export default function NavBar() {
             className="d-inline-block align-top"
           />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleToggle}/>
-        <Navbar.Collapse
-          id="basic-navbar-nav"
-          className="flex-grow-1"
-        >
+        <Navbar.Toggle
+          aria-controls="basic-navbar-nav"
+          onClick={handleToggle}
+        />
+        <Navbar.Collapse id="basic-navbar-nav" className="flex-grow-1">
           <Nav className="m-auto defbodyFont">
             <Nav.Link>
               <NavLink
@@ -176,7 +172,6 @@ export default function NavBar() {
             Contact Sales
           </Button>
 
-          
           {showDropdown && (
             <div
               className={`container custom-dropdown bg-light ${
@@ -191,10 +186,15 @@ export default function NavBar() {
                 <div className="col col-md-3 d-flex align-items-start align-self-start justify-content-center flex-column">
                   <h1
                     className="mt-4 ms-1 secondary defheadFont"
-                    style={{ fontSize: "1.4rem" }} 
+                    style={{ fontSize: "1.4rem" }}
                     onClick={handleMouseLeave}
                   >
-                    <Link to="/markets" className="text-decoration-none text-danger">Markets</Link>
+                    <Link
+                      to="/markets"
+                      className="text-decoration-none text-danger"
+                    >
+                      Markets
+                    </Link>
                   </h1>
                   <p className="mt-3 text-black d-none d-md-block">
                     <p className="defbodyFont">
@@ -221,7 +221,10 @@ export default function NavBar() {
                       {" "}
                       <RiArrowRightSLine className="me-2 " /> Governments
                     </p>
-                    <div className="mb-3 pt-3 d-flex align-items-center justify-content-center" onClick={handleMouseLeave}>
+                    <div
+                      className="mb-3 pt-3 d-flex align-items-center justify-content-center"
+                      onClick={handleMouseLeave}
+                    >
                       <Link
                         to="/markets"
                         className="px-3 py-1 bg-danger rounded"
@@ -241,8 +244,13 @@ export default function NavBar() {
                     className="mt-4 ms-1 secondary defheadFont"
                     style={{ fontSize: "1.4rem" }}
                     onClick={handleMouseLeave}
-                  ><Link to="/projects" className="text-decoration-none text-danger">Projects</Link>
-                    
+                  >
+                    <Link
+                      to="/projects"
+                      className="text-decoration-none text-danger"
+                    >
+                      Projects
+                    </Link>
                   </h1>
                   <p className="mt-3 text-black d-none d-md-block">
                     <p className="defbodyFont">
@@ -257,14 +265,18 @@ export default function NavBar() {
                     </p>
                     <p className="defbodyFont">
                       {" "}
-                      <RiArrowRightSLine className="me-2 " /> Yinson Productions West Africa Limited
+                      <RiArrowRightSLine className="me-2 " /> Yinson Productions
+                      West Africa Limited
                     </p>
                     <p className="defbodyFont">
                       {" "}
                       <RiArrowRightSLine className="me-2 " /> AngloGold Ashanti
                       Ghana Limited
                     </p>
-                    <div className="mb-3 pt-3 d-flex align-items-start justify-content-start rounded" onClick={handleMouseLeave}>
+                    <div
+                      className="mb-3 pt-3 d-flex align-items-start justify-content-start rounded"
+                      onClick={handleMouseLeave}
+                    >
                       <Link
                         to="/projects"
                         className="px-3 py-1 bg-danger rounded"
@@ -284,7 +296,13 @@ export default function NavBar() {
                     className="mt-4 ms-1 secondary defheadFont"
                     style={{ fontSize: "1.4rem" }}
                     onClick={handleMouseLeave}
-                  ><Link to="/service" className="text-decoration-none text-danger">Services</Link>
+                  >
+                    <Link
+                      to="/service"
+                      className="text-decoration-none text-danger"
+                    >
+                      Services
+                    </Link>
                   </h1>
                   <p className="mt-3 text-black d-none d-md-block">
                     <p className="defbodyFont">
@@ -327,7 +345,10 @@ export default function NavBar() {
                       <RiArrowRightSLine className="me-2 " />
                       Sustainability
                     </p>
-                    <div className="mb-3 pt-3 d-flex align-items-start justify-content-start rounded" onClick={handleMouseLeave}>
+                    <div
+                      className="mb-3 pt-3 d-flex align-items-start justify-content-start rounded"
+                      onClick={handleMouseLeave}
+                    >
                       <Link
                         to="/service"
                         className="px-3 py-1 bg-danger rounded"
@@ -356,19 +377,10 @@ export default function NavBar() {
               <Modal.Title>Contact Sales</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-              <Form
-                autoComplete="off"
-                onSubmit={sendEmail}
-              >
+              <Form autoComplete="off" onSubmit={sendEmail}>
                 <Row className="py-3">
-                  <Col
-                    xs={12}
-                    lg={5}
-                  >
-                    <Form.Group
-                      as={Col}
-                      className="mb-3"
-                    >
+                  <Col xs={12} lg={5}>
+                    <Form.Group as={Col} className="mb-3">
                       <Form.Label>Name</Form.Label>
                       <Form.Control
                         type="name"
@@ -410,11 +422,7 @@ export default function NavBar() {
                         />
                       </div>
                     </Form.Group>
-                    <Form.Group
-                      as={Col}
-                      md="12"
-                      className="mb-3"
-                    >
+                    <Form.Group as={Col} md="12" className="mb-3">
                       <Form.Label>Location</Form.Label>
                       <Form.Control
                         type="text"
@@ -424,15 +432,8 @@ export default function NavBar() {
                       />
                     </Form.Group>
                   </Col>
-                  <Col
-                    xs={12}
-                    lg={7}
-                  >
-                    <Form.Group
-                      as={Col}
-                      md="12"
-                      className="mb-3"
-                    >
+                  <Col xs={12} lg={7}>
+                    <Form.Group as={Col} md="12" className="mb-3">
                       <Form.Label>Select Institution: </Form.Label>
                       <Form.Control
                         as="select"
@@ -445,11 +446,7 @@ export default function NavBar() {
                         <option value="com">Company</option>
                       </Form.Control>
                     </Form.Group>
-                    <Form.Group
-                      as={Col}
-                      md="12"
-                      className="mb-3"
-                    >
+                    <Form.Group as={Col} md="12" className="mb-3">
                       <Form.Label name="sender_institution">
                         Name of institution
                       </Form.Label>
@@ -459,11 +456,7 @@ export default function NavBar() {
                         required
                       />
                     </Form.Group>
-                    <Form.Group
-                      as={Col}
-                      md="12"
-                      className="mb-3"
-                    >
+                    <Form.Group as={Col} md="12" className="mb-3">
                       <Form.Label name="quote_details">Details</Form.Label>
                       <Form.Control
                         style={{ resize: "none" }}
@@ -487,10 +480,7 @@ export default function NavBar() {
               </Form>
             </Modal.Body>
             <Modal.Footer>
-              <Button
-                variant="secondary"
-                onClick={handleClose}
-              >
+              <Button variant="secondary" onClick={handleClose}>
                 Close
               </Button>
             </Modal.Footer>
