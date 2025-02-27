@@ -21,9 +21,9 @@ const PVFSection = () => {
     <Container className="my-5">
       <Row className="align-items-center">
         <Col md={7} className=" text-md-start">
-          <h1 className="defheadFont">Building a Sustainable Future</h1>
+          <h1 className="defheadFont">Renewable Energy</h1>
           <p className="defbodyFont">
-            VALTEC Limited is dedicated to building a sustainable future through
+            VALTEC is dedicated to building a sustainable future through
             renewable energy. We design and implement clean energy projects that
             reduce carbon footprints and lower energy costs. We meet
             residential, commercial, and utility energy demands with
