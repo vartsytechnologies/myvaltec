@@ -218,7 +218,7 @@ function ContactSection() {
                           <Form.Label>Subject</Form.Label>
                           <Form.Control
                             type="text"
-                            placeholder="Enter the subject of the mail here"
+                            placeholder="Enter the subject of the mail"
                             required
                             name="subject"
                           />

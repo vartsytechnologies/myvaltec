@@ -248,7 +248,39 @@
 .btn-close-white .btn-close:focus {
   border: none;
 }
-
+.offcanvas_btn {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  transition: all 0.3s ease-in-out;
+}
+.offcanvas_btn:hover {
+  background-color: white;
+  border: 2px solid transparent;
+  color: rgb(180, 10, 47);
+}
+.nav_btn {
+  background-color: transparent;
+  color: rgb(180, 10, 47);
+  border: 2px solid rgb(180, 10, 47);
+  transition: all 0.3s ease-in-out;
+}
+.nav_btn:hover {
+  background-color: rgb(180, 10, 47);
+  border: 2px solid transparent;
+  color: white;
+}
+.navy_btn {
+  background-color: rgb(180, 10, 47);
+  border: 2px solid transparent;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+.navy_btn:hover {
+  background-color: transparent;
+  color: rgb(180, 10, 47);
+  border: 2px solid rgb(180, 10, 47);
+}
 /* Smooth hiding of hover effects on small screens */
 @media (max-width: 448px) {
   li:hover,

@@ -12,6 +12,7 @@ import {
   Collapse,
   Col,
 } from "react-bootstrap";
+import DownloadButton from "./Profile";
 import { PhoneInput } from "react-international-phone";
 import { IoSendSharp } from "react-icons/io5";
 import { IoIosArrowUp } from "react-icons/io";
@@ -370,9 +371,9 @@ export default function NavBar() {
               </NavLink>
             </Nav.Link>
           </Nav>
+          <DownloadButton className="defbodyFont mx-3 nav_btn d-lg-block d-md-none me-2" />
           <Button
-            className="d-none d-lg-block ms-0 ms-lg-3 btn btn-danger defbodyFont"
-            variant="primary"
+            className="navy_btn d-none d-lg-block ms-0 ms-lg-3 btn btn-danger defbodyFont"
             onClick={handleSho}
           >
             Contact Sales
@@ -602,6 +603,7 @@ export default function NavBar() {
               </NavLink>
             </Nav.Link>
           </Nav>
+          <DownloadButton className="defbodyFont mt-3 offcanvas_btn d-md-block d-lg-none me-2" />
           <hr className="text-white mt-5" />
         </Offcanvas.Body>
       </Offcanvas>

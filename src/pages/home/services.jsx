@@ -268,7 +268,7 @@ function ServiceSection() {
                           <p
                             className="fs-5 p-0 m-0 defheadFont text-danger"
                             data-aos="fade-up"
-                            data-aos-delay="750"
+                            data-aos-delay="800"
                           >
                             Sustainability
                           </p>
