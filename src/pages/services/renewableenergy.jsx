@@ -20,8 +20,10 @@ const PVFSection = () => {
   return (
     <Container className="my-5">
       <Row className="align-items-center">
-        <Col md={7} className=" text-md-start">
-          <h1 className="defheadFont">Renewable Energy</h1>
+        <Col lg={7} md={12} className=" text-md-start">
+          <h1 className="defheadFont text-danger" style={{ marginTop: "50px" }}>
+            Renewable Energy
+          </h1>
           <p className="defbodyFont">
             VALTEC is dedicated to building a sustainable future through
             renewable energy. We design and implement clean energy projects that
@@ -39,7 +41,7 @@ const PVFSection = () => {
             energy goals and environmental standards.
           </p>
         </Col>
-        <Col md={5} className="text-center">
+        <Col lg={5} md={12} className="text-center mt-lg-5 mt-0">
           <img src={Renewable} alt="PVF Products" className="img-fluid" />
         </Col>
       </Row>
@@ -164,9 +166,6 @@ const ProductsSection = () => {
                   <Card.Title className="defheadFont text-start">
                     {product.name}
                   </Card.Title>
-                  {/* <Card.Text className="defbodyFont text-start flex-grow-1">
-                    {product.text}
-                  </Card.Text> */}
                 </Card.Body>
               </Card>
             </Col>
