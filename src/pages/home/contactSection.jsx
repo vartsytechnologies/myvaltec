@@ -50,9 +50,7 @@ function ContactSection() {
       <Container className="mt-4" style={{ marginBottom: "30px" }}>
         <h1 className="mt-4 text-center defheadFont text-danger">Contact Us</h1>
         <p className="text-center defbodyFont">
-          <i>
-            Send us your enquiries, Request a quote, etc. Get in touch with us!
-          </i>
+          <i>Send us an equiry. We will gladly respond.</i>
         </p>
         <Row>
           <Col xs={12} lg={5}>

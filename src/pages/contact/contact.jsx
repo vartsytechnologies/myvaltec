@@ -125,7 +125,7 @@ export default function Contact() {
             Make an enquiry
           </h1>
           <p className="text-center" data-aos="fade-up">
-            <i>Send us your message and we will gladly respond!</i>
+            <i>Send us an enquiry. We will gladly respond.</i>
           </p>
 
           <ContactForm data-aos="fade-up" />

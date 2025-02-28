@@ -22,7 +22,7 @@ import "./components/thinking.css";
 const teamMembers = [
   {
     // name: "Director 1",
-    title: "Finance Manager",
+    title: "Finance Director",
     image: "https://via.placeholder.com/150", // Replace with the actual image URL
   },
   {
@@ -40,6 +40,16 @@ const teamMembers = [
     title: "Human Resource Manager",
     image: "https://via.placeholder.com/150",
   },
+  {
+    // name: "Director 5",
+    title: "HSQ Manager",
+    image: "https://via.placeholder.com/150",
+  },
+  {
+    // name: "Director 6",
+    title: "Marketing Manager",
+    image: "https://via.placeholder.com/150",
+  },
 ];
 
 function App() {
@@ -54,13 +64,17 @@ function App() {
     <>
       <Banner title="Thinking" />
 
-      <Container fluid className="mt-4 px-0">
-        <Container>
+      <Container className="mt-4 px-0">
+        <Container className="mt-4 px-0">
           <Row className="flex-column gy-2 mt-5">
             <Col data-aos="fade-up" className="py-4">
               <Row className="justify-content-between">
-                <Col xs={12} lg={6} className="align-self-center p-auto">
-                  <h2 className="fs-5 p-0 m-0 defheadFont text-danger">
+                <Col
+                  xs={12}
+                  lg={6}
+                  className="align-self-center p-auto text-xs-start"
+                >
+                  <h2 className="fs-5 p-0 m-0 defheadFont text-danger ">
                     Company Overview
                   </h2>
                   <hr
@@ -71,7 +85,7 @@ function App() {
                       margin: "0.5rem 0",
                     }}
                   />
-                  <span className="defbodyFont d-block me-3">
+                  <p className="defbodyFont d-block me-3 text-justify text-justify-xs-start">
                     Established in August 2015, VALTEC is a value-driven design,
                     engineering, procurement, consulting, and project management
                     company. Our mission is to deliver compelling value through
@@ -82,7 +96,7 @@ function App() {
                     globalized affiliated support network ensures specialized
                     precision, real-time speed, and reliable service quality
                     across all projects in Africa.
-                  </span>
+                  </p>
                   <p className="mt-4"></p>
                 </Col>
                 <Col
@@ -130,30 +144,28 @@ function App() {
                       margin: "0.5rem 0",
                     }}
                   />
-                  <span className="defbodyFont d-block">
-                    <ul className="defbodyFont">
-                      <li data-aos="fade-up">
-                        Deliver value through technology.
-                      </li>
-                      <li data-aos="fade-up">
-                        Demonstrate leadership with excellence.
-                      </li>
-                      <li data-aos="fade-up">
-                        Think innovatively while embracing new ideas.
-                      </li>
-                      <li data-aos="fade-up">
-                        Operate ethically and with integrity, prioritizing
-                        safety and security.
-                      </li>
-                      <li data-aos="fade-up">
-                        Collaborate with unrivaled expertise to solve complex
-                        challenges.
-                      </li>
-                      <li data-aos="fade-up">
-                        Share success with our stakeholders.
-                      </li>
-                    </ul>
-                  </span>
+                  <ul className="defbodyFont ">
+                    <li data-aos="fade-up">
+                      Deliver value through technology.
+                    </li>
+                    <li data-aos="fade-up">
+                      Demonstrate leadership with excellence.
+                    </li>
+                    <li data-aos="fade-up">
+                      Think innovatively while embracing new ideas.
+                    </li>
+                    <li data-aos="fade-up">
+                      Operate ethically and with integrity, prioritizing safety
+                      and security.
+                    </li>
+                    <li data-aos="fade-up">
+                      Collaborate with unrivaled expertise to solve complex
+                      challenges.
+                    </li>
+                    <li data-aos="fade-up">
+                      Share success with our stakeholders.
+                    </li>
+                  </ul>
                   <p className="mt-4"></p>
                 </Col>
               </Row>
@@ -193,7 +205,7 @@ function App() {
                         margin: "0.5rem 0",
                       }}
                     />
-                    <span className="defbodyFont d-block">
+                    <p className="defbodyFont d-block text-justify text-justify-xs-start">
                       The potential of harnessing digital technologies to
                       deliver value for our client's projects drives us at
                       VALTEC. We collaborate with experts and build global
@@ -205,7 +217,7 @@ function App() {
                       emphasize effective ways of working together and
                       developing productive long-term relationships with our
                       internal and external stakeholders.
-                    </span>
+                    </p>
                     <p className="mt-4"></p>
                   </Col>
                 </Row>
@@ -224,7 +236,7 @@ function App() {
                         margin: "0.5rem 0",
                       }}
                     />
-                    <span className="defbodyFont d-block me-3">
+                    <p className="defbodyFont d-block me-3 text-justify text-justify-xs-start">
                       VALTEC prioritizes integrity and maintains high ethical
                       and compliance standards while delivering exceptional
                       value to our clients. We collaborate with each other, our
@@ -243,7 +255,7 @@ function App() {
                       our Code of Conduct and Anticorruption Policy, which lays
                       out crucial legal and ethical standards for making sound
                       business decisions across all projects.
-                    </span>
+                    </p>
                     <p className="mt-4"></p>
                   </Col>
                   <Col
@@ -299,7 +311,7 @@ function App() {
                       margin: "0.5rem 0",
                     }}
                   />
-                  <span className="defbodyFont d-block">
+                  <p className="defbodyFont d-block text-justify text-justify-xs-start">
                     We are fully aware that when we get it wrong, the
                     consequences can be severe. When we get it wrong, the
                     consequencescanbesevere. We fully recognize our duty to
@@ -311,10 +323,10 @@ function App() {
                     safeguarding the physical, psychological, and social
                     well-being of our employees, stakeholders, and communities.
                     <br />{" "}
-                    <span className="fw-bolder text-danger">
+                    <span className="fw-bolder text-danger text-justify text-justify-xs-start">
                       We are ISO 9001 and ISO 14001 certified.
                     </span>
-                  </span>
+                  </p>
                   <div
                     className=" rounded bg-white d-flex align-items-center justify-content-between"
                     style={{ width: "290px" }}
@@ -339,19 +351,13 @@ function App() {
               </Row>
               <Row>
                 <Col>
-                  {/* <h3
-                    className=" pt-2 text-danger defHeadFont"
-                    data-aos="fade-up"
-                    data-aos-delay="300"
-                  >
-                    VALTEC ISO certified
-                  </h3> */}
-
-                  <br />
                   <h4 className="text-danger pt-3" data-aos="fade-up">
                     VALTEC upholds a robust QHSE policy by:
                   </h4>
-                  <p className="defbodyFont text-justify" data-aos="fade-up">
+                  <p
+                    className="defbodyFont text-justify text-justify-xs-start"
+                    data-aos="fade-up"
+                  >
                     Establishing clear and measurable Quality Objectives across
                     all operational sectors is imperative. Continuous
                     monitoring, evaluation, and enhancement of the Quality
@@ -381,12 +387,9 @@ function App() {
       </Container>
       <Container>
         <div>
-          <h4
-            className="text-secondary text-center pt-3 mt-5"
-            data-aos="fade-up"
-          >
+          <h3 className="text-dark text-center pt-3 mt-5" data-aos="fade-up">
             Team Members
-          </h4>
+          </h3>
         </div>
         <Row className="p-0 gx-0 defbodyFont my-5">
           <Col lg={12}>
@@ -410,7 +413,6 @@ function App() {
           </Col>
         </Row>
       </Container>
-      {/* start here */}
     </>
   );
 }

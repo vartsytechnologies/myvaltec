@@ -8,6 +8,7 @@ import {
   MdOutlineCompassCalibration,
   MdOutlineSolarPower,
   MdOutlinePrecisionManufacturing,
+  MdOutlineWifiProtectedSetup,
   MdOutlineGroup,
 } from "react-icons/md";
 import { VscWorkspaceTrusted } from "react-icons/vsc";
@@ -245,6 +246,53 @@ function ServiceSection() {
                     </div>
                   </div>
                 </Col>
+                <Col>
+                  <div className="main mb-5 pb-2">
+                    <div className="row">
+                      <div
+                        className="col-3 d-none d-sm-flex align-items-center justify-content-center"
+                        style={{
+                          background: "rgba(255, 177, 193, 0.22",
+                        }}
+                      >
+                        <div
+                          className="image-container m-2 p-2 d-flex align-items-center justify-content-center"
+                          data-aos="fade-up"
+                          data-aos-delay="700"
+                        >
+                          <MdOutlineWifiProtectedSetup className="i-cons" />
+                        </div>
+                      </div>
+                      <div className="col-12 col-sm-9">
+                        <div className="text-container me-2">
+                          <p
+                            className="fs-5 p-0 m-0 defheadFont text-danger"
+                            data-aos="fade-up"
+                            data-aos-delay="750"
+                          >
+                            Sustainability
+                          </p>
+                          <hr
+                            style={{
+                              borderTop: "2px solid rgba(255,17,67,1)",
+                              borderRadius: "4px",
+                              opacity: "1",
+                              margin: "0.5rem 0",
+                            }}
+                            data-aos="fade-up"
+                            data-aos-delay="10"
+                          />
+                          <p className="p-0 m-0 defbodyFont ">
+                            We help you identify risks and build strategies that
+                            ensure sustainable, long-term success. Our solutions
+                            help you track energy use and reduce emissions for a
+                            greener, efficient future.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </Col>
               </Row>
             </Col>
             <Col xs={12} lg={6}>
@@ -442,10 +490,11 @@ function ServiceSection() {
                             data-aos="fade-up"
                             data-aos-delay="700"
                           >
-                            Our collaborative approach connects government
-                            entities and private enterprises, fostering projects
-                            that benefit communities and contribute to
-                            sustainable development.
+                            Our highly specialized technical team is equipped to
+                            identify and resolve operational issues while
+                            utilizing various reliability tools and
+                            complementary techniques to address every aspect of
+                            your maintenance needs.
                           </p>
                         </div>
                       </div>

@@ -27,16 +27,8 @@ function ProjectCard({
 
   return (
     <>
-      <Card
-        className="shadow-sm h-100"
-        data-aos="fade-up"
-        onClick={handleShow}
-      >
-        <Card.Img
-          variant="top"
-          src={imgSrc}
-          data-aos="fade-up"
-        />
+      <Card className="shadow-sm h-100" data-aos="fade-up" onClick={handleShow}>
+        <Card.Img variant="top" src={imgSrc} data-aos="fade-up" />
         <Card.Body>
           <Card.Title
             className="defheadFont text-danger"
@@ -70,10 +62,7 @@ function ProjectCard({
               <Carousel>
                 {carouselImages.length > 0 ? (
                   carouselImages.map((image, idx) => (
-                    <Carousel.Item
-                      key={idx}
-                      interval={1000}
-                    >
+                    <Carousel.Item key={idx} interval={1000}>
                       <img
                         src={image}
                         alt={`Slideshow ${idx + 1}`}
@@ -84,15 +73,6 @@ function ProjectCard({
                 ) : (
                   <p>No images available for this project.</p>
                 )}
-                {/* <Carousel.Item>
-              <img src={projectImage} alt="projectImage1" className=""/>
-              </Carousel.Item> */}
-                {/* <Carousel.Item>
-              <img src={projectImage2} alt="projectImage2"/>
-              </Carousel.Item>
-              <Carousel.Item>
-              <img src={projectImage3} alt="projectImage3"/>
-              </Carousel.Item> */}
               </Carousel>
             </div>
             <div>
@@ -101,10 +81,7 @@ function ProjectCard({
             </div>
           </Modal.Body>
           <Modal.Footer>
-            <Button
-              variant="secondary"
-              onClick={handleClose}
-            >
+            <Button variant="secondary" onClick={handleClose}>
               Close
             </Button>
           </Modal.Footer>

@@ -224,7 +224,7 @@ export const serviceItems = [
 
   {
     name: "Data & Analytics",
-    slug: "digital_solutions",
+    slug: "data_analytics",
     initialImage: digital,
     imgOrder: 2,
     carouselImages: [digital],
@@ -241,171 +241,175 @@ export const serviceItems = [
       </p>
     ),
     detailedContent: (
-      <div className="row">
-        <div className="col-12">
-          <h1 className="text-danger defheadFont">Data & Analytics</h1>
-          <p className="mb-5">
-            We help businesses make smarter decisions by turning raw data into
-            actionable insights. We leverage data engineering, advanced
-            analytics and machine learning technology to address a diverse range
-            of client challenges. A typical project may include a combination of
-            data scientists, data engineers, business analysts, software
-            engineers and domain experts in disciplines such as geotechnical,
-            electrical, civil and mechanical engineering.  <br />
-            <span className="mt-3">
-              Our data and analytics team works closely with all other parts of
-              VALTEC to deliver exceptional results for clients, for example:
-            </span>
-          </p>
-          <div className="row d-flex align-items-stretch">
-            <div className="col-md-6 d-flex">
-              <ol
-                className="list-unstyled p-3 flex-grow-1 rounded"
-                style={{ border: "2px solid red" }}
-              >
-                <li>
-                  {" "}
-                  <h3 className="text-danger p-0 my-0">
-                    <GoGraph
-                      style={{ fontSize: "1.3em", marginRight: ".5rem" }}
-                    />
-                    Visualize
-                  </h3>
-                  We create engaging interactive dashboards and data
-                  visualization tools to display averages, variations, trends,
-                  relationships, and structures.
-                </li>
-                <li>
-                  <h3 className="text-danger p-0 d-flex align-items-center">
-                    <FaMagnifyingGlassChart
-                      style={{ fontSize: "1.3em", marginRight: ".5rem" }}
-                    />
-                    Detect
-                  </h3>
-                  <p>
-                    We identify people, objects, assets, features, anomalies,
-                    faults, hazards, risks, actions, and behaviors. For example,
-                    we map roads from aerial images and identify road signs and
-                    pipeline faults from video footage.
-                  </p>
-                </li>
-                <li>
-                  {" "}
-                  <h3 className="text-danger p-0">
-                    <MdBatchPrediction
-                      style={{ fontSize: "1.3em", marginRight: ".5rem" }}
-                    />
-                    Predict
-                  </h3>
-                  We utilize metered data from residential developments to
-                  predict critical peak loads for energy consumption. We
-                  anticipate demand, timing, events, equipment failures, and
-                  cost revenue.
-                </li>
-              </ol>
+      <Container className="p-0 text-xs-start">
+        <div className="row">
+          <div className="col-12">
+            <h1 className="text-danger defheadFont">Data & Analytics</h1>
+            <p className="mb-5">
+              We help businesses make smarter decisions by turning raw data into
+              actionable insights. We leverage data engineering, advanced
+              analytics and machine learning technology to address a diverse
+              range of client challenges. A typical project may include a
+              combination of data scientists, data engineers, business analysts,
+              software engineers and domain experts in disciplines such as
+              geotechnical, electrical, civil and mechanical engineering. {" "}
+              <br />
+              <span className="mt-3">
+                Our data and analytics team works closely with all other parts
+                of VALTEC to deliver exceptional results for clients, for
+                example:
+              </span>
+            </p>
+            <div className="row d-flex align-items-stretch">
+              <div className="col-md-6 d-flex">
+                <ol
+                  className="list-unstyled p-2 flex-grow-1 rounded"
+                  style={{ border: "2px solid red" }}
+                >
+                  <li>
+                    {" "}
+                    <h4 className="text-danger p-0 my-0">
+                      <GoGraph
+                        style={{ fontSize: "1.3em", marginRight: ".5rem" }}
+                      />
+                      Visualize
+                    </h4>
+                    We create engaging interactive dashboards and data
+                    visualization tools to display averages, variations, trends,
+                    relationships, and structures.
+                  </li>
+                  <li>
+                    <h4 className="text-danger p-0 d-flex align-items-center">
+                      <FaMagnifyingGlassChart
+                        style={{ fontSize: "1.3em", marginRight: ".5rem" }}
+                      />
+                      Detect
+                    </h4>
+                    <p>
+                      We identify people, objects, assets, features, anomalies,
+                      faults, hazards, risks, actions, and behaviors. For
+                      example, we map roads from aerial images and identify road
+                      signs and pipeline faults from video footage.
+                    </p>
+                  </li>
+                  <li>
+                    {" "}
+                    <h4 className="text-danger p-0">
+                      <MdBatchPrediction
+                        style={{ fontSize: "1.3em", marginRight: ".5rem" }}
+                      />
+                      Predict
+                    </h4>
+                    We utilize metered data from residential developments to
+                    predict critical peak loads for energy consumption. We
+                    anticipate demand, timing, events, equipment failures, and
+                    cost revenue.
+                  </li>
+                </ol>
+              </div>
+              <div className="col-md-6 d-flex">
+                <ol
+                  className="list-unstyled p-3 flex-grow-1 rounded"
+                  style={{ border: "2px solid red" }}
+                >
+                  <li>
+                    {" "}
+                    <h4 className="text-danger p-0">
+                      <GrOptimize
+                        style={{ fontSize: "1.3em", marginRight: ".5rem" }}
+                      />
+                      Optimize
+                    </h4>
+                    We optimize site selection, routes, schedules, operational
+                    and production processes, and maintenance. Projects include
+                    HVAC energy reduction, predictive maintenance, and
+                    production process optimization.
+                  </li>
+                  <li>
+                    {" "}
+                    <h4 className="text-danger p-0">
+                      <TbSettingsAutomation
+                        style={{ fontSize: "1.3em", marginRight: ".5rem" }}
+                      />
+                      Automate
+                    </h4>
+                    Automating expensive, repetitive, or hazardous tasks;
+                    consulting and manufacturing activities; and evaluations.
+                  </li>
+                  <li>
+                    {" "}
+                    <h4 className="text-danger p-0">
+                      <IoCreate
+                        style={{ fontSize: "1.3em", marginRight: ".5rem" }}
+                      />
+                      Create
+                    </h4>
+                    Machine learning for designs, images, processes, strategies,
+                    and experiments. We applied machine learning-based
+                    generative design to automate the configuration of a data
+                    center. We assist clients in managing, understanding, and
+                    extracting insights from their data to enhance asset
+                    management, optimize operations, make informed planning and
+                    design decisions, and execute projects more efficiently.
+                  </li>
+                </ol>
+              </div>
             </div>
-            <div className="col-md-6 d-flex">
-              <ol
-                className="list-unstyled p-3 flex-grow-1 rounded"
-                style={{ border: "2px solid red" }}
-              >
-                <li>
-                  {" "}
-                  <h3 className="text-danger p-0">
-                    <GrOptimize
-                      style={{ fontSize: "1.3em", marginRight: ".5rem" }}
-                    />
-                    Optimize
-                  </h3>
-                  We optimize site selection, routes, schedules, operational and
-                  production processes, and maintenance. Projects include HVAC
-                  energy reduction, predictive maintenance, and production
-                  process optimization.
-                </li>
-                <li>
-                  {" "}
-                  <h3 className="text-danger p-0">
-                    <TbSettingsAutomation
-                      style={{ fontSize: "1.3em", marginRight: ".5rem" }}
-                    />
-                    Automate
-                  </h3>
-                  Automating expensive, repetitive, or hazardous tasks;
-                  consulting and manufacturing activities; and evaluations.
-                </li>
-                <li>
-                  {" "}
-                  <h3 className="text-danger p-0">
-                    <IoCreate
-                      style={{ fontSize: "1.3em", marginRight: ".5rem" }}
-                    />
-                    Create
-                  </h3>
-                  Machine learning for designs, images, processes, strategies,
-                  and experiments. We applied machine learning-based generative
-                  design to automate the configuration of a data center. We
-                  assist clients in managing, understanding, and extracting
-                  insights from their data to enhance asset management, optimize
-                  operations, make informed planning and design decisions, and
-                  execute projects more efficiently.
-                </li>
-              </ol>
-            </div>
+            <br />
+            <h2 className="mt-5 text-danger defheadFont">
+              {" "}
+              Our services focus on four key areas and include:
+            </h2>
+            <ul className="marker">
+              <li>
+                <h4 className="text-danger">Data management</h4> Advising on the
+                capabilities, processes, platforms, and architectures needed to
+                effectively and securely manage big data. Designing and
+                implementing processes and infrastructure for data acquisition,
+                storage, transformation, and integration. Creating interactive
+                dashboards and reporting tools that enable clients to understand
+                their data and gain better insights into the performance of
+                their assets and operations.
+              </li>
+              <li>
+                <h4 className="text-danger">Asset management</h4> Analytical
+                models for optimizing asset management or capital projects at
+                the portfolio or program level. Automated monitoring of asset
+                conditions and forecasting of asset health. Utilizing machine
+                vision to more accurately, quickly, safely, and remotely detect,
+                geolocate, and inspect geographically dispersed assets.
+                Predictive maintenance through machine learning to optimize
+                maintenance scheduling, road surface evaluation, and capital
+                expenditure decisions.
+              </li>
+              <li>
+                <h4 className="text-danger">Operational improvement</h4>
+                Optimizing logistics, scheduling, capacity assessment, root
+                cause analysis, and production processes with machine learning.
+                Enhancing energy efficiency of HVAC systems, pumps, and other
+                energy-intensive systems through machine learning. Automated
+                event detection, activity analysis, and traffic incident
+                detection utilizing computer vision and machine learning
+                technologies.
+              </li>
+              <li>
+                <h4 className="text-danger">Planning and design</h4>Utilizing
+                advanced analytics enhances infrastructure planning,
+                transportation planning, and urban design. Employing predictive
+                modeling to forecast or assess the likelihood of events, such as
+                predicting critical peak loads for energy usage in residential
+                developments, to aid infrastructure planning. Automating and
+                augmenting design processes through generative design
+                technology. Monitoring projects and enhancing productivity.
+                Optimizing site selection.
+              </li>
+            </ul>
           </div>
-          <br />
-          <h2 className="mt-5 defheadFont">
-            {" "}
-            Our services focus on four key areas and include:
-          </h2>
-          <ul>
-            <li>
-              <h3 className="text-danger">Data management</h3> Advising on the
-              capabilities, processes, platforms, and architectures needed to
-              effectively and securely manage big data. Designing and
-              implementing processes and infrastructure for data acquisition,
-              storage, transformation, and integration. Creating interactive
-              dashboards and reporting tools that enable clients to understand
-              their data and gain better insights into the performance of their
-              assets and operations.
-            </li>
-            <li>
-              <h3 className="text-danger">Asset management</h3> Analytical
-              models for optimizing asset management or capital projects at the
-              portfolio or program level. Automated monitoring of asset
-              conditions and forecasting of asset health. Utilizing machine
-              vision to more accurately, quickly, safely, and remotely detect,
-              geolocate, and inspect geographically dispersed assets. Predictive
-              maintenance through machine learning to optimize maintenance
-              scheduling, road surface evaluation, and capital expenditure
-              decisions.
-            </li>
-            <li>
-              <h3 className="text-danger">Operational improvement</h3>
-              Optimizing logistics, scheduling, capacity assessment, root cause
-              analysis, and production processes with machine learning.
-              Enhancing energy efficiency of HVAC systems, pumps, and other
-              energy-intensive systems through machine learning. Automated event
-              detection, activity analysis, and traffic incident detection
-              utilizing computer vision and machine learning technologies.
-            </li>
-            <li>
-              <h3 className="text-danger">Planning and design</h3>Utilizing
-              advanced analytics enhances infrastructure planning,
-              transportation planning, and urban design. Employing predictive
-              modeling to forecast or assess the likelihood of events, such as
-              predicting critical peak loads for energy usage in residential
-              developments, to aid infrastructure planning. Automating and
-              augmenting design processes through generative design technology.
-              Monitoring projects and enhancing productivity. Optimizing site
-              selection.
-            </li>
-          </ul>
-        </div>
-        <div className="col-12">
-          <h1 className="text-danger pt-4 defheadFont">
-            Visualization and Immersive Storytelling
-          </h1>
-          <Container fluid>
+          <div className="col-12">
+            <h1 className="text-danger pt-4 mb-3 defheadFont">
+              Visualization and Immersive Storytelling
+            </h1>
+
             <Row className="align-items-center">
               <Col lg={6} md={12}>
                 <img src={visualize} style={{}} />
@@ -427,9 +431,9 @@ export const serviceItems = [
                 stakeholder engagement or promotion.
               </Col>
             </Row>
-          </Container>
+          </div>
         </div>
-      </div>
+      </Container>
     ),
   },
   {
@@ -475,91 +479,75 @@ export const serviceItems = [
       </p>
     ),
     detailedContent: (
-      <div className="service-description">
-        <Container>
-          <Row>
-            <h2 className="text-danger p-0 defheadFont">
-              Risk and Assurance Strategy
-            </h2>
-            <Col lg={6} md={12}>
-              <p className="pt-4 lg-pt-0">
-                Uncertainty, experienced by all businesses, is synonymous with
-                risk. We recognize this and offer comprehensive risk and
-                assurance strategies for clients that yield significant
-                enterprise, strategic, and capital asset outcomes. We assist
-                business leaders in becoming comfortable with uncertainty,
-                defining complex problems, managing ambiguity, and navigating
-                dynamic environments through:
-              </p>
-            </Col>
-            <Col lg={6} md={12}>
-              <img
-                src={chess}
-                alt="strategy"
-                style={{
-                  height: "250px",
-                  objectFit: "cover",
-                }}
-                className="p-0"
-              />
-            </Col>
-          </Row>
-        </Container>
-
-        <h4 className="text-danger pt-4 md-pt-0">
-          Strategic risk and assurance
-        </h4>
-        <ul>
-          <li>Risk-based strategy and strategic risk management.</li>
-          <li>Strategy performance and governance integration.</li>
-          <li>
-            Risk-based decision support, scenario management, and adaptive
-            planning.
-          </li>
-          <li>
-            Board and Executive advisory, alignment, and assurance delivery
-            services.
-          </li>
-        </ul>
-        <h4 className="text-danger mt-4">Enterprise risk and assurance</h4>
-        <ul>
-          <li>Risk, governance, audit, assurance, and benefits frameworks</li>
-          <li>
-            Risk assessments and controls, key risk indicators, risk reporting,
-            knowledge management and continuous improvement approaches.
-          </li>
-          <li>Second-line assurance and compliance services.</li>
-          <li>
-            Enterprise resilience, including business continuity, security, and
-            crisis and emergency management.
-          </li>
-        </ul>
-        <h4 className="text-danger">
-          Capital asset program risk and assurance
-        </h4>
-        <ul>
-          <li>
-            Project, program, and portfolio risk advisory, governance, benefits
-            management, and assurance services.
-          </li>
-          <li>
-            Capital portfolio prioritization, multi-criteria analysis (MCA),
-            total value of ownership (TVO), and complex diagnostic-based project
-            selection.
-          </li>
-          <li>
-            Qualitative and quantitative risk analysis, scenario testing,
-            risk-based cost estimation, and Monte Carlo simulation.
-          </li>
-        </ul>
-        <h2 className="text-danger p-0 defheadFont">
-          Energy and emissions modeling
-        </h2>
-        <p>
-          Our solutions help you track energy use and reduce emissions for a
-          greener, efficient future.
-        </p>
-      </div>
+      <Container>
+        <div className="service-description">
+          <h2 className="text-danger p-0 defheadFont">
+            Risk and Assurance Strategy
+          </h2>
+          <p className="pt-3 lg-pt-0">
+            Uncertainty, experienced by all businesses, is synonymous with risk.
+            We recognize this and offer comprehensive risk and assurance
+            strategies for clients that yield significant enterprise, strategic,
+            and capital asset outcomes. We assist business leaders in becoming
+            comfortable with uncertainty, defining complex problems, managing
+            ambiguity, and navigating dynamic environments through:
+          </p>
+          <h4 className="text-danger pt-4 md-pt-0">
+            Strategic risk and assurance
+          </h4>
+          <ul>
+            <li>Risk-based strategy and strategic risk management.</li>
+            <li>Strategy performance and governance integration.</li>
+            <li>
+              Risk-based decision support, scenario management, and adaptive
+              planning.
+            </li>
+            <li>
+              Board and Executive advisory, alignment, and assurance delivery
+              services.
+            </li>
+          </ul>
+          <h4 className="text-danger mt-4">Enterprise risk and assurance</h4>
+          <ul>
+            <li>Risk, governance, audit, assurance, and benefits frameworks</li>
+            <li>
+              Risk assessments and controls, key risk indicators, risk
+              reporting, knowledge management and continuous improvement
+              approaches.
+            </li>
+            <li>Second-line assurance and compliance services.</li>
+            <li>
+              Enterprise resilience, including business continuity, security,
+              and crisis and emergency management.
+            </li>
+          </ul>
+          <h4 className="text-danger">
+            Capital asset program risk and assurance
+          </h4>
+          <ul>
+            <li>
+              Project, program, and portfolio risk advisory, governance,
+              benefits management, and assurance services.
+            </li>
+            <li>
+              Capital portfolio prioritization, multi-criteria analysis (MCA),
+              total value of ownership (TVO), and complex diagnostic-based
+              project selection.
+            </li>
+            <li>
+              Qualitative and quantitative risk analysis, scenario testing,
+              risk-based cost estimation, and Monte Carlo simulation.
+            </li>
+          </ul>
+          <h2 className="text-danger p-0 defheadFont">
+            Energy and emissions modeling
+          </h2>
+          <p>
+            Our solutions help you track energy use and reduce emissions for a
+            greener, efficient future.
+          </p>
+        </div>
+      </Container>
     ),
   },
   {
@@ -571,73 +559,46 @@ export const serviceItems = [
     icon: <VscWorkspaceTrusted className="s-icon" />,
     description: (
       <p>
-        VALTEC ensures the reliability of your machinery through advanced
-        vibration analysis and predictive maintenance solutions. Our expert team
-        conducts in-depth reliability appraisals to assess critical assets,
-        identify vulnerabilities, and recommend tailored solutions for your
-        plant or factory.
+        Our highly specialized technical team is equipped to identify and
+        resolve operational issues while utilizing various reliability tools and
+        complementary techniques to address every aspect of your maintenance
+        needs. We collaborate with other experts to achieve the best results if
+        we do not have in-house personnel available for the task. VALTEC offers
+        reliable solutions and 24/7 repair services, including Vibration
+        Analysis, Onsite Repairs, Laser Alignment, Dynamic Balancing, and
+        Diagnostics Services.
       </p>
     ),
     detailedContent: (
-      <div>
-        <Container>
-          <Row>
-            <Col>
-              <img
-                src={vibration}
-                style={{
-                  objectFit: "cover",
-                  height: "100%",
-                }}
-              />
-            </Col>
-            <Col md={6} xs={12}>
-              <img
-                src={laser}
-                style={{
-                  objectFit: "cover",
-                  height: "100%",
-                }}
-              />
-            </Col>
-          </Row>
-        </Container>
-        <p className="pt-5">
-          Most customers encounter various challenges regarding the overall
-          reliability of their machinery. Consequently, a vibration analysis
-          service for rotating assets has evolved into a comprehensive solution
-          for your factory or plant’s high-cost equipment maintenance program.
-          To determine which technology is best suited for your needs, we
-          perform an in-depth analysis of your business through a complimentary
-          reliability appraisal that assesses your current and future
-          maintenance requirements highlights:
-        </p>
-
-        <ul>
-          <li>What are your critical assets are</li>
-          <li>Where are your potential pain points & weaknesses are</li>
-          <li>
-            Which solution is optimal for your business (conventional or
-            customized)
-          </li>
-          <li>How your business will benefit.</li>
-        </ul>
-        <h2 className="defheadFont text-danger">
-          Our consulting services cover:
+      <Container>
+        <Row>
+          <Col>
+            <img
+              src={vibration}
+              style={{
+                objectFit: "cover",
+                height: "100%",
+              }}
+            />
+          </Col>
+          <Col md={6} xs={12}>
+            <img
+              src={laser}
+              style={{
+                objectFit: "cover",
+                height: "100%",
+              }}
+            />
+          </Col>
+        </Row>
+        <h2 className="mt-4 pt-3 defheadFont text-danger">
+          Our precision & reliability services cover:
         </h2>
         <div className="row">
-          <div className="col-md-6">
+          <div className="col-12">
             <ul>
               <li>Machinery balancing</li>
-              <li>Acceptance testing</li>
-              <li>Safety assessments for people & the environment</li>
-              <li>Structural stability</li>
-              <li>Electrical issues</li>
-              <li>Fire mitigation</li>
-            </ul>
-          </div>
-          <div className="col-md-6">
-            <ul>
+              <li>Laser alignment</li>
               <li>Leak detection</li>
               <li>Energy savings</li>
               <li>Oil analysis</li>
@@ -647,26 +608,14 @@ export const serviceItems = [
           </div>
         </div>
         <div className="p-3 rounded" style={{ border: "2px solid red" }}>
-          <p>
-            Our highly specialized technical team is equipped to identify and
-            resolve operational issues while utilizing various reliability tools
-            and complementary techniques to address every aspect of your
-            maintenance needs. We collaborate with other experts to achieve the
-            best results if we do not have in-house personnel available for the
-            task. VALTEC offers reliable solutions and 24/7 repair services,
-            including{" "}
-            <strong>
-              Vibration Analysis, Onsite Repairs, Laser Alignment, Dynamic
-              Balancing, and Diagnostics Services. Vibration Analysis
-            </strong>
-          </p>
-          <p>
-            Our ASNT-certified analysts provide the most effective predictive
-            tool for routine machinery health monitoring, detecting early
-            issues, and minimizing unscheduled downtime, along with diagnostic
-            capabilities for nearly any rotating equipment machine.
-          </p>
-          <ul>
+          <ul className="marker">
+            <li>
+              <h4 className="text-danger">Vibration Analysis</h4>
+              Our ASNT-certified analysts provide the most effective predictive
+              tool for routine machinery health monitoring, detecting early
+              issues, and minimizing unscheduled downtime, along with diagnostic
+              capabilities for nearly any rotating equipment machine.
+            </li>
             <li>
               <h4 className="text-danger">Onsite Repairs</h4>
               We don’t just identify problems; we solve them. Our onsite repair
@@ -687,7 +636,7 @@ export const serviceItems = [
             </li>
           </ul>
         </div>
-      </div>
+      </Container>
     ),
   },
 ];

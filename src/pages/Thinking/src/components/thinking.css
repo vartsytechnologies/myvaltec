@@ -1,12 +1,16 @@
 /*custom utils*/
 
-li{
-    padding-bottom: 1vh;
+li {
+  padding-bottom: 1vh;
 }
 
-@media (min-width: 992px) {
-    .text-md-justify{
-        text-align: justify;
-    }
+.text-justify {
+  text-align: justify; /* Justify on all screens */
+}
+
+@media (max-width: 576px) {
+  /* Extra small screens */
+  .text-justify-xs-start {
+    text-align: left !important; /* Override Bootstrap */
   }
-  
+}

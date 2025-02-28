@@ -33,7 +33,7 @@ function MarketCard({ title }) {
     <Container>
       <Row xs={1} md={2} clamarketsssName="g-4">
         <Col className="mt-3">
-          <Card className="rounded-lg overflow-hidden">
+          <Card className="p-0 rounded-lg overflow-hidden">
             <Card.Body>
               <Card.Title
                 className="text-danger fs-3 defheadFont"

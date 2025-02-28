@@ -154,9 +154,7 @@ const ProductsSection = () => {
       style={{ backgroundColor: "#f5f5f5" }}
     >
       <Container>
-        <h2 className="text-center text-danger defheadFont mb-3">
-          Products & Services
-        </h2>
+        <h2 className="text-center text-danger defheadFont mb-3">Products</h2>
         <Row>
           {filteredProducts.map((product, index) => (
             <Col md={4} sm={6} key={index} className="mb-4">
