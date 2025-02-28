@@ -12,7 +12,7 @@ function Banner(props) {
   return (
     <div className="banner d-flex align-items-center justify-content-center">
       <h3
-        className="d-none d-md-block banner-text text-center defheadFont mt-5 pt-5"
+        className="d-none d-sm-block banner-text text-center defheadFont mt-5 pt-5"
         data-aos="fade-up"
       >
         {props.title}
