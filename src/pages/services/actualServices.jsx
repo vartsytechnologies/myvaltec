@@ -738,7 +738,7 @@ function Services() {
 
                     {/* Conditional rendering to exclude "Read More" for certain services */}
                     {service.name !== "Calibration Services" &&
-                      service.name !== "Infrastructure and Facilities" &&
+                      service.name !== "Infrastructure & Facilities" &&
                       service.name !== "Public Private Partnerships" && (
                         <Link
                           className="bg-danger p-2 mb-4 text-white fs-5 fw-bolder rounded"

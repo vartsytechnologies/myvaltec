@@ -29,7 +29,7 @@ import tech_1 from "../../../assets/markets_img/new/tech1.jpg";
 import tech_drone from "../../../assets/markets_img/new/tech2.jpg";
 
 const Markets = () => {
-  const [activeTab, setActiveTab] = useState("tech");
+  const [activeTab, setActiveTab] = useState("oilGas");
 
   const tabContent = {
     oilGas: [
