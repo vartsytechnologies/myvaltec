@@ -371,7 +371,7 @@ export default function NavBar() {
               </NavLink>
             </Nav.Link>
           </Nav>
-          <DownloadButton className="defbodyFont mx-3 nav_btn d-lg-block d-md-none me-2" />
+          <DownloadButton className="defbodyFont mx-3 nav_btn d-lg-block d-none me-2" />
           <Button
             className="navy_btn d-none d-lg-block ms-0 ms-lg-3 btn btn-danger defbodyFont"
             onClick={handleSho}
