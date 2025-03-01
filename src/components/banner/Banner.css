@@ -22,4 +22,8 @@
   .banner {
     height: 26vh;
   }
+  .title {
+    font-size: 1.4em;
+    line-height: 1em;
+  }
 }
