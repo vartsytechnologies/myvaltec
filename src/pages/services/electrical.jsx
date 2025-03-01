@@ -56,6 +56,7 @@ const ElectricalHeaderSection = () => {
   );
 };
 
+// eslint-disable-next-line no-unused-vars
 const ProductsSection = () => {
   const allProducts = [
     {

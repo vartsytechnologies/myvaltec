@@ -146,6 +146,7 @@ const ProductsSection = () => {
 
   const [filteredProducts, setFilteredProducts] = useState(allProducts);
 
+  // eslint-disable-next-line no-unused-vars
   const filterProducts = (category) => {
     if (category === "all") {
       setFilteredProducts(allProducts);

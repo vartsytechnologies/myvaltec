@@ -159,16 +159,11 @@ const MillProductsSection = () => {
       text: "We stock tailored oilfield solutions including chemical soap sticks for optimizing well production and efficient rig wash products. Committed to eco-compliance, we provide high-quality pit liners and environmental tanks for contamination prevention.",
       category: "tsm",
     },
-    // {
-    //   name: "Industrial Chemicals and Cleaners",
-    //   image: Pipe_accessories,
-    //   text: "Industrial chemicals and cleaners are formulated to tackle water-insoluble substances, rust, electronic residues and more. Our products ensure optimal equipment functionality and workplace hygiene.",
-    //   category: "tsm",
-    // },
   ];
 
   const [filteredProducts, setFilteredProducts] = useState(allProducts);
 
+  // eslint-disable-next-line no-unused-vars
   const filterProducts = (category) => {
     if (category === "all") {
       setFilteredProducts(allProducts);
