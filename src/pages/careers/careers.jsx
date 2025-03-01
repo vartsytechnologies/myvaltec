@@ -5,20 +5,29 @@ import AOS from "aos";
 function Careers() {
   useEffect(() => {
     AOS.init({
-      duration: 550, // Animation duration in milliseconds
-      offset: 50, // Trigger animations 50px before an element is in view
+      duration: 550,
+      offset: 50,
     });
   }, []);
   return (
-    <div style={{ minHeight: "60vh" }}>
-      <Banner title="Join us in Impact" />
-      <h2 className="text-center mt-3 defheadFont" data-aos="fade-up">
+    <div style={{ minHeight: "62vh" }}>
+      <Banner
+        title={
+          <>
+            Join us to deliver compelling <br />
+            value through technology solution
+          </>
+        }
+      />
+      <h2 className="text-danger"></h2>
+      <h2 className="text-center mt-4  defheadFont" data-aos="fade-up">
         Stay tuned for Career Openings!
       </h2>
-      <h5 className="text-center defbodyFont" data-aos="fade-up">
-        There are no job openings currently. <br />
+      <h5 className="mt-2 text-center defbodyFont" data-aos="fade-up">
+        <span>There are no job openings currently.</span> <br />
         Job Openings will be posted for applications in due time.
       </h5>
+      {/* <h4>Join us to deliver compelling value through technology solution</h4> */}
     </div>
   );
 }

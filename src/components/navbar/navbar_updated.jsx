@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from "react";
-// import { useMediaQuery } from "react-responsive";
 import {
   Navbar,
   Nav,
@@ -9,23 +8,19 @@ import {
   Button,
   Container,
   Row,
-  Collapse,
   Col,
 } from "react-bootstrap";
 import DownloadButton from "./Profile";
 import { PhoneInput } from "react-international-phone";
 import { IoSendSharp } from "react-icons/io5";
-import { IoIosArrowUp } from "react-icons/io";
 import valtecLogo from "../../assets/valtec_logo.png";
 import { NavLink } from "react-router-dom";
 import navbar from "./navbar.css";
 import emailjs from "@emailjs/browser";
-import { Link } from "react-router-dom";
 import { VscArrowSmallRight } from "react-icons/vsc";
 import { RiArrowDownSLine } from "react-icons/ri";
 // Imports for form
 import Form from "react-bootstrap/Form";
-// import Button from "react-bootstrap/Button";
 import { RxHamburgerMenu } from "react-icons/rx";
 import AOS from "aos";
 export default function NavBar() {
@@ -95,10 +90,6 @@ export default function NavBar() {
   };
   return (
     <>
-      <style>
-        {`
-`}
-      </style>
       <Navbar bg="light" expand="lg" className="sticky-top px-3">
         <Container>
           <Navbar.Brand href="/">

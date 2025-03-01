@@ -146,7 +146,7 @@ export const serviceItems = [
     detailedContent: <div></div>,
   },
   {
-    name: "Additives : Fuel, Lubricants and Greases",
+    name: "Additives : Fuel, Lubricants & Greases",
     slug: "additives",
     initialImage: lubricants,
     imgOrder: 0,

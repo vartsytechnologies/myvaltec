@@ -2,10 +2,24 @@
   background-image: url("../../assets/Thinking.jpeg");
   background-size: cover;
   background-position: center;
-  height: 21vh;
+  height: 22vh;
 }
 
 .banner-text {
   font-size: 3rem;
   color: white;
+}
+.title {
+  font-size: 1.6em;
+  line-height: 1.1em;
+}
+@media (max-width: 768px) {
+  .banner {
+    height: 24vh;
+  }
+}
+@media (max-width: 448px) {
+  .banner {
+    height: 26vh;
+  }
 }
