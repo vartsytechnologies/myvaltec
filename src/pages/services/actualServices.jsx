@@ -1,5 +1,13 @@
 import { React, useState, useEffect } from "react";
-import { Container, Row, Col, Modal, Button, Carousel } from "react-bootstrap";
+import {
+  Container,
+  Row,
+  Col,
+  Modal,
+  Card,
+  Button,
+  Carousel,
+} from "react-bootstrap";
 import Banner from "../../components/banner/Banner";
 import "./services.css";
 
@@ -73,7 +81,6 @@ import { TbSettingsAutomation } from "react-icons/tb";
 import { IoCreate } from "react-icons/io5";
 import laser from "../../assets/services_img/reliability/Laser Alignment Machine.jpg";
 import vibration from "../../assets/services_img/reliability/Vibration Analysis Machine.jpg";
-import chess from "../../assets/services_img/sustainability/new1.jpg";
 
 const epcDetails = [
   {
@@ -148,26 +155,37 @@ export const serviceItems = [
     description:
       "VALTEC offers a range of high-quality fuel additives and lubricants designed to enhance equipment performance, reduce emissions, and extend machinery life. Our solutions are formulated for the demanding conditions of the energy and industrial sectors, providing improved efficiency and reliability in day-to-day operations. Partner with us for a greener, more efficient approach to fuel and lubricant management.",
     detailedContent: (
-      <div>
-        <ImageGallery />
-        <p>
-          Industry has struggled forever to find a way to significantly reduce
-          the cost of maintaining its capital equipment. Friction and
-          inefficient combustion are the greatest destroyers of machinery,
-          efficiency, and the environment. We provide the industrial world with
-          the most powerful lubricants and fuel additives that not only extend
-          the life of equipment but also reduce greenhouse gas emissions, fuel
-          consumption, maintenance, and replacement parts costs. The Fuel Ox®
-          Infinity Lube™ and Fuel Ox® fuel additive line of products have
-          accomplished this and by doing so offer value far beyond that of our
-          competition. Our patented lubricant and fuel additive formulas,
-          derived from renewable plant sources, are proven to deeply penetrate
-          surfaces and reduce friction. They have been tested against all
-          competitive products in the marketplace and our results show that they
-          outlast conventional oil by up to 4x while reducing emissions by up to
-          50%.
-        </p>
-      </div>
+      <Container className="text-justify text-justify-xs-start">
+        <div>
+          <p>
+            VALTEC offers a range of high-quality fuel additives and lubricants
+            designed to enhance equipment performance, reduce emissions, and
+            extend machinery life. Our solutions are formulated for the
+            demanding conditions of the energy and industrial sectors, providing
+            improved efficiency and reliability in day-to-day operations.
+            Partner with us for a greener, more efficient approach to fuel and
+            lubricant management.
+          </p>
+          <ImageGallery />
+          <p>
+            Industry has struggled forever to find a way to significantly reduce
+            the cost of maintaining its capital equipment. Friction and
+            inefficient combustion are the greatest destroyers of machinery,
+            efficiency, and the environment. We provide the industrial world
+            with the most powerful lubricants and fuel additives that not only
+            extend the life of equipment but also reduce greenhouse gas
+            emissions, fuel consumption, maintenance, and replacement parts
+            costs. The Fuel Ox® Infinity Lube™ and Fuel Ox® fuel additive line
+            of products have accomplished this and by doing so offer value far
+            beyond that of our competition. Our patented lubricant and fuel
+            additive formulas, derived from renewable plant sources, are proven
+            to deeply penetrate surfaces and reduce friction. They have been
+            tested against all competitive products in the marketplace and our
+            results show that they outlast conventional oil by up to 4x while
+            reducing emissions by up to 50%.
+          </p>
+        </div>
+      </Container>
     ),
   },
   {
@@ -241,7 +259,7 @@ export const serviceItems = [
       </p>
     ),
     detailedContent: (
-      <Container className="p-0 text-xs-start">
+      <Container className="p-0 text-justify text-justify-xs-start">
         <div className="row">
           <div className="col-12">
             <h1 className="text-danger defheadFont">Data & Analytics</h1>
@@ -479,7 +497,7 @@ export const serviceItems = [
       </p>
     ),
     detailedContent: (
-      <Container>
+      <Container className="text-justify text-justify-xs-start">
         <div className="service-description">
           <h2 className="text-danger p-0 defheadFont">
             Risk and Assurance Strategy
@@ -570,7 +588,7 @@ export const serviceItems = [
       </p>
     ),
     detailedContent: (
-      <Container>
+      <Container className="text-justify text-justify-xs-start">
         <Row>
           <Col>
             <img
@@ -690,6 +708,36 @@ function Services() {
             {serviceItems.map((service, idx) => (
               <Col key={idx} data-aos="fade-up" className="py-0 mb-5">
                 <Row className="justify-content-between align-items-center">
+                  {/* <Col
+                    xs={12}
+                    lg={6}
+                    className={`zoom-out-container mb-0 mb-md-4 align-self-center order-md-${service.imgOrder}`}
+                  >
+                    <div
+                      className="image-Container align-self-center pe-3 pt-0"
+                      style={{
+                        width: "100%",
+                        height: "auto",
+                        overflow: "hidden",
+                      }}
+                    >
+                      <Card
+                        style={{ boxShadow: "0px 2px 5px rgba(0, 0, 0, 0.3)" }}
+                      >
+                        <Card.Img
+                          style={{
+                            width: "100%",
+                            maxHeight: "550px",
+                            objectFit: "contain",
+                          }}
+                          className="h-auto"
+                          src={service.initialImage}
+                          alt={service.name}
+                          onClick={() => handleShowImageModal(service)}
+                        />
+                      </Card>
+                    </div>
+                  </Col> */}
                   <Col
                     xs={12}
                     lg={6}
@@ -697,21 +745,34 @@ function Services() {
                   >
                     <div
                       className="image-Container align-self-center pe-3 pt-0"
-                      style={{ width: "100%", height: "auto" }}
+                      style={{
+                        width: "100%",
+                        height: "auto",
+                        overflow: "hidden",
+                      }}
                     >
-                      <img
-                        style={{
-                          width: "100%",
-                          height: "500px",
-                          objectFit: "contain",
-                        }}
-                        src={service.initialImage}
-                        alt={service.name}
-                        className={`img-fluid `}
-                        onClick={() => handleShowImageModal(service)}
-                      />
+                      <Card
+                        style={{ boxShadow: "0px 2px 5px rgba(0, 0, 0, 0.3)" }}
+                      >
+                        <Card.Img
+                          style={{
+                            width: "100%",
+                            maxHeight: "550px",
+                            objectFit: "contain",
+                            padding:
+                              service.name === "Calibration Services"
+                                ? "1rem"
+                                : "0",
+                          }}
+                          className="h-auto"
+                          src={service.initialImage}
+                          alt={service.name}
+                          onClick={() => handleShowImageModal(service)}
+                        />
+                      </Card>
                     </div>
                   </Col>
+
                   <Col
                     xs={12}
                     lg={6}

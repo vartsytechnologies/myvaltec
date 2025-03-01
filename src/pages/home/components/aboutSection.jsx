@@ -1,7 +1,5 @@
 import { React, useEffect } from "react";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import { Row, Col, Card, Container } from "react-bootstrap";
 import DefaultButton from "../../../components/defaultButton";
 import aboutImg from "../../../assets/agamine_bollard.jpg";
 import AOS from "aos";
@@ -48,29 +46,25 @@ function AboutSection() {
                   </Link>
                 </p>
               </Col>
+
               <Col
                 xs={12}
                 lg={6}
                 className="zoom-out-container"
                 data-aos="fade-up"
                 data-aos-delay="500"
+                style={{
+                  borderRadius: "0",
+                  boxShadow: "0px 2px 5px rgba(0, 0, 0, 0.3)",
+                }}
               >
-                <img
-                  src={aboutImg}
-                  style={{ maxHeight: "400px" }}
-                  alt="about-valtec"
-                  className="w-100 aboutImgFullWidth"
-                  // style={{
-                  //   height: "100%",
-                  //   width: "auto",
-                  //   objectFit: "cover",
-                  // }}
-                  // style={{
-                  //   width: "100%" /* Takes full width of its container */,
-                  //   height: "60%" /* Sets height to 60% of its container */,
-                  //   objectFit: "cover" /* Ensures the image does not stretch */,
-                  // }}
-                />
+                <Card>
+                  <Card.Img
+                    className="img-fluid w-100 h-auto"
+                    src={aboutImg}
+                    style={{ borderRadius: "0", maxHeight: "400px" }}
+                  />
+                </Card>
               </Col>
             </Row>
           </Col>

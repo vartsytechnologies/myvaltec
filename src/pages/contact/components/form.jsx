@@ -2,7 +2,7 @@ import React from "react";
 import { Row, Col } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import { PhoneInput } from "react-international-phone";
+import { PhoneInput, isValidPhoneNumber } from "react-international-phone";
 import "react-international-phone/style.css";
 import "./Contacts.css";
 import AOS from "aos";
@@ -22,7 +22,7 @@ function ContactForm() {
     });
   }, []);
 
-  //Form handling
+  // Form handling
   const sendDetails = (e) => {
     e.preventDefault();
     emailjs
@@ -67,7 +67,12 @@ function ContactForm() {
               name="sender_email"
             />
           </Form.Group>
-          <Form.Group as={Col} className="mb-3" controlId="formPhoneNumber">
+          <Form.Group
+            as={Col}
+            className="mb-3"
+            controlId="formPhoneNumber"
+            required
+          >
             <Form.Label>Phone Number</Form.Label>
             <div
               className="phone-input-container w-100"
@@ -87,6 +92,7 @@ function ContactForm() {
               />
             </div>
           </Form.Group>
+
           <Form.Group as={Col} className="mb-3">
             <Form.Label>Name of Company or Institution</Form.Label>
             <Form.Control

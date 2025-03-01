@@ -127,8 +127,8 @@ const projects = [
     carouselImages: [bently1, bently2, bently3],
   },
   {
-    title: "Rango Construction Limited",
-    description: "Solar traffic light installation for Suame Interchange",
+    title: "Solar Traffic Light",
+    description: "Solar traffic light installation for road contractor",
     imgSrc: traffic,
     modalProjectName: <p className="pt-3">Rango Construction Limited</p>,
     modalContent: (

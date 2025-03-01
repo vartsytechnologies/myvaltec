@@ -54,3 +54,23 @@ span {
 .marker li::marker {
   color: red;
 }
+
+@media (max-width: 448px) {
+  .s-icon {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .img-fluids {
+    height: 300px;
+  }
+}
+.text-justify {
+  text-align: justify;
+}
+
+@media (max-width: 576px) {
+  .text-justify-xs-start {
+    text-align: left !important;
+  }
+}

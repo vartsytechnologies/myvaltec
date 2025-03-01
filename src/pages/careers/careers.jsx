@@ -17,7 +17,7 @@ function Careers() {
       </h2>
       <h5 className="text-center defbodyFont" data-aos="fade-up">
         There are no job openings currently. <br />
-        Job Openings will be posted for applications in due time
+        Job Openings will be posted for applications in due time.
       </h5>
     </div>
   );

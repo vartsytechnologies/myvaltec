@@ -25,6 +25,7 @@ const ServiceDetails = () => {
         <Container className="py-3 mt-5 text-justify">
           <div>
             {service.name !== "Sustainability" &&
+              service.name !== "Additives : Fuel, Lubricants and Greases" &&
               service.name !== "Data & Analytics" && (
                 <p className="defbodyFont" data-aos="fade-down">
                   {service.description}

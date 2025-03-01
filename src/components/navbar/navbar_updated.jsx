@@ -188,7 +188,7 @@ export default function NavBar() {
                   </li>
                   <li className="listnav mb-1 ms-2">
                     <NavLink
-                      to="/service/digital_solutions"
+                      to="/service/data_analytics"
                       className="navlink d-flex align-items-center text-decoration-underline"
                     >
                       <VscArrowSmallRight className="me-2" />

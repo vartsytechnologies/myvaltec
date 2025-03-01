@@ -37,10 +37,10 @@ export default function Contact() {
               <div className="row">
                 <div className="col-12">
                   <div className="row mt-2">
-                    <div className="col-1">
+                    <div className="d-none d-md-block col-md-1 col-lg-1">
                       <GoHomeFill className="icon" />
                     </div>
-                    <div className="col-11">
+                    <div className="col-12 col-sm-12 col-md-11 ">
                       <p className="pt-2">
                         <b>
                           <span style={{ color: "rgba(255, 17, 67, 1)" }}>
@@ -63,10 +63,10 @@ export default function Contact() {
                 <div className="w-100"></div>
                 <div className="col-12">
                   <div className="row mt-2">
-                    <div className="col-1">
+                    <div className="d-none d-md-block col-md-1 col-lg-1">
                       <LuPhoneCall className="icon" />
                     </div>
-                    <div className="col-11">
+                    <div className="col-12 col-sm-12 col-md-11">
                       <p>
                         <b>
                           <span style={{ color: "rgba(255, 17, 67, 1)" }}>
@@ -89,11 +89,11 @@ export default function Contact() {
                 <div className="w-100"></div>
                 <div className="col-12">
                   <div className="row">
-                    <div className="col-1">
+                    <div className="d-none d-md-block col-md-1 col-lg-1">
                       <MdEmail className="icon" />
                     </div>
-                    <div className="col-11">
-                      <p>
+                    <div className="col-12 col-sm-12 col-md-11">
+                      <p className="pt-2">
                         <b>
                           <span style={{ color: "rgba(255, 17, 67, 1)" }}>
                             Email

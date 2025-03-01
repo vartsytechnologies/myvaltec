@@ -22,32 +22,42 @@ import "./components/thinking.css";
 const teamMembers = [
   {
     // name: "Director 1",
-    title: "Finance Director",
+    title: "President & CEO",
     image: "https://via.placeholder.com/150", // Replace with the actual image URL
   },
   {
     // name: "Director 2",
-    title: "Technical Director",
+    title: "Director, Finance & Administration",
     image: "https://via.placeholder.com/150",
   },
   {
     // name: "Director 3",
-    title: "Growth & Strategic Partnerships",
+    title: "Director, Technical",
     image: "https://via.placeholder.com/150",
   },
   {
     // name: "Director 4",
-    title: "Human Resource Manager",
+    title: "Director, Growth & Strategic Partnerships",
     image: "https://via.placeholder.com/150",
   },
   {
     // name: "Director 5",
-    title: "HSQ Manager",
+    title: "Manager, Sales & Marketing",
     image: "https://via.placeholder.com/150",
   },
   {
     // name: "Director 6",
-    title: "Marketing Manager",
+    title: "Manager, People & Culture",
+    image: "https://via.placeholder.com/150",
+  },
+  {
+    // name: "Director 7",
+    title: "Manager, HSEQ",
+    image: "https://via.placeholder.com/150",
+  },
+  {
+    // name: "Director 8",
+    title: "Manager, Innovation & Communication",
     image: "https://via.placeholder.com/150",
   },
 ];
@@ -67,7 +77,7 @@ function App() {
       <Container className="mt-4 px-0">
         <Container className="mt-4 px-0">
           <Row className="flex-column gy-2 mt-5">
-            <Col data-aos="fade-up" className="py-4">
+            <Col data-aos="fade-up" className="">
               <Row className="justify-content-between">
                 <Col
                   xs={12}
@@ -99,20 +109,27 @@ function App() {
                   </p>
                   <p className="mt-4"></p>
                 </Col>
+
                 <Col
                   xs={12}
                   lg={6}
                   className="zoom-out-container mb-5 align-self-center"
+                  style={{
+                    borderRadius: "0",
+                    boxShadow: "2px 2px 2px rgba(0, 0, 0, 0.3)",
+                  }}
                 >
                   <div
-                    className="image-Container pe-3 pt-0 "
+                    className="image-Container pt-0 "
                     style={{ width: "100%", height: "auto" }}
                   >
-                    <img
-                      src={companyOverview}
-                      alt="Company"
-                      className="img-fluid"
-                    />
+                    <Card>
+                      <Card.Img
+                        className="w-100 h-auto"
+                        src={companyOverview}
+                        style={{ borderRadius: "0" }}
+                      />
+                    </Card>
                   </div>
                 </Col>
               </Row>
@@ -124,12 +141,23 @@ function App() {
                   Compliance
                   lg={6}
                   className="zoom-out-container mb-5 align-self-center"
+                  style={{
+                    borderRadius: "0",
+                    boxShadow: "2px 2px 2px rgba(0, 0, 0, 0.3)",
+                  }}
                 >
                   <div
-                    className="image-Container pe-3 pt-0 "
+                    className="image-Container pt-0 "
                     style={{ width: "100%", height: "auto" }}
                   >
-                    <img src={purpose} alt="Company" className="img-fluid" />
+                    <Card>
+                      <Card.Img
+                        className="w-100 h-auto"
+                        src={purpose}
+                        alt="Purpose"
+                        style={{ borderRadius: "0" }}
+                      />
+                    </Card>
                   </div>
                 </Col>
                 <Col className="align-self-center p-auto">
@@ -179,18 +207,26 @@ function App() {
                 <Row className="justify-content-between">
                   <Col
                     xs={12}
+                    Compliance
                     lg={6}
                     className="zoom-out-container mb-5 align-self-center"
+                    style={{
+                      borderRadius: "0",
+                      boxShadow: "2px 2px 2px rgba(0, 0, 0, 0.3)",
+                    }}
                   >
                     <div
-                      className="image-Container pe-3 pt-0 "
+                      className="image-Container pt-0 "
                       style={{ width: "100%", height: "auto" }}
                     >
-                      <img
-                        src={valtec_digital}
-                        alt="Company"
-                        className="img-fluid"
-                      />
+                      <Card>
+                        <Card.Img
+                          className="w-100 h-auto"
+                          src={valtec_digital}
+                          alt="valtec_digital"
+                          style={{ borderRadius: "0" }}
+                        />
+                      </Card>
                     </div>
                   </Col>
                   <Col className="align-self-center p-auto">
@@ -258,20 +294,29 @@ function App() {
                     </p>
                     <p className="mt-4"></p>
                   </Col>
+
                   <Col
                     xs={12}
+                    Compliance
                     lg={6}
                     className="zoom-out-container mb-5 align-self-center"
+                    style={{
+                      borderRadius: "0",
+                      boxShadow: "2px 2px 2px rgba(0, 0, 0, 0.3)",
+                    }}
                   >
                     <div
-                      className="image-Container pe-3 pt-0 "
+                      className="image-Container pt-0 "
                       style={{ width: "100%", height: "auto" }}
                     >
-                      <img
-                        src={ethics_and_compliance}
-                        alt="Company"
-                        className="img-fluid"
-                      />
+                      <Card>
+                        <Card.Img
+                          className="w-100 h-auto"
+                          src={ethics_and_compliance}
+                          alt="Ethics&Compliance"
+                          style={{ borderRadius: "0" }}
+                        />
+                      </Card>
                     </div>
                   </Col>
                 </Row>
@@ -285,18 +330,26 @@ function App() {
               <Row className="justify-content-between">
                 <Col
                   xs={12}
+                  Compliance
                   lg={6}
                   className="zoom-out-container mb-5 align-self-center"
+                  style={{
+                    borderRadius: "0",
+                    boxShadow: "2px 2px 2px rgba(0, 0, 0, 0.3)",
+                  }}
                 >
                   <div
-                    className="image-Container pe-3 pt-0 "
+                    className="image-Container pt-0 "
                     style={{ width: "100%", height: "auto" }}
                   >
-                    <img
-                      src={quality_assurance}
-                      alt="Company"
-                      className="img-fluid"
-                    />
+                    <Card>
+                      <Card.Img
+                        className="w-100 h-auto"
+                        src={quality_assurance}
+                        alt="Quality_Assurance"
+                        style={{ borderRadius: "0" }}
+                      />
+                    </Card>
                   </div>
                 </Col>
                 <Col className="align-self-center p-auto">
@@ -387,7 +440,10 @@ function App() {
       </Container>
       <Container>
         <div>
-          <h3 className="text-dark text-center pt-3 mt-5" data-aos="fade-up">
+          <h3
+            className="text-danger fw-bold ms-3 text-start pt-0 mt-0 mt-sm-5 pt-sm-3"
+            data-aos="fade-up"
+          >
             Team Members
           </h3>
         </div>
@@ -395,7 +451,7 @@ function App() {
           <Col lg={12}>
             <Row>
               {teamMembers.map((member, index) => (
-                <Col key={index} xs={12} sm={6} md={5} lg={3} className="mb-4">
+                <Col key={index} xs={12} sm={6} md={5} lg={3} className="mb-3">
                   <Card className="text-center h-100 d-flex flex-column">
                     <Card.Img
                       className="border border-secondary border-1"

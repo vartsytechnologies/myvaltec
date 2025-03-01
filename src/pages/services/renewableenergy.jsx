@@ -41,8 +41,15 @@ const PVFSection = () => {
             energy goals and environmental standards.
           </p>
         </Col>
-        <Col lg={5} md={12} className="text-center mt-lg-5 mt-0">
-          <img src={Renewable} alt="PVF Products" className="img-fluid" />
+
+        <Col className="text-center mt-lg-5 mt-0">
+          <Card style={{ boxShadow: "0px 2px 5px rgba(0, 0, 0, 0.3)" }}>
+            <Card.Img
+              className="img-fluid w-100 h-auto"
+              src={Renewable}
+              alt="Renewable Energy"
+            />
+          </Card>
         </Col>
       </Row>
     </Container>

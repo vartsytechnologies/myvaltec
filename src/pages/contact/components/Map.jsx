@@ -1,5 +1,6 @@
 import AOS from "aos";
 import { useEffect } from "react";
+
 import "aos/dist/aos.css";
 function Map() {
   useEffect(() => {
@@ -11,13 +12,14 @@ function Map() {
   return (
     <>
       <div
-        className="d-flex align-items-center justify-content-center"
+        className="p-0 m-0 d-flex align-items-center justify-content-center"
         style={{
           width: "100%",
           height: "400px",
-          outline: "2px solid red",
-          outlineOffset: "12px",
-          borderRadius: "1px",
+          // outline: "2px solid rgba(255, 17, 67, 1)",
+          outlineOffset: "4px",
+          borderRadius: "2px",
+          boxShadow: "1px 1px 1px rgba(0, 0, 0, 0.3)",
         }}
       >
         <iframe
