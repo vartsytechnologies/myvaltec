@@ -82,6 +82,7 @@ import { IoCreate } from "react-icons/io5";
 import laser from "../../assets/services_img/reliability/Laser Alignment Machine.jpg";
 import vibration from "../../assets/services_img/reliability/Vibration Analysis Machine.jpg";
 
+// eslint-disable-next-line no-unused-vars
 const epcDetails = [
   {
     name: "Engineering, Procurement, Consulting & Project Management",
@@ -429,8 +430,28 @@ export const serviceItems = [
             </h1>
 
             <Row className="align-items-center">
-              <Col lg={6} md={12}>
-                <img src={visualize} style={{}} />
+              <Col xs={12} lg={6} className="mb-0 mb-md-4 align-self-center">
+                <div
+                  className="image-Container align-self-center pe-3 pt-0"
+                  style={{
+                    width: "100%",
+                    height: "auto",
+                    overflow: "hidden",
+                  }}
+                >
+                  <Card>
+                    <Card.Img
+                      style={{
+                        width: "100%",
+                        maxHeight: "550px",
+                        objectFit: "contain",
+                      }}
+                      src={visualize}
+                      className="h-auto"
+                      alt="visualize"
+                    />
+                  </Card>
+                </div>
               </Col>
               <Col lg={6} md={12} className="defbodyFont mt-3 lg-mt-0">
                 VALTEC brings your data to life with stunning visuals and
@@ -590,23 +611,59 @@ export const serviceItems = [
     detailedContent: (
       <Container className="text-justify text-justify-xs-start">
         <Row>
-          <Col>
-            <img
-              src={vibration}
+          <Col
+            xs={12}
+            lg={6}
+            className="zoom-out-container mb-0 mb-md-4 align-self-center"
+          >
+            <div
+              className="image-Container align-self-center pe-3 pt-0"
               style={{
-                objectFit: "cover",
-                height: "100%",
+                width: "100%",
+                height: "auto",
+                overflow: "hidden",
               }}
-            />
+            >
+              <Card style={{ boxShadow: "0px 2px 5px rgba(0, 0, 0, 0.3)" }}>
+                <Card.Img
+                  style={{
+                    width: "100%",
+                    maxHeight: "550px",
+                    objectFit: "contain",
+                  }}
+                  src={vibration}
+                  className="h-auto"
+                  alt="visualize"
+                />
+              </Card>
+            </div>
           </Col>
-          <Col md={6} xs={12}>
-            <img
-              src={laser}
+          <Col
+            xs={12}
+            lg={6}
+            className="zoom-out-container mb-0 mb-md-4 align-self-center"
+          >
+            <div
+              className="image-Container align-self-center pe-3 pt-0"
               style={{
-                objectFit: "cover",
-                height: "100%",
+                width: "100%",
+                height: "auto",
+                overflow: "hidden",
               }}
-            />
+            >
+              <Card style={{ boxShadow: "0px 2px 5px rgba(0, 0, 0, 0.3)" }}>
+                <Card.Img
+                  style={{
+                    width: "100%",
+                    maxHeight: "550px",
+                    objectFit: "contain",
+                  }}
+                  src={laser}
+                  className="h-auto"
+                  alt="laser"
+                />
+              </Card>
+            </div>
           </Col>
         </Row>
         <h2 className="mt-4 pt-3 defheadFont text-danger">
@@ -708,36 +765,6 @@ function Services() {
             {serviceItems.map((service, idx) => (
               <Col key={idx} data-aos="fade-up" className="py-0 mb-5">
                 <Row className="justify-content-between align-items-center">
-                  {/* <Col
-                    xs={12}
-                    lg={6}
-                    className={`zoom-out-container mb-0 mb-md-4 align-self-center order-md-${service.imgOrder}`}
-                  >
-                    <div
-                      className="image-Container align-self-center pe-3 pt-0"
-                      style={{
-                        width: "100%",
-                        height: "auto",
-                        overflow: "hidden",
-                      }}
-                    >
-                      <Card
-                        style={{ boxShadow: "0px 2px 5px rgba(0, 0, 0, 0.3)" }}
-                      >
-                        <Card.Img
-                          style={{
-                            width: "100%",
-                            maxHeight: "550px",
-                            objectFit: "contain",
-                          }}
-                          className="h-auto"
-                          src={service.initialImage}
-                          alt={service.name}
-                          onClick={() => handleShowImageModal(service)}
-                        />
-                      </Card>
-                    </div>
-                  </Col> */}
                   <Col
                     xs={12}
                     lg={6}
@@ -832,7 +859,7 @@ function Services() {
                   <img
                     src={image}
                     alt={`Slideshow ${idx + 1}`}
-                    className="d-block w-100 modal-img" // Ensure modal images have the same size
+                    className="d-block w-100 modal-img"
                   />
                 </Carousel.Item>
               ))}
