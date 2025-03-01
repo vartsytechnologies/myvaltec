@@ -1,7 +1,6 @@
 .footer {
   background-color: #ce0d37;
   color: white;
-  /* padding: 20px 0; */
 }
 
 .footer-logo {
@@ -45,7 +44,7 @@
   .footer-links-group {
     align-items: center;
   }
-  .footer-links-group{
-    margin-top:30px;
+  .footer-links-group {
+    margin-top: 30px;
   }
 }

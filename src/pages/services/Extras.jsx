@@ -1,4 +1,3 @@
-// import NavBar from "../../components/navbar/navbar_updated";
 import { useParams } from "react-router-dom";
 import Banner from "../../components/banner/Banner";
 import { useEffect } from "react";

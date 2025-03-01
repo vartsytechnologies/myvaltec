@@ -1,18 +1,9 @@
 import { React, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-// import Image from "react-bootstrap/Image";
-// import kin_r from "../../../assets/partnerIcons/kin_r.png";
 import agamine_r from "../../../assets/partnerIcons/agamine_r.png";
-// import fulltrades_r from "../../../assets/partnerIcons/fulltrades_r.png";
-// import kimray_r from "../../../assets/partnerIcons/kimray_r.png";
-// import micin_r from "../../../assets/partnerIcons/micin_r.png";
-// import pana_r from "../../../assets/partnerIcons/pana_r.png";
-// import russ_r from "../../../assets/partnerIcons/russ_r.png";
-// import druck_r from "../../../assets/partnerIcons/druck_r.png";
 import cans_r from "../../../assets/partnerIcons/cans_r.png";
 import huawei_e from "../../../assets/partnerIcons/huawei_e.png";
 import fuelox from "../../../assets/partnerIcons/fuelox.png";
-// import druck_r from "../../../assets/partnerIcons/druck_r.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 

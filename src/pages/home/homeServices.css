@@ -16,10 +16,7 @@
   border: 1px solid rgba(0, 0, 0, 0.521);
   border-top: 5px solid rgba(255, 17, 67, 1);
 }
-/* .contactForm:first-child {
-  margin-bottom: 140px;
-  padding-bottom: 0px;
-} */
+
 .form-control {
   border: 1px solid black;
   border-radius: 0;
@@ -29,12 +26,7 @@
   outline: none;
   box-shadow: 0 0 3px rgba(255, 17, 67, 1);
 }
-@media (max-width: 1200px) {
-  /* .contactForm:first-child {
-    margin-bottom: 10px;
-    padding-bottom: 0px;
-  } */
-}
+
 .i-cons {
   height: 70px;
   width: 70px;

@@ -10,20 +10,26 @@
   color: white;
 }
 .title {
-  font-size: 1.6em;
+  font-size: 1.7em;
   line-height: 1.1em;
 }
+
 @media (max-width: 768px) {
   .banner {
     height: 24vh;
   }
+  .title {
+    font-size: 1.6em;
+    line-height: 1.06em;
+  }
 }
+
 @media (max-width: 448px) {
   .banner {
-    height: 26vh;
+    height: 25.5vh;
   }
   .title {
     font-size: 1.4em;
-    line-height: 1em;
+    line-height: 1.05em;
   }
 }

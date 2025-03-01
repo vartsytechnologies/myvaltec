@@ -7,7 +7,6 @@ import Cent from "../../assets/services_img/pumps/Centrifugal_pumps_thumb.webp";
 import ChemInj from "../../assets/services_img/pumps/Chemical_injection_pumps_thumb.webp";
 import MechSeal from "../../assets/services_img/pumps/Mechanical_seals_thumb.webp";
 import Positive from "../../assets/services_img/pumps/Positive-displacement-thumbnail.webp";
-import Pumpserv from "../../assets/services_img/pumps/Pump_service_repair_thumb.jpg";
 import Rent from "../../assets/services_img/pumps/Rental-pumps-thumbnail.webp";
 import Swd from "../../assets/services_img/pumps/SWD-Turnkey-Package.webp";
 import Pumpsthumb from "../../assets/services_img/pumps/Pumps_thumbnail.webp";
@@ -86,12 +85,7 @@ const ProductsSection = () => {
       text: "VALTEC is your solution for pumps that deliver constant flow rates at a given speed (rpm) no matter the system discharge pressure",
       category: "all",
     },
-    // {
-    //   name: "Pump Service & Repair",
-    //   image: Pumpserv,
-    //   text: "VALTEC offers an entire fleet of pump field services and maintenance programs for in-house repairs, upgrades, and replacement parts.",
-    //   category: "tsm",
-    // },
+
     {
       name: "Rental Pumps",
       image: Rent,

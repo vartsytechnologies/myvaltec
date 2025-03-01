@@ -1,8 +1,9 @@
 # myvaltec
 
-Valtec website development repo
+Valtec Website development repo
 
 Tech stack
+
 - React Js
 - React-bootstrap
 - Bootstrap

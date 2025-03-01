@@ -1,5 +1,5 @@
 import React from "react";
-import "./services.css"; // Custom styling for consistent image size
+import "./services.css";
 import f1 from "../../assets/services_img/new/fuel/f1.png";
 import f2 from "../../assets/services_img/new/fuel/f2.png";
 import f3 from "../../assets/services_img/new/fuel/f3.png";
@@ -17,7 +17,6 @@ const ImageGallery = () => {
           <div key={index} className="col-md-4 col-sm-4 mb-4">
             <div className="image-wrapper border rounded shadow-sm">
               {" "}
-              {/* Bootstrap border and shadow */}
               <img
                 src={src}
                 alt={`Gallery ${index + 1}`}

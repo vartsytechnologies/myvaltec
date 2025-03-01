@@ -13,8 +13,8 @@ import "aos/dist/aos.css";
 export default function Contact() {
   useEffect(() => {
     AOS.init({
-      duration: 550, // Animation duration in milliseconds
-      offset: 50, // Trigger animations 50px before an element is in view
+      duration: 550,
+      offset: 50,
     });
   }, []);
   return (

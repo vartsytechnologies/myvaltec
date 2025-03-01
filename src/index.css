@@ -1,3 +1,6 @@
+:root {
+  --bs-gutter-x: 1rem;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -15,12 +18,4 @@ code {
 .react-international-phone-input-container .react-international-phone-input {
   width: 100%;
   height: 200px;
-}
-/* img {
-  width: 100%;
-  height: 400px;
-  object-fit: contain;
-} */
-:root {
-  --bs-gutter-x: 1rem;
 }

@@ -2,10 +2,6 @@ import { React, useState, useEffect } from "react";
 import { Card, Carousel } from "react-bootstrap";
 import AOS from "aos";
 import { Modal, Button } from "react-bootstrap";
-// import projectImage from "../../../assets/ENI OCTP ORF1.jpg";
-// import projectImage2 from "../../../assets/ENI OCTP ORF2.jpeg";
-// import projectImage3 from "../../../assets/ENI OCTP ORF3.jpeg";
-//import { Carousel } from "react-bootstrap";
 
 function ProjectCard({
   title,

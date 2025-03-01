@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Button, Card } from "react-bootstrap";
-import Pvf from "../../assets/services_img/PVF.jpg";
 import Pipe from "../../assets/services_img/pvf/Pipe_and_Tube_Thumbnail.jpg";
 import Valves from "../../assets/services_img/pvf/Valves_Thumbnails.jpg";
 import Act from "../../assets/services_img/pvf/Actuation_Thumbnails.jpg";
@@ -170,7 +169,6 @@ const ElectricalServicePage = () => {
     <>
       <BreadcrumbSection />
       <ElectricalHeaderSection />
-      {/* <ProductsSection /> */}
     </>
   );
 };

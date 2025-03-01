@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, Row, Col, Button, Card } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
 
 import Batteries_thumb from "../../assets/services_img/mill/Batteries_thumb.webp";
 import Drill from "../../assets/services_img/mill/Drilling_and_production_thumb.webp";

@@ -20,8 +20,8 @@ import "aos/dist/aos.css";
 function ServiceSection() {
   useEffect(() => {
     AOS.init({
-      duration: 350, // Animation duration in milliseconds
-      offset: 50, // Trigger animations 50px before an element is in view
+      duration: 350,
+      offset: 50,
     });
   }, []);
   return (
@@ -41,7 +41,7 @@ function ServiceSection() {
           >
             <i>We serve our clients very well in these areas of services</i>
           </p>
-          {/* <hr style={{ height: "3px", background: "black", opacity: "1" }} /> */}
+
           <Row>
             <Col xs={12} lg={6}>
               <Row className="flex-column">

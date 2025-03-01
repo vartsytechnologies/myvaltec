@@ -1,8 +1,5 @@
-import { React } from "react";
+import { useEffect, React } from "react";
 import Banner from "../../../components/banner/Banner";
-import CompanyOverview from "./components/CompanyOverview";
-import Purpose from "./components/Purpose";
-import Section from "./components/Section";
 import { Container, Row, Col } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import valtec_digital from "../../../assets/valtec_digital.jpg";
@@ -13,17 +10,16 @@ import companyOverview from "../../../assets/solars.jpeg";
 import purpose from "../../../assets/purpose.jpg";
 import quality_assurance from "../../../assets/q_a.jpg";
 import ethics_and_compliance from "../../../assets/e_c.webp";
-import "../src/components/thinking.css";
-import { useEffect } from "react";
+
 import AOS from "aos";
-import "aos/dist/aos.css"; // Import the CSS styles;
+import "aos/dist/aos.css";
 import "./components/thinking.css";
 
 const teamMembers = [
   {
     // name: "Director 1",
     title: "President & CEO",
-    image: "https://via.placeholder.com/150", // Replace with the actual image URL
+    image: "https://via.placeholder.com/150",
   },
   {
     // name: "Director 2",
@@ -65,15 +61,14 @@ const teamMembers = [
 function App() {
   useEffect(() => {
     AOS.init({
-      duration: 550, // Animation duration in milliseconds
-      offset: 50, // Trigger animations 50px before an element is in view
+      duration: 550,
+      offset: 50,
     });
   }, []);
 
   return (
     <>
       <Banner title="Thinking" />
-
       <Container className="mt-4 px-0">
         <Container className="mt-4 px-0">
           <Row className="flex-column gy-2 mt-5">

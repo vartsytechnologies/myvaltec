@@ -1,9 +1,7 @@
 import React from "react";
 import MainSlider from "./components/carousel.jsx";
 import AboutSection from "./components/aboutSection.jsx";
-
 import ServiceSection from "./services.jsx";
-
 import MarketSection from "./components/marketSection.jsx";
 import PartnersSection from "./components/partners.jsx";
 import ProjectSection from "./components/projectsSection.jsx";

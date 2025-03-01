@@ -1,21 +1,14 @@
 import React from "react";
-import MarketCard from "./MarketCard";
-import { Container } from "react-bootstrap";
-import Banner from "../../../src/components/banner/Banner";
+import Banner from "../../components/banner/Banner.js";
+import MarketSection from "./components/marketSection.jsx";
 
-export default function Markets() {
+function Market() {
   return (
     <>
-      <Container fluid>
-        <Banner title="Markets" />
-        <Container>
-          <div>
-            <div>
-              <MarketCard />
-            </div>
-          </div>
-        </Container>
-      </Container>
+      <Banner title="Markets" />
+      <MarketSection />
     </>
   );
 }
+
+export default Market;

@@ -5,8 +5,8 @@ import "aos/dist/aos.css";
 function Map() {
   useEffect(() => {
     AOS.init({
-      duration: 650, // Animation duration in milliseconds
-      offset: 50, // Trigger animations 50px before an element is in view
+      duration: 650,
+      offset: 50,
     });
   }, []);
   return (

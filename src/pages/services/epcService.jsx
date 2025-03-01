@@ -5,10 +5,8 @@ import "./services.css";
 import { GiValve, GiOilPump } from "react-icons/gi";
 import { FaTools } from "react-icons/fa";
 import { MdOutlineElectricalServices, MdEngineering } from "react-icons/md";
-// import ReadMorebtn from "./readMorebtn";
 import AOS from "aos";
 import "aos/dist/aos.css";
-//the epc section on the services page
 
 const EpcSection = () => {
   useEffect(() => {
@@ -43,7 +41,6 @@ const EpcSection = () => {
             of experience, utilizing advanced technology and local expertise to
             streamline project execution from design to completion.
             <br />
-            {/* <ReadMorebtn/> */}
           </p>
         </Col>
 
@@ -58,8 +55,6 @@ const EpcSection = () => {
                   style={{ backgroundColor: "#1a1a1a" }}
                 >
                   <Card.Body>
-                    {/* <div className="mb-2">🔧</div>
-                     */}
                     <GiValve className="mb-2 b-icon" />
 
                     <p className="defbodyFont">
@@ -76,7 +71,6 @@ const EpcSection = () => {
                   style={{ backgroundColor: "rgb(189, 14, 52)" }}
                 >
                   <Card.Body>
-                    {/* <div className="mb-2">🔬</div> */}
                     <GiOilPump className="mb-2 b-icon" />
                     <p className="defbodyFont">Pumps, Production & Drilling</p>
                   </Card.Body>
@@ -93,7 +87,6 @@ const EpcSection = () => {
                   style={{ backgroundColor: "rgb(189, 14, 52)" }}
                 >
                   <Card.Body>
-                    {/* <div className="mb-2">🛠</div> */}
                     <FaTools className="mb-2 b-icon" />
                     <p className="defbodyFont">
                       Mill, Tools, MRO & Consumables
@@ -109,7 +102,6 @@ const EpcSection = () => {
                   style={{ backgroundColor: "#1a1a1a" }}
                 >
                   <Card.Body>
-                    {/* <div className="mb-2">⚡</div> */}
                     <MdOutlineElectricalServices className="mb-2 b-icon" />
                     <p className="defbodyFont">Electrical Cable & Products</p>
                   </Card.Body>

@@ -27,7 +27,6 @@ function Careers() {
         <span>There are no job openings currently.</span> <br />
         Job Openings will be posted for applications in due time.
       </h5>
-      {/* <h4>Join us to deliver compelling value through technology solution</h4> */}
     </div>
   );
 }

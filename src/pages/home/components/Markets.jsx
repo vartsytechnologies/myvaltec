@@ -1,26 +1,18 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Image, Tab, Nav } from "react-bootstrap";
 import "../home.css";
-import {
-  FaIndustry,
-  FaBuilding,
-  FaLandmark,
-  // FaTools,
-  FaRecycle,
-} from "react-icons/fa";
+import { FaIndustry, FaBuilding, FaLandmark, FaRecycle } from "react-icons/fa";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+
 //market images
 import oil_1 from "../../../assets/markets_img/new/oilA.JPG";
 import oil_2 from "../../../assets/markets_img/new/oilC.JPG";
 import energy_1 from "../../../assets/markets_img/new/RoofPVSolar.jpg";
-// import energy_2 from "../../../assets/markets_img/new/SolarPV.jpg";
 import lights from "../../../assets/markets_img/new/solar.webp";
 import gov_ger from "../../../assets/markets_img/new/Skyscrappers.jpg";
 import gov_uk from "../../../assets/markets_img/new/Eco-building.jpg";
-// import health_1 from "../../../assets/markets_img/health_1.jpg";
-// import health_3 from "../../../assets/markets_img/health_3.jpg";
 import mine_1 from "../../../assets/markets_img/new/Miningpit.jpg";
 import mine_2 from "../../../assets/markets_img/new/Mineplant.jpg";
 import power_1 from "../../../assets/markets_img/new/PowerPlant1.jpg";
@@ -122,7 +114,6 @@ const Markets = () => {
         },
       ],
     ],
-    // Additional tabs content can go here
   };
 
   useEffect(() => {
