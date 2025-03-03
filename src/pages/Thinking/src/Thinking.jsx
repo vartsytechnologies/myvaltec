@@ -3,8 +3,8 @@ import Banner from "../../../components/banner/Banner";
 import { Container, Row, Col } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import valtec_digital from "../../../assets/valtec_digital.jpg";
-import ISO_9 from "../../../assets/ISO/ISO_9.webp";
-import ISO_1 from "../../../assets/ISO/ISO_1.webp";
+import ISO_9 from "../../../assets/ISO/ISO_9.jpg";
+import ISO_1 from "../../../assets/ISO/ISO_2.jpg";
 import user from "../../../assets/ISO/user.jpg";
 import companyOverview from "../../../assets/solars.jpeg";
 import purpose from "../../../assets/purpose.jpg";
@@ -439,7 +439,7 @@ function App() {
             className="text-danger fw-bold ms-3 text-start pt-0 mt-0 mt-sm-5 pt-sm-3"
             data-aos="fade-up"
           >
-            Team Members
+            MANAGEMENT TEAM
           </h3>
         </div>
         <Row className="p-0 gx-0 defbodyFont my-5">
