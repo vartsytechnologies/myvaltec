@@ -1,6 +1,6 @@
 import { React, useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { PhoneInput } from "react-international-phone";
+import "./home.css";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import "./homeServices.css";
@@ -13,6 +13,11 @@ import "aos/dist/aos.css";
 import emailjs from "@emailjs/browser";
 
 function ContactSection() {
+  const [phone, setPhone] = useState("");
+  const [phoneError, setPhoneError] = useState("");
+  const [successMessage, setSuccessMessage] = useState("");
+  const [messageType, setMessageType] = useState("");
+
   useEffect(() => {
     AOS.init({
       duration: 1050,
@@ -20,10 +25,26 @@ function ContactSection() {
     });
   }, []);
 
-  //Form handling
-  const [phone, setPhone] = useState("");
+  // **Phone number validation (country code + 9-11 digits)**
+  const phoneRegex = /^\+?[1-9]\d{0,3}\d{9,11}$/;
+
+  const handlePhoneBlur = () => {
+    if (!phoneRegex.test(phone)) {
+      setPhoneError(
+        "Invalid phone number. Include country code [e.g, +233123456789]"
+      );
+    } else {
+      setPhoneError("");
+    }
+  };
+
+  // **Form submission**
   const sendDetails = (e) => {
     e.preventDefault();
+    if (phoneError) {
+      return;
+    }
+
     emailjs
       .sendForm(
         process.env.REACT_APP_CONTACT_SERVICE,
@@ -33,14 +54,30 @@ function ContactSection() {
       )
       .then(
         (result) => {
-          e.target.reset();
-          alert("Message Sent Successfully. Thank you for contacting VALTEC!");
+          setSuccessMessage(
+            "Message Sent Successfully. Thank you for contacting VALTEC!"
+          );
+          setMessageType("success");
+
+          // Wait 4.5 seconds before resetting the form
+          setTimeout(() => {
+            e.target.reset();
+            setPhone("");
+            setSuccessMessage(""); // Hide message after reset
+            setMessageType("");
+          }, 4500);
         },
         (error) => {
-          alert(
-            "Failed to send the Message. Please try again Later. You can also contact us through the contact details below."
+          setSuccessMessage(
+            "Failed to send the message. Please try again later."
           );
-          console.error(error);
+          setMessageType("error");
+
+          // Hide message after 5 seconds
+          setTimeout(() => {
+            setSuccessMessage("");
+            setMessageType("");
+          }, 5000);
         }
       );
   };
@@ -176,27 +213,34 @@ function ContactSection() {
                         <Row className="gx-1">
                           <Form.Group
                             as={Col}
+                            md="6"
                             className="mb-3"
                             controlId="formPhoneNumber"
                           >
                             <Form.Label>Phone Number</Form.Label>
-                            <div
-                              className="phone-input-container w-100"
-                              style={{ border: "1px solid black" }}
-                            >
-                              <PhoneInput
-                                defaultCountry="gh" // Change to desired default country
-                                value={phone}
-                                onChange={setPhone}
-                                inputClassName="field"
-                                inputProps={{
-                                  required: true,
-                                  placeholder: "Enter your phone number",
-                                  // pattern: "^\\+?[1-9][0-9]{7,14}$", // Pattern to support international numbers
-                                }}
-                                name="sender_phone"
-                              />
-                            </div>
+                            <Form.Control
+                              type="tel"
+                              value={phone}
+                              onChange={(e) =>
+                                setPhone(e.target.value.replace(/[^0-9+]/g, ""))
+                              } // Allow only numbers & '+'
+                              onBlur={handlePhoneBlur}
+                              placeholder="e.g +233123456789"
+                              required
+                              name="sender_contact"
+                              pattern="^\+?[1-9]\d{9,11}$" // Country code + 9-11 digits
+                              title="Enter a valid phone number with country code (e.g., +233123456789)"
+                            />
+                            {phoneError && (
+                              <div
+                                className={`text-danger mt-1 ${
+                                  phoneError ? "show" : ""
+                                }`}
+                                style={{ fontSize: ".9em" }}
+                              >
+                                {phoneError}
+                              </div>
+                            )}
                           </Form.Group>
 
                           <Form.Group
@@ -205,7 +249,7 @@ function ContactSection() {
                             className="mb-3"
                             controlId="formBasicEmail"
                           >
-                            <Form.Label>Institution or Company</Form.Label>
+                            <Form.Label>Institution/Company</Form.Label>
                             <Form.Control
                               type="text"
                               placeholder="Enter N/A if not applicable"
@@ -244,6 +288,17 @@ function ContactSection() {
                             Send <IoSendSharp className="" />
                           </Button>
                         </div>
+                        <Col className="mt-1 p-t-2">
+                          <div className="container d-flex align-items-center justify-content-center">
+                            {successMessage && (
+                              <div
+                                className={`submission-message ${messageType}`}
+                              >
+                                {successMessage}
+                              </div>
+                            )}
+                          </div>
+                        </Col>
                       </Form>
                     </div>
                   </div>

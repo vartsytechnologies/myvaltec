@@ -19,7 +19,6 @@ function Careers() {
           </>
         }
       />
-      <h2 className="text-danger"></h2>
       <h2 className="text-center mt-4  defheadFont" data-aos="fade-up">
         Stay tuned for Career Openings!
       </h2>

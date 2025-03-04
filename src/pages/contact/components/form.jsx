@@ -2,8 +2,6 @@ import React from "react";
 import { Row, Col } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import { PhoneInput, isValidPhoneNumber } from "react-international-phone";
-import "react-international-phone/style.css";
 import "./Contacts.css";
 import AOS from "aos";
 import { useEffect } from "react";
@@ -14,6 +12,9 @@ import emailjs from "@emailjs/browser";
 
 function ContactForm() {
   const [phone, setPhone] = useState("");
+  const [phoneError, setPhoneError] = useState("");
+  const [successMessage, setSuccessMessage] = useState("");
+  const [messageType, setMessageType] = useState(""); // "success
 
   useEffect(() => {
     AOS.init({
@@ -21,6 +22,19 @@ function ContactForm() {
       offset: 50,
     });
   }, []);
+
+  // Phone number validation (country code + 9-11 digits)
+  const phoneRegex = /^\+?[1-9]\d{0,3}\d{9,11}$/;
+
+  const handlePhoneBlur = () => {
+    if (!phoneRegex.test(phone)) {
+      setPhoneError(
+        "Invalid phone number. Include country code [e.g, +233123456789]"
+      );
+    } else {
+      setPhoneError("");
+    }
+  };
 
   // Form handling
   const sendDetails = (e) => {
@@ -34,13 +48,30 @@ function ContactForm() {
       )
       .then(
         (result) => {
-          alert("Message Sent Successfully. Thank you for contacting VALTEC!");
-          e.target.reset();
-          setPhone("");
+          setSuccessMessage(
+            "Message Sent Successfully. Thank you for contacting VALTEC!"
+          );
+          setMessageType("success");
+
+          // Wait 4.5 seconds before resetting the form
+          setTimeout(() => {
+            e.target.reset();
+            setPhone("");
+            setSuccessMessage(""); // Hide message after reset
+            setMessageType("");
+          }, 4500);
         },
         (error) => {
-          alert("Failed to send the Message. Please try again Later.");
-          console.error(error);
+          setSuccessMessage(
+            "Failed to send the message. Please try again later."
+          );
+          setMessageType("error");
+
+          // Hide message after 5 seconds
+          setTimeout(() => {
+            setSuccessMessage("");
+            setMessageType("");
+          }, 5000);
         }
       );
   };
@@ -69,32 +100,34 @@ function ContactForm() {
           </Form.Group>
           <Form.Group
             as={Col}
+            md="12"
             className="mb-3"
             controlId="formPhoneNumber"
-            required
           >
             <Form.Label>Phone Number</Form.Label>
-            <div
-              className="phone-input-container w-100"
-              style={{ border: "1px solid black" }}
-            >
-              <PhoneInput
-                defaultCountry="gh" // Change to desired default country
-                value={phone}
-                onChange={setPhone}
-                inputClassName="field"
-                inputProps={{
-                  required: true,
-                  placeholder: "Enter your phone number",
-                  // pattern: "^\\+?[1-9][0-9]{7,14}$", // Pattern to support international numbers
-                }}
-                name="sender_phone"
-              />
-            </div>
+            <Form.Control
+              type="tel"
+              value={phone}
+              onChange={(e) => setPhone(e.target.value.replace(/[^0-9+]/g, ""))} // Allow only numbers & '+'
+              onBlur={handlePhoneBlur}
+              placeholder="e.g +233123456789"
+              required
+              name="sender_contact"
+              pattern="^\+?[1-9]\d{9,11}$" // Country code + 9-11 digits
+              title="Enter a valid phone number with country code (e.g., +233123456789)"
+            />
+            {phoneError && (
+              <div
+                className={`text-danger mt-1 ${phoneError ? "show" : ""}`}
+                style={{ fontSize: ".9em" }}
+              >
+                {phoneError}
+              </div>
+            )}
           </Form.Group>
 
           <Form.Group as={Col} className="mb-3">
-            <Form.Label>Name of Company or Institution</Form.Label>
+            <Form.Label>Name of Company/Institution</Form.Label>
             <Form.Control
               type="name"
               placeholder="Enter N/A if not applicable"
@@ -144,6 +177,15 @@ function ContactForm() {
           </div>
         </Col>
       </Row>
+      <Col className="mt-1 p-t-2">
+        <div className="container  d-flex align-items-center justify-content-center">
+          {successMessage && (
+            <div className={`submission-message ${messageType}`}>
+              {successMessage}
+            </div>
+          )}
+        </div>
+      </Col>
     </Form>
   );
 }
