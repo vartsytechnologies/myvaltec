@@ -11,7 +11,6 @@ import {
   Col,
 } from "react-bootstrap";
 import DownloadButton from "./Profile";
-import { PhoneInput } from "react-international-phone";
 import { IoSendSharp } from "react-icons/io5";
 import valtecLogo from "../../assets/valtec_logo.png";
 import { NavLink } from "react-router-dom";
