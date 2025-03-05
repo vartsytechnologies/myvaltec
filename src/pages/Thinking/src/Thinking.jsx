@@ -361,15 +361,13 @@ function App() {
                   />
                   <p className="defbodyFont d-block text-justify text-justify-xs-start">
                     We are fully aware that when we get it wrong, the
-                    consequences can be severe. When we get it wrong, the
-                    consequencescanbesevere. We fully recognize our duty to
-                    develop safe and reliable technical solutions. All our
-                    projects follow a tailored, strong, flexible, and systematic
-                    process that includes non-negotiable guidelines, expected
-                    results, and suitable toolkits. Hence, our operations
-                    strictly adhere to a robust QHSE policy that is dedicated to
+                    consequences can be severe. Hence, our operations strictly
+                    adhere to a robust HSEQ policy that is dedicated to
                     safeguarding the physical, psychological, and social
                     well-being of our employees, stakeholders, and communities.
+                    All our projects follow a tailored, strong, flexible, and
+                    systematic process that includes non-negotiable guidelines,
+                    expected results, and suitable toolkits.
                     <br />{" "}
                     <span className="fw-bolder text-danger text-justify text-justify-xs-start">
                       We are ISO 9001 and ISO 14001 certified.
