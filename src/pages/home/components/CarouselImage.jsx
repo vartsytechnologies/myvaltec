@@ -7,7 +7,7 @@ function CarouselImage({ sliderImage }) {
       fluid
       className="carousel-image-container"
       style={{
-        height: "80vh",
+        height: "78vh",
         overflow: "hidden",
         display: "flex",
         alignItems: "center",

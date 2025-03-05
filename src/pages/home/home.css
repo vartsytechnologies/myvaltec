@@ -5,6 +5,10 @@
 
 .sliderCaption {
   /*for positioning the captions*/
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
   text-align: left;
   position: absolute;
   top: 20%;
@@ -94,5 +98,10 @@
 @media (max-width: 576px) {
   .text-justify-xs-start {
     text-align: left !important;
+  }
+}
+@media (max-width: 448px) {
+  .sliderCaption {
+    top: 20%;
   }
 }

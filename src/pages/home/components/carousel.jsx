@@ -24,11 +24,8 @@ function MainSlider() {
           text="First slide"
           sliderImage={solutions}
         />
-        <Carousel.Caption className="sliderCaption">
-          <p
-            className="sliderCaptionMain defbodyFont mt-4 pt-3"
-            data-aos="fade-up"
-          >
+        <Carousel.Caption className="sliderCaption mb-4">
+          <p className="sliderCaptionMain defbodyFont" data-aos="fade-up">
             <b>
               {" "}
               We are VALTEC, <br /> an energy technology company
@@ -55,7 +52,7 @@ function MainSlider() {
           text="Second slide"
           sliderImage={precision_2}
         />
-        <Carousel.Caption className="sliderCaption">
+        <Carousel.Caption className="sliderCaption mb-4">
           <p
             className="sliderCaptionMain defbodyFont mt-4 pt-3"
             data-aos="fade-up"
@@ -87,7 +84,7 @@ function MainSlider() {
           text="Third slide"
           sliderImage={sustainable}
         />
-        <Carousel.Caption className="sliderCaption">
+        <Carousel.Caption className="sliderCaption mb-4">
           <p
             className="sliderCaptionMain defbodyFont mt-4 pt-3 mt-xs-0 pt-xs-0"
             data-aos="fade-up"

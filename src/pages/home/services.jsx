@@ -79,7 +79,7 @@ function ServiceSection() {
                               opacity: "1",
                               margin: "0.5rem 0",
                             }}
-                            data-aos="fade-left"
+                            data-aos="fade-up"
                             data-aos-delay="10"
                           />
                           <p
