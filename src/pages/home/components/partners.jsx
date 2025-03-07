@@ -5,6 +5,7 @@ import cans_r from "../../../assets/partnerIcons/cans_r.png";
 import huawei_e from "../../../assets/partnerIcons/huawei_e.png";
 import fuelox from "../../../assets/partnerIcons/fuelox.png";
 import AOS from "aos";
+import "../home.css";
 import "aos/dist/aos.css";
 
 const partners = [
@@ -36,6 +37,7 @@ function Partners() {
               <a href={`${partner[1]}`} target="blank">
                 <img
                   src={partner[0]}
+                  className="img-partner"
                   alt="valtec partner"
                   style={{ width: "85%" }}
                 />

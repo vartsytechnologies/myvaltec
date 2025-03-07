@@ -18,7 +18,7 @@ function MainSlider() {
   }, []);
   return (
     <Carousel indicators={false}>
-      <Carousel.Item interval={2500}>
+      <Carousel.Item interval={7500}>
         <CarouselImage
           className="carousel-image"
           text="First slide"
@@ -31,14 +31,16 @@ function MainSlider() {
               We are VALTEC, <br /> an energy technology company
             </b>
           </p>
+
           <p
-            className="sliderCaptionSubtext defbodyFont"
+            className="sliderCaptionSubtext my-3 py-3  defbodyFont fw-bolder"
             data-aos="fade-left"
             data-aos-delay="200"
           >
             We take energy forward - making it safer, cleaner, and more
             efficient for people and the planet.
           </p>
+
           <Link to="/service">
             {" "}
             <p className="btn btn-danger px-4 mt-0 defbodyFont">Explore</p>{" "}
@@ -46,7 +48,7 @@ function MainSlider() {
         </Carousel.Caption>
       </Carousel.Item>
 
-      <Carousel.Item interval={2000}>
+      <Carousel.Item interval={7500}>
         <CarouselImage
           className="carousel-image"
           text="Second slide"
@@ -54,7 +56,7 @@ function MainSlider() {
         />
         <Carousel.Caption className="sliderCaption mb-4">
           <p
-            className="sliderCaptionMain defbodyFont mt-4 pt-3"
+            className="sliderCaptionMain defbodyFont my-4 pt-3"
             data-aos="fade-up"
           >
             <b>
@@ -63,7 +65,7 @@ function MainSlider() {
             </b>
           </p>
           <p
-            className="sliderCaptionSubtext defbodyFont"
+            className="sliderCaptionSubtext defbodyFont fw-bolder"
             data-aos="fade-left"
             data-aos-delay="200"
           >
@@ -78,7 +80,7 @@ function MainSlider() {
         </Carousel.Caption>
       </Carousel.Item>
 
-      <Carousel.Item interval={2000}>
+      <Carousel.Item interval={7500}>
         <CarouselImage
           className="carousel-image"
           text="Third slide"
@@ -86,7 +88,7 @@ function MainSlider() {
         />
         <Carousel.Caption className="sliderCaption mb-4">
           <p
-            className="sliderCaptionMain defbodyFont mt-4 pt-3 mt-xs-0 pt-xs-0"
+            className="sliderCaptionMain defbodyFont my-4 pt-3 mt-xs-0 pt-xs-0"
             data-aos="fade-up"
           >
             {" "}
@@ -97,12 +99,13 @@ function MainSlider() {
             </b>
           </p>
           <p
-            className="sliderCaptionSubtext defbodyFont"
+            className="sliderCaptionSubtext defbodyFont fw-bolder"
             data-aos="fade-left"
             data-aos-delay="200"
           >
-            VALTEC is building a sustainable future through renewable energy. We
-            design and implement clean energy projects that reduce carbon
+            VALTEC is building a sustainable future through renewable energy.{" "}
+            <br />
+            We design and implement clean energy projects that reduce carbon
             footprints and lower energy costs.
           </p>
           <Link to="/service/renewable_energy">

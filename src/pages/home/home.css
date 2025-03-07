@@ -28,8 +28,17 @@
 .sliderCaptionSubtext {
   color: white;
   font-size: 1.2rem;
+  padding: 10px;
+  background-color: rgba(26, 25, 22, 0.253);
+  backdrop-filter: blur(3px);
 }
-
+.img-partner {
+  transition: all 0.3s ease-in-out;
+}
+.img-partner:hover {
+  transform: scale(1.09);
+  /* color: rgba(29, 27, 27, 0.774); */
+}
 @media (max-width: 576px) {
   .sliderCaptionMain {
     font-size: 2rem;

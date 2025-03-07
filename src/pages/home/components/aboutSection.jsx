@@ -18,16 +18,14 @@ function AboutSection() {
       <Container className="defPt defPb mb-4">
         <Row className="mt-4 flex-column">
           <Col>
-            <h1 className="defheadFont text-danger" data-aos="fade-up">
-              About Us
-            </h1>
+            <h1 className="defheadFont text-danger">About Us</h1>
           </Col>
           <Col>
             <Row className="justify-content-between align-items-start flex-column-reverse flex-lg-row">
               <Col
                 className="mt-4 me-sm-1 me-md-3 me-lg-4 ps-0 defbodyFont text-justify text-justify-xs-start"
-                data-aos="fade-up"
-                data-aos-delay="300"
+                // data-aos="fade-up"
+                // data-aos-delay="300"
               >
                 Established in August 2015, VALTEC is a value-driven design,
                 engineering, procurement, consulting, and project management
@@ -50,8 +48,8 @@ function AboutSection() {
                 xs={12}
                 lg={6}
                 className="zoom-out-container"
-                data-aos="fade-up"
-                data-aos-delay="500"
+                // data-aos="fade-up"
+                // data-aos-delay="500"
                 style={{
                   borderRadius: "0",
                   boxShadow: "0px 2px 5px rgba(0, 0, 0, 0.3)",
