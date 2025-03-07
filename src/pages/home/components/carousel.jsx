@@ -25,7 +25,10 @@ function MainSlider() {
           sliderImage={solutions}
         />
         <Carousel.Caption className="sliderCaption mb-4">
-          <p className="sliderCaptionMain defbodyFont" data-aos="fade-up">
+          <p
+            className="sliderCaptionMain defbodyFont my-4 pt-3"
+            data-aos="fade-up"
+          >
             <b>
               {" "}
               We are VALTEC, <br /> an energy technology company
@@ -33,7 +36,7 @@ function MainSlider() {
           </p>
 
           <p
-            className="sliderCaptionSubtext my-3 py-3  defbodyFont fw-bolder"
+            className="sliderCaptionSubtext my-3 py-3 defbodyFont fw-bolder"
             data-aos="fade-left"
             data-aos-delay="200"
           >
@@ -99,7 +102,7 @@ function MainSlider() {
             </b>
           </p>
           <p
-            className="sliderCaptionSubtext defbodyFont fw-bolder"
+            className="sliderCaptionSubtext defbodyFont"
             data-aos="fade-left"
             data-aos-delay="200"
           >
