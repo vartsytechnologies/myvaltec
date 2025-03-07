@@ -36,7 +36,7 @@ function MainSlider() {
           </p>
 
           <p
-            className="sliderCaptionSubtext my-3 py-3 defbodyFont fw-bolder"
+            className="sliderCaptionSubtext my-3 py-3 defbodyFont"
             data-aos="fade-left"
             data-aos-delay="200"
           >
@@ -68,7 +68,7 @@ function MainSlider() {
             </b>
           </p>
           <p
-            className="sliderCaptionSubtext defbodyFont fw-bolder"
+            className="sliderCaptionSubtext defbodyFont "
             data-aos="fade-left"
             data-aos-delay="200"
           >

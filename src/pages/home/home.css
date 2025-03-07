@@ -31,6 +31,7 @@
   padding: 10px;
   background-color: rgba(26, 25, 22, 0.253);
   backdrop-filter: blur(3px);
+  font-weight: bolder;
 }
 .img-partner {
   transition: all 0.3s ease-in-out;
@@ -51,6 +52,7 @@
   .sliderCaptionSubtext {
     line-height: 1.4em;
     font-size: 1rem;
+    font-weight: 500;
   }
 }
 @media (min-width: 1200px) {
