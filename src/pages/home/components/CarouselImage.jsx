@@ -1,19 +1,10 @@
 import { Container } from "react-bootstrap";
+import "../home.css";
 
 function CarouselImage({ sliderImage }) {
   // Function to take in the sliderimage
   return (
-    <Container
-      fluid
-      className="carousel-image-container"
-      style={{
-        height: "80vh",
-        overflow: "hidden",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-      }}
-    >
+    <Container fluid className="carousel-image-container">
       <img
         src={sliderImage}
         alt="sliderImage"

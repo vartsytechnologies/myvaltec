@@ -40,6 +40,13 @@
   transform: scale(1.09);
   /* color: rgba(29, 27, 27, 0.774); */
 }
+.carousel-image-container {
+  height: 80vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 @media (max-width: 576px) {
   .sliderCaptionMain {
     font-size: 2rem;
@@ -114,5 +121,10 @@
 @media (max-width: 448px) {
   .sliderCaption {
     top: 20%;
+  }
+}
+@media (max-width: 414px) {
+  .carousel-image-container {
+    height: 90vh;
   }
 }
