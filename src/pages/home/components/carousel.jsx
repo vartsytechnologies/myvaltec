@@ -44,7 +44,7 @@ function MainSlider() {
             efficient for people and the planet.
           </p>
 
-          <Link to="/service">
+          <Link className="mt-4" to="/service">
             {" "}
             <p className="btn btn-danger px-4 mt-0 defbodyFont">Explore</p>{" "}
           </Link>
@@ -76,7 +76,7 @@ function MainSlider() {
             and predictive solutions for your operations and plants; designed to
             enhance values and efficiency.
           </p>
-          <Link to="/service">
+          <Link className="mt-4" to="/service">
             {" "}
             <p className="btn btn-danger px-4 mt-0 defbodyFont">Explore</p>{" "}
           </Link>
@@ -111,7 +111,7 @@ function MainSlider() {
             We design and implement clean energy projects that reduce carbon
             footprints and lower energy costs.
           </p>
-          <Link to="/service/renewable_energy">
+          <Link className="mt-4" to="/service/renewable_energy">
             {" "}
             <p className="btn btn-danger px-4 mt-0 defbodyFont">Explore</p>{" "}
           </Link>
