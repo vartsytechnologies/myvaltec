@@ -767,8 +767,12 @@ function Services() {
                 <Row className="justify-content-between align-items-center">
                   <Col
                     xs={12}
+                    order={{
+                      xs: service.imgOrder === 2 ? 1 : 2,
+                      md: service.imgOrder,
+                    }}
                     lg={6}
-                    className={`zoom-out-container mb-0 mb-md-4 align-self-center order-md-${service.imgOrder}`}
+                    className="zoom-out-container mb-0 mb-md-4 align-self-center"
                   >
                     <div
                       className="image-Container align-self-center pe-3 pt-0"
