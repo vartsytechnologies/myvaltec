@@ -25,7 +25,7 @@ const EpcSection = () => {
           className="d-flex flex-column justify-content-center"
         >
           <div
-            style={{ borderBottom: "2px solid red" }}
+            style={{ borderBottom: "2px solid rgba(255, 17, 67, 1);" }}
             className="d-flex align-items-center justify-content-start"
           >
             <MdEngineering className="mb-2 s-icon" />{" "}

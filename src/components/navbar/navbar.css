@@ -1,7 +1,7 @@
 :root {
-  --bs-btn-color: red;
+  --bs-btn-color: rgba(255, 17, 67, 1);
   --bs-btn-close-color: white;
-  --bs-btn-border-color: red;
+  --bs-btn-border-color: rgba(255, 17, 67, 1);
 }
 
 /* Ensure the mega menu takes the full width of the parent container */

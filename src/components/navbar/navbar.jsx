@@ -535,7 +535,7 @@ export default function NavBar() {
         show={show}
         onHide={handleClose}
         placement="end"
-        className="d-lg-none bg bg-danger .offcanvas"
+        className="d-lg-none bg bg-danger offcanvas"
       >
         <Offcanvas.Header closeButton className="btn-close-white">
           <Offcanvas.Title className="defbodyFont fs-3 text-white">

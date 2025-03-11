@@ -151,7 +151,7 @@ const ProductsSection = () => {
               <Card className="text-center shadow-sm">
                 <Card.Img variant="top" src={product.image} />
                 <Card.Body>
-                  <Card.Title style={{ color: "red" }}>
+                  <Card.Title style={{ color: "rgba(255, 17, 67, 1);" }}>
                     {product.name}
                   </Card.Title>
                   <Card.Text>{product.text}</Card.Text>

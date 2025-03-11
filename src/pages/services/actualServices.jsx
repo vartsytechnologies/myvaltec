@@ -283,7 +283,7 @@ export const serviceItems = [
               <div className="col-md-6 d-flex">
                 <ol
                   className="list-unstyled p-2 flex-grow-1 rounded"
-                  style={{ border: "2px solid red" }}
+                  style={{ border: "2px solid rgba(255, 17, 67, 1);" }}
                 >
                   <li>
                     {" "}
@@ -329,7 +329,7 @@ export const serviceItems = [
               <div className="col-md-6 d-flex">
                 <ol
                   className="list-unstyled p-3 flex-grow-1 rounded"
-                  style={{ border: "2px solid red" }}
+                  style={{ border: "2px solid rgba(255, 17, 67, 1);" }}
                 >
                   <li>
                     {" "}
@@ -682,7 +682,10 @@ export const serviceItems = [
             </ul>
           </div>
         </div>
-        <div className="p-3 rounded" style={{ border: "2px solid red" }}>
+        <div
+          className="p-3 rounded"
+          style={{ border: "2px solid rgba(255, 17, 67, 1);" }}
+        >
           <ul className="marker">
             <li>
               <h4 className="text-danger">Vibration Analysis</h4>
@@ -767,12 +770,9 @@ function Services() {
                 <Row className="justify-content-between align-items-center">
                   <Col
                     xs={12}
-                    order={{
-                      xs: service.imgOrder === 2 ? 1 : 2,
-                      md: service.imgOrder,
-                    }}
                     lg={6}
-                    className="zoom-out-container mb-0 mb-md-4 align-self-center"
+                    // className="zoom-out-container mb-0 mb-md-4 align-self-center"
+                    className={`zoom-out-container mb-0 mb-md-4 align-self-center order-md-${service.imgOrder}`}
                   >
                     <div
                       className="image-Container align-self-center pe-3 pt-0"
@@ -833,7 +833,7 @@ function Services() {
                       service.name !== "Infrastructure & Facilities" &&
                       service.name !== "Public Private Partnerships" && (
                         <Link
-                          className="bg-danger p-2 mb-4 text-white fs-5 fw-bolder rounded"
+                          className="readmore bg-danger p-2 mb-4 text-white fs-5 fw-bolder rounded"
                           style={{ textDecorationLine: "none" }}
                           to={`/service/${service.slug}`}
                         >

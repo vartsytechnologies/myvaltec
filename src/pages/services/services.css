@@ -52,7 +52,7 @@ span {
   transform: scale(1.05);
 }
 .marker li::marker {
-  color: red;
+  color: rgba(255, 17, 67, 1);
 }
 
 @media (max-width: 448px) {
