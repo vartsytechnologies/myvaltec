@@ -3,12 +3,13 @@ import { Row, Col } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import "./Contacts.css";
-import AOS from "aos";
+// import AOS from "aos";
 import { useEffect } from "react";
-import "aos/dist/aos.css";
+// import "aos/dist/aos.css";
 import { IoSendSharp } from "react-icons/io5";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import useIntersectionObserver from "../../../components/animationHook";
 
 function ContactForm() {
   const [phone, setPhone] = useState("");
@@ -16,12 +17,12 @@ function ContactForm() {
   const [successMessage, setSuccessMessage] = useState("");
   const [messageType, setMessageType] = useState(""); // "success
 
-  useEffect(() => {
-    AOS.init({
-      duration: 650,
-      offset: 50,
-    });
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 650,
+  //     offset: 50,
+  //   });
+  // }, []);
 
   // Phone number validation (country code + 9-11 digits)
   const phoneRegex = /^\+?[1-9]\d{0,3}\d{9,11}$/;
@@ -76,9 +77,11 @@ function ContactForm() {
       );
   };
 
+  //for useinterventionobserver
+  const { ref, isVisible } = useIntersectionObserver();
   return (
-    <Form data-aos="fade-up" autoComplete="off" onSubmit={sendDetails}>
-      <Row className="py-3">
+    <Form autoComplete="off" onSubmit={sendDetails}>
+      <Row ref={ref} className={` fade-up ${isVisible ? "visible" : ""} py-3`}>
         <Col xs={12} lg={5}>
           <Form.Group as={Col} className="mb-3">
             <Form.Label>Name</Form.Label>

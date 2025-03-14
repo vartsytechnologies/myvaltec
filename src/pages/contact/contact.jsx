@@ -6,23 +6,25 @@ import { LuPhoneCall } from "react-icons/lu";
 import { MdEmail } from "react-icons/md";
 import ContactForm from "./components/form";
 import Map from "./components/Map";
-import AOS from "aos";
-import { useEffect } from "react";
-import "aos/dist/aos.css";
+// import AOS from "aos";
+// import { useEffect } from "react";
+// import "aos/dist/aos.css";
+import useIntersectionObserver from "../../components/animationHook";
 
 export default function Contact() {
-  useEffect(() => {
-    AOS.init({
-      duration: 550,
-      offset: 50,
-    });
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 550,
+  //     offset: 50,
+  //   });
+  // }, []);
+  const { ref, isVisible } = useIntersectionObserver();
   return (
     <>
       <Banner title="How can we help ?" />
       <Container fluid>
         <Container className="pt-5 defbodyFont">
-          <Row data-aos="fade-up">
+          <Row ref={ref} className={`fade-up ${isVisible ? "visible" : ""}`}>
             <Col xs={12} lg={6}>
               <div
                 className="div google-map w-100 d-flex align-items-center justify-content-center"
@@ -118,17 +120,23 @@ export default function Contact() {
             </Col>
           </Row>
           <h1
-            data-aos="fade-up"
-            className="pt-5 mt-2 text-center defheadFont"
+            ref={ref}
+            className={`pt-5 mt-2 text-center defheadFont fade-up ${
+              isVisible ? "visible" : ""
+            }`}
             style={{ color: "rgba(255, 17, 67, 1)" }}
           >
             Make an enquiry
           </h1>
-          <p className="text-center" data-aos="fade-up">
+          <p
+            className={`fade-up delay-1 ${
+              isVisible ? "visible" : ""
+            } text-center`}
+          >
             <i>Send us an enquiry. We will gladly respond.</i>
           </p>
 
-          <ContactForm data-aos="fade-up" />
+          <ContactForm />
         </Container>
       </Container>
     </>

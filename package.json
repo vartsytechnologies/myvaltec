@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^13.5.0",
     "aos": "^2.3.4",
     "bootstrap": "^5.3.3",
+    "framer-motion": "^12.5.0",
     "path-to-regexp": "^0.1.12",
     "process": "^0.11.10",
     "react": "^18.3.1",

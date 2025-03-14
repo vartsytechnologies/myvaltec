@@ -11,8 +11,8 @@ import purpose from "../../../assets/purpose.jpg";
 import quality_assurance from "../../../assets/q_a.jpg";
 import ethics_and_compliance from "../../../assets/e_c.webp";
 
-import AOS from "aos";
-import "aos/dist/aos.css";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
 import "./components/thinking.css";
 
 const teamMembers = [
@@ -59,12 +59,12 @@ const teamMembers = [
 ];
 
 function App() {
-  useEffect(() => {
-    AOS.init({
-      duration: 550,
-      offset: 50,
-    });
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 550,
+  //     offset: 50,
+  //   });
+  // }, []);
 
   return (
     <>
@@ -72,7 +72,7 @@ function App() {
       <Container className="mt-4 px-0">
         <Container className="mt-4 px-0">
           <Row className="flex-column gy-2 mt-5">
-            <Col data-aos="fade-up" className="">
+            <Col className="">
               <Row className="justify-content-between">
                 <Col
                   xs={12}
@@ -129,7 +129,7 @@ function App() {
                 </Col>
               </Row>
             </Col>
-            <Col data-aos="fade-up" className="py-4">
+            <Col className="py-4">
               <Row className="justify-content-between">
                 <Col
                   xs={12}
@@ -168,26 +168,18 @@ function App() {
                     }}
                   />
                   <ul className="defbodyFont ">
-                    <li data-aos="fade-up">
-                      Deliver value through technology.
-                    </li>
-                    <li data-aos="fade-up">
-                      Demonstrate leadership with excellence.
-                    </li>
-                    <li data-aos="fade-up">
-                      Think innovatively while embracing new ideas.
-                    </li>
-                    <li data-aos="fade-up">
+                    <li>Deliver value through technology.</li>
+                    <li>Demonstrate leadership with excellence.</li>
+                    <li>Think innovatively while embracing new ideas.</li>
+                    <li>
                       Operate ethically and with integrity, prioritizing safety
                       and security.
                     </li>
-                    <li data-aos="fade-up">
+                    <li>
                       Collaborate with unrivaled expertise to solve complex
                       challenges.
                     </li>
-                    <li data-aos="fade-up">
-                      Share success with our stakeholders.
-                    </li>
+                    <li>Share success with our stakeholders.</li>
                   </ul>
                   <p className="mt-4"></p>
                 </Col>
@@ -198,7 +190,7 @@ function App() {
         <Container fluid className="bg-gray">
           <Container className="py-4">
             <Row className="flex-column gy-2 mt-5">
-              <Col data-aos="fade-up" className="py-4">
+              <Col className="py-4">
                 <Row className="justify-content-between">
                   <Col
                     xs={12}
@@ -253,7 +245,7 @@ function App() {
                   </Col>
                 </Row>
               </Col>
-              <Col data-aos="fade-up" className="py-4">
+              <Col className="py-4">
                 <Row className="justify-content-between">
                   <Col className="align-self-center p-auto">
                     <h2 className="fs-5 p-0 m-0 defheadFont text-danger">
@@ -321,7 +313,7 @@ function App() {
         </Container>
         <Container>
           <Row className="flex-column gy-2 mt-5">
-            <Col data-aos="fade-up" className="py-4">
+            <Col className="py-4">
               <Row className="justify-content-between">
                 <Col
                   xs={12}
@@ -376,8 +368,6 @@ function App() {
                   <div
                     className=" rounded bg-white d-flex align-items-center justify-content-between"
                     style={{ width: "290px" }}
-                    data-aos="fade-up"
-                    data-aos-delay="400"
                   >
                     <img
                       className="m-3"
@@ -397,13 +387,10 @@ function App() {
               </Row>
               <Row>
                 <Col>
-                  <h4 className="text-danger pt-3" data-aos="fade-up">
+                  <h4 className="text-danger pt-3">
                     VALTEC upholds a robust QHSE policy by:
                   </h4>
-                  <p
-                    className="defbodyFont text-justify text-justify-xs-start"
-                    data-aos="fade-up"
-                  >
+                  <p className="defbodyFont text-justify text-justify-xs-start">
                     Establishing clear and measurable Quality Objectives across
                     all operational sectors is imperative. Continuous
                     monitoring, evaluation, and enhancement of the Quality
@@ -433,10 +420,7 @@ function App() {
       </Container>
       <Container>
         <div>
-          <h3
-            className="text-danger fw-bold ms-3 text-start pt-0 mt-0 mt-sm-5 pt-sm-3"
-            data-aos="fade-up"
-          >
+          <h3 className="text-danger fw-bold ms-3 text-start pt-0 mt-0 mt-sm-5 pt-sm-3">
             MANAGEMENT TEAM
           </h3>
         </div>

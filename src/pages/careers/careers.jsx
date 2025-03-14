@@ -14,8 +14,9 @@ function Careers() {
       <Banner
         title={
           <>
-            Join us to deliver compelling <br />
-            value through technology solution
+            <span style={{ fontSize: "2.3rem" }}>
+              Join us to deliver compelling value through technology solution
+            </span>
           </>
         }
       />

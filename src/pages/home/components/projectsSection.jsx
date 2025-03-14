@@ -10,13 +10,18 @@ import MiG1 from "../../../assets/projectpics/MIG_Welding1.jpg";
 import img9 from "../../../assets/projectpics/bently2.jpg";
 import { Link } from "react-router-dom";
 
+import useIntersectionObserver from "../../../components/animationHook";
+
 function ProjectSection() {
+  const { ref, isVisible } = useIntersectionObserver();
   return (
     <>
       <Container className="mt-5 defPt defPb">
         <h1
-          className="text-center mb-5 text-danger defheadFont"
-          data-aos="fade-up"
+          ref={ref}
+          className={` text-center mb-5 text-danger defheadFont fade-up ${
+            isVisible ? "visible" : ""
+          }`}
         >
           <FaTools /> Projects
         </h1>
@@ -40,11 +45,7 @@ function ProjectSection() {
             />
           </Col>
         </Row>
-        <p
-          style={{ textAlign: "center", marginTop: "0.8rem" }}
-          data-aos="fade-up"
-          data-aos-delay="200"
-        >
+        <p style={{ textAlign: "center", marginTop: "0.8rem" }}>
           <Link to="/projects">
             <DefaultButton name="See More Projects" variant="danger" />
           </Link>

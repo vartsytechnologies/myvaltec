@@ -25,8 +25,8 @@ import {
 import { VscWorkspaceTrusted } from "react-icons/vsc";
 import { PiMonitor } from "react-icons/pi";
 import { AiOutlineExperiment } from "react-icons/ai";
-import AOS from "aos";
-import "aos/dist/aos.css";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
 
 import serv_bg from "../../assets/services_img/white-unsplash-9d0375d2.jpg";
 // new service images
@@ -720,12 +720,12 @@ export const serviceItems = [
 ];
 
 function Services() {
-  useEffect(() => {
-    AOS.init({
-      duration: 900,
-      offset: 50,
-    });
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 900,
+  //     offset: 50,
+  //   });
+  // }, []);
 
   // State for Image Modal
   const [showModal, setShowModal] = useState(false);
@@ -766,7 +766,7 @@ function Services() {
           </Row>
           <Row className="flex-column mt-5">
             {serviceItems.map((service, idx) => (
-              <Col key={idx} data-aos="fade-up" className="py-0 mb-5">
+              <Col key={idx} className="py-0 mb-5">
                 <Row className="justify-content-between align-items-center">
                   <Col
                     xs={12}

@@ -9,21 +9,23 @@ import { LuPhoneCall } from "react-icons/lu";
 import { MdEmail } from "react-icons/md";
 import { IoSendSharp } from "react-icons/io5";
 import AOS from "aos";
-import "aos/dist/aos.css";
+// import "aos/dist/aos.css";
 import emailjs from "@emailjs/browser";
+import useIntersectionObserver from "../../components/animationHook";
 
 function ContactSection() {
   const [phone, setPhone] = useState("");
   const [phoneError, setPhoneError] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
   const [messageType, setMessageType] = useState("");
+  const { ref, isVisible } = useIntersectionObserver();
 
-  useEffect(() => {
-    AOS.init({
-      duration: 1050,
-      offset: 100,
-    });
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 1050,
+  //     offset: 100,
+  //   });
+  // }, []);
 
   // **Phone number validation (country code + 9-11 digits)**
   const phoneRegex = /^\+?[1-9]\d{0,3}\d{9,11}$/;
@@ -83,8 +85,12 @@ function ContactSection() {
   };
 
   return (
-    <Container fluid data-aos="fade-up" data-aos-delay="400">
-      <Container className="mt-4" style={{ marginBottom: "30px" }}>
+    <Container fluid>
+      <Container
+        ref={ref}
+        className={`mt-4 fade-up ${isVisible ? "visible" : ""}`}
+        style={{ marginBottom: "30px" }}
+      >
         <h1 className="mt-4 text-center defheadFont text-danger">Contact Us</h1>
         <p className="text-center defbodyFont">
           <i>Send us an enquiry. We will gladly respond.</i>

@@ -3,8 +3,9 @@ import { Container, Row, Col, Image, Tab, Nav } from "react-bootstrap";
 import "../home.css";
 import { FaIndustry, FaBuilding, FaLandmark, FaRecycle } from "react-icons/fa";
 
-import AOS from "aos";
-import "aos/dist/aos.css";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
+import useIntersectionObserver from "../../../components/animationHook";
 
 //market images
 import oil_1 from "../../../assets/markets_img/new/oilA.JPG";
@@ -21,6 +22,7 @@ import tech_1 from "../../../assets/markets_img/new/tech1.jpg";
 import tech_drone from "../../../assets/markets_img/new/tech2.jpg";
 
 const Markets = () => {
+  const { ref, isVisible } = useIntersectionObserver();
   const [activeTab, setActiveTab] = useState("oilGas");
 
   const tabContent = {
@@ -116,20 +118,26 @@ const Markets = () => {
     ],
   };
 
-  useEffect(() => {
-    AOS.init({
-      duration: 1050,
-      offset: 50,
-    });
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 1050,
+  //     offset: 50,
+  //   });
+  // }, []);
 
   return (
-    <Container fluid className="mt-5 marketSection mt-5">
-      <h1 className="marketTitle text-center mb-3 defheadFont text-danger">
-        <span data-aos="fade-up" data-aos-delay="500">
+    <Container ref={ref} fluid className="mt-5 marketSection mt-5">
+      <h1
+        className={`marketTitle text-center mb-3 defheadFont text-danger fade-up ${
+          isVisible ? "visible" : ""
+        }`}
+      >
+        <span>
+          {/*data-aos="fade-up" //data-aos-delay="500"*/}
           <FaIndustry />
         </span>{" "}
-        <span data-aos="fade-up" data-aos-delay="600">
+        <span>
+          {/*data-aos="fade-up" //data-aos-delay="600"*/}
           Markets
         </span>
       </h1>
@@ -204,8 +212,10 @@ const Markets = () => {
           <Tab.Content>
             <Tab.Pane eventKey={activeTab}>
               <h3
-                className="text-center mt-3 mb-1 defheadFont"
-                data-aos="fade-up"
+                className={`text-center mt-3 mb-3 defheadFont fade-up ${
+                  isVisible ? "visible" : ""
+                } delay-1`}
+                //data-aos="fade-up"
               >
                 {tabContent[activeTab][0][0].sectionTitle}
               </h3>
@@ -214,9 +224,11 @@ const Markets = () => {
                   <Col
                     sm={12}
                     md={6}
-                    className="mt-4 mt-sm-0"
+                    className={`mt-4 mt-sm-0 fade-up ${
+                      isVisible ? "visible" : ""
+                    } delay-2`}
                     key={index}
-                    data-aos="fade-up"
+                    //data-aos="fade-up"
                   >
                     <Image src={content.img} className="img-fluids" rounded />
                   </Col>
