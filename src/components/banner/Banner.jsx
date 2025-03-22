@@ -1,4 +1,4 @@
-import { React, useEffect } from "react";
+import { React } from "react";
 import "./Banner.css";
 import AnimatedElement from "../../components/motionComponent";
 

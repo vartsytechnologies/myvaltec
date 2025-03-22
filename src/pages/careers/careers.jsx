@@ -20,7 +20,8 @@ function Careers() {
         Stay tuned for Career Openings!
       </AnimatedElement>
       <AnimatedElement
-        className="text-center mt-4  defheadFont"
+        as="p"
+        className="text-center mt-4  "
         animation="fade-up"
       >
         <span>There are no job openings currently.</span> <br />

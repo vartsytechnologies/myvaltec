@@ -21,7 +21,7 @@ import AnimatedElement from "../../components/motionComponent";
 function ServiceSection() {
   return (
     <>
-      <Container fluid className="defPb bg-gray pt-5 pb-0 mb-5">
+      <Container fluid className="defPb bg-gray pt-4 pb-0 mb-5">
         <Container className="pb-4 mb-4">
           <AnimatedElement
             as="h1"
@@ -42,9 +42,9 @@ function ServiceSection() {
 
           <Row>
             <Col xs={12} lg={6}>
-              <Row className="flex-column">
-                <Col>
-                  <div className="main mb-5 pb-2">
+              <Row className="flex-column p-0 m-0">
+                <Col className="subs">
+                  <div className="main mb-4 mb-md-5 pb-2">
                     <div className="row">
                       <div
                         className="col-3 d-none d-sm-flex align-items-center justify-content-center"
@@ -101,8 +101,8 @@ function ServiceSection() {
                     </div>
                   </div>
                 </Col>
-                <Col>
-                  <div className="main mb-5 pb-2">
+                <Col className="subs">
+                  <div className="main mb-4 mb-md-5 pb-2">
                     <div className="row">
                       <div
                         className="col-3 d-none d-sm-flex align-items-center justify-content-center"
@@ -158,8 +158,8 @@ function ServiceSection() {
                     </div>
                   </div>
                 </Col>
-                <Col>
-                  <div className="main mb-5 pb-2">
+                <Col className="subs">
+                  <div className="main mb-4 mb-md-5 pb-2">
                     <div className="row">
                       <div
                         className="col-3 d-none d-sm-flex align-items-center justify-content-center"
@@ -215,8 +215,8 @@ function ServiceSection() {
                     </div>
                   </div>
                 </Col>
-                <Col>
-                  <div className="main mb-5 pb-2">
+                <Col className="subs">
+                  <div className="main mb-4 mb-md-5 pb-2">
                     <div className="row">
                       <div
                         className="col-3 d-none d-sm-flex align-items-center justify-content-center"
@@ -271,8 +271,8 @@ function ServiceSection() {
                     </div>
                   </div>
                 </Col>
-                <Col>
-                  <div className="main mb-5 pb-2">
+                <Col className="subs">
+                  <div className="main mb-4 mb-md-5 pb-2">
                     <div className="row">
                       <div
                         className="col-3 d-none d-sm-flex align-items-center justify-content-center"
@@ -332,8 +332,8 @@ function ServiceSection() {
             </Col>
             <Col xs={12} lg={6}>
               <Row className="flex-column">
-                <Col>
-                  <div className="main mb-5 pb-2">
+                <Col className="subs">
+                  <div className="main mb-4 mb-md-5 pb-2">
                     <div className="row">
                       <div
                         className="col-3 d-none d-sm-flex align-items-center justify-content-center"
@@ -388,8 +388,8 @@ function ServiceSection() {
                     </div>
                   </div>
                 </Col>
-                <Col>
-                  <div className="main mb-5 pb-2">
+                <Col className="subs">
+                  <div className="main mb-4 mb-md-5 pb-2">
                     <div className="row">
                       <div
                         className="col-3 d-none d-sm-flex align-items-center justify-content-center"
@@ -445,8 +445,8 @@ function ServiceSection() {
                     </div>
                   </div>
                 </Col>
-                <Col>
-                  <div className="main mb-5 pb-2">
+                <Col className="subs">
+                  <div className="main mb-4 mb-md-5 pb-2">
                     <div className="row">
                       <div
                         className="col-3 d-none d-sm-flex align-items-center justify-content-center"
@@ -502,8 +502,8 @@ function ServiceSection() {
                     </div>
                   </div>
                 </Col>
-                <Col>
-                  <div className="main mb-5 pb-2">
+                <Col className="subs">
+                  <div className="main mb-4 mb-md-5 pb-2">
                     <div className="row">
                       <div
                         className="col-3 d-none d-sm-flex align-items-center justify-content-center"

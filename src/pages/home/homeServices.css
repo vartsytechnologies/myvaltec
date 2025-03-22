@@ -65,3 +65,13 @@
   opacity: 1;
   transform: translateY(0);
 }
+@media (max-width: 414px) {
+  .subs {
+    padding: 0px 0px !important;
+    margin: 0px 0px !important;
+  }
+  /* .row {
+    padding: 0px 0px;
+    margin: 0px 0px;
+  } */
+}

@@ -127,3 +127,8 @@
     height: 95vh;
   }
 }
+@media (max-width: 400px) {
+  .carousel-image-container {
+    height: 98vh;
+  }
+}

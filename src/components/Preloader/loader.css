@@ -1,0 +1,20 @@
+.spinner-loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1050;
+  background: rgba(255, 255, 255, 0.8);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+/* Add fade-out effect */
+.spinner-loader.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
