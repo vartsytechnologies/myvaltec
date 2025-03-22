@@ -1,15 +1,8 @@
 import { React, useEffect } from "react";
 import "./Banner.css";
 import AnimatedElement from "../../components/motionComponent";
-import AOS from "aos";
 
 function Banner(props) {
-  useEffect(() => {
-    AOS.init({
-      duration: 1050,
-      offset: 50,
-    });
-  });
   return (
     <div className="banner d-flex align-items-center justify-content-center">
       <AnimatedElement
