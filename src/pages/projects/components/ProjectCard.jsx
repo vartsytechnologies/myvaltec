@@ -1,7 +1,8 @@
-import { React, useState, useEffect } from "react";
+import { React, useState } from "react";
 import { Card, Carousel } from "react-bootstrap";
-import AOS from "aos";
+
 import { Modal, Button } from "react-bootstrap";
+import AnimatedElement from "../../../components/motionComponent";
 
 function ProjectCard({
   title,
@@ -11,37 +12,45 @@ function ProjectCard({
   modalContent,
   carouselImages = [],
 }) {
-  useEffect(() => {
-    AOS.init({
-      duration: 1050,
-      offset: 50,
-    });
-  });
   const handleShow = () => setShowModal(true);
   const handleClose = () => setShowModal(false);
   const [showModal, setShowModal] = useState(false);
 
   return (
     <>
-      <Card className="shadow-sm h-100" data-aos="fade-up" onClick={handleShow}>
-        <Card.Img variant="top" src={imgSrc} data-aos="fade-up" />
+      <AnimatedElement
+        as={Card}
+        className="shadow-sm h-100"
+        animation="fade-up"
+        onClick={handleShow}
+      >
+        <AnimatedElement
+          as={Card.Img}
+          variant="top"
+          src={imgSrc}
+          animation="fade-up"
+        />
+
         <Card.Body>
-          <Card.Title
+          <AnimatedElement
+            as={Card.Title}
             className="defheadFont text-danger"
-            data-aos="fade-up"
-            data-aos-delay="300"
+            animation="fade-up"
+            delay={0.3}
           >
             {title}
-          </Card.Title>
-          <Card.Text
+          </AnimatedElement>
+
+          <AnimatedElement
+            as={Card.Text}
             className="defbodyFont"
-            data-aos="fade-up"
-            data-aos-delay="500"
+            animation="fade-up"
+            delay={0.5}
           >
             {description}
-          </Card.Text>
+          </AnimatedElement>
         </Card.Body>
-      </Card>
+      </AnimatedElement>
 
       {/* modal */}
       <>

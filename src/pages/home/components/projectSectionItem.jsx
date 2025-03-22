@@ -1,32 +1,39 @@
-import { React, useEffect } from "react";
-import AOS from "aos";
+import { React } from "react";
+import AnimatedElement from "../../../components/motionComponent";
 
 function ProjectSectionItem(props) {
-  useEffect(() => {
-    AOS.init({
-      duration: 1050,
-      offset: 50,
-    });
-  });
   return (
     <>
-      <p
+      <AnimatedElement
+        animation="fade-up"
+        as="p"
         style={{ zIndex: "0" }}
         className="zoom-out-container"
-        data-aos="fade-up"
       >
         <img
           src={props.imageSource}
           alt="Project"
           style={{ width: "100%", height: "auto" }}
         />
-      </p>
-      <h3 className="defbodyFont" data-aos="fade-up" data-aos-delay="400">
+      </AnimatedElement>
+
+      <AnimatedElement
+        animation="fade-up"
+        as="h3"
+        className="defbodyFont"
+        delay={0.4}
+      >
         {props.heading}
-      </h3>
-      <p className="defbodyFont" data-aos="fade-up" data-aos-delay="500">
+      </AnimatedElement>
+
+      <AnimatedElement
+        animation="fade-up"
+        as="p"
+        className="defbodyFont"
+        delay={0.5}
+      >
         {props.subtext}
-      </p>
+      </AnimatedElement>
     </>
   );
 }

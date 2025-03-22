@@ -9,17 +9,20 @@ import ENI1 from "../../../assets/projectpics/ENI_OCTP_ORF1.jpg";
 import MiG1 from "../../../assets/projectpics/MIG_Welding1.jpg";
 import img9 from "../../../assets/projectpics/bently2.jpg";
 import { Link } from "react-router-dom";
+import AnimatedElement from "../../../components/motionComponent";
 
 function ProjectSection() {
   return (
     <>
       <Container className="mt-5 defPt defPb">
-        <h1
+        <AnimatedElement
+          as="h1"
+          animation="fade-up"
           className="text-center mb-5 text-danger defheadFont"
-          data-aos="fade-up"
         >
           <FaTools /> Projects
-        </h1>
+        </AnimatedElement>
+
         <Row>
           <Col xs={12} md={6} lg={4}>
             <ProjectSectionItem
@@ -40,15 +43,16 @@ function ProjectSection() {
             />
           </Col>
         </Row>
-        <p
+
+        <AnimatedElement
+          animation="fade-up"
+          delay={0.2}
           style={{ textAlign: "center", marginTop: "0.8rem" }}
-          data-aos="fade-up"
-          data-aos-delay="200"
         >
           <Link to="/projects">
             <DefaultButton name="See More Projects" variant="danger" />
           </Link>
-        </p>
+        </AnimatedElement>
       </Container>
     </>
   );

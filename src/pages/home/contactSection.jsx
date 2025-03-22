@@ -1,4 +1,4 @@
-import { React, useEffect, useState } from "react";
+import { React, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./home.css";
 import Button from "react-bootstrap/Button";
@@ -8,22 +8,14 @@ import { GoHomeFill } from "react-icons/go";
 import { LuPhoneCall } from "react-icons/lu";
 import { MdEmail } from "react-icons/md";
 import { IoSendSharp } from "react-icons/io5";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import emailjs from "@emailjs/browser";
+import AnimatedElement from "../../components/motionComponent";
 
 function ContactSection() {
   const [phone, setPhone] = useState("");
   const [phoneError, setPhoneError] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
   const [messageType, setMessageType] = useState("");
-
-  useEffect(() => {
-    AOS.init({
-      duration: 1050,
-      offset: 100,
-    });
-  }, []);
 
   // **Phone number validation (country code + 9-11 digits)**
   const phoneRegex = /^\+?[1-9]\d{0,3}\d{9,11}$/;
@@ -83,7 +75,7 @@ function ContactSection() {
   };
 
   return (
-    <Container fluid data-aos="fade-up" data-aos-delay="400">
+    <AnimatedElement as={Container} fluid animation="fade-up" delay={0.4}>
       <Container className="mt-4" style={{ marginBottom: "30px" }}>
         <h1 className="mt-4 text-center defheadFont text-danger">Contact Us</h1>
         <p className="text-center defbodyFont">
@@ -308,7 +300,7 @@ function ContactSection() {
           </Col>
         </Row>
       </Container>
-    </Container>
+    </AnimatedElement>
   );
 }
 

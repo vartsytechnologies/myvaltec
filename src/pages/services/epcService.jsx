@@ -1,22 +1,20 @@
-import { useEffect, React } from "react";
+import { React } from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./services.css";
 import { GiValve, GiOilPump } from "react-icons/gi";
 import { FaTools } from "react-icons/fa";
 import { MdOutlineElectricalServices, MdEngineering } from "react-icons/md";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import AnimatedElement from "../../components/motionComponent";
 
 const EpcSection = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 900,
-      offset: 40,
-    });
-  }, []);
   return (
-    <Container fluid className="px-2 py-3" data-aos="fade-up">
+    <AnimatedElement
+      as={Container}
+      fluid
+      className="px-2 py-3"
+      animation="fade-up"
+    >
       <Row className="align-items-center">
         {/* Left side - Text Section */}
         <Col
@@ -111,7 +109,7 @@ const EpcSection = () => {
           </Row>
         </Col>
       </Row>
-    </Container>
+    </AnimatedElement>
   );
 };
 

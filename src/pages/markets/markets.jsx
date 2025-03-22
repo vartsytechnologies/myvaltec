@@ -1,5 +1,5 @@
 import React from "react";
-import Banner from "../../components/banner/Banner.js";
+import Banner from "../../components/banner/Banner.jsx";
 import MarketSection from "./components/marketSection.jsx";
 
 function Market() {

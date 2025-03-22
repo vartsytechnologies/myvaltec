@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Container, Row, Col, Image, Tab, Nav } from "react-bootstrap";
 import "../home.css";
 import { FaIndustry, FaBuilding, FaLandmark, FaRecycle } from "react-icons/fa";
 
-import AOS from "aos";
-import "aos/dist/aos.css";
+import AnimatedElement from "../../../components/motionComponent";
 
 //market images
 import oil_1 from "../../../assets/markets_img/new/oilA.JPG";
@@ -116,22 +115,20 @@ const Markets = () => {
     ],
   };
 
-  useEffect(() => {
-    AOS.init({
-      duration: 1050,
-      offset: 50,
-    });
-  }, []);
-
   return (
     <Container fluid className="mt-5 marketSection mt-5">
       <h1 className="marketTitle text-center mb-3 defheadFont text-danger">
-        <span data-aos="fade-up" data-aos-delay="500">
+        <AnimatedElement as="span" animation="fade-up" delay={0.5}>
           <FaIndustry />
-        </span>{" "}
-        <span data-aos="fade-up" data-aos-delay="600">
+        </AnimatedElement>
+        <AnimatedElement
+          as="span"
+          className="ms-3"
+          animation="fade-up"
+          delay={0.6}
+        >
           Markets
-        </span>
+        </AnimatedElement>
       </h1>
       <Tab.Container activeKey={activeTab} onSelect={(k) => setActiveTab(k)}>
         <Nav
@@ -203,22 +200,20 @@ const Markets = () => {
         <Container className="marketTitle">
           <Tab.Content>
             <Tab.Pane eventKey={activeTab}>
-              <h3
-                className="text-center mt-3 mb-1 defheadFont"
-                data-aos="fade-up"
-              >
-                {tabContent[activeTab][0][0].sectionTitle}
-              </h3>
+              <AnimatedElement animation="fade-up" delay={0.01}>
+                <h3 className="text-center mt-3 mb-1 defheadFont">
+                  {tabContent[activeTab][0][0].sectionTitle}
+                </h3>
+              </AnimatedElement>
               <Row className="justify-content-around">
                 {tabContent[activeTab][1].map((content, index) => (
-                  <Col
-                    sm={12}
-                    md={6}
-                    className="mt-4 mt-sm-0"
-                    key={index}
-                    data-aos="fade-up"
-                  >
-                    <Image src={content.img} className="img-fluids" rounded />
+                  <Col sm={12} md={6} className="mt-4 mt-sm-0" key={index}>
+                    <AnimatedElement
+                      animation="fade-up"
+                      delay={0.1 + index * 0.09}
+                    >
+                      <Image src={content.img} className="img-fluids" rounded />
+                    </AnimatedElement>
                   </Col>
                 ))}
               </Row>

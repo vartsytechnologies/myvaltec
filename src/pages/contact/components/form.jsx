@@ -3,9 +3,8 @@ import { Row, Col } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import "./Contacts.css";
-import AOS from "aos";
-import { useEffect } from "react";
-import "aos/dist/aos.css";
+import AnimatedElement from "../../../components/motionComponent";
+
 import { IoSendSharp } from "react-icons/io5";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
@@ -15,13 +14,6 @@ function ContactForm() {
   const [phoneError, setPhoneError] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
   const [messageType, setMessageType] = useState(""); // "success
-
-  useEffect(() => {
-    AOS.init({
-      duration: 650,
-      offset: 50,
-    });
-  }, []);
 
   // Phone number validation (country code + 9-11 digits)
   const phoneRegex = /^\+?[1-9]\d{0,3}\d{9,11}$/;
@@ -77,7 +69,12 @@ function ContactForm() {
   };
 
   return (
-    <Form data-aos="fade-up" autoComplete="off" onSubmit={sendDetails}>
+    <AnimatedElement
+      as={Form}
+      animation="fade-up"
+      autoComplete="off"
+      onSubmit={sendDetails}
+    >
       <Row className="py-3">
         <Col xs={12} lg={5}>
           <Form.Group as={Col} className="mb-3">
@@ -186,7 +183,7 @@ function ContactForm() {
           )}
         </div>
       </Col>
-    </Form>
+    </AnimatedElement>
   );
 }
 export default ContactForm;

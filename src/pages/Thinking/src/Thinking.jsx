@@ -1,4 +1,4 @@
-import { useEffect, React } from "react";
+import { React } from "react";
 import Banner from "../../../components/banner/Banner";
 import { Container, Row, Col } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
@@ -10,9 +10,7 @@ import companyOverview from "../../../assets/solars.jpeg";
 import purpose from "../../../assets/purpose.jpg";
 import quality_assurance from "../../../assets/q_a.jpg";
 import ethics_and_compliance from "../../../assets/e_c.webp";
-
-import AOS from "aos";
-import "aos/dist/aos.css";
+import AnimatedElement from "../../../components/motionComponent";
 import "./components/thinking.css";
 
 const teamMembers = [
@@ -59,20 +57,13 @@ const teamMembers = [
 ];
 
 function App() {
-  useEffect(() => {
-    AOS.init({
-      duration: 550,
-      offset: 50,
-    });
-  }, []);
-
   return (
     <>
       <Banner title="Thinking" />
       <Container className="mt-4 px-0">
         <Container className="mt-4 px-0">
           <Row className="flex-column gy-2 mt-5">
-            <Col data-aos="fade-up" className="">
+            <AnimatedElement as={Col} animation="fade-up">
               <Row className="justify-content-between">
                 <Col
                   xs={12}
@@ -128,8 +119,8 @@ function App() {
                   </div>
                 </Col>
               </Row>
-            </Col>
-            <Col data-aos="fade-up" className="py-4">
+            </AnimatedElement>
+            <AnimatedElement as={Col} animation="fade-up" className="py-4">
               <Row className="justify-content-between">
                 <Col
                   xs={12}
@@ -168,37 +159,44 @@ function App() {
                     }}
                   />
                   <ul className="defbodyFont ">
-                    <li data-aos="fade-up">
+                    <AnimatedElement as="li" animation="fade-up">
+                      {" "}
                       Deliver value through technology.
-                    </li>
-                    <li data-aos="fade-up">
+                    </AnimatedElement>
+                    <AnimatedElement as="li" animation="fade-up">
+                      {" "}
                       Demonstrate leadership with excellence.
-                    </li>
-                    <li data-aos="fade-up">
+                    </AnimatedElement>
+                    <AnimatedElement as="li" animation="fade-up">
+                      {" "}
                       Think innovatively while embracing new ideas.
-                    </li>
-                    <li data-aos="fade-up">
+                    </AnimatedElement>
+                    <AnimatedElement as="li" animation="fade-up">
+                      {" "}
                       Operate ethically and with integrity, prioritizing safety
                       and security.
-                    </li>
-                    <li data-aos="fade-up">
+                    </AnimatedElement>
+                    <AnimatedElement as="li" animation="fade-up">
+                      {" "}
                       Collaborate with unrivaled expertise to solve complex
                       challenges.
-                    </li>
-                    <li data-aos="fade-up">
+                    </AnimatedElement>
+                    <AnimatedElement as="li" animation="fade-up">
+                      {" "}
                       Share success with our stakeholders.
-                    </li>
+                    </AnimatedElement>
                   </ul>
+
                   <p className="mt-4"></p>
                 </Col>
               </Row>
-            </Col>
+            </AnimatedElement>
           </Row>
         </Container>
         <Container fluid className="bg-gray">
           <Container className="py-4">
             <Row className="flex-column gy-2 mt-5">
-              <Col data-aos="fade-up" className="py-4">
+              <AnimatedElement as={Col} animation="fade-up" className="py-4">
                 <Row className="justify-content-between">
                   <Col
                     xs={12}
@@ -252,8 +250,8 @@ function App() {
                     <p className="mt-4"></p>
                   </Col>
                 </Row>
-              </Col>
-              <Col data-aos="fade-up" className="py-4">
+              </AnimatedElement>
+              <AnimatedElement as={Col} animation="fade-up" className="py-4">
                 <Row className="justify-content-between">
                   <Col className="align-self-center p-auto">
                     <h2 className="fs-5 p-0 m-0 defheadFont text-danger">
@@ -315,13 +313,13 @@ function App() {
                     </div>
                   </Col>
                 </Row>
-              </Col>
+              </AnimatedElement>
             </Row>
           </Container>
         </Container>
         <Container>
           <Row className="flex-column gy-2 mt-5">
-            <Col data-aos="fade-up" className="py-4">
+            <AnimatedElement as={Col} animation="fade-up" className="py-4">
               <Row className="justify-content-between">
                 <Col
                   xs={12}
@@ -373,11 +371,12 @@ function App() {
                       We are ISO 9001 and ISO 14001 certified.
                     </span>
                   </p>
-                  <div
+                  <AnimatedElement
+                    as="div"
+                    animation="fade-up"
+                    delay={0.4}
                     className=" rounded bg-white d-flex align-items-center justify-content-between"
                     style={{ width: "290px" }}
-                    data-aos="fade-up"
-                    data-aos-delay="400"
                   >
                     <img
                       className="m-3"
@@ -391,18 +390,23 @@ function App() {
                       style={{ height: "100px" }}
                       alt=""
                     />
-                  </div>
+                  </AnimatedElement>
+
                   <p className="mt-4"></p>
                 </Col>
               </Row>
               <Row>
                 <Col>
-                  <h4 className="text-danger pt-3" data-aos="fade-up">
+                  <AnimatedElement
+                    as="h4"
+                    className="text-danger pt-3"
+                    animation="fade-up"
+                  >
                     VALTEC upholds a robust QHSE policy by:
-                  </h4>
-                  <p
+                  </AnimatedElement>
+                  <AnimatedElement
                     className="defbodyFont text-justify text-justify-xs-start"
-                    data-aos="fade-up"
+                    animation="fade-up"
                   >
                     Establishing clear and measurable Quality Objectives across
                     all operational sectors is imperative. Continuous
@@ -424,21 +428,22 @@ function App() {
                     inception. Thorough planning safeguards employees and the
                     environment.
                     <br />
-                  </p>
+                  </AnimatedElement>
                 </Col>
               </Row>
-            </Col>
+            </AnimatedElement>
           </Row>
         </Container>
       </Container>
       <Container>
         <div>
-          <h3
+          <AnimatedElement
+            as="h3"
             className="text-danger fw-bold ms-3 text-start pt-0 mt-0 mt-sm-5 pt-sm-3"
-            data-aos="fade-up"
+            animation="fade-up"
           >
             MANAGEMENT TEAM
-          </h3>
+          </AnimatedElement>
         </div>
         <Row className="p-0 gx-0 defbodyFont my-5">
           <Col lg={12}>

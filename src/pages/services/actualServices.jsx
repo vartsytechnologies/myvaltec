@@ -1,4 +1,4 @@
-import { React, useState, useEffect } from "react";
+import { React, useState } from "react";
 import {
   Container,
   Row,
@@ -9,6 +9,7 @@ import {
   Carousel,
 } from "react-bootstrap";
 import Banner from "../../components/banner/Banner";
+import AnimatedElement from "../../components/motionComponent";
 import "./services.css";
 
 import { Link } from "react-router-dom";
@@ -25,8 +26,6 @@ import {
 import { VscWorkspaceTrusted } from "react-icons/vsc";
 import { PiMonitor } from "react-icons/pi";
 import { AiOutlineExperiment } from "react-icons/ai";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 import serv_bg from "../../assets/services_img/white-unsplash-9d0375d2.jpg";
 // new service images
@@ -720,13 +719,6 @@ export const serviceItems = [
 ];
 
 function Services() {
-  useEffect(() => {
-    AOS.init({
-      duration: 900,
-      offset: 50,
-    });
-  }, []);
-
   // State for Image Modal
   const [showModal, setShowModal] = useState(false);
   const [clickedImage, setClickedImage] = useState(null);
@@ -766,7 +758,12 @@ function Services() {
           </Row>
           <Row className="flex-column mt-5">
             {serviceItems.map((service, idx) => (
-              <Col key={idx} data-aos="fade-up" className="py-0 mb-5">
+              <AnimatedElement
+                as={Col}
+                key={idx}
+                animation="fade-up"
+                className="py-0 mb-5"
+              >
                 <Row className="justify-content-between align-items-center">
                   <Col
                     xs={12}
@@ -842,7 +839,7 @@ function Services() {
                       )}
                   </Col>
                 </Row>
-              </Col>
+              </AnimatedElement>
             ))}
           </Row>
         </Container>

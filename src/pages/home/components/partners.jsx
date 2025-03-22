@@ -1,10 +1,10 @@
-import { React, useEffect } from "react";
+import { React } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import agamine_r from "../../../assets/partnerIcons/agamine_r.png";
 import cans_r from "../../../assets/partnerIcons/cans_r.png";
 import huawei_e from "../../../assets/partnerIcons/huawei_e.png";
 import fuelox from "../../../assets/partnerIcons/fuelox.png";
-import AOS from "aos";
+
 import "../home.css";
 import "aos/dist/aos.css";
 
@@ -16,12 +16,6 @@ const partners = [
 ];
 
 function Partners() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1050,
-      offset: 100,
-    });
-  }, []);
   return (
     <Container fluid style={{ backgroundColor: "rgba(255, 177, 193, 0.6" }}>
       <Container className="mb-5 pb-3">
@@ -29,12 +23,13 @@ function Partners() {
         <Row className="mt-4 align-items-around justify-content-center mt-0 pt-0 pt-1 mb-5">
           {partners.map((partner, index) => (
             <Col
+              key={index}
               xs={6}
               sm={4}
               md={3}
               className="d-flex align-self-center justify-content-center my-0 py-0"
             >
-              <a href={`${partner[1]}`} target="blank">
+              <a href={partner[1]} target="_blank" rel="noopener noreferrer">
                 <img
                   src={partner[0]}
                   className="img-partner"

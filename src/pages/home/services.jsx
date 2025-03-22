@@ -1,4 +1,5 @@
-import { React, useEffect } from "react";
+import React from "react";
+// import { useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -14,33 +15,30 @@ import {
 import { VscWorkspaceTrusted } from "react-icons/vsc";
 import { PiMonitor } from "react-icons/pi";
 import { AiOutlineExperiment } from "react-icons/ai";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import { motion } from "framer-motion";
+import AnimatedElement from "../../components/motionComponent";
 
 function ServiceSection() {
-  useEffect(() => {
-    AOS.init({
-      duration: 350,
-      offset: 50,
-    });
-  }, []);
   return (
     <>
       <Container fluid className="defPb bg-gray pt-5 pb-0 mb-5">
         <Container className="pb-4 mb-4">
-          <h1
+          <AnimatedElement
+            as="h1"
+            animation="fade-down"
+            delay={0.5}
             className="mt-4 text-center text-danger defheadFont"
-            data-aos="fade-up"
           >
             Services
-          </h1>
-          <p
+          </AnimatedElement>
+          <AnimatedElement
+            as="p"
+            animation="fade-down"
+            delay={0.4}
             className="text-center defbodyFont defPb"
-            data-aos="fade-up"
-            data-aos-delay="400"
           >
-            <i>We serve our clients very well in these areas of services</i>
-          </p>
+            <i>We serve our clients very well in these areas of services.</i>
+          </AnimatedElement>
 
           <Row>
             <Col xs={12} lg={6}>
@@ -54,44 +52,50 @@ function ServiceSection() {
                           background: "rgba(255, 177, 193, 0.22",
                         }}
                       >
-                        <div
+                        <AnimatedElement
+                          as="div"
+                          animation="fade-up"
+                          delay={0.6}
                           className="image-container m-2 p-2 d-flex align-items-center justify-content-center"
-                          data-aos="fade-up"
-                          data-aos-delay="500"
                         >
+                          {" "}
                           <MdOutlineConstruction className="i-cons" />
-                        </div>
+                        </AnimatedElement>
                       </div>
                       <div className="col-12 col-sm-9">
                         <div className="text-container me-2">
-                          <h3
+                          <AnimatedElement
                             className="fs-5 p-0 m-0 defheadFont text-danger"
-                            data-aos="fade-up"
-                            data-aos-delay="600"
+                            animation="fade-up"
+                            delay={0.6}
                           >
                             Engineering, Procurement, Consulting & Project
                             Management
-                          </h3>
-                          <hr
+                          </AnimatedElement>
+
+                          <motion.hr
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5, delay: 0.6 }}
+                            viewport={{ once: true }}
                             style={{
                               borderTop: "2px solid rgba(255,17,67,1)",
                               borderRadius: "4px",
                               opacity: "1",
                               margin: "0.5rem 0",
                             }}
-                            data-aos="fade-up"
-                            data-aos-delay="10"
                           />
-                          <p
+                          <AnimatedElement
+                            as="p"
+                            animation="fade-up"
+                            delay={0.7}
                             className="p-0 m-0 defbodyFont text-left"
-                            data-aos="fade-up"
-                            data-aos-delay="700"
                           >
                             Our team brings a wealth of experience, utilizing
                             advanced technology and local expertise to
                             streamline project execution from design to
                             completion.
-                          </p>
+                          </AnimatedElement>
                         </div>
                       </div>
                     </div>
@@ -106,44 +110,49 @@ function ServiceSection() {
                           background: "rgba(255, 177, 193, 0.22",
                         }}
                       >
-                        <div
+                        <AnimatedElement
+                          as="div"
+                          animation="fade-up"
+                          delay={0.6}
                           className="image-container m-2 p-2 d-flex align-items-center justify-content-center"
-                          style={{}}
-                          data-aos="fade-up"
-                          data-aos-delay="500"
                         >
+                          {" "}
                           <MdOutlineCompassCalibration className="i-cons" />
-                        </div>
+                        </AnimatedElement>
                       </div>
                       <div className="col-12 col-sm-9">
                         <div className="text-container me-2">
-                          <p
+                          <AnimatedElement
                             className="fs-5 p-0 m-0 defheadFont text-danger"
-                            data-aos="fade-up"
-                            data-aos-delay="600"
+                            animation="fade-up"
+                            delay={0.6}
                           >
                             Calibration Services
-                          </p>
-                          <hr
+                          </AnimatedElement>
+
+                          <motion.hr
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5, delay: 0.6 }}
+                            viewport={{ once: true }}
                             style={{
                               borderTop: "2px solid rgba(255,17,67,1)",
                               borderRadius: "4px",
                               opacity: "1",
                               margin: "0.5rem 0",
                             }}
-                            data-aos="fade-up"
-                            data-aos-delay="10"
                           />
-                          <p
+                          <AnimatedElement
+                            as="p"
+                            animation="fade-up"
+                            delay={0.7}
                             className="p-0 m-0 defbodyFont text-left"
-                            data-aos="fade-up"
-                            data-aos-delay="700"
                           >
                             In an industry where accuracy is paramount, our
                             Calibration Services provide reliable, precise
                             calibrations for industrial equipment across energy,
                             mining, and oil & gas sectors.
-                          </p>
+                          </AnimatedElement>
                         </div>
                       </div>
                     </div>
@@ -158,43 +167,49 @@ function ServiceSection() {
                           background: "rgba(255, 177, 193, 0.22",
                         }}
                       >
-                        <div
+                        <AnimatedElement
+                          as="div"
+                          animation="fade-up"
+                          delay={0.6}
                           className="image-container m-2 p-2 d-flex align-items-center justify-content-center"
-                          data-aos="fade-up"
-                          data-aos-delay="500"
                         >
+                          {" "}
                           <AiOutlineExperiment className="i-cons" />
-                        </div>
+                        </AnimatedElement>
                       </div>
                       <div className="col-12 col-sm-9">
                         <div className="text-container me-2">
-                          <p
+                          <AnimatedElement
                             className="fs-5 p-0 m-0 defheadFont text-danger"
-                            data-aos="fade-up"
-                            data-aos-delay="600"
+                            animation="fade-up"
+                            delay={0.6}
                           >
                             Additives : Fuel, Lubricants and Greases
-                          </p>
-                          <hr
+                          </AnimatedElement>
+
+                          <motion.hr
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5, delay: 0.6 }}
+                            viewport={{ once: true }}
                             style={{
                               borderTop: "2px solid rgba(255,17,67,1)",
                               borderRadius: "4px",
                               opacity: "1",
                               margin: "0.5rem 0",
                             }}
-                            data-aos="fade-up"
-                            data-aos-delay="10"
                           />
-                          <p
+                          <AnimatedElement
+                            as="p"
+                            animation="fade-up"
+                            delay={0.7}
                             className="p-0 m-0 defbodyFont text-left"
-                            data-aos="fade-up"
-                            data-aos-delay="700"
                           >
                             VALTEC offers a range of high-quality fuel additives
                             and lubricants designed to enhance equipment
                             performance, reduce emissions, and extend machinery
                             life.
-                          </p>
+                          </AnimatedElement>
                         </div>
                       </div>
                     </div>
@@ -209,38 +224,48 @@ function ServiceSection() {
                           background: "rgba(255, 177, 193, 0.22",
                         }}
                       >
-                        <div
+                        <AnimatedElement
+                          as="div"
+                          animation="fade-up"
+                          delay={0.6}
                           className="image-container m-2 p-2 d-flex align-items-center justify-content-center"
-                          data-aos="fade-up"
-                          data-aos-delay="500"
                         >
+                          {" "}
                           <PiMonitor className="i-cons" />
-                        </div>
+                        </AnimatedElement>
                       </div>
                       <div className="col-12 col-sm-9">
                         <div className="text-container me-2">
-                          <p
+                          <AnimatedElement
                             className="fs-5 p-0 m-0 defheadFont text-danger"
-                            data-aos="fade-up"
-                            data-aos-delay="600"
+                            animation="fade-up"
+                            delay={0.6}
                           >
                             Data & Analytics
-                          </p>
-                          <hr
+                          </AnimatedElement>
+
+                          <motion.hr
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5, delay: 0.6 }}
+                            viewport={{ once: true }}
                             style={{
                               borderTop: "2px solid rgba(255,17,67,1)",
                               borderRadius: "4px",
                               opacity: "1",
                               margin: "0.5rem 0",
                             }}
-                            data-aos="fade-up"
-                            data-aos-delay="10"
                           />
-                          <p className="p-0 m-0 defbodyFont ">
+                          <AnimatedElement
+                            as="p"
+                            animation="fade-up"
+                            delay={0.7}
+                            className="p-0 m-0 defbodyFont text-left"
+                          >
                             We leverage data engineering, advanced analytics and
                             machine learning technology to address a diverse
                             range of client challenges.
-                          </p>
+                          </AnimatedElement>
                         </div>
                       </div>
                     </div>
@@ -255,39 +280,49 @@ function ServiceSection() {
                           background: "rgba(255, 177, 193, 0.22",
                         }}
                       >
-                        <div
+                        <AnimatedElement
+                          as="div"
+                          animation="fade-up"
+                          delay={0.6}
                           className="image-container m-2 p-2 d-flex align-items-center justify-content-center"
-                          data-aos="fade-up"
-                          data-aos-delay="700"
                         >
+                          {" "}
                           <MdOutlineWifiProtectedSetup className="i-cons" />
-                        </div>
+                        </AnimatedElement>
                       </div>
                       <div className="col-12 col-sm-9">
                         <div className="text-container me-2">
-                          <p
+                          <AnimatedElement
                             className="fs-5 p-0 m-0 defheadFont text-danger"
-                            data-aos="fade-up"
-                            data-aos-delay="800"
+                            animation="fade-up"
+                            delay={0.6}
                           >
                             Sustainability
-                          </p>
-                          <hr
+                          </AnimatedElement>
+
+                          <motion.hr
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5, delay: 0.6 }}
+                            viewport={{ once: true }}
                             style={{
                               borderTop: "2px solid rgba(255,17,67,1)",
                               borderRadius: "4px",
                               opacity: "1",
                               margin: "0.5rem 0",
                             }}
-                            data-aos="fade-up"
-                            data-aos-delay="10"
                           />
-                          <p className="p-0 m-0 defbodyFont ">
+                          <AnimatedElement
+                            as="p"
+                            animation="fade-up"
+                            delay={0.7}
+                            className="p-0 m-0 defbodyFont text-left"
+                          >
                             We help you identify risks and build strategies that
                             ensure sustainable, long-term success. Our solutions
                             help you track energy use and reduce emissions for a
                             greener, efficient future.
-                          </p>
+                          </AnimatedElement>
                         </div>
                       </div>
                     </div>
@@ -306,42 +341,48 @@ function ServiceSection() {
                           background: "rgba(255, 177, 193, 0.22",
                         }}
                       >
-                        <div
+                        <AnimatedElement
+                          as="div"
+                          animation="fade-up"
+                          delay={0.6}
                           className="image-container m-2 p-2 d-flex align-items-center justify-content-center"
-                          data-aos="fade-up"
-                          data-aos-delay="500"
                         >
+                          {" "}
                           <MdOutlineSolarPower className="i-cons" />
-                        </div>
+                        </AnimatedElement>
                       </div>
                       <div className="col-12 col-sm-9">
                         <div className="text-container me-2">
-                          <p
+                          <AnimatedElement
                             className="fs-5 p-0 m-0 defheadFont text-danger"
-                            data-aos="fade-up"
-                            data-aos-delay="600"
+                            animation="fade-up"
+                            delay={0.6}
                           >
                             Renewable Energy
-                          </p>
-                          <hr
+                          </AnimatedElement>
+
+                          <motion.hr
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5, delay: 0.6 }}
+                            viewport={{ once: true }}
                             style={{
                               borderTop: "2px solid rgba(255,17,67,1)",
                               borderRadius: "4px",
                               opacity: "1",
                               margin: "0.5rem 0",
                             }}
-                            data-aos="fade-up"
-                            data-aos-delay="10"
                           />
-                          <p
+                          <AnimatedElement
+                            as="p"
+                            animation="fade-up"
+                            delay={0.7}
                             className="p-0 m-0 defbodyFont text-left"
-                            data-aos="fade-up"
-                            data-aos-delay="700"
                           >
                             We meet residential, commercial, utility energy
                             demands with high-quality solar photovoltaic modules
                             and reliable battery solutions for our projects.
-                          </p>
+                          </AnimatedElement>
                         </div>
                       </div>
                     </div>
@@ -356,43 +397,49 @@ function ServiceSection() {
                           background: "rgba(255, 177, 193, 0.22",
                         }}
                       >
-                        <div
+                        <AnimatedElement
+                          as="div"
+                          animation="fade-up"
+                          delay={0.6}
                           className="image-container m-2 p-2 d-flex align-items-center justify-content-center"
-                          data-aos="fade-up"
-                          data-aos-delay="500"
                         >
+                          {" "}
                           <MdOutlinePrecisionManufacturing className="i-cons" />
-                        </div>
+                        </AnimatedElement>
                       </div>
                       <div className="col-12 col-sm-9">
                         <div className="text-container me-2">
-                          <p
+                          <AnimatedElement
                             className="fs-5 p-0 m-0 defheadFont text-danger"
-                            data-aos="fade-up"
-                            data-aos-delay="600"
+                            animation="fade-up"
+                            delay={0.6}
                           >
                             Infrastructure and Facilities
-                          </p>
-                          <hr
+                          </AnimatedElement>
+
+                          <motion.hr
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5, delay: 0.6 }}
+                            viewport={{ once: true }}
                             style={{
                               borderTop: "2px solid rgba(255,17,67,1)",
                               borderRadius: "4px",
                               opacity: "1",
                               margin: "0.5rem 0",
                             }}
-                            data-aos="fade-up"
-                            data-aos-delay="10"
                           />
-                          <p
+                          <AnimatedElement
+                            as="p"
+                            animation="fade-up"
+                            delay={0.7}
                             className="p-0 m-0 defbodyFont text-left"
-                            data-aos="fade-up"
-                            data-aos-delay="700"
                           >
                             VALTEC leverages its local expertise and global
                             network to support infrastructure projects, ensuring
                             optimal functionality and safety standards in every
                             project.
-                          </p>
+                          </AnimatedElement>
                         </div>
                       </div>
                     </div>
@@ -407,43 +454,49 @@ function ServiceSection() {
                           background: "rgba(255, 177, 193, 0.22",
                         }}
                       >
-                        <div
-                          className="image-container m-2 p-2 d-flex align-items-center justify-content-center "
-                          data-aos="fade-up"
-                          data-aos-delay="500"
+                        <AnimatedElement
+                          as="div"
+                          animation="fade-up"
+                          delay={0.6}
+                          className="image-container m-2 p-2 d-flex align-items-center justify-content-center"
                         >
+                          {" "}
                           <MdOutlineGroup className="i-cons" />
-                        </div>
+                        </AnimatedElement>
                       </div>
                       <div className="col-12 col-sm-9">
                         <div className="text-container me-2">
-                          <p
+                          <AnimatedElement
                             className="fs-5 p-0 m-0 defheadFont text-danger"
-                            data-aos="fade-up"
-                            data-aos-delay="600"
+                            animation="fade-up"
+                            delay={0.6}
                           >
                             Public Private Partnerships
-                          </p>
-                          <hr
+                          </AnimatedElement>
+
+                          <motion.hr
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5, delay: 0.6 }}
+                            viewport={{ once: true }}
                             style={{
                               borderTop: "2px solid rgba(255,17,67,1)",
                               borderRadius: "4px",
                               opacity: "1",
                               margin: "0.5rem 0",
                             }}
-                            data-aos="fade-up"
-                            data-aos-delay="10"
                           />
-                          <p
+                          <AnimatedElement
+                            as="p"
+                            animation="fade-up"
+                            delay={0.7}
                             className="p-0 m-0 defbodyFont text-left"
-                            data-aos="fade-up"
-                            data-aos-delay="700"
                           >
                             Our collaborative approach connects government
                             entities and private enterprises, fostering projects
                             that benefit communities and contribute to
                             sustainable development.
-                          </p>
+                          </AnimatedElement>
                         </div>
                       </div>
                     </div>
@@ -458,44 +511,50 @@ function ServiceSection() {
                           background: "rgba(255, 177, 193, 0.22",
                         }}
                       >
-                        <div
-                          className="image-container m-2 p-2 d-flex align-items-center justify-content-center "
-                          data-aos="fade-up"
-                          data-aos-delay="500"
+                        <AnimatedElement
+                          as="div"
+                          animation="fade-up"
+                          delay={0.6}
+                          className="image-container m-2 p-2 d-flex align-items-center justify-content-center"
                         >
+                          {" "}
                           <VscWorkspaceTrusted className="i-cons" />
-                        </div>
+                        </AnimatedElement>
                       </div>
                       <div className="col-12 col-sm-9">
                         <div className="text-container me-2">
-                          <p
+                          <AnimatedElement
                             className="fs-5 p-0 m-0 defheadFont text-danger"
-                            data-aos="fade-up"
-                            data-aos-delay="600"
+                            animation="fade-up"
+                            delay={0.6}
                           >
                             Precision & Reliability
-                          </p>
-                          <hr
+                          </AnimatedElement>
+
+                          <motion.hr
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5, delay: 0.6 }}
+                            viewport={{ once: true }}
                             style={{
                               borderTop: "2px solid rgba(255,17,67,1)",
                               borderRadius: "4px",
                               opacity: "1",
                               margin: "0.5rem 0",
                             }}
-                            data-aos="fade-up"
-                            data-aos-delay="10"
                           />
-                          <p
+                          <AnimatedElement
+                            as="p"
+                            animation="fade-up"
+                            delay={0.7}
                             className="p-0 m-0 defbodyFont text-left"
-                            data-aos="fade-up"
-                            data-aos-delay="700"
                           >
                             Our highly specialized technical team is equipped to
                             identify and resolve operational issues while
                             utilizing various reliability tools and
                             complementary techniques to address every aspect of
                             your maintenance needs.
-                          </p>
+                          </AnimatedElement>
                         </div>
                       </div>
                     </div>

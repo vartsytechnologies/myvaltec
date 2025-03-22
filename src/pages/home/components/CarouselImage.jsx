@@ -2,7 +2,6 @@ import { Container } from "react-bootstrap";
 import "../home.css";
 
 function CarouselImage({ sliderImage }) {
-  // Function to take in the sliderimage
   return (
     <Container fluid className="carousel-image-container">
       <img

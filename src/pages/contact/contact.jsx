@@ -1,35 +1,25 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Banner from "../../components/banner/Banner";
+import AnimatedElement from "../../components/motionComponent";
 import { GoHomeFill } from "react-icons/go";
 import { LuPhoneCall } from "react-icons/lu";
 import { MdEmail } from "react-icons/md";
 import ContactForm from "./components/form";
 import Map from "./components/Map";
-import AOS from "aos";
-import { useEffect } from "react";
-import "aos/dist/aos.css";
 
 export default function Contact() {
-  useEffect(() => {
-    AOS.init({
-      duration: 550,
-      offset: 50,
-    });
-  }, []);
   return (
     <>
       <Banner title="How can we help ?" />
       <Container fluid>
         <Container className="pt-5 defbodyFont">
-          <Row data-aos="fade-up">
+          <AnimatedElement as={Row} animation="fade-up">
             <Col xs={12} lg={6}>
               <div
                 className="div google-map w-100 d-flex align-items-center justify-content-center"
                 style={{ height: "410px" }}
               >
-                {/* <h1>Google Map API here</h1>
-                 */}
                 <Map />
               </div>
             </Col>
@@ -116,19 +106,22 @@ export default function Contact() {
                 </div>
               </div>
             </Col>
-          </Row>
-          <h1
-            data-aos="fade-up"
+          </AnimatedElement>
+          <AnimatedElement
             className="pt-5 mt-2 text-center defheadFont"
+            as="h1"
+            animation="fade-up"
             style={{ color: "rgba(255, 17, 67, 1)" }}
           >
+            {" "}
             Make an enquiry
-          </h1>
-          <p className="text-center" data-aos="fade-up">
-            <i>Send us an enquiry. We will gladly respond.</i>
-          </p>
+          </AnimatedElement>
 
-          <ContactForm data-aos="fade-up" />
+          <AnimatedElement className="text-center" animation="fade-up">
+            <i>Send us an enquiry. We will gladly respond.</i>
+          </AnimatedElement>
+
+          <ContactForm />
         </Container>
       </Container>
     </>

@@ -1,36 +1,42 @@
-import { React, useEffect } from "react";
+import { React } from "react";
 import { Card } from "react-bootstrap";
-import AOS from "aos";
+import AnimatedElement from "../../../components/motionComponent";
 
 function MarketCard({ title, description, imgSrc }) {
-  useEffect(() => {
-    AOS.init({
-      duration: 1050,
-      offset: 50,
-    });
-  });
-
   return (
     <>
-      <Card className="shadow-sm h-100" data-aos="fade-up">
-        <Card.Img variant="top" src={imgSrc} data-aos="fade-up" />
+      <AnimatedElement
+        as={Card}
+        className="shadow-sm h-100"
+        animation="fade-up"
+      >
+        <AnimatedElement
+          as={Card.Img}
+          variant="top"
+          src={imgSrc}
+          animation="fade-up"
+        />
+
         <Card.Body>
-          <Card.Title
+          <AnimatedElement
+            as={Card.Title}
             className="defheadFont text-danger"
-            data-aos="fade-up"
-            data-aos-delay="300"
+            animation="fade-up"
+            delay={0.3}
           >
             {title}
-          </Card.Title>
-          <Card.Text
+          </AnimatedElement>
+
+          <AnimatedElement
+            as={Card.Text}
             className="defbodyFont"
-            data-aos="fade-up"
-            data-aos-delay="500"
+            animation="fade-up"
+            delay={0.5}
           >
             {description}
-          </Card.Text>
+          </AnimatedElement>
         </Card.Body>
-      </Card>
+      </AnimatedElement>
     </>
   );
 }

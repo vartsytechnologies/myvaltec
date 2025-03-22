@@ -21,7 +21,6 @@ import { RiArrowDownSLine } from "react-icons/ri";
 // Imports for form
 import Form from "react-bootstrap/Form";
 import { RxHamburgerMenu } from "react-icons/rx";
-import AOS from "aos";
 
 export default function NavBar() {
   const [phone, setPhone] = useState("");
@@ -62,13 +61,6 @@ export default function NavBar() {
     };
   }, []);
   //End of Navbar handling
-
-  useEffect(() => {
-    AOS.init({
-      duration: 550,
-      offset: 50,
-    });
-  }, []);
 
   // Phone number validation (country code + 9-11 digits)
   const phoneRegex = /^\+?[1-9]\d{0,3}\d{9,11}$/;
@@ -185,7 +177,6 @@ export default function NavBar() {
               onMouseLeave={() => setShowDropdown(false)}
             >
               <Col
-                data-aos="fade-right"
                 className="p-0 m-0 bg-danger text-white"
                 style={{ backgroundColor: "#f8f9fa" }}
               >
@@ -279,7 +270,6 @@ export default function NavBar() {
                 </ul>
               </Col>
               <Col
-                data-aos="fade-right"
                 className="text-white"
                 style={{ backgroundColor: "#525050" }}
               >
@@ -330,7 +320,6 @@ export default function NavBar() {
                 </ul>
               </Col>
               <Col
-                data-aos="fade-right "
                 className="text-black"
                 style={{ backgroundColor: "#dee2e6" }}
               >
