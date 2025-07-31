@@ -31,7 +31,9 @@ const AnimatedElement = ({
   children,
   ...props
 }) => {
-  const MotionComponent = motion(bootstrapComponents[Component] || Component);
+  const MotionComponent = motion.create(
+    bootstrapComponents[Component] || Component
+  );
 
   return (
     <MotionComponent
