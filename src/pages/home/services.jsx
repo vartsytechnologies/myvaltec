@@ -186,7 +186,7 @@ function ServiceSection() {
                             animation="fade-up"
                             delay={0.6}
                           >
-                            Additives : Fuel, Lubricants and Greases
+                            Additives : Fuel, Lubricants, and Greases
                           </AnimatedElement>
 
                           <motion.hr
@@ -207,8 +207,8 @@ function ServiceSection() {
                             delay={0.7}
                             className="p-0 m-0 defbodyFont text-left"
                           >
-                            VALTEC offers a range of high-quality fuel additives
-                            and lubricants designed to enhance equipment
+                            VALTEC offers a range of high quality addictives, fuels, 
+                            lubricants, and greases designed to enhance equipment
                             performance, reduce emissions, and extend machinery
                             life.
                           </AnimatedElement>
@@ -436,7 +436,7 @@ function ServiceSection() {
                             animation="fade-up"
                             delay={0.7}
                             className="p-0 m-0 defbodyFont text-left"
-                          >
+                            >
                             VALTEC leverages its local expertise and global
                             network to support infrastructure projects, ensuring
                             optimal functionality and safety standards in every
