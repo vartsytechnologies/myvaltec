@@ -50,11 +50,6 @@ function ContactForm() {
           );
           setMessageType("success");
           setShowModal(true); // Show the modal
-          console.log(
-            process.env.REACT_APP_CONTACT_SERVICE,
-            process.env.REACT_APP_CONTACT_TEMP,
-            process.env.REACT_APP_CONTACT_PUBK
-          );
 
           // Wait 4.5 seconds before resetting the form
           setTimeout(() => {
