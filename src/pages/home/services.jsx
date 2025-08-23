@@ -37,7 +37,9 @@ function ServiceSection() {
             delay={0.4}
             className="text-center defbodyFont defPb"
           >
-            <i>We serve our clients very well in these areas of services.</i>
+            <i>
+              We deliver value through technology to our clients in these areas.
+            </i>
           </AnimatedElement>
 
           <Row>

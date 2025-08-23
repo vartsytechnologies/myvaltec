@@ -22,11 +22,11 @@ const projects = [
   {
     title: "ENI Ghana Exploration and Production Limited",
     description:
-      "ENI Offshore Cape Three Point Onshore Gas Receiving Facility ",
+      "Subcontractor for ENI Cape Three Point Onshore Gas Receiving Facility. ",
     imgSrc: ENI1,
     modalProjectName: (
       <p className="pt-3">
-        ENI Offshore Cape Three Point Onshore Gas Receiving Facility
+        Subcontractor for ENI Cape Three Point Onshore Gas Receiving Facility.
       </p>
     ),
     modalContent: (
@@ -44,10 +44,13 @@ const projects = [
 
   {
     title: "AMANDI Energy Power Plant, Power Enclave, Aboadze, Ghana",
-    description: "192MW dual-fired combined cycle power plant",
+    description:
+      "Subcontractor on the 192MW dual-fired combined cycle power plant",
     imgSrc: MIG1,
     modalProjectName: (
-      <p className="pt-3">192MW dual-fired combined cycle power plant</p>
+      <p className="pt-3">
+        Subcontractor on the 192MW dual-fired combined cycle power plant
+      </p>
     ),
     modalContent: (
       <p>
@@ -61,10 +64,12 @@ const projects = [
   },
   {
     title: "AngloGold Ashanti Ghana Limited",
-    description: "Paste Backfill Plant for Obuasi Mine",
+    description: "Subcontractor for Paste Backfill Plant for Obuasi Mine",
     imgSrc: AG1,
     modalProjectName: (
-      <p className="pt-3">Paste Backfill Plant for Obuasi Mine</p>
+      <p className="pt-3">
+        Subcontractor for Paste Backfill Plant for Obuasi Mine
+      </p>
     ),
     modalContent: (
       <p>
@@ -91,10 +96,11 @@ const projects = [
   },
   {
     title: "Yinson Productions West Africa Limited",
-    description: "Supply of various FPSO refurbishment items",
+    description:
+      "Supply contract for various FPSO refurbishment and modifications (Bently Nevada parts and Panametrics components)",
     imgSrc: FPSOJA,
     modalProjectName: (
-      <p className="pt-3">Yinson Productions West Africa Ltd</p>
+      <p className="pt-3">Yinson Productions West Africa Limited</p>
     ),
     modalContent: (
       <p>
@@ -112,9 +118,10 @@ const projects = [
   },
   {
     title: "MODEC Ghana Limited",
-    description: "Supply of various  Bently Nevada accessories",
+    description:
+      "Supply contract for various FPSO refurbishment and modifications (Pipes, pipe fittings, flanges, valves, pumps, electrical components, pre-engineered mechanical packages)",
     imgSrc: bently1,
-    modalProjectName: <p className="pt-3"> </p>,
+    modalProjectName: <p className="pt-3">MODEC Ghana Limited </p>,
     modalContent: (
       <p>
         {" "}
@@ -126,7 +133,7 @@ const projects = [
   },
   {
     title: "Solar Traffic Light",
-    description: "Solar traffic light installation for road contractor",
+    description: "Design and installation of solar street lighting solution",
     imgSrc: traffic,
     modalProjectName: <p className="pt-3">Rango Construction Limited</p>,
     modalContent: (
