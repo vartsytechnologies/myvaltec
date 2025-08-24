@@ -9,6 +9,9 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
   font-size: 1.2rem;
+  scroll-behavior: auto;
+  top: 0;
+  position: relative;
 }
 /*Text alignment*/
 .justify {

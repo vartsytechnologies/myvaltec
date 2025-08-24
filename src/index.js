@@ -16,7 +16,6 @@ import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Careers from "./pages/careers/careers.jsx";
 import EpcSection from "./pages/services/pvfpage.jsx";
-// import ResetScroll from "./components/resetScroll/resetscroll";
 import PumpServicePage from "./pages/services/pumps.jsx";
 import MillServicePage from "./pages/services/mill.jsx";
 import ElectricalServicePage from "./pages/services/electrical.jsx";
