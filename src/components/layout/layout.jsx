@@ -10,7 +10,7 @@ const Layout = ({ children }) => {
       <BackToTop />
       <div>
         <NavBar />
-        <main>{children}</main>
+        <main id="main">{children}</main>
         <Footer />
       </div>
     </>

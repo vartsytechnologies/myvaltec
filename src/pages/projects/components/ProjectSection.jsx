@@ -97,7 +97,7 @@ const projects = [
   {
     title: "Yinson Productions West Africa Limited",
     description:
-      "Supply contract for various FPSO refurbishment and modifications (Bently Nevada parts and Panametrics components)",
+      "Supply contract for various FPSO refurbishment and modifications (Pipes, pipe fittings, flanges, valves, pumps, electrical components, pre-engineered mechanical packages)",
     imgSrc: FPSOJA,
     modalProjectName: (
       <p className="pt-3">Yinson Productions West Africa Limited</p>
@@ -119,7 +119,7 @@ const projects = [
   {
     title: "MODEC Ghana Limited",
     description:
-      "Supply contract for various FPSO refurbishment and modifications (Pipes, pipe fittings, flanges, valves, pumps, electrical components, pre-engineered mechanical packages)",
+      "Supply contract for various FPSO refurbishment and modifications (Bently Nevada parts and Panametrics components)",
     imgSrc: bently1,
     modalProjectName: <p className="pt-3">MODEC Ghana Limited </p>,
     modalContent: (
